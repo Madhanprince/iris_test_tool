@@ -1,0 +1,36 @@
+[0.017s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.046s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.506s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.594s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.594s] -- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h
+[0.594s] -- Configured cppcheck exclude dirs and/or files: 
+[0.594s] -- Added test 'lint_cmake' to check CMake code style
+[0.596s] -- Added test 'uncrustify' to check C / C++ code style
+[0.596s] -- Configured uncrustify additional arguments: 
+[0.596s] -- Added test 'xmllint' to check XML markup files
+[0.597s] -- Configuring done
+[0.623s] -- Generating done
+[0.627s] -- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[0.668s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.708s] [ 20%] Built target test_tool_autogen
+[0.723s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.747s] [ 40%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[0.747s] [ 60%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/main.cpp.o[0m
+[0.749s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[0.754s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h: not a directory
+[0.754s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h: not a directory
+[0.755s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h: not a directory
+[0.761s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/main.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmainwindow.h: No such file or directory
+[0.761s]     1 | #include [01;31m[K"mainwindow.h"[m[K
+[0.761s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.761s] compilation terminated.
+[0.762s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmainwindow.h: No such file or directory
+[0.762s]     1 | #include [01;31m[K"mainwindow.h"[m[K
+[0.762s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.762s] compilation terminated.
+[0.762s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/mainwindow.cpp.o] Error 1
+[0.763s] gmake[2]: *** Waiting for unfinished jobs....
+[0.763s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/main.cpp.o] Error 1
+[0.769s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/test_tool.dir/all] Error 2
+[0.770s] gmake: *** [Makefile:146: all] Error 2
+[0.772s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

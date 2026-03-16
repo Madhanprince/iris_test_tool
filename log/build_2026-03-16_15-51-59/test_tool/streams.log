@@ -1,0 +1,18 @@
+[0.016s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.073s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.096s] [ 20%] Built target test_tool_autogen
+[0.110s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.129s] [ 40%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[1.519s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[1.519s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:29:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ui::MainWindow[m[K’ has no member named ‘[01m[KpushButton_2[m[K’; did you mean ‘[01m[KpushButton_5[m[K’?
+[1.519s]    29 |     connect(ui->[01;31m[KpushButton_2[m[K, &QPushButton::clicked,
+[1.519s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[1.519s]       |                 [32m[KpushButton_5[m[K
+[1.523s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::on_centralwidget_customContextMenuRequested(const QPoint&)[m[K’:
+[1.523s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:112:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.523s]   112 | void MainWindow::on_centralwidget_customContextMenuRequested([01;35m[Kconst QPoint &pos[m[K)
+[1.524s]       |                                                              [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[1.745s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/mainwindow.cpp.o] Error 1
+[1.745s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/test_tool.dir/all] Error 2
+[1.746s] gmake: *** [Makefile:146: all] Error 2
+[1.749s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

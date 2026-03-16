@@ -1,0 +1,41 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 20%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/main.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::on_centralwidget_customContextMenuRequested(const QPoint&)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:112:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  112 | void MainWindow::on_centralwidget_customContextMenuRequested([01;35m[Kconst QPoint &pos[m[K)
+      |                                                              [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable test_tool[0m
+[100%] Built target test_tool
+-- Install configuration: ""
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml
