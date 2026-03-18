@@ -4,9 +4,6 @@
 #include <QMainWindow>
 #include <QListView>
 #include <QStringListModel>
-#include <QFile>
-#include <QTextStream>
-#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,15 +18,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void logSensorData();
+
+private slots:
+    void on_launch_button_clicked();
 
 private:
     Ui::MainWindow *ui;
-
-    QListView *listview = nullptr;
-    QFile logFile;
-    QTextStream logStream;
-    QTimer *timer;
+    QListView *listview ;
+    QStringListModel *model ;
 
 };
 

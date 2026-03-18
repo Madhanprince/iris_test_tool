@@ -24,7 +24,7 @@
 			{
 				"command" : 2,
 				"file" : 4,
-				"line" : 19,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall",
+			"path" : "/home/maddy/iris_test_tool/build/test_tool/CMakeFiles/test_tool_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.rule",
+			"path" : "/home/maddy/iris_test_tool/build/test_tool/CMakeFiles/test_tool_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

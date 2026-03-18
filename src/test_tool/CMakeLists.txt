@@ -12,9 +12,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON) # Include current directory automatically
 set(CMAKE_AUTOUIC ON) # Automatically process Qt UI files (.ui)
 set(CMAKE_AUTOMOC ON) # Automatically process Qt signals/slots (Q_OBJECT)
 set(CMAKE_AUTORCC ON) # Automatically process Qt resource files (.qrc)
-
-set(CMAKE_CXX_STANDARD 11) # Use C++11 standard
-set(CMAKE_CXX_STANDARD_REQUIRED ON) # Enforce C++11
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON) # Enforce C++17
 
 find_package(ament_cmake REQUIRED) # ROS2 build system
 
