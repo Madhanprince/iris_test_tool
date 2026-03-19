@@ -1,0 +1,14 @@
+[ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 20%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::on_launch_button_clicked()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:59:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   59 |     })
+      |       [01;31m[K^[m[K
+      |       [32m[K;[m[K
+   60 | [32m[K}[m[K
+      | [32m[K~[m[K      
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

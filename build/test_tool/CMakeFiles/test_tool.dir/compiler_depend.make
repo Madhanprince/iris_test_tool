@@ -780,7 +780,13 @@ CMakeFiles/test_tool.dir/src/mainwindow.cpp.o: /home/maddy/iris_test_tool/src/te
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
   /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h
+  /usr/include/c++/11/bits/fs_ops.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
 
 CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o: test_tool_autogen/mocs_compilation.cpp \
   /usr/include/stdc-predef.h \
@@ -1137,6 +1143,16 @@ CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o: test_tool_aut
 
 
 test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug:
 
 /usr/include/c++/11/bits/fs_ops.h:
 
@@ -1787,6 +1803,8 @@ test_tool_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h:
 
