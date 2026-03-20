@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->launch_button, &QPushButton::clicked,
             this, &MainWindow::on_launch_button_clicked);
+    connect(ui->log_button, &QPushButton::clicked,
+            this, &MainWindow::on_log_button_clicked);
 }
 
 MainWindow::~MainWindow()
@@ -59,3 +61,14 @@ void MainWindow::on_launch_button_clicked()
 
 
 }
+void MainWindow::on_log_button_clicked()
+{
+    QWidget  *logWidget = new QWidget(this);
+    QVBoxLayout *layout = new QVBoxLayout(logWidget);
+    QTextEdit *textEdit = new QTextEdit(logWidget);
+    textEdit->setReadOnly(true);
+    layout->addWidget(textEdit);
+
+    QComboBox *logLevelComboBox = new QComboBox(logWidget);
+}
+

@@ -262,4 +262,75 @@ target_link_libraries(QtToolbarToggle Qt5::Widgets)
 //     logStream.flush();   // forces write immediately
 // }
 
+#include <rclcpp/rclcpp.hpp>
+#include <QApplication>
+#include <QPlainTextEdit>
+#include <QVBoxLayout>
+#include <thread>
+#include <chrono>
+#include <QWidget>
+#include "rcl_interfaces/msg/log.hpp"
 
+
+class logger :public QWidget
+{
+
+public:
+    logger (rclcpp::Node::SharedPtr node,QWidget *parent = nullptr): QWidget(parent), node_(node) {
+        layout = new QVBoxLayout(this);
+        textEdit = new QPlainTextEdit(this);
+        textEdit->setReadOnly(true);
+        layout->addWidget(textEdit);
+
+        this->setWindowTitle("ROS2 Log Viewer");
+        resize(600, 400);
+
+        log_sub_ = node_->create_subscription<rcl_interfaces::msg::Log>(
+            "/rosout",
+            10,
+            [this](const rcl_interfaces::msg::Log::SharedPtr msg) {
+                QString log_msg = QString::fromStdString(msg->msg);
+                textEdit->appendPlainText(log_msg);
+            }
+        );
+
+        timer = node_->create_wall_timer(std::chrono::seconds(1),[this](){
+                RCLCPP_INFO(node_->get_logger(), "Log viewer node is running.");
+        });
+    }
+private:
+    QVBoxLayout *layout;
+    QPlainTextEdit *textEdit;
+    rclcpp::TimerBase::SharedPtr timer;
+    rclcpp::Node::SharedPtr node_;
+    rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr log_sub_;
+};
+
+
+// logger ::logger (/* args */)
+// {
+// }
+
+// logger ::~logger ()
+// {
+// }
+
+
+    
+
+int main (int argc, char *argv[])
+{
+  rclcpp::init(argc, argv);
+  QApplication app(argc, argv);
+  auto node = std::make_shared<rclcpp::Node>("log_viewer");
+  logger logViewerNode(node);
+  logViewerNode.show();
+  std::thread ros_thread([&]() {
+        rclcpp::spin(node);
+    });
+  RCLCPP_INFO(node->get_logger(), "Log viewer node has started.");
+  int result = app.exec();
+  rclcpp::shutdown();
+  ros_thread.join();
+  return result;
+}
