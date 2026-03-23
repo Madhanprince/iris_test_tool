@@ -1,0 +1,14 @@
+[  8%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
+[ 25%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 25%] Built target dummy_test_autogen
+[ 25%] Built target test_tool_autogen
+[ 25%] Built target lidar_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 50%] Built target dummy_test
+[ 58%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/lidar_node_autogen/mocs_compilation.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable lidar_node[0m
+[ 83%] [32m[1mLinking CXX executable test_tool[0m
+[100%] Built target test_tool

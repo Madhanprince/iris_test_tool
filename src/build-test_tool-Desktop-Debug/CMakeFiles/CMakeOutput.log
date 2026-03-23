@@ -228,3 +228,51 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b704f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b704f.dir/build.make CMakeFiles/cmTC_b704f.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b704f.dir/CheckIncludeFile.cxx.o
+/usr/bin/g++   -std=gnu++17 -o CMakeFiles/cmTC_b704f.dir/CheckIncludeFile.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_b704f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b704f.dir/link.txt --verbose=1
+/usr/bin/g++ CMakeFiles/cmTC_b704f.dir/CheckIncludeFile.cxx.o -o cmTC_b704f 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8e8b3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8e8b3.dir/build.make CMakeFiles/cmTC_8e8b3.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8e8b3.dir/src.cxx.o
+/usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_8e8b3.dir/src.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8e8b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e8b3.dir/link.txt --verbose=1
+/usr/bin/g++ CMakeFiles/cmTC_8e8b3.dir/src.cxx.o -o cmTC_8e8b3 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

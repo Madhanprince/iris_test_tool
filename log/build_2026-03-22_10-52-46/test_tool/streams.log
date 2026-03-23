@@ -1,0 +1,15 @@
+[0.007s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j16 -l16
+[0.044s] [ 12%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.045s] [ 25%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.058s] [ 25%] Built target dummy_test_autogen
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[0.075s] [ 37%] [32m[1mLinking CXX executable dummy_test[0m
+[0.115s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.115s] (.text+0x1b): undefined reference to `main'
+[0.116s] collect2: error: ld returned 1 exit status
+[0.118s] gmake[2]: *** [CMakeFiles/dummy_test.dir/build.make:159: dummy_test] Error 1
+[0.118s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/dummy_test.dir/all] Error 2
+[0.118s] gmake[1]: *** Waiting for unfinished jobs....
+[0.239s] [ 37%] Built target test_tool_autogen
+[0.240s] gmake: *** [Makefile:146: all] Error 2
+[0.242s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j16 -l16

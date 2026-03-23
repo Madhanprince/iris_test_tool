@@ -1,0 +1,29 @@
+[0.006s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j16 -l16
+[0.042s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.058s] [ 20%] Built target test_tool_autogen
+[0.077s] [ 40%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/main.cpp.o[0m
+[0.078s] [ 60%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[0.079s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[0.154s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/main.cpp:1[m[K:
+[0.154s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:8:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[0.155s]     8 | #include [01;31m[K<rclcpp/rclcpp.h>[m[K
+[0.155s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.155s] compilation terminated.
+[0.156s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/main.cpp.o] Error 1
+[0.156s] gmake[2]: *** Waiting for unfinished jobs....
+[0.159s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+[0.159s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[0.159s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:8:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[0.159s]     8 | #include [01;31m[K<rclcpp/rclcpp.h>[m[K
+[0.159s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.159s] compilation terminated.
+[0.161s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:1[m[K:
+[0.161s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:8:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[0.161s]     8 | #include [01;31m[K<rclcpp/rclcpp.h>[m[K
+[0.161s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.161s] compilation terminated.
+[0.161s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+[0.162s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/mainwindow.cpp.o] Error 1
+[0.163s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/test_tool.dir/all] Error 2
+[0.163s] gmake: *** [Makefile:146: all] Error 2
+[0.165s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j16 -l16

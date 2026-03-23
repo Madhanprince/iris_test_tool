@@ -1,0 +1,13 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/main.cpp:10:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMainWindow::MainWindow()[m[K’
+   10 |     MainWindow [01;31m[Kw[m[K;
+      |                [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/main.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:31:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMainWindow::MainWindow(rclcpp::Node::SharedPtr, QWidget*)[m[K’
+   31 |     [01;36m[KMainWindow[m[K(rclcpp::Node::SharedPtr node, QWidget *parent = nullptr);
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:31:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

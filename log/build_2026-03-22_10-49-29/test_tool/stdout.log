@@ -1,0 +1,8 @@
+[ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 25%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 25%] Built target test_tool_autogen
+[ 25%] Built target dummy_test_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable test_tool[0m
+[ 62%] [32m[1mLinking CXX executable dummy_test[0m

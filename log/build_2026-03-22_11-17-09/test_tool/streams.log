@@ -1,0 +1,16 @@
+[0.007s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j16 -l16
+[0.044s] [ 22%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.044s] [ 22%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.061s] [ 22%] Built target test_tool_autogen
+[0.061s] [ 22%] Built target dummy_test_autogen
+[0.071s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.081s] [ 55%] Built target dummy_test
+[0.091s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[5.438s] [ 77%] [32m[1mLinking CXX executable test_tool[0m
+[5.899s] /usr/bin/ld: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o: in function `MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)':
+[5.899s] mocs_compilation.cpp:(.text+0x4c): undefined reference to `MainWindow::on_pushButton_5_clicked()'
+[5.932s] collect2: error: ld returned 1 exit status
+[5.933s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:194: test_tool] Error 1
+[5.934s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/test_tool.dir/all] Error 2
+[5.934s] gmake: *** [Makefile:146: all] Error 2
+[5.936s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j16 -l16
