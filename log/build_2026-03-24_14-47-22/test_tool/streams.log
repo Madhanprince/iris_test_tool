@@ -1,0 +1,18 @@
+[0.030s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.213s] [ 23%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.213s] [ 23%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
+[0.213s] [ 23%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.244s] [ 23%] Built target lidar_node_autogen
+[0.245s] [ 23%] Built target dummy_test_autogen
+[0.250s] [ 23%] Built target test_tool_autogen
+[0.280s] [ 30%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o[0m
+[0.281s] [ 53%] Built target lidar_node
+[0.291s] [ 84%] Built target test_tool
+[0.752s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:54:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/laser_scan.hpp: No such file or directory
+[0.752s]    54 | #include [01;31m[K<sensor_msgs/msg/laser_scan.hpp>[m[K
+[0.752s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.752s] compilation terminated.
+[0.758s] gmake[2]: *** [CMakeFiles/dummy_test.dir/build.make:90: CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o] Error 1
+[0.758s] gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/dummy_test.dir/all] Error 2
+[0.759s] gmake: *** [Makefile:146: all] Error 2
+[0.763s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

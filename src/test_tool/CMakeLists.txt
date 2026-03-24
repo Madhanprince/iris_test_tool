@@ -46,7 +46,8 @@ add_executable(dummy_test src/dummy_test.cpp) # Create dummy test executable
 ament_target_dependencies(dummy_test
   rclcpp
   rcl_interfaces   # ✅ ADD THIS
-  std_msgs          # ✅ ADD THIS
+  std_msgs   
+  sensor_msgs       # ✅ ADD THIS
 )
 
 add_executable(lidar_node src/lidar_node.cpp) # Create lidar_node executable

@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-072c52689722118d7098.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "test_tool",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dummy_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dummy_test-Debug-8e6ba9ab368d512cad73.json",
+					"name" : "dummy_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dummy_test_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dummy_test_autogen-Debug-c01aa261f2cbf7f8ce74.json",
+					"name" : "dummy_test_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_node-Debug-b047ba72d6e055e1c9f8.json",
+					"name" : "lidar_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_node_autogen-Debug-3a50a3c06e55a4adf47c.json",
+					"name" : "lidar_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_tool::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_tool-Debug-78979d3352810bb1642e.json",
+					"name" : "test_tool",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_tool_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_tool_autogen-Debug-399156d4101ceb8cdf3a.json",
+					"name" : "test_tool_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_tool_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_tool_uninstall-Debug-b4fb9cec0fc2f83d15ef.json",
+					"name" : "test_tool_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-afa9f141b49e1741b08a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug",
+		"source" : "/home/maddy/iris_test_tool/src/test_tool"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

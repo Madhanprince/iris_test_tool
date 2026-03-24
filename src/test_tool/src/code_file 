@@ -61,23 +61,23 @@
 //     selectTool->setChecked(true);
 // }
 
-cmake_minimum_required(VERSION 3.16)
+// cmake_minimum_required(VERSION 3.16)
 
-project(QtToolbarToggle)
+// project(QtToolbarToggle)
 
-set(CMAKE_CXX_STANDARD 17)
+// set(CMAKE_CXX_STANDARD 17)
 
-set(CMAKE_AUTOMOC ON)
+// set(CMAKE_AUTOMOC ON)
 
-find_package(Qt5 REQUIRED COMPONENTS Widgets)
+// find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
-add_executable(QtToolbarToggle
-   src/main.cpp
-   src/mainwindow.cpp
-   src/mainwindow.h
-)
+// add_executable(QtToolbarToggle
+//    src/main.cpp
+//    src/mainwindow.cpp
+//    src/mainwindow.h
+// )
 
-target_link_libraries(QtToolbarToggle Qt5::Widgets)
+// target_link_libraries(QtToolbarToggle Qt5::Widgets)
 
 // -----------------------------------------------------------------------------------------------------------------------------------
 

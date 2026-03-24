@@ -3,6 +3,10 @@
 #include <filesystem>
 #include <QDebug>
 #include <QProcess>
+#include <iostream>
+#include <filesystem>
+#include <QDir>
+#include <QString>
 
 namespace fs = std::filesystem;  // Add this for older compilers
 
@@ -17,34 +21,8 @@ MainWindow::MainWindow(rclcpp::Node::SharedPtr node,
     // connect(ui->log_button, &QPushButton::clicked,
     //         this, &MainWindow::on_log_button_clicked);
     log_subscription_= node_->create_subscription<rcl_interfaces::msg::Log>("/rosout", 10,
-        [this](const rcl_interfaces::msg::Log::SharedPtr msg){
-           std::string node_name=msg->name;
-           if (msg->level>= rcl_interfaces::msg::Log::ERROR){
-               if (node_name=="test_logger_node"){
-                    QMetaObject::invokeMethod(this, [=]() { // used for updating UI from non-UI thread
-                        ui->pushButton_5->setStyleSheet("background-color: red;");
-                    });
-                    if (msg->level == rcl_interfaces::msg::Log::INFO)
-                    {
-                        QMetaObject::invokeMethod(this, [=]() { // used for updating UI from non-UI thread
-                            ui->pushButton_5->setStyleSheet("background-color: green;");
-                    });
-                    }
-                }else if (node_name=="lidar_node")
-                {
-                    QMetaObject::invokeMethod(this, [=]() {
-                        ui->pushButton_6->setStyleSheet("background-color: red;");
-                    });/* code */
-                    if (msg->level == rcl_interfaces::msg::Log::INFO)
-                    {
-                        QMetaObject::invokeMethod(this, [=]() { // used for updating UI from non-UI thread
-                            ui->pushButton_5->setStyleSheet("background-color: green;");
-                    });
-                    }
-                }
-                
-            }
-        });
+        std::bind(&MainWindow::logcallback, this, std::placeholders::_1));
+        
 
 
 }
@@ -93,29 +71,79 @@ void MainWindow::on_launch_button_clicked()
 
 
 }
-// void MainWindow::on_log_button_clicked()
-// {
-//     logWidget = new QWidget(this);
-//     logWidget->setStyleSheet("background-color: lightgray;");
-//     logWidget->setWindowTitle("ROS2 Logs");
-//     logWidget->setWindowFlags(Qt::Window );
+void MainWindow::on_log_button_clicked()
+{
+    logWidget = new QWidget(this);
+    logWidget->setStyleSheet("background-color: lightgray;");
+    logWidget->setWindowTitle("ROS2 Logs");
+    logWidget->setWindowFlags(Qt::Window);
 
-//     QVBoxLayout *layout = new QVBoxLayout(logWidget);
-//     QComboBox *logLevelComboBox = new QComboBox(logWidget);
-//     logLevelComboBox->setMaximumWidth(150);
-//     logLevelComboBox->addItems({"DEBUG", "INFO", "WARN", "ERROR", "FATAL"});
-//     layout->addWidget(logLevelComboBox);
+    QVBoxLayout *layout = new QVBoxLayout(logWidget);
+    QComboBox *logLevelComboBox = new QComboBox(logWidget);
+    logLevelComboBox->setMaximumWidth(150);
 
-//     QTextEdit *textEdit = new QTextEdit(logWidget);
-//     textEdit->setReadOnly(true);
-//     layout->addWidget(textEdit);
+    QStringList text_file;
+    QDir diretory;
+    QString path = "/home/maddy/iris_test_tool/src/test_tool/src/logfiles";
 
-//     logWidget->showMaximized();
-// }
+    // 1. Define the specific path
+    QDir directory(path);
+
+// 2. Filter for only .txt files
+    QStringList filters;
+    filters << "*.txt";
+    directory.setNameFilters(filters);
+
+// 3. Get the list of files and add them to the box
+    QStringList text_files = directory.entryList(QDir::Files);
+    logLevelComboBox->addItems(text_files);
+    layout->addWidget(logLevelComboBox);
+
+    QTextEdit *textEdit = new QTextEdit(logWidget);
+    textEdit->setReadOnly(true);
+    layout->addWidget(textEdit);
+
+    logWidget->showMaximized();
+
+    
+}
 
 
-// void MainWindow::on_pushButton_5_clicked()
-// {
-//     ui->pushButton_5->setStyleSheet("background-color: red;");
-// }
+void MainWindow::logcallback(const rcl_interfaces::msg::Log::SharedPtr msg)
+{
+    std::string node_name=msg->name;
+    if (node_name == "test_logger_node")
+    {
+        switch (msg->level)
+        {
+            case rcl_interfaces::msg::Log::ERROR:
+            case rcl_interfaces::msg::Log::FATAL:
+                QMetaObject::invokeMethod(this, [=]() {
+                ui->pushButton_5->setStyleSheet("background-color: red;");
+            });
+            break;
 
+            case rcl_interfaces::msg::Log::INFO:
+                QMetaObject::invokeMethod(this, [=]() {
+                ui->pushButton_5->setStyleSheet("background-color: green;");
+                });
+            break;
+        }
+    }
+    if(node_name == "lidar_node")
+    {
+        switch (msg->level)
+        {
+            case rcl_interfaces::msg::Log::ERROR:
+            case rcl_interfaces::msg::Log::FATAL:
+                QMetaObject::invokeMethod(this, [=]() {
+                ui->pushButton_6->setStyleSheet("background-color: red;");
+            });
+            break;
+            case rcl_interfaces::msg::Log::INFO:
+                QMetaObject::invokeMethod(this, [=]() {
+                ui->pushButton_6->setStyleSheet("background-color: green;");
+                });        
+        }   
+    }
+}

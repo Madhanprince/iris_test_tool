@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.090s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.091s] [ 23%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.092s] [ 23%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
+[0.122s] [ 23%] Built target lidar_node_autogen
+[0.123s] [ 23%] Built target dummy_test_autogen
+[0.123s] [ 23%] Built target test_tool_autogen
+[0.146s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[0.168s] [ 46%] Built target lidar_node
+[0.170s] [ 76%] Built target test_tool
+[0.180s] [ 84%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o[0m
+[4.086s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[4.086s]   148 | }
+[4.086s]       |  [01;31m[K^[m[K
+[4.087s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:59:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[4.087s]    59 | [01;36m[K{[m[K
+[4.087s]       | [01;36m[K^[m[K
+[4.115s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[4.115s]   148 | }
+[4.115s]       |  [01;31m[K^[m[K
+[5.415s] gmake[2]: *** [CMakeFiles/dummy_test.dir/build.make:90: CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o] Error 1
+[5.416s] gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/dummy_test.dir/all] Error 2
+[5.416s] gmake: *** [Makefile:146: all] Error 2
+[5.419s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -1135,7 +1135,7 @@
 		"/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/include/src/ui_mainwindow.h"
 	],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 12,
+	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/maddy/iris_test_tool/build/test_tool/CMakeFiles/lidar_node_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",

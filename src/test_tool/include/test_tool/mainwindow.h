@@ -34,7 +34,7 @@ public:
 private slots:
     void on_launch_button_clicked();
 
-    // void on_log_button_clicked();
+    void on_log_button_clicked();
 
     // void on_pushButton_5_clicked();
 
@@ -48,6 +48,9 @@ private:
 
     rclcpp::Node::SharedPtr node_;
     rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr log_subscription_; 
+
+   
+    void logcallback(const rcl_interfaces::msg::Log::SharedPtr msg);
 
 
 

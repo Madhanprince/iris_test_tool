@@ -1,0 +1,12 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  148 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:59:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   59 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  148 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/dummy_test.dir/build.make:90: CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/dummy_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

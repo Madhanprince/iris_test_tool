@@ -55,21 +55,21 @@ private:
 
             // ⚠️ Warning simulation
             if (count_ == 3) {
-                RCLCPP_WARN(this->get_logger(), "⚠️ Weak signal detected!");
+                RCLCPP_WARN(this->get_logger(), "Weak signal detected!");
             }
 
             // ❌ Error simulation
             if (count_ == 5) {
-                RCLCPP_ERROR(this->get_logger(), "❌ Lidar sensor failure!");
+                RCLCPP_ERROR(this->get_logger(), "Lidar sensor failure!");
             }
 
             // 💥 Exception simulation
             if (count_ == 7) {
-                throw std::runtime_error("💥 Lidar hardware disconnected!");
+                throw std::runtime_error("Lidar hardware disconnected!");
             }
 
         } catch (const std::exception &e) {
-            RCLCPP_ERROR(this->get_logger(), "❌ Exception caught: %s", e.what());
+            RCLCPP_ERROR(this->get_logger(), "Exception caught: %s", e.what());
         }
     }
 

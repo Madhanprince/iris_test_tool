@@ -1,0 +1,70 @@
+[0.023s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.150s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.376s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.664s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.671s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.689s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.716s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.748s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.829s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.834s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.060s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.166s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[9.388s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.494s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.494s] -- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool
+[9.494s] -- Configured cppcheck exclude dirs and/or files: 
+[9.496s] -- Added test 'lint_cmake' to check CMake code style
+[9.498s] -- Added test 'uncrustify' to check C / C++ code style
+[9.499s] -- Configured uncrustify additional arguments: 
+[9.499s] -- Added test 'xmllint' to check XML markup files
+[9.503s] -- Configuring done
+[9.641s] -- Generating done
+[9.654s] -- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[9.712s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[9.715s] [ 15%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
+[9.716s] [ 23%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[9.741s] [ 23%] Built target dummy_test_autogen
+[9.743s] [ 23%] Built target lidar_node_autogen
+[9.756s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[9.758s] [35m[1mConsolidate compiler generated dependencies of target lidar_node[0m
+[9.784s] [ 30%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o[0m
+[9.786s] [ 38%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/lidar_node_autogen/mocs_compilation.cpp.o[0m
+[9.790s] [ 46%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o[0m
+[9.790s] [ 53%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[10.332s] [ 53%] Built target test_tool_autogen
+[10.362s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[10.444s] [ 61%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[10.451s] [ 69%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/main.cpp.o[0m
+[10.465s] [ 76%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[18.438s] [ 84%] [32m[1mLinking CXX executable dummy_test[0m
+[19.115s] [ 84%] Built target dummy_test
+[21.136s] [ 92%] [32m[1mLinking CXX executable lidar_node[0m
+[21.657s] [ 92%] Built target lidar_node
+[29.489s] [100%] [32m[1mLinking CXX executable test_tool[0m
+[30.880s] [100%] Built target test_tool
+[30.896s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[30.911s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+[30.921s] -- Install configuration: ""
+[30.921s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool
+[30.932s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool" to ""
+[30.933s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test
+[30.934s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test" to ""
+[30.935s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/lidar_node
+[30.938s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/lidar_node" to ""
+[30.938s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool
+[30.939s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool
+[30.939s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh
+[30.939s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv
+[30.939s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh
+[30.940s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv
+[30.940s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash
+[30.940s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh
+[30.941s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh
+[30.941s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv
+[30.941s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv
+[30.941s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool
+[30.942s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake
+[30.942s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake
+[30.942s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml
+[30.946s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
