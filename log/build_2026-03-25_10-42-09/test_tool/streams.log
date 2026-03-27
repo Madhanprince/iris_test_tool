@@ -1,0 +1,41 @@
+[0.038s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.250s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.255s] [ 15%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.257s] [ 23%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
+[0.287s] [ 23%] Built target dummy_test_autogen
+[0.287s] [ 23%] Built target lidar_node_autogen
+[0.294s] [ 23%] Built target test_tool_autogen
+[0.332s] [ 30%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[0.339s] [ 38%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o[0m
+[0.350s] [ 46%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[9.506s] [ 53%] [32m[1mLinking CXX executable dummy_test[0m
+[9.671s] [ 61%] [32m[1mLinking CXX executable lidar_node[0m
+[10.118s] [ 69%] Built target dummy_test
+[10.159s] [ 76%] Built target lidar_node
+[17.196s] [ 84%] [32m[1mLinking CXX executable test_tool[0m
+[18.586s] [100%] Built target test_tool
+[18.605s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[18.621s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+[18.630s] -- Install configuration: ""
+[18.632s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool
+[18.638s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool" to ""
+[18.640s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test
+[18.642s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test" to ""
+[18.643s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/lidar_node
+[18.646s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/lidar_node" to ""
+[18.646s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool
+[18.646s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool
+[18.647s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh
+[18.647s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv
+[18.648s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh
+[18.648s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv
+[18.648s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash
+[18.649s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh
+[18.649s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh
+[18.649s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv
+[18.649s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv
+[18.649s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool
+[18.649s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake
+[18.650s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake
+[18.650s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml
+[18.652s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool

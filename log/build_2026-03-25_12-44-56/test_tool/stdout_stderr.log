@@ -1,0 +1,32 @@
+[ 15%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 23%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
+[ 23%] Built target lidar_node_autogen
+[ 23%] Built target dummy_test_autogen
+[ 23%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 46%] Built target dummy_test
+[ 69%] Built target lidar_node
+[ 76%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/main.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable test_tool[0m
+[100%] Built target test_tool
+-- Install configuration: ""
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool
+-- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool" to ""
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/lidar_node
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv
+-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake
+-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml

@@ -262,75 +262,219 @@
 //     logStream.flush();   // forces write immediately
 // }
 
-#include <rclcpp/rclcpp.hpp>
-#include <QApplication>
-#include <QPlainTextEdit>
-#include <QVBoxLayout>
-#include <thread>
-#include <chrono>
-#include <QWidget>
-#include "rcl_interfaces/msg/log.hpp"
+// #include <rclcpp/rclcpp.hpp>
+// #include <QApplication>
+// #include <QPlainTextEdit>
+// #include <QVBoxLayout>
+// #include <thread>
+// #include <chrono>
+// #include <QWidget>
+// #include "rcl_interfaces/msg/log.hpp"
 
 
-class logger :public QWidget
-{
-
-public:
-    logger (rclcpp::Node::SharedPtr node,QWidget *parent = nullptr): QWidget(parent), node_(node) {
-        layout = new QVBoxLayout(this);
-        textEdit = new QPlainTextEdit(this);
-        textEdit->setReadOnly(true);
-        layout->addWidget(textEdit);
-
-        this->setWindowTitle("ROS2 Log Viewer");
-        resize(600, 400);
-
-        log_sub_ = node_->create_subscription<rcl_interfaces::msg::Log>(
-            "/rosout",
-            10,
-            [this](const rcl_interfaces::msg::Log::SharedPtr msg) {
-                QString log_msg = QString::fromStdString(msg->msg);
-                textEdit->appendPlainText(log_msg);
-            }
-        );
-
-        timer = node_->create_wall_timer(std::chrono::seconds(1),[this](){
-                RCLCPP_INFO(node_->get_logger(), "Log viewer node is running.");
-        });
-    }
-private:
-    QVBoxLayout *layout;
-    QPlainTextEdit *textEdit;
-    rclcpp::TimerBase::SharedPtr timer;
-    rclcpp::Node::SharedPtr node_;
-    rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr log_sub_;
-};
-
-
-// logger ::logger (/* args */)
+// class logger :public QWidget
 // {
-// }
 
-// logger ::~logger ()
-// {
-// }
+// public:
+//     logger (rclcpp::Node::SharedPtr node,QWidget *parent = nullptr): QWidget(parent), node_(node) {
+//         layout = new QVBoxLayout(this);
+//         textEdit = new QPlainTextEdit(this);
+//         textEdit->setReadOnly(true);
+//         layout->addWidget(textEdit);
+
+//         this->setWindowTitle("ROS2 Log Viewer");
+//         resize(600, 400);
+
+//         log_sub_ = node_->create_subscription<rcl_interfaces::msg::Log>(
+//             "/rosout",
+//             10,
+//             [this](const rcl_interfaces::msg::Log::SharedPtr msg) {
+//                 QString log_msg = QString::fromStdString(msg->msg);
+//                 textEdit->appendPlainText(log_msg);
+//             }
+//         );
+
+//         timer = node_->create_wall_timer(std::chrono::seconds(1),[this](){
+//                 RCLCPP_INFO(node_->get_logger(), "Log viewer node is running.");
+//         });
+//     }
+// private:
+//     QVBoxLayout *layout;
+//     QPlainTextEdit *textEdit;
+//     rclcpp::TimerBase::SharedPtr timer;
+//     rclcpp::Node::SharedPtr node_;
+//     rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr log_sub_;
+// };
+
+
+// // logger ::logger (/* args */)
+// // {
+// // }
+
+// // logger ::~logger ()
+// // {
+// // }
 
 
     
 
-int main (int argc, char *argv[])
+// int main (int argc, char *argv[])
+// {
+//   rclcpp::init(argc, argv);
+//   QApplication app(argc, argv);
+//   auto node = std::make_shared<rclcpp::Node>("log_viewer");
+//   logger logViewerNode(node);
+//   logViewerNode.show();
+//   std::thread ros_thread([&]() {
+//         rclcpp::spin(node);
+//     });
+//   RCLCPP_INFO(node->get_logger(), "Log viewer node has started.");
+//   int result = app.exec();
+//   rclcpp::shutdown();
+//   ros_thread.join();
+//   return result;
+// }
+
+#include <QApplication>
+#include <QMainWindow>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QListWidget>
+#include <QStackedWidget>
+#include <QLabel>
+
+// 🔹 Sensor Box
+QLabel* createSensorBox(QString name)
 {
-  rclcpp::init(argc, argv);
-  QApplication app(argc, argv);
-  auto node = std::make_shared<rclcpp::Node>("log_viewer");
-  logger logViewerNode(node);
-  logViewerNode.show();
-  std::thread ros_thread([&]() {
-        rclcpp::spin(node);
+    QLabel *label = new QLabel(name);
+    label->setAlignment(Qt::AlignCenter);
+    label->setFixedSize(80, 40);
+
+    label->setStyleSheet(
+        "background-color: red;"
+        "color: white;"
+        "border-radius: 10px;"
+        "font-weight: bold;"
+    );
+
+    return label;
+}
+
+// 🔹 Page
+QWidget* createPage(QString title)
+{
+    QWidget *page = new QWidget();
+    QVBoxLayout *layout = new QVBoxLayout(page);
+
+    layout->setSpacing(15);
+    layout->setContentsMargins(15, 15, 15, 15);
+
+    QLabel *label = new QLabel(title);
+    label->setAlignment(Qt::AlignCenter);
+    label->setStyleSheet("font-size: 20px;");
+
+    layout->addWidget(label);
+    return page;
+}
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    QMainWindow window;
+
+    QWidget *central = new QWidget();
+    QVBoxLayout *mainLayout = new QVBoxLayout(central);
+
+    // 🔥 Global spacing
+    mainLayout->setSpacing(10);
+    mainLayout->setContentsMargins(10, 10, 10, 10);
+
+    // 🔝 HEADER
+    QHBoxLayout *headerLayout = new QHBoxLayout();
+    headerLayout->setSpacing(10);
+
+    headerLayout->addWidget(createSensorBox("CAM1"));
+    headerLayout->addWidget(createSensorBox("CAM2"));
+    headerLayout->addWidget(createSensorBox("CAM3"));
+    headerLayout->addWidget(createSensorBox("CAM4"));
+    headerLayout->addSpacing(20);
+    headerLayout->addWidget(createSensorBox("LIDAR"));
+    headerLayout->addSpacing(20);
+    headerLayout->addWidget(createSensorBox("US1"));
+    headerLayout->addWidget(createSensorBox("US2"));
+    headerLayout->addWidget(createSensorBox("US3"));
+
+    mainLayout->addLayout(headerLayout);
+
+    // 🔻 BODY
+    QHBoxLayout *bodyLayout = new QHBoxLayout();
+    bodyLayout->setSpacing(10);
+
+    // 🔹 Sidebar
+    QListWidget *sidebar = new QListWidget();
+
+    sidebar->setStyleSheet(R"(
+        QListWidget {
+            background-color: #f2f2f2;
+            border: none;
+            font-size: 14px;
+        }
+
+        QListWidget::item {
+            padding: 12px;
+            margin-left: 10px;
+        }
+
+        QListWidget::item:selected {
+            background-color: #d6e4ff;
+            border-radius: 8px;
+        }
+
+        QListWidget::item:hover {
+            background-color: #e6e6e6;
+            border-radius: 8px;
+        }
+    )");
+
+    // 🔹 ESS Title
+    QListWidgetItem *title = new QListWidgetItem("   ESS");
+    title->setFlags(Qt::NoItemFlags);
+    title->setSizeHint(QSize(150, 40));
+    sidebar->addItem(title);
+  
+    // 🔥 Added items
+    sidebar->addItem("  Logs");
+    sidebar->addItem("  Mapping");
+
+    sidebar->setFixedWidth(260);
+
+    // 🔹 Pages
+    QStackedWidget *pages = new QStackedWidget();
+    pages->setStyleSheet("background-color: white;");
+
+    // 🔥 Added pages
+    pages->addWidget(createPage("Logs"));
+    pages->addWidget(createPage("Mapping"));
+
+    // 🔗 Sidebar → Pages
+    QObject::connect(sidebar, &QListWidget::currentRowChanged,
+                     [&](int row){
+        if(row > 0)
+            pages->setCurrentIndex(row - 1);
     });
-  RCLCPP_INFO(node->get_logger(), "Log viewer node has started.");
-  int result = app.exec();
-  rclcpp::shutdown();
-  ros_thread.join();
-  return result;
+
+    sidebar->setCurrentRow(1);
+
+    // 🔻 Layout
+    bodyLayout->addWidget(sidebar);
+    bodyLayout->addWidget(pages);
+
+    mainLayout->addLayout(bodyLayout);
+
+    window.setCentralWidget(central);
+    window.resize(1100, 650);
+    window.setWindowTitle("Autonomous Cleaning Machine - Test UI");
+    window.show();
+
+    return app.exec();
 }

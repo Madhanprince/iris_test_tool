@@ -112,7 +112,7 @@ void MainWindow::on_log_button_clicked()
 void MainWindow::logcallback(const rcl_interfaces::msg::Log::SharedPtr msg)
 {
     std::string node_name=msg->name;
-    if (node_name == "test_logger_node")
+    if (node_name == "dummy_node")
     {
         switch (msg->level)
         {

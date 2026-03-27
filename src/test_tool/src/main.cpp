@@ -16,7 +16,8 @@ int main(int argc, char *argv[])
         rclcpp::spin(node);
     });
     MainWindow w(node);
-    w.show();
+    // w.show();
+    w.showMaximized();
 
     int result = a.exec();
 

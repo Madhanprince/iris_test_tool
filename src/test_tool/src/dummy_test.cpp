@@ -3,20 +3,25 @@
 #include <chrono>
 #include <random>
 #include <fstream>  // 1. Include the file stream header
+#include <filesystem>
 
 using namespace std::chrono_literals;
 
 class LidarNode : public rclcpp::Node
 {
 public:
-    LidarNode() : Node("lidar_node"), count_(0)
+    LidarNode() : Node("dummy_node"), count_(0)
     {
         // 2. Open the file (appends to existing content)
-        log_file_.open("lidar_logs.txt", std::ios::app);
+    std::string folder = "/home/maddy/iris_test_tool/src/test_tool/src/logfiles";
+    std::filesystem::create_directories(folder);
 
-        if (!log_file_.is_open()) {
-            RCLCPP_ERROR(this->get_logger(), "Could not open log file!");
-        }
+    std::string file_path = folder + "/lidar_node.txt";
+    log_file_.open(file_path, std::ios::app);
+
+    if (!log_file_.is_open()) {
+        throw std::runtime_error("Failed to open log file!");
+    }     
 
         publisher_ = this->create_publisher<sensor_msgs::msg::LaserScan>("scan", 10);
         timer_ = this->create_wall_timer(1s, std::bind(&LidarNode::timer_callback, this));
