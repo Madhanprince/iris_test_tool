@@ -33,32 +33,11 @@ set(PROJECT_SOURCES # List of all project source files
 
 add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source files
 
-ament_target_dependencies(test_tool
-  rclcpp
-  rcl_interfaces   # ✅ ADD THIS
-  std_msgs          # ✅ ADD THIS
-)
-
 target_include_directories(test_tool PUBLIC include/test_tool) # Include header directory
 target_link_libraries(test_tool Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library
 
-add_executable(dummy_test src/dummy_test.cpp) # Create dummy test executable 
-ament_target_dependencies(dummy_test
-  rclcpp
-  rcl_interfaces   # ✅ ADD THIS
-  std_msgs   
-  sensor_msgs       # ✅ ADD THIS
-)
 
-add_executable(lidar_node src/lidar_node.cpp) # Create lidar_node executable
-ament_target_dependencies(lidar_node
-  rclcpp
-  rcl_interfaces
-  std_msgs
-  sensor_msgs
-)
-
-install(TARGETS test_tool dummy_test lidar_node DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
+install(TARGETS test_tool DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
 
 # Optional testing section used by ROS2 lint tools
 if(BUILD_TESTING)

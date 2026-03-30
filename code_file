@@ -335,386 +335,386 @@
 //   return result;
 // }
 
-#include <QApplication>
-#include <QMainWindow>
-#include <QHBoxLayout>
-#include <QVBoxLayout>
-#include <QListWidget>
-#include <QStackedWidget>
-#include <QLabel>
+// #include <QApplication>
+// #include <QMainWindow>
+// #include <QHBoxLayout>
+// #include <QVBoxLayout>
+// #include <QListWidget>
+// #include <QStackedWidget>
+// #include <QLabel>
 
-// 🔹 Sensor Box
-QLabel* createSensorBox(QString name)
-{
-    QLabel *label = new QLabel(name);
-    label->setAlignment(Qt::AlignCenter);
-    label->setFixedSize(80, 40);
+// // 🔹 Sensor Box
+// QLabel* createSensorBox(QString name)
+// {
+//     QLabel *label = new QLabel(name);
+//     label->setAlignment(Qt::AlignCenter);
+//     label->setFixedSize(80, 40);
 
-    label->setStyleSheet(
-        "background-color: red;"
-        "color: white;"
-        "border-radius: 10px;"
-        "font-weight: bold;"
-    );
+//     label->setStyleSheet(
+//         "background-color: red;"
+//         "color: white;"
+//         "border-radius: 10px;"
+//         "font-weight: bold;"
+//     );
 
-    return label;
-}
+//     return label;
+// }
 
-// 🔹 Page
-QWidget* createPage(QString title)
-{
-    QWidget *page = new QWidget();
-    QVBoxLayout *layout = new QVBoxLayout(page);
+// // 🔹 Page
+// QWidget* createPage(QString title)
+// {
+//     QWidget *page = new QWidget();
+//     QVBoxLayout *layout = new QVBoxLayout(page);
 
-    layout->setSpacing(15);
-    layout->setContentsMargins(15, 15, 15, 15);
+//     layout->setSpacing(15);
+//     layout->setContentsMargins(15, 15, 15, 15);
 
-    QLabel *label = new QLabel(title);
-    label->setAlignment(Qt::AlignCenter);
-    label->setStyleSheet("font-size: 20px;");
+//     QLabel *label = new QLabel(title);
+//     label->setAlignment(Qt::AlignCenter);
+//     label->setStyleSheet("font-size: 20px;");
 
-    layout->addWidget(label);
-    return page;
-}
+//     layout->addWidget(label);
+//     return page;
+// }
 
-int main(int argc, char *argv[])
-{
-    QApplication app(argc, argv);
-    QMainWindow window;
+// int main(int argc, char *argv[])
+// {
+//     QApplication app(argc, argv);
+//     QMainWindow window;
 
-    QWidget *central = new QWidget();
-    QVBoxLayout *mainLayout = new QVBoxLayout(central);
+//     QWidget *central = new QWidget();
+//     QVBoxLayout *mainLayout = new QVBoxLayout(central);
 
-    // 🔥 Global spacing
-    mainLayout->setSpacing(10);
-    mainLayout->setContentsMargins(10, 10, 10, 10);
+//     // 🔥 Global spacing
+//     mainLayout->setSpacing(10);
+//     mainLayout->setContentsMargins(10, 10, 10, 10);
 
-    // 🔝 HEADER
-    QHBoxLayout *headerLayout = new QHBoxLayout();
-    headerLayout->setSpacing(10);
+//     // 🔝 HEADER
+//     QHBoxLayout *headerLayout = new QHBoxLayout();
+//     headerLayout->setSpacing(10);
 
-    headerLayout->addWidget(createSensorBox("CAM1"));
-    headerLayout->addWidget(createSensorBox("CAM2"));
-    headerLayout->addWidget(createSensorBox("CAM3"));
-    headerLayout->addWidget(createSensorBox("CAM4"));
-    headerLayout->addSpacing(20);
-    headerLayout->addWidget(createSensorBox("LIDAR"));
-    headerLayout->addSpacing(20);
-    headerLayout->addWidget(createSensorBox("US1"));
-    headerLayout->addWidget(createSensorBox("US2"));
-    headerLayout->addWidget(createSensorBox("US3"));
+//     headerLayout->addWidget(createSensorBox("CAM1"));
+//     headerLayout->addWidget(createSensorBox("CAM2"));
+//     headerLayout->addWidget(createSensorBox("CAM3"));
+//     headerLayout->addWidget(createSensorBox("CAM4"));
+//     headerLayout->addSpacing(20);
+//     headerLayout->addWidget(createSensorBox("LIDAR"));
+//     headerLayout->addSpacing(20);
+//     headerLayout->addWidget(createSensorBox("US1"));
+//     headerLayout->addWidget(createSensorBox("US2"));
+//     headerLayout->addWidget(createSensorBox("US3"));
 
-    mainLayout->addLayout(headerLayout);
+//     mainLayout->addLayout(headerLayout);
 
-    // 🔻 BODY
-    QHBoxLayout *bodyLayout = new QHBoxLayout();
-    bodyLayout->setSpacing(10);
+//     // 🔻 BODY
+//     QHBoxLayout *bodyLayout = new QHBoxLayout();
+//     bodyLayout->setSpacing(10);
 
-    // 🔹 Sidebar
-    QListWidget *sidebar = new QListWidget();
+//     // 🔹 Sidebar
+//     QListWidget *sidebar = new QListWidget();
 
-    sidebar->setStyleSheet(R"(
-        QListWidget {
-            background-color: #f2f2f2;
-            border: none;
-            font-size: 14px;
-        }
+//     sidebar->setStyleSheet(R"(
+//         QListWidget {
+//             background-color: #f2f2f2;
+//             border: none;
+//             font-size: 14px;
+//         }
 
-        QListWidget::item {
-            padding: 12px;
-            margin-left: 10px;
-        }
+//         QListWidget::item {
+//             padding: 12px;
+//             margin-left: 10px;
+//         }
 
-        QListWidget::item:selected {
-            background-color: #d6e4ff;
-            border-radius: 8px;
-        }
+//         QListWidget::item:selected {
+//             background-color: #d6e4ff;
+//             border-radius: 8px;
+//         }
 
-        QListWidget::item:hover {
-            background-color: #e6e6e6;
-            border-radius: 8px;
-        }
-    )");
+//         QListWidget::item:hover {
+//             background-color: #e6e6e6;
+//             border-radius: 8px;
+//         }
+//     )");
 
-    // 🔹 ESS Title
-    QListWidgetItem *title = new QListWidgetItem("   ESS");
-    title->setFlags(Qt::NoItemFlags);
-    title->setSizeHint(QSize(150, 40));
-    sidebar->addItem(title);
+//     // 🔹 ESS Title
+//     QListWidgetItem *title = new QListWidgetItem("   ESS");
+//     title->setFlags(Qt::NoItemFlags);
+//     title->setSizeHint(QSize(150, 40));
+//     sidebar->addItem(title);
   
-    // 🔥 Added items
-    sidebar->addItem("  Logs");
-    sidebar->addItem("  Mapping");
+//     // 🔥 Added items
+//     sidebar->addItem("  Logs");
+//     sidebar->addItem("  Mapping");
 
-    sidebar->setFixedWidth(260);
+//     sidebar->setFixedWidth(260);
 
-    // 🔹 Pages
-    QStackedWidget *pages = new QStackedWidget();
-    pages->setStyleSheet("background-color: white;");
+//     // 🔹 Pages
+//     QStackedWidget *pages = new QStackedWidget();
+//     pages->setStyleSheet("background-color: white;");
 
-    // 🔥 Added pages
-    pages->addWidget(createPage("Logs"));
-    pages->addWidget(createPage("Mapping"));
+//     // 🔥 Added pages
+//     pages->addWidget(createPage("Logs"));
+//     pages->addWidget(createPage("Mapping"));
 
-    // 🔗 Sidebar → Pages
-    QObject::connect(sidebar, &QListWidget::currentRowChanged,
-                     [&](int row){
-        if(row > 0)
-            pages->setCurrentIndex(row - 1);
-    });
+//     // 🔗 Sidebar → Pages
+//     QObject::connect(sidebar, &QListWidget::currentRowChanged,
+//                      [&](int row){
+//         if(row > 0)
+//             pages->setCurrentIndex(row - 1);
+//     });
 
-    sidebar->setCurrentRow(1);
+//     sidebar->setCurrentRow(1);
 
-    // 🔻 Layout
-    bodyLayout->addWidget(sidebar);
-    bodyLayout->addWidget(pages);
+//     // 🔻 Layout
+//     bodyLayout->addWidget(sidebar);
+//     bodyLayout->addWidget(pages);
 
-    mainLayout->addLayout(bodyLayout);
+//     mainLayout->addLayout(bodyLayout);
 
-    window.setCentralWidget(central);
-    window.resize(1100, 650);
-    window.setWindowTitle("Autonomous Cleaning Machine - Test UI");
-    window.show();
+//     window.setCentralWidget(central);
+//     window.resize(1100, 650);
+//     window.setWindowTitle("Autonomous Cleaning Machine - Test UI");
+//     window.show();
 
-    return app.exec();
-}
------------------------------------------------------------------------------------------------------------------------------
+//     return app.exec();
+// }
+// -----------------------------------------------------------------------------------------------------------------------------
 
-#include "mainwindow.h"
+// #include "mainwindow.h"
 
-#include <QApplication>
+// #include <QApplication>
 
-#include <thread>
+// #include <thread>
 
-int main(int argc, char *argv[])
-{
-    rclcpp::init(argc, argv);
-    QApplication a(argc, argv);
+// int main(int argc, char *argv[])
+// {
+//     rclcpp::init(argc, argv);
+//     QApplication a(argc, argv);
 
-    auto node = std::make_shared<rclcpp::Node>("qt_ui_node");
+//     auto node = std::make_shared<rclcpp::Node>("qt_ui_node");
 
-    // ROS spinning in separate thread
-    std::thread ros_thread([&]() {
-        rclcpp::spin(node);
-    });
-    MainWindow w(node);
-    // w.show();
-    w.showMaximized();
+//     // ROS spinning in separate thread
+//     std::thread ros_thread([&]() {
+//         rclcpp::spin(node);
+//     });
+//     MainWindow w(node);
+//     // w.show();
+//     w.showMaximized();
 
-    int result = a.exec();
+//     int result = a.exec();
 
-    rclcpp::shutdown();
-    ros_thread.join();
+//     rclcpp::shutdown();
+//     ros_thread.join();
     
 
-    return result;
-}
+//     return result;
+// }
 
-#include "mainwindow.h"
-#include "./ui_mainwindow.h"
-#include <filesystem>
-#include <QDebug>
-#include <QProcess>
-#include <iostream>
-#include <filesystem>
-#include <QDir>
-#include <QString>
+// #include "mainwindow.h"
+// #include "./ui_mainwindow.h"
+// #include <filesystem>
+// #include <QDebug>
+// #include <QProcess>
+// #include <iostream>
+// #include <filesystem>
+// #include <QDir>
+// #include <QString>
 
-namespace fs = std::filesystem;  // Add this for older compilers
+// namespace fs = std::filesystem;  // Add this for older compilers
 
-MainWindow::MainWindow(rclcpp::Node::SharedPtr node,
-    QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::MainWindow), listview(nullptr), model(nullptr), node_(node)
-{
-    ui->setupUi(this);
+// MainWindow::MainWindow(rclcpp::Node::SharedPtr node,
+//     QWidget *parent)
+//     : QMainWindow(parent), ui(new Ui::MainWindow), listview(nullptr), model(nullptr), node_(node)
+// {
+//     ui->setupUi(this);
 
-    connect(ui->launch_button, &QPushButton::clicked,
-            this, &MainWindow::on_launch_button_clicked);
-    // connect(ui->log_button, &QPushButton::clicked,
-    //         this, &MainWindow::on_log_button_clicked);
-    log_subscription_= node_->create_subscription<rcl_interfaces::msg::Log>("/rosout", 10,
-        std::bind(&MainWindow::logcallback, this, std::placeholders::_1));
+//     connect(ui->launch_button, &QPushButton::clicked,
+//             this, &MainWindow::on_launch_button_clicked);
+//     // connect(ui->log_button, &QPushButton::clicked,
+//     //         this, &MainWindow::on_log_button_clicked);
+//     log_subscription_= node_->create_subscription<rcl_interfaces::msg::Log>("/rosout", 10,
+//         std::bind(&MainWindow::logcallback, this, std::placeholders::_1));
         
 
 
-}
+// }
 
-MainWindow::~MainWindow()
-{
-}
+// MainWindow::~MainWindow()
+// {
+// }
 
-void MainWindow::on_launch_button_clicked()
-{
-    if (listview) {
-        listview = new QListView(this);
+// void MainWindow::on_launch_button_clicked()
+// {
+//     if (listview) {
+//         listview = new QListView(this);
 
-        QStringList launch_files;
+//         QStringList launch_files;
 
-        std::string path = "/opt/ros/humble/share/turtlesim/launch";
-        launch_files <<"madhan"
-                     <<"roots";
+//         std::string path = "/opt/ros/humble/share/turtlesim/launch";
+//         launch_files <<"madhan"
+//                      <<"roots";
 
-        for (const auto &entry : fs::directory_iterator(path))
-        {
-            if (entry.path().extension() == ".py")
-            {
-                launch_files << QString::fromStdString(entry.path().filename().string());
-            }
-        }
+//         for (const auto &entry : fs::directory_iterator(path))
+//         {
+//             if (entry.path().extension() == ".py")
+//             {
+//                 launch_files << QString::fromStdString(entry.path().filename().string());
+//             }
+//         }
 
-        model = new QStringListModel(launch_files);
-        listview->setModel(model);
+//         model = new QStringListModel(launch_files);
+//         listview->setModel(model);
 
-        listview->setGeometry(100, 100, 300, 200);
-        listview->show();
+//         listview->setGeometry(100, 100, 300, 200);
+//         listview->show();
 
-        connect(listview,&QListView::clicked,this,
-            [=](const QModelIndex &index){
-                QString filename = model->data(index,Qt::DisplayRole).toString();
-                QString fullpath = QString::fromStdString(path)+"/"+filename;
-                qDebug()<<"selected file"<<fullpath;
-                QProcess *process = new QProcess(this);
-                process ->start("ros2",QStringList() <<"launch"<<"turtlesim"<<filename);
-        });
-    }else{
-        listview->setVisible(!listview->isVisible());
-        return;    
-    }
+//         connect(listview,&QListView::clicked,this,
+//             [=](const QModelIndex &index){
+//                 QString filename = model->data(index,Qt::DisplayRole).toString();
+//                 QString fullpath = QString::fromStdString(path)+"/"+filename;
+//                 qDebug()<<"selected file"<<fullpath;
+//                 QProcess *process = new QProcess(this);
+//                 process ->start("ros2",QStringList() <<"launch"<<"turtlesim"<<filename);
+//         });
+//     }else{
+//         listview->setVisible(!listview->isVisible());
+//         return;    
+//     }
 
 
-}
-void MainWindow::on_log_button_clicked()
-{
-    logWidget = new QWidget(this);
-    logWidget->setStyleSheet("background-color: lightgray;");
-    logWidget->setWindowTitle("ROS2 Logs");
-    logWidget->setWindowFlags(Qt::Window);
+// }
+// void MainWindow::on_log_button_clicked()
+// {
+//     logWidget = new QWidget(this);
+//     logWidget->setStyleSheet("background-color: lightgray;");
+//     logWidget->setWindowTitle("ROS2 Logs");
+//     logWidget->setWindowFlags(Qt::Window);
 
-    QVBoxLayout *layout = new QVBoxLayout(logWidget);
-    QComboBox *logLevelComboBox = new QComboBox(logWidget);
-    logLevelComboBox->setMaximumWidth(150);
+//     QVBoxLayout *layout = new QVBoxLayout(logWidget);
+//     QComboBox *logLevelComboBox = new QComboBox(logWidget);
+//     logLevelComboBox->setMaximumWidth(150);
 
-    QStringList text_file;
-    QDir diretory;
-    QString path = "/home/maddy/iris_test_tool/src/test_tool/src/logfiles";
+//     QStringList text_file;
+//     QDir diretory;
+//     QString path = "/home/maddy/iris_test_tool/src/test_tool/src/logfiles";
 
-    // 1. Define the specific path
-    QDir directory(path);
+//     // 1. Define the specific path
+//     QDir directory(path);
 
-// 2. Filter for only .txt files
-    QStringList filters;
-    filters << "*.txt";
-    directory.setNameFilters(filters);
+// // 2. Filter for only .txt files
+//     QStringList filters;
+//     filters << "*.txt";
+//     directory.setNameFilters(filters);
 
-// 3. Get the list of files and add them to the box
-    QStringList text_files = directory.entryList(QDir::Files);
-    logLevelComboBox->addItems(text_files);
-    layout->addWidget(logLevelComboBox);
+// // 3. Get the list of files and add them to the box
+//     QStringList text_files = directory.entryList(QDir::Files);
+//     logLevelComboBox->addItems(text_files);
+//     layout->addWidget(logLevelComboBox);
 
-    QTextEdit *textEdit = new QTextEdit(logWidget);
-    textEdit->setReadOnly(true);
-    layout->addWidget(textEdit);
+//     QTextEdit *textEdit = new QTextEdit(logWidget);
+//     textEdit->setReadOnly(true);
+//     layout->addWidget(textEdit);
 
-    logWidget->showMaximized();
+//     logWidget->showMaximized();
 
     
-}
+// }
 
 
-void MainWindow::logcallback(const rcl_interfaces::msg::Log::SharedPtr msg)
-{
-    std::string node_name=msg->name;
-    if (node_name == "dummy_node")
-    {
-        switch (msg->level)
-        {
-            case rcl_interfaces::msg::Log::ERROR:
-            case rcl_interfaces::msg::Log::FATAL:
-                QMetaObject::invokeMethod(this, [=]() {
-                ui->pushButton_5->setStyleSheet("background-color: red;");
-            });
-            break;
+// void MainWindow::logcallback(const rcl_interfaces::msg::Log::SharedPtr msg)
+// {
+//     std::string node_name=msg->name;
+//     if (node_name == "dummy_node")
+//     {
+//         switch (msg->level)
+//         {
+//             case rcl_interfaces::msg::Log::ERROR:
+//             case rcl_interfaces::msg::Log::FATAL:
+//                 QMetaObject::invokeMethod(this, [=]() {
+//                 ui->pushButton_5->setStyleSheet("background-color: red;");
+//             });
+//             break;
 
-            case rcl_interfaces::msg::Log::INFO:
-                QMetaObject::invokeMethod(this, [=]() {
-                ui->pushButton_5->setStyleSheet("background-color: green;");
-                });
-            break;
-        }
-    }
-    if(node_name == "lidar_node")
-    {
-        switch (msg->level)
-        {
-            case rcl_interfaces::msg::Log::ERROR:
-            case rcl_interfaces::msg::Log::FATAL:
-                QMetaObject::invokeMethod(this, [=]() {
-                ui->pushButton_6->setStyleSheet("background-color: red;");
-            });
-            break;
-            case rcl_interfaces::msg::Log::INFO:
-                QMetaObject::invokeMethod(this, [=]() {
-                ui->pushButton_6->setStyleSheet("background-color: green;");
-                });        
-        }   
-    }
-}
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+//             case rcl_interfaces::msg::Log::INFO:
+//                 QMetaObject::invokeMethod(this, [=]() {
+//                 ui->pushButton_5->setStyleSheet("background-color: green;");
+//                 });
+//             break;
+//         }
+//     }
+//     if(node_name == "lidar_node")
+//     {
+//         switch (msg->level)
+//         {
+//             case rcl_interfaces::msg::Log::ERROR:
+//             case rcl_interfaces::msg::Log::FATAL:
+//                 QMetaObject::invokeMethod(this, [=]() {
+//                 ui->pushButton_6->setStyleSheet("background-color: red;");
+//             });
+//             break;
+//             case rcl_interfaces::msg::Log::INFO:
+//                 QMetaObject::invokeMethod(this, [=]() {
+//                 ui->pushButton_6->setStyleSheet("background-color: green;");
+//                 });        
+//         }   
+//     }
+// }
+// #ifndef MAINWINDOW_H
+// #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include <QListView>
-#include <QStringListModel>
+// #include <QMainWindow>
+// #include <QListView>
+// #include <QStringListModel>
 
-// #include <rclcpp/rclcpp.h>
-#include <QApplication>
-#include <QPlainTextEdit>
-#include <QHBoxLayout>
-#include <thread>
-#include <chrono>
-#include <QWidget>
-#include "rcl_interfaces/msg/log.hpp"
-#include <QComboBox>
-#include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/string.hpp>
+// // #include <rclcpp/rclcpp.h>
+// #include <QApplication>
+// #include <QPlainTextEdit>
+// #include <QHBoxLayout>
+// #include <thread>
+// #include <chrono>
+// #include <QWidget>
+// #include "rcl_interfaces/msg/log.hpp"
+// #include <QComboBox>
+// #include <rclcpp/rclcpp.hpp>
+// #include <std_msgs/msg/string.hpp>
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
+// QT_BEGIN_NAMESPACE
+// namespace Ui {
+// class MainWindow;
+// }
+// QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
+// class MainWindow : public QMainWindow
+// {
+//     Q_OBJECT
 
-public:
-    MainWindow(rclcpp::Node::SharedPtr node, QWidget *parent = nullptr);
-    ~MainWindow();
+// public:
+//     MainWindow(rclcpp::Node::SharedPtr node, QWidget *parent = nullptr);
+//     ~MainWindow();
 
-private slots:
-    void on_launch_button_clicked();
+// private slots:
+//     void on_launch_button_clicked();
 
-    void on_log_button_clicked();
+//     void on_log_button_clicked();
 
-    // void on_pushButton_5_clicked();
+//     // void on_pushButton_5_clicked();
 
-private:
-    Ui::MainWindow *ui;
-    QListView *listview ;
-    QStringListModel *model ;
-    QComboBox *logLevelComboBox;
-    QTextEdit *textEdit;
-    QWidget *logWidget=nullptr;
+// private:
+//     Ui::MainWindow *ui;
+//     QListView *listview ;
+//     QStringListModel *model ;
+//     QComboBox *logLevelComboBox;
+//     QTextEdit *textEdit;
+//     QWidget *logWidget=nullptr;
 
-    rclcpp::Node::SharedPtr node_;
-    rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr log_subscription_; 
+//     rclcpp::Node::SharedPtr node_;
+//     rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr log_subscription_; 
 
    
-    void logcallback(const rcl_interfaces::msg::Log::SharedPtr msg);
+//     void logcallback(const rcl_interfaces::msg::Log::SharedPtr msg);
 
 
 
-};
+// };
 
-#endif
+// #endif

@@ -22,6 +22,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -48,7 +51,7 @@
        </size>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string>Sensor Status</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -59,7 +62,7 @@
          <x>12</x>
          <y>30</y>
          <width>591</width>
-         <height>31</height>
+         <height>32</height>
         </rect>
        </property>
        <property name="minimumSize">
@@ -93,7 +96,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -103,11 +106,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border: 2px solid black;
-    border-radius: 11px;
-    background-color: transparent;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>R</string>
@@ -119,21 +126,25 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
             <width>30</width>
-            <height>59</height>
+            <height>30</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border: 2px solid black;
-    border-radius: 11px;
-    background-color: transparent;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>L</string>
@@ -145,7 +156,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -155,11 +166,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>F</string>
@@ -171,7 +186,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -181,11 +196,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>C</string>
@@ -238,7 +257,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -248,11 +267,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>C</string>
@@ -305,7 +328,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -315,11 +338,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>R</string>
@@ -331,7 +358,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -341,11 +368,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>L</string>
@@ -357,7 +388,7 @@
           <property name="minimumSize">
            <size>
             <width>30</width>
-            <height>0</height>
+            <height>30</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -367,11 +398,15 @@
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton {
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}</string>
+           <string notr="true">background-color: green;
+color: white;
+border-radius: 15px;
+min-width: 30px;
+max-width: 30px;
+min-height: 30px;
+max-height: 30px;
+font-weight: bold;
+text-align: center;</string>
           </property>
           <property name="text">
            <string>F</string>
@@ -383,77 +418,154 @@
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QFrame" name="frame">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-          <horstretch>1</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>900</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QListWidget" name="listWidget">
+         <property name="maximumSize">
+          <size>
+           <width>260</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>3</width>
+           <height>3</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QListWidget {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+/* Normal items */
+QListWidget::item {
+    padding: 12px;
+}
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
          <item>
-          <widget class="QLabel" name="label_4">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>16777209</height>
-            </size>
-           </property>
-           <property name="cursor">
-            <cursorShape>UpArrowCursor</cursorShape>
-           </property>
-           <property name="text">
-            <string>visualizationFrame</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
+          <property name="text">
+           <string>Home</string>
+          </property>
          </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="log_button">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Logs</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="launch_button">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Launch_node </string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+         <item>
+          <property name="text">
+           <string>Logs</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mapping</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QStackedWidget {
+    background-color: white;
+    border: 2px solid #4a90e2;
+    border-radius: 1px;
+    padding: 2px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="Home">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="tabletTracking">
+              <bool>true</bool>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="autoFillBackground">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-size: 60px;
+font-weight: bold;
+color: #4a90e2;
+letter-spacing: 4px;</string>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string>IRIS</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::MarkdownText</enum>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Logs">
+          <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -464,7 +576,7 @@
      <x>0</x>
      <y>0</y>
      <width>689</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
