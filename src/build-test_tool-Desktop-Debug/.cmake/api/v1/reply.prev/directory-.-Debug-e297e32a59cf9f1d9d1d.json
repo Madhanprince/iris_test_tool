@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 61,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 71,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -232,31 +232,7 @@
 				"test_tool"
 			],
 			"targetId" : "test_tool::@6890427a1f51a3e7e1df",
-			"targetIndex" : 4,
-			"type" : "target"
-		},
-		{
-			"backtrace" : 1,
-			"component" : "Unspecified",
-			"destination" : "lib/test_tool",
-			"paths" : 
-			[
-				"dummy_test"
-			],
-			"targetId" : "dummy_test::@6890427a1f51a3e7e1df",
 			"targetIndex" : 0,
-			"type" : "target"
-		},
-		{
-			"backtrace" : 1,
-			"component" : "Unspecified",
-			"destination" : "lib/test_tool",
-			"paths" : 
-			[
-				"lidar_node"
-			],
-			"targetId" : "lidar_node::@6890427a1f51a3e7e1df",
-			"targetIndex" : 2,
 			"type" : "target"
 		},
 		{

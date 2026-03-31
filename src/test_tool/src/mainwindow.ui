@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>689</width>
+    <width>784</width>
     <height>615</height>
    </rect>
   </property>
@@ -430,40 +430,31 @@ text-align: center;</string>
         <widget class="QListWidget" name="listWidget">
          <property name="maximumSize">
           <size>
-           <width>260</width>
+           <width>200</width>
            <height>16777215</height>
           </size>
          </property>
-         <property name="baseSize">
-          <size>
-           <width>3</width>
-           <height>3</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
          <property name="styleSheet">
           <string notr="true">QListWidget {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     border: none;
+    font-size: 14px;
 }
 
-/* Normal items */
 QListWidget::item {
-    padding: 12px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
 }
 
-</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Sunken</enum>
+QListWidget::item:hover {
+    background-color: #e0e0e0;
+}
+
+QListWidget::item:selected {
+    background-color: #0078d7;
+    color: white;
+}</string>
          </property>
          <item>
           <property name="text">
@@ -478,6 +469,16 @@ QListWidget::item {
          <item>
           <property name="text">
            <string>Mapping</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Navigation</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Localization</string>
           </property>
          </item>
         </widget>
@@ -496,7 +497,7 @@ QListWidget::item {
          <property name="styleSheet">
           <string notr="true">QStackedWidget {
     background-color: white;
-    border: 2px solid #4a90e2;
+    border: 2px 
     border-radius: 1px;
     padding: 2px;
 }</string>
@@ -505,7 +506,7 @@ QListWidget::item {
           <enum>QFrame::StyledPanel</enum>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="Home">
           <property name="layoutDirection">
@@ -560,7 +561,70 @@ letter-spacing: 4px;</string>
           </layout>
          </widget>
          <widget class="QWidget" name="Logs">
-          <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="tabShape">
+              <enum>QTabWidget::Rounded</enum>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="Logs_2">
+              <attribute name="title">
+               <string>Logs</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QPlainTextEdit" name="plainTextEdit"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="Warning_2">
+              <attribute name="title">
+               <string>Warning</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="Error">
+              <attribute name="title">
+               <string>Error</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QPlainTextEdit" name="plainTextEdit_3"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="Message">
+              <attribute name="title">
+               <string>Message</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Mapping">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </widget>
        </item>
@@ -575,8 +639,8 @@ letter-spacing: 4px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>689</width>
-     <height>22</height>
+     <width>784</width>
+     <height>20</height>
     </rect>
    </property>
   </widget>

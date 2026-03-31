@@ -16,8 +16,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     // 🔷 Default page
     ui->listWidget->setCurrentRow(0);
-
-
 }
 
 MainWindow::~MainWindow()

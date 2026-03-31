@@ -1113,7 +1113,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 12,
+	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
