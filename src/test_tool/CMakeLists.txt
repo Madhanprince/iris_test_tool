@@ -36,8 +36,16 @@ add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source fil
 target_include_directories(test_tool PUBLIC include/test_tool) # Include header directory
 target_link_libraries(test_tool Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library
 
+add_executable(dummy_test src/dummy_test.cpp)
+target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  
+ament_target_dependencies(dummy_test rclcpp std_msgs rcl_interfaces sensor_msgs)
 
-install(TARGETS test_tool DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
+add_executable(dummy_test_1 src/dummy_test.cpp)
+target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  
+ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
+
+
+install(TARGETS test_tool dummy_test dummy_test_1 DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
 
 # Optional testing section used by ROS2 lint tools
 if(BUILD_TESTING)

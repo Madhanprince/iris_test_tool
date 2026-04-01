@@ -19,5 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void logs_op();
+    void pages(int row);
 };
 #endif // MAINWINDOW_H
