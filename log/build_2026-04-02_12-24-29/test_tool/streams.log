@@ -1,0 +1,32 @@
+[0.030s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.195s] [ 23%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.195s] [ 23%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.195s] [ 23%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.228s] [ 23%] Built target dummy_test_autogen
+[0.230s] [ 23%] Built target dummy_test_1_autogen
+[0.232s] [ 23%] Built target test_tool_autogen
+[0.267s] [ 30%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/mainwindow.cpp.o[0m
+[0.272s] [ 76%] Built target dummy_test_1
+[0.272s] [ 76%] Built target dummy_test
+[2.300s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::logs_op()[m[K’:
+[2.300s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kitem[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[2.300s]    70 |     if ([01;31m[Kitem[m[K->checkState() == Qt::Checked) {
+[2.300s]       |         [01;31m[K^~~~[m[K
+[2.300s]       |         [32m[Ktm[m[K
+[2.301s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:71:15:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass QDebug[m[K’
+[2.301s]    71 |         qDebug[01;31m[K([m[K) << "Checked:" << item->text();
+[2.301s]       |               [01;31m[K^[m[K
+[2.301s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:1297[m[K,
+[2.301s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:43[m[K,
+[2.301s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43[m[K,
+[2.301s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:43[m[K,
+[2.301s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[2.301s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[2.302s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:1[m[K:
+[2.302s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:57:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass QDebug[m[K’
+[2.302s]    57 | class [01;36m[KQDebug[m[K;
+[2.302s]       |       [01;36m[K^~~~~~[m[K
+[2.570s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/mainwindow.cpp.o] Error 1
+[2.571s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[2.571s] gmake: *** [Makefile:146: all] Error 2
+[2.575s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

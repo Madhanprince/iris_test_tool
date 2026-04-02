@@ -10,7 +10,7 @@ using namespace std::chrono_literals;
 class LidarNode : public rclcpp::Node
 {
 public:
-    LidarNode() : Node("_node"), count_(0)
+    LidarNode() : Node("dummy_node_1"), count_(0)
     {
         // 2. Open the file (appends to existing content)
     std::string folder = "/home/maddy/iris_test_tool/src/test_tool/src/logfiles";

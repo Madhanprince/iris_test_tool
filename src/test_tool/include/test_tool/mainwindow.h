@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QListWidget>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,7 +20,14 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QListWidgetItem *item;
+    QTimer *Timer;
+    QStringList *nodes;
+    QString *outputs ;
+
     void logs_op();
     void pages(int row);
+    void onItemChanged();
+    void listupdate();
 };
 #endif // MAINWINDOW_H

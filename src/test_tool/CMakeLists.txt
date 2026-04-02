@@ -40,7 +40,7 @@ add_executable(dummy_test src/dummy_test.cpp)
 target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  
 ament_target_dependencies(dummy_test rclcpp std_msgs rcl_interfaces sensor_msgs)
 
-add_executable(dummy_test_1 src/dummy_test.cpp)
+add_executable(dummy_test_1 src/dummy_test_1.cpp)
 target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  
 ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
 

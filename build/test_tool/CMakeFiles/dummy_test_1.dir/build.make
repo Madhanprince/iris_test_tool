@@ -83,30 +83,30 @@ CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/build/test_tool/dummy_test_1_autogen/mocs_compilation.cpp -o CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o: CMakeFiles/dummy_test_1.dir/flags.make
-CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o: /home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp
-CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o: CMakeFiles/dummy_test_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/iris_test_tool/build/test_tool/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o -MF CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o.d -o CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o -c /home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp
+CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o: CMakeFiles/dummy_test_1.dir/flags.make
+CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o: /home/maddy/iris_test_tool/src/test_tool/src/dummy_test_1.cpp
+CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o: CMakeFiles/dummy_test_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/iris_test_tool/build/test_tool/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o -MF CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o.d -o CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o -c /home/maddy/iris_test_tool/src/test_tool/src/dummy_test_1.cpp
 
-CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp > CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.i
+CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maddy/iris_test_tool/src/test_tool/src/dummy_test_1.cpp > CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.i
 
-CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp -o CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.s
+CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/src/test_tool/src/dummy_test_1.cpp -o CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.s
 
 # Object files for target dummy_test_1
 dummy_test_1_OBJECTS = \
 "CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o"
+"CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o"
 
 # External object files for target dummy_test_1
 dummy_test_1_EXTERNAL_OBJECTS =
 
 dummy_test_1: CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o
-dummy_test_1: CMakeFiles/dummy_test_1.dir/src/dummy_test.cpp.o
+dummy_test_1: CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o
 dummy_test_1: CMakeFiles/dummy_test_1.dir/build.make
 dummy_test_1: /opt/ros/humble/lib/librclcpp.so
 dummy_test_1: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so

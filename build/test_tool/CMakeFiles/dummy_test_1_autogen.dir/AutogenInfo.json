@@ -1145,7 +1145,7 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp",
+			"/home/maddy/iris_test_tool/src/test_tool/src/dummy_test_1.cpp",
 			"MU",
 			null
 		]

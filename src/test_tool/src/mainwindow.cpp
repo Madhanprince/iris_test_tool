@@ -1,9 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QProcess>
-#include <QString>
-#include <QStringList>
-#include <QCheckBox>
+#include <QListWidget>
+#include <QListWidgetItem>
+#include <QDebug>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,15 +17,23 @@ MainWindow::MainWindow(QWidget *parent)
             this, [=](int row){
                 pages(row);
     });
-
     // 🔷 Default page
     ui->listWidget->setCurrentRow(0);
+
+    Timer = new QTimer(this);
+    connect(Timer, &QTimer::timeout, this, &MainWindow::logs_op);
+    Timer->start(2000);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void refresh(){
+
+}
+
 
 void MainWindow::pages(int row)
 {
@@ -47,26 +56,41 @@ void MainWindow::pages(int row)
 }
 
 
-void MainWindow::logs_op(){  //Logs_operation
-    ui->node_list->clear(); 
-    QProcess process ;
-    process.start("ros2",QStringList()<<"node"<<"list");
-    process.waitForFinished();   //get the output of a command/program
+void MainWindow::logs_op() {
+
+    // ui->node_list->clear();
+    QProcess process;
+    process.start("ros2", QStringList() << "node" << "list");
+    process.waitForFinished();
 
     QString outputs = process.readAllStandardOutput();
+    QStringList nodes = outputs.split("\n", Qt::SkipEmptyParts); //this used to skip the empty string to the list one after the other 
 
-    QStringList nodes = outputs.split("\n",Qt::KeepEmptyParts); //Qt::KeepEmptyParts -> [ "/talker", "/listener", "", "" ] skip empty part
+    if (ui->node_list->count() <= 0){
+        for (const QString &active_node : nodes) {
 
-    for (const QString &active_node : nodes){
+            item = new QListWidgetItem(active_node, ui->node_list);
 
-        ui->node_list->addItem(active_node);
-        node_list->addItem(checkbox);
-        ui->
+            item->setFlags(item->flags() | Qt::ItemIsUserCheckable);//These are options (features) you can enable/disable for an item.
+            item->setCheckState(Qt::Unchecked);
+
+            connect(ui->node_list, &QListWidget::itemChanged,
+            this, [this](){
+                 if (item->checkState() == Qt::Checked) {
+                    qDebug() << "Checked:" << item->text();
+                }
+            });       
+        }
     }
-
-    connect(ui->node_list,)
 }
 
-// void Mainwindow::Mapping(){
+// void MainWindow::onItemChanged(){
+
+//     if (item->checkState() == Qt::Checked) {
+//         qDebug() << "Checked:" << item->text();
+//     }
+// }
+
+// void Mainwindow::Mapping(){ 
 
 // }

@@ -590,7 +590,30 @@ letter-spacing: 4px;</string>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_5">
               <item>
-               <widget class="QListWidget" name="node_list"/>
+               <widget class="QListWidget" name="node_list">
+                <property name="styleSheet">
+                 <string notr="true">QListWidget {
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+}
+
+QListWidget::item {
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+QListWidget::item:hover {
+    background-color: #e0e0e0;
+}
+
+QListWidget::item:selected {
+    background-color: #0078d7;
+    color: white;
+}</string>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
