@@ -5,6 +5,7 @@
 #include <QListWidget>
 #include <QListWidgetItem>
 #include <QDebug>
+#include <QString>
 
 using namespace std::chrono_literals;
 
@@ -13,16 +14,17 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow) ,Node("iris_tool")
 {
     ui->setupUi(this);
-
-    // 🔷 Sidebar → Page Switching
-    connect(ui->listWidget, &QListWidget::currentRowChanged,
+    connect(ui->listWidget, &QListWidget::currentRowChanged, // Sidebar → Page Switching
             this, [=](int row){
                 pages(row);
     });
-    // 🔷 Default page
-    ui->listWidget->setCurrentRow(0);
+    ui->listWidget->setCurrentRow(0); //Default page
 
-    connect(ui->node_list,QListWidget::itemChanged,this,onItemChanged);
+    qtros = new Qtros();
+    connect(qtros,&Qtros::logReceived,this,&MainWindow::onLogReceived);// once the message is received from the subscription in qtros, 
+    //it will emit a signal logReceived which is connected to the onLogReceived slot in MainWindow.
+
+    connect(ui->node_list,QListWidget::itemChanged,this,&MainWindow::onItemChanged);
 
     Timer = new QTimer(this);
     connect(Timer, &QTimer::timeout, this, &MainWindow::refreshNodeList);
@@ -100,14 +102,38 @@ void MainWindow::refreshNodeList()
     }
 }
 
-
-void MainWindow::onItemChanged(){
-
+void MainWindow::onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg)
+{
+    int index 
     if (item->checkState() == Qt::Checked) {
-        
+        for (const QString &selected_node : nodes){
+            index = ui->node_list->row(selected_node);
+            if (msg->name.c_str() == item->text(index)){
+               onLogReceived(msg);
+            }
+        }       
+    }else {
+        if(item->checkState() == Qt::Unchecked){
+            index = ui->node_list->row(item);
+            QString unselected_node=item->text(index);
+            return; // Skip processing logs for this node
+        }
     }
 }
 
-// void Mainwindow::Mapping(){ 
 
-// }
+void MainWindow::onLogReceived(const rcl_interfaces::msg::Log::SharedPtr msg)
+{
+    QString logMessage = QString("[%1] %2: %3").arg(QString::fromStdString(msg->name))
+                                        .arg(QString::fromStdString(msg->msg))
+                                        .arg(QString::fromStdString(msg->file));
+    if (msg->level >= 40) {
+        ui->plainTextEdit_3->appendPlainText(logMessage); // ERROR
+    }
+    else if (msg->level >= 30) {
+        ui->plainTextEdit_2->appendPlainText(logMessage); // WARN
+    }
+    else {
+        ui->plainTextEdit->appendPlainText(logMessage);   // INFO
+    }
+}

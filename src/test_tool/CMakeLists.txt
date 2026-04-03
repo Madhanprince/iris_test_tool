@@ -35,6 +35,7 @@ add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source fil
 
 target_include_directories(test_tool PUBLIC include/test_tool) # Include header directory
 target_link_libraries(test_tool Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library
+ament_target_dependencies(test_tool rclcpp std_msgs rcl_interfaces sensor_msgs)
 
 add_executable(dummy_test src/dummy_test.cpp)
 target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  

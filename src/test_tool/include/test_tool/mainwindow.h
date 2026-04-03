@@ -6,6 +6,8 @@
 #include <QTimer>
 #include <QProcess>
 #include <rclcpp/rclcpp.hpp>
+#include <rcl_interfaces/msg/log.hpp>
+#include "qt_ros.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,6 +22,7 @@ public:
     ~MainWindow();
 
     rclcpp::Node::SharedPtr node ;
+    rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr subscription;
 
 private:
     Ui::MainWindow *ui;
@@ -28,9 +31,12 @@ private:
     QStringList *nodes;
     QString *outputs ;
     QProcess process;
+    
+    Qtros *qtros;
 
     void refreshNodeList();
     void pages(int row);
-    void onItemChanged();
+    void onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg);
+    void onLogReceived(const rcl_interfaces::msg::Log::SharedPtr msg);
 };
 #endif // MAINWINDOW_H
