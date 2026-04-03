@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/maddy/iris_test_tool/src/test_tool/src/main.cpp" "CMakeFiles/test_tool.dir/src/main.cpp.o" "gcc" "CMakeFiles/test_tool.dir/src/main.cpp.o.d"
-  "/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp" "CMakeFiles/test_tool.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/test_tool.dir/src/mainwindow.cpp.o.d"
+  "/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp" "CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o" "gcc" "CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o.d"
+  "/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp" "CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o" "gcc" "CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o.d"
   "/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp" "CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o.d"
   )
 

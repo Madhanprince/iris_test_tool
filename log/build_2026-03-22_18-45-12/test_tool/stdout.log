@@ -1,9 +1,0 @@
-[  8%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
-[ 16%] [34m[1mAutomatic MOC and UIC for target lidar_node[0m
-[ 25%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
-[ 25%] Built target dummy_test_autogen
-[ 25%] Built target lidar_node_autogen
-[ 25%] Built target test_tool_autogen
-[ 33%] [32m[1mLinking CXX executable lidar_node[0m
-[ 58%] Built target dummy_test
-[ 91%] Built target test_tool

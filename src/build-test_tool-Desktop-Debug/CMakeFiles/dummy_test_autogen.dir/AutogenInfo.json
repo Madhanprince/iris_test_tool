@@ -1132,7 +1132,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/test_tool_autogen/include/src/ui_mainwindow.h"
+		"/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/test_tool_autogen/include/src/iris_tool/ui_mainwindow.h"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
@@ -1154,7 +1154,7 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/test_tool_autogen/include/src/ui_mainwindow.h"
+		"/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/test_tool_autogen/include/src/iris_tool/ui_mainwindow.h"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

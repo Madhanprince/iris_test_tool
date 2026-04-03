@@ -302,10 +302,17 @@ CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h

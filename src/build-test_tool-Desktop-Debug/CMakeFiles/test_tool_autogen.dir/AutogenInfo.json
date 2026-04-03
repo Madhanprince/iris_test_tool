@@ -1122,9 +1122,13 @@
 	"SETTINGS_FILE" : "/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/maddy/iris_test_tool/src/test_tool/src/main.cpp", "MU", null ],
 		[
-			"/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp",
+			"/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp",
 			"MU",
 			null
 		]

@@ -303,4 +303,9 @@ CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h

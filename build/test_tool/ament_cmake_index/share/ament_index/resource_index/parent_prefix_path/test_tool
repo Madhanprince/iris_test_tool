@@ -1,1 +1,1 @@
-/opt/ros/humble:/home/maddy/iris_test_tool/install/test_tool
+/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble

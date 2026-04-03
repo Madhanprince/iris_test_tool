@@ -25,9 +25,9 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets) # Find Qt version
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets) # Load correct Qt Widgets module
 
 set(PROJECT_SOURCES # List of all project source files
-    src/main.cpp
-    src/mainwindow.cpp
-    src/mainwindow.ui
+    src/iris_tool/main.cpp
+    src/iris_tool/mainwindow.cpp
+    src/iris_tool/mainwindow.ui
     include/test_tool/mainwindow.h
 )
 

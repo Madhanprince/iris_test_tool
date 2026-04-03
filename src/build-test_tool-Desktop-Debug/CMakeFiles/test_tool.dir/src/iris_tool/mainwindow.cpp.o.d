@@ -302,6 +302,11 @@ CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h \
  /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/test_tool_autogen/include/ui_mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
@@ -363,4 +368,19 @@ CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidgetItem \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h

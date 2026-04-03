@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_tool_autogen"
-  "test_tool_autogen/include/src/ui_mainwindow.h"
+  "test_tool_autogen/include/src/iris_tool/ui_mainwindow.h"
   "test_tool_autogen/mocs_compilation.cpp"
 )
 

@@ -1,4 +1,0 @@
-[01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::on_log_button_clicked()[m[K’:
-[01m[K/home/maddy/iris_test_tool/src/test_tool/src/mainwindow.cpp:72:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KlogLevelComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-   72 |     QComboBox *[01;35m[KlogLevelComboBox[m[K = new QComboBox(logWidget);
-      |                [01;35m[K^~~~~~~~~~~~~~~~[m[K
