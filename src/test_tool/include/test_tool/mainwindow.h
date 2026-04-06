@@ -36,7 +36,7 @@ private:
 
     void refreshNodeList();
     void pages(int row);
-    void onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg);
-    void onLogReceived(const rcl_interfaces::msg::Log::SharedPtr msg);
+    // void onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg);
+    void onLogReceived(const QString &msg,const QString &node,int level);
 };
 #endif // MAINWINDOW_H

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "dummy_test_1"
+			"path" : "dummy_test"
 		}
 	],
 	"backtrace" : 1,
@@ -36,7 +36,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 49,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
@@ -111,7 +111,7 @@
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/home/maddy/iris_test_tool/build/test_tool/dummy_test_1_autogen/include"
+					"path" : "/home/maddy/iris_test_tool/build/test_tool/dummy_test_autogen/include"
 				},
 				{
 					"backtrace" : 6,
@@ -274,10 +274,10 @@
 	[
 		{
 			"backtrace" : 0,
-			"id" : "dummy_test_1_autogen::@6890427a1f51a3e7e1df"
+			"id" : "dummy_test_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "dummy_test_1::@6890427a1f51a3e7e1df",
+	"id" : "dummy_test::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -652,8 +652,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "dummy_test_1",
-	"nameOnDisk" : "dummy_test_1",
+	"name" : "dummy_test",
+	"nameOnDisk" : "dummy_test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -683,19 +683,19 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "/home/maddy/iris_test_tool/build/test_tool/dummy_test_1_autogen/mocs_compilation.cpp",
+			"path" : "/home/maddy/iris_test_tool/build/test_tool/dummy_test_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/dummy_test_1.cpp",
+			"path" : "src/dummy_test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/maddy/iris_test_tool/build/test_tool/dummy_test_1_autogen/include/src/iris_tool/ui_mainwindow.h",
+			"path" : "/home/maddy/iris_test_tool/build/test_tool/dummy_test_autogen/include/src/iris_tool/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		}
 	],

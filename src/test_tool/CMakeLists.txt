@@ -28,7 +28,11 @@ set(PROJECT_SOURCES # List of all project source files
     src/iris_tool/main.cpp
     src/iris_tool/mainwindow.cpp
     src/iris_tool/mainwindow.ui
+    src/iris_tool/qt_ros.cpp
+
     include/test_tool/mainwindow.h
+    include/test_tool/qt_ros.h
+
 )
 
 add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source files

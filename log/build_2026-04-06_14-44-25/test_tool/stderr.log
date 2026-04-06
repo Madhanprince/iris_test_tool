@@ -1,0 +1,15 @@
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_qt_ros.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:3[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/qt_ros.h:6:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass Qtros[m[K’
+    6 | class [01;31m[KQtros[m[K : public QObject, public rclcpp::Node
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/qt_ros.h:6:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass Qtros[m[K’
+    6 | class [01;36m[KQtros[m[K : public QObject, public rclcpp::Node
+      |       [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

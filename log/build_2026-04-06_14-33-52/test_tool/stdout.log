@@ -1,0 +1,13 @@
+[  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 23%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 23%] Built target dummy_test_1_autogen
+[ 23%] Built target dummy_test_autogen
+[ 46%] Built target dummy_test
+[ 69%] Built target dummy_test_1
+[ 69%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_tool[0m

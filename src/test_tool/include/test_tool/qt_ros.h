@@ -1,3 +1,6 @@
+#ifndef QTROS_H
+#define QTROS_H
+
 #include <rclcpp/rclcpp.hpp>
 #include <rcl_interfaces/msg/log.hpp>
 #include <QObject>
@@ -17,3 +20,5 @@ private:
     void logscallback(const rcl_interfaces::msg::Log::SharedPtr msg); // callback for ROS logs
     rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr subscription;
 };
+
+#endif

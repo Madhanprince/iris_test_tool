@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(qtros,&Qtros::logReceived,this,&MainWindow::onLogReceived);// once the message is received from the subscription in qtros, 
     //it will emit a signal logReceived which is connected to the onLogReceived slot in MainWindow.
 
-    connect(ui->node_list,&QListWidget::itemChanged,this,&MainWindow::onItemChanged);
+    // connect(ui->node_list,&QListWidget::itemChanged,this,&MainWindow::onItemChanged);
 
     Timer = new QTimer(this);
     connect(Timer, &QTimer::timeout, this, &MainWindow::refreshNodeList);
@@ -102,42 +102,42 @@ void MainWindow::refreshNodeList()
     }
 }
 
-void MainWindow::onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg)
-{
-    int index ;
-    if (item->checkState() == Qt::Checked) {
+// void MainWindow::onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg)
+// {
+//     if (item->checkState() == Qt::Checked) {
 
-    for (const QString &selected_node : nodes) {
+//     for (const QString &selected_node : nodes) {
 
-        QListWidgetItem *listItem = ui->node_list->item(nodes.indexOf(selected_node));
+//         QListWidgetItem *listItem = ui->node_list->item(nodes.indexOf(selected_node));
 
-        if (!listItem) continue; 
+//         if (!listItem) continue; 
       
 
-        if (QString::fromStdString(msg->name) == listItem->text()) {
-            // onLogReceived(msg);/*  */
-        }
-    }
+//         if (QString::fromStdString(msg->name) == listItem->text()) {
+//             onLogReceived(msg);/*  */
+//         }
+//     }
 
-    } else {
+//     } else {
 
-        if (item->checkState() == Qt::Unchecked) {
-            QString unselected_node = item->text();
-            return; // Skip processing logs for this node
-        }
-    }
-}
+//         if (item->checkState() == Qt::Unchecked) {
+//             QString unselected_node = item->text();
+//             return; // Skip processing logs for this node
+//         }
+//     }
+// }
 
 
-void MainWindow::onLogReceived(const rcl_interfaces::msg::Log::SharedPtr msg)
+void MainWindow::onLogReceived(const QString &msg,const QString &node,int level)
 {
-    QString logMessage = QString("[%1] %2: %3").arg(QString::fromStdString(msg->name))
-                                        .arg(QString::fromStdString(msg->msg))
-                                        .arg(QString::fromStdString(msg->file));
-    if (msg->level >= 40) {
+    
+    QString logMessage = QString("[%1] %2: %3").arg(msg)
+                                        .arg(node)
+                                        .arg(level);
+    if (level >= 40) {
         ui->plainTextEdit_3->appendPlainText(logMessage); // ERROR
     }
-    else if (msg->level >= 30) {
+    else if (level >= 30) {
         ui->plainTextEdit_2->appendPlainText(logMessage); // WARN
     }
     else {

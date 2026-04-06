@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.001564] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict()}
+[0.001694] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.011853] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.013333] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.014521] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('TMUX', '/tmp/tmux-1000/default,10035,0'), ('USER', 'maddy'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/maddy'), ('LESS', '-R'), ('OLDPWD', '/home/maddy'), ('TERM_PROGRAM_VERSION', '3.2a'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('GREP_COLORS', 'mt=1;33'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'maddy'), ('NAME', 'RMCCORPDE-DT024'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/7108_interop'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/3'), ('ROS_VERSION', '2'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('P9K_SSH', '0'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('TMUX_PANE', '%0'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099658] (test_tool) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[0.100068] (-) TimerEvent: {}
+[0.100363] (test_tool) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[0.102002] (test_tool) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool\x1b[0m\n'}
+[0.135715] (test_tool) StdoutLine: {'line': b'[ 23%] Built target dummy_test_1_autogen\n'}
+[0.136235] (test_tool) StdoutLine: {'line': b'[ 23%] Built target dummy_test_autogen\n'}
+[0.182693] (test_tool) StdoutLine: {'line': b'[ 46%] Built target dummy_test\n'}
+[0.188822] (test_tool) StdoutLine: {'line': b'[ 69%] Built target dummy_test_1\n'}
+[0.200293] (-) TimerEvent: {}
+[0.300985] (-) TimerEvent: {}
+[0.401461] (-) TimerEvent: {}
+[0.501998] (-) TimerEvent: {}
+[0.596849] (test_tool) StdoutLine: {'line': b'[ 69%] Built target test_tool_autogen\n'}
+[0.602144] (-) TimerEvent: {}
+[0.617658] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool\x1b[0m\n'}
+[0.650769] (test_tool) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[0.651508] (test_tool) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o\x1b[0m\n'}
+[0.652507] (test_tool) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o\x1b[0m\n'}
+[0.702367] (-) TimerEvent: {}
+[0.802963] (-) TimerEvent: {}
+[0.903568] (-) TimerEvent: {}
+[1.004046] (-) TimerEvent: {}
+[1.104570] (-) TimerEvent: {}
+[1.205080] (-) TimerEvent: {}
+[1.305572] (-) TimerEvent: {}
+[1.406074] (-) TimerEvent: {}
+[1.506626] (-) TimerEvent: {}
+[1.607108] (-) TimerEvent: {}
+[1.707674] (-) TimerEvent: {}
+[1.808302] (-) TimerEvent: {}
+[1.908960] (-) TimerEvent: {}
+[2.009451] (-) TimerEvent: {}
+[2.110073] (-) TimerEvent: {}
+[2.210801] (-) TimerEvent: {}
+[2.311533] (-) TimerEvent: {}
+[2.412230] (-) TimerEvent: {}
+[2.512950] (-) TimerEvent: {}
+[2.613701] (-) TimerEvent: {}
+[2.714404] (-) TimerEvent: {}
+[2.815270] (-) TimerEvent: {}
+[2.916005] (-) TimerEvent: {}
+[3.016715] (-) TimerEvent: {}
+[3.117842] (-) TimerEvent: {}
+[3.218640] (-) TimerEvent: {}
+[3.319581] (-) TimerEvent: {}
+[3.420462] (-) TimerEvent: {}
+[3.521137] (-) TimerEvent: {}
+[3.621821] (-) TimerEvent: {}
+[3.722589] (-) TimerEvent: {}
+[3.823322] (-) TimerEvent: {}
+[3.923949] (-) TimerEvent: {}
+[4.024555] (-) TimerEvent: {}
+[4.125090] (-) TimerEvent: {}
+[4.225687] (-) TimerEvent: {}
+[4.326362] (-) TimerEvent: {}
+[4.426914] (-) TimerEvent: {}
+[4.527483] (-) TimerEvent: {}
+[4.627976] (-) TimerEvent: {}
+[4.728526] (-) TimerEvent: {}
+[4.829097] (-) TimerEvent: {}
+[4.929633] (-) TimerEvent: {}
+[5.030241] (-) TimerEvent: {}
+[5.130705] (-) TimerEvent: {}
+[5.231224] (-) TimerEvent: {}
+[5.331725] (-) TimerEvent: {}
+[5.432257] (-) TimerEvent: {}
+[5.532722] (-) TimerEvent: {}
+[5.633335] (-) TimerEvent: {}
+[5.734055] (-) TimerEvent: {}
+[5.834613] (-) TimerEvent: {}
+[5.935168] (-) TimerEvent: {}
+[6.035768] (-) TimerEvent: {}
+[6.136248] (-) TimerEvent: {}
+[6.236716] (-) TimerEvent: {}
+[6.337280] (-) TimerEvent: {}
+[6.437844] (-) TimerEvent: {}
+[6.538435] (-) TimerEvent: {}
+[6.639063] (-) TimerEvent: {}
+[6.740790] (-) TimerEvent: {}
+[6.841338] (-) TimerEvent: {}
+[6.941784] (-) TimerEvent: {}
+[7.042296] (-) TimerEvent: {}
+[7.142905] (-) TimerEvent: {}
+[7.243557] (-) TimerEvent: {}
+[7.344246] (-) TimerEvent: {}
+[7.444950] (-) TimerEvent: {}
+[7.545531] (-) TimerEvent: {}
+[7.646067] (-) TimerEvent: {}
+[7.746627] (-) TimerEvent: {}
+[7.847116] (-) TimerEvent: {}
+[7.947702] (-) TimerEvent: {}
+[8.048295] (-) TimerEvent: {}
+[8.148807] (-) TimerEvent: {}
+[8.249331] (-) TimerEvent: {}
+[8.349976] (-) TimerEvent: {}
+[8.450477] (-) TimerEvent: {}
+[8.550959] (-) TimerEvent: {}
+[8.651424] (-) TimerEvent: {}
+[8.751932] (-) TimerEvent: {}
+[8.852441] (-) TimerEvent: {}
+[8.952939] (-) TimerEvent: {}
+[9.053464] (-) TimerEvent: {}
+[9.154035] (-) TimerEvent: {}
+[9.254599] (-) TimerEvent: {}
+[9.355096] (-) TimerEvent: {}
+[9.455602] (-) TimerEvent: {}
+[9.556099] (-) TimerEvent: {}
+[9.657004] (-) TimerEvent: {}
+[9.757524] (-) TimerEvent: {}
+[9.858090] (-) TimerEvent: {}
+[9.958577] (-) TimerEvent: {}
+[10.059057] (-) TimerEvent: {}
+[10.124507] (test_tool) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_tool\x1b[0m\n'}
+[10.159219] (-) TimerEvent: {}
+[10.259731] (-) TimerEvent: {}
+[10.360301] (-) TimerEvent: {}
+[10.460972] (-) TimerEvent: {}
+[10.561513] (-) TimerEvent: {}
+[10.662124] (-) TimerEvent: {}
+[10.762663] (-) TimerEvent: {}
+[10.863307] (-) TimerEvent: {}
+[10.963960] (-) TimerEvent: {}
+[11.064604] (-) TimerEvent: {}
+[11.165158] (-) TimerEvent: {}
+[11.265804] (-) TimerEvent: {}
+[11.366443] (-) TimerEvent: {}
+[11.467118] (-) TimerEvent: {}
+[11.567707] (-) TimerEvent: {}
+[11.668257] (-) TimerEvent: {}
+[11.768832] (-) TimerEvent: {}
+[11.869341] (-) TimerEvent: {}
+[11.969944] (-) TimerEvent: {}
+[12.030982] (test_tool) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::MainWindow(QWidget*)':\n"}
+[12.031256] (test_tool) StderrLine: {'line': b"mainwindow.cpp:(.text+0x2d6): undefined reference to `Qtros::Qtros()'\n"}
+[12.031391] (test_tool) StderrLine: {'line': b"/usr/bin/ld: mainwindow.cpp:(.text+0x2fb): undefined reference to `Qtros::logReceived(QString const&, QString const&, int)'\n"}
+[12.031983] (test_tool) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `QMetaObject::Connection QObject::connect<void (Qtros::*)(QString const&, QString const&, int), void (MainWindow::*)(QString const&, QString const&, int)>(QtPrivate::FunctionPointer<void (Qtros::*)(QString const&, QString const&, int)>::Object const*, void (Qtros::*)(QString const&, QString const&, int), QtPrivate::FunctionPointer<void (MainWindow::*)(QString const&, QString const&, int)>::Object const*, void (MainWindow::*)(QString const&, QString const&, int), Qt::ConnectionType)':\n"}
+[12.032120] (test_tool) StderrLine: {'line': b"mainwindow.cpp:(.text._ZN7QObject7connectIM5QtrosFvRK7QStringS4_iEM10MainWindowFvS4_S4_iEEEN11QMetaObject10ConnectionEPKN9QtPrivate15FunctionPointerIT_E6ObjectESE_PKNSD_IT0_E6ObjectESJ_N2Qt14ConnectionTypeE[_ZN7QObject7connectIM5QtrosFvRK7QStringS4_iEM10MainWindowFvS4_S4_iEEEN11QMetaObject10ConnectionEPKN9QtPrivate15FunctionPointerIT_E6ObjectESE_PKNSD_IT0_E6ObjectESJ_N2Qt14ConnectionTypeE]+0x8b): undefined reference to `Qtros::staticMetaObject'\n"}
+[12.062434] (test_tool) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[12.064427] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:212: test_tool] Error 1\n'}
+[12.065009] (test_tool) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2\n'}
+[12.065489] (test_tool) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.069005] (test_tool) CommandEnded: {'returncode': 2}
+[12.070879] (-) TimerEvent: {}
+[12.082981] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 2}
+[12.094120] (-) EventReactorShutdown: {}
