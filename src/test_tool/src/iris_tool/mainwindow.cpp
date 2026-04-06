@@ -11,7 +11,7 @@ using namespace std::chrono_literals;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow) ,Node("iris_tool")
+    , Node("iris_tool"), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     connect(ui->listWidget, &QListWidget::currentRowChanged, // Sidebar → Page Switching
@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(qtros,&Qtros::logReceived,this,&MainWindow::onLogReceived);// once the message is received from the subscription in qtros, 
     //it will emit a signal logReceived which is connected to the onLogReceived slot in MainWindow.
 
-    connect(ui->node_list,QListWidget::itemChanged,this,&MainWindow::onItemChanged);
+    connect(ui->node_list,&QListWidget::itemChanged,this,&MainWindow::onItemChanged);
 
     Timer = new QTimer(this);
     connect(Timer, &QTimer::timeout, this, &MainWindow::refreshNodeList);
@@ -89,7 +89,7 @@ void MainWindow::refreshNodeList()
             item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
             item->setCheckState(Qt::Unchecked);
         }
-    }
+    }//
 
     // 🔹 Remove stopped nodes
     for (int i = ui->node_list->count() - 1; i >= 0; i--) { //checks from the revers index {node_list count()-1}
@@ -104,18 +104,25 @@ void MainWindow::refreshNodeList()
 
 void MainWindow::onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg)
 {
-    int index 
+    int index ;
     if (item->checkState() == Qt::Checked) {
-        for (const QString &selected_node : nodes){
-            index = ui->node_list->row(selected_node);
-            if (msg->name.c_str() == item->text(index)){
-               onLogReceived(msg);
-            }
-        }       
-    }else {
-        if(item->checkState() == Qt::Unchecked){
-            index = ui->node_list->row(item);
-            QString unselected_node=item->text(index);
+
+    for (const QString &selected_node : nodes) {
+
+        QListWidgetItem *listItem = ui->node_list->item(nodes.indexOf(selected_node));
+
+        if (!listItem) continue; 
+      
+
+        if (QString::fromStdString(msg->name) == listItem->text()) {
+            // onLogReceived(msg);/*  */
+        }
+    }
+
+    } else {
+
+        if (item->checkState() == Qt::Unchecked) {
+            QString unselected_node = item->text();
             return; // Skip processing logs for this node
         }
     }

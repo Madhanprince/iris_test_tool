@@ -1,0 +1,188 @@
+[0.000000] (-) TimerEvent: {}
+[0.000344] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict()}
+[0.000468] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.017398] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.017982] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.019381] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('USER', 'maddy'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maddy'), ('OLDPWD', '/home/maddy'), ('LESS', '-R'), ('ZSH', '/home/maddy/.oh-my-zsh'), ('LSCOLORS', 'exfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('GREP_COLORS', 'mt=1;33'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maddy'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/2387_interop'), ('NAME', 'RMCCORPDE-DT024'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098554] (-) TimerEvent: {}
+[0.188557] (test_tool) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[0.189183] (test_tool) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool\x1b[0m\n'}
+[0.189419] (test_tool) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[0.198750] (-) TimerEvent: {}
+[0.225113] (test_tool) StdoutLine: {'line': b'[ 23%] Built target dummy_test_1_autogen\n'}
+[0.226876] (test_tool) StdoutLine: {'line': b'[ 23%] Built target dummy_test_autogen\n'}
+[0.231290] (test_tool) StdoutLine: {'line': b'[ 23%] Built target test_tool_autogen\n'}
+[0.257016] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool\x1b[0m\n'}
+[0.271141] (test_tool) StdoutLine: {'line': b'[ 46%] Built target dummy_test\n'}
+[0.273201] (test_tool) StdoutLine: {'line': b'[ 69%] Built target dummy_test_1\n'}
+[0.290668] (test_tool) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o\x1b[0m\n'}
+[0.298859] (-) TimerEvent: {}
+[0.399360] (-) TimerEvent: {}
+[0.500035] (-) TimerEvent: {}
+[0.600557] (-) TimerEvent: {}
+[0.701068] (-) TimerEvent: {}
+[0.801686] (-) TimerEvent: {}
+[0.902320] (-) TimerEvent: {}
+[1.002880] (-) TimerEvent: {}
+[1.103483] (-) TimerEvent: {}
+[1.204270] (-) TimerEvent: {}
+[1.304825] (-) TimerEvent: {}
+[1.405323] (-) TimerEvent: {}
+[1.505814] (-) TimerEvent: {}
+[1.606326] (-) TimerEvent: {}
+[1.706830] (-) TimerEvent: {}
+[1.807353] (-) TimerEvent: {}
+[1.907948] (-) TimerEvent: {}
+[2.008488] (-) TimerEvent: {}
+[2.109072] (-) TimerEvent: {}
+[2.209637] (-) TimerEvent: {}
+[2.310200] (-) TimerEvent: {}
+[2.410756] (-) TimerEvent: {}
+[2.511367] (-) TimerEvent: {}
+[2.612004] (-) TimerEvent: {}
+[2.712534] (-) TimerEvent: {}
+[2.813137] (-) TimerEvent: {}
+[2.913678] (-) TimerEvent: {}
+[3.014292] (-) TimerEvent: {}
+[3.114926] (-) TimerEvent: {}
+[3.215545] (-) TimerEvent: {}
+[3.316163] (-) TimerEvent: {}
+[3.416749] (-) TimerEvent: {}
+[3.517324] (-) TimerEvent: {}
+[3.617867] (-) TimerEvent: {}
+[3.718409] (-) TimerEvent: {}
+[3.819084] (-) TimerEvent: {}
+[3.919717] (-) TimerEvent: {}
+[4.020291] (-) TimerEvent: {}
+[4.120938] (-) TimerEvent: {}
+[4.221542] (-) TimerEvent: {}
+[4.322132] (-) TimerEvent: {}
+[4.422721] (-) TimerEvent: {}
+[4.523510] (-) TimerEvent: {}
+[4.624059] (-) TimerEvent: {}
+[4.724616] (-) TimerEvent: {}
+[4.825173] (-) TimerEvent: {}
+[4.925710] (-) TimerEvent: {}
+[5.026251] (-) TimerEvent: {}
+[5.126768] (-) TimerEvent: {}
+[5.227294] (-) TimerEvent: {}
+[5.327886] (-) TimerEvent: {}
+[5.428442] (-) TimerEvent: {}
+[5.528995] (-) TimerEvent: {}
+[5.629596] (-) TimerEvent: {}
+[5.730200] (-) TimerEvent: {}
+[5.830765] (-) TimerEvent: {}
+[5.931311] (-) TimerEvent: {}
+[6.031958] (-) TimerEvent: {}
+[6.132489] (-) TimerEvent: {}
+[6.233178] (-) TimerEvent: {}
+[6.333807] (-) TimerEvent: {}
+[6.434387] (-) TimerEvent: {}
+[6.534978] (-) TimerEvent: {}
+[6.635548] (-) TimerEvent: {}
+[6.729182] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[KMainWindow\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.729656] (test_tool) StderrLine: {'line': b'   10 | using namespace std::chrono_literals\n'}
+[6.729842] (test_tool) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.729998] (test_tool) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.730148] (test_tool) StderrLine: {'line': b'   11 | \n'}
+[6.730287] (test_tool) StderrLine: {'line': b'   12 | \x1b[32m\x1b[KMainWindow\x1b[m\x1b[K::MainWindow(QWidget *parent)\n'}
+[6.730439] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K                           \n'}
+[6.735701] (-) TimerEvent: {}
+[6.746847] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MainWindow::onItemChanged(QListWidgetItem*, rcl_interfaces::msg::Log_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.747288] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:110:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbegin\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.747549] (test_tool) StderrLine: {'line': b'  110 |     for (const QString &selected_node : \x1b[01;31m\x1b[Knodes\x1b[m\x1b[K) {\n'}
+[6.748195] (test_tool) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.748405] (test_tool) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[Kstd::begin\x1b[m\x1b[K\n'}
+[6.748580] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/array:41\x1b[m\x1b[K,\n'}
+[6.748693] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[6.748804] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[6.749009] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[6.749332] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[6.749525] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:137\x1b[m\x1b[K,\n'}
+[6.749713] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:43\x1b[m\x1b[K,\n'}
+[6.749903] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:43\x1b[m\x1b[K,\n'}
+[6.750090] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:43\x1b[m\x1b[K,\n'}
+[6.750274] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[6.750461] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[6.750650] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[6.750840] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:108:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.751029] (test_tool) StderrLine: {'line': b'  108 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kbegin\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[6.751218] (test_tool) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.751371] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:110:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::end\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.751647] (test_tool) StderrLine: {'line': b'  110 |     for (const QString &selected_node : \x1b[01;31m\x1b[Knodes\x1b[m\x1b[K) {\n'}
+[6.751978] (test_tool) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.752196] (test_tool) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[Kstd::end\x1b[m\x1b[K\n'}
+[6.752380] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/array:41\x1b[m\x1b[K,\n'}
+[6.752577] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[6.752764] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[6.752968] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[6.753169] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[6.753412] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:137\x1b[m\x1b[K,\n'}
+[6.753771] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:43\x1b[m\x1b[K,\n'}
+[6.754160] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:43\x1b[m\x1b[K,\n'}
+[6.754562] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:43\x1b[m\x1b[K,\n'}
+[6.754951] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[6.755344] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[6.755792] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[6.756179] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:110:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::end\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.756591] (test_tool) StderrLine: {'line': b'  110 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kend\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[6.756980] (test_tool) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.757366] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:112:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[KindexOf\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((MainWindow*)this)->MainWindow::nodes\x1b[m\x1b[K\xe2\x80\x99, which is of pointer type \xe2\x80\x98\x1b[01m\x1b[KQStringList*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KQList<QString>*\x1b[m\x1b[K\xe2\x80\x99} (maybe you meant to use \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 ?)\n'}
+[6.757765] (test_tool) StderrLine: {'line': b'  112 |         QListWidgetItem *listItem = ui->node_list->item(nodes.\x1b[01;31m\x1b[KindexOf\x1b[m\x1b[K(selected_node));\n'}
+[6.758095] (test_tool) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.758545] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:107:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kindex\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.758849] (test_tool) StderrLine: {'line': b'  107 |     int \x1b[01;35m\x1b[Kindex\x1b[m\x1b[K ;\n'}
+[6.759143] (test_tool) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.835942] (-) TimerEvent: {}
+[6.936530] (-) TimerEvent: {}
+[7.037115] (-) TimerEvent: {}
+[7.093931] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45\x1b[m\x1b[K,\n'}
+[7.094255] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[7.094404] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[7.094537] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[7.094657] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[7.094922] (test_tool) StderrLine: {'line': b'/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstatic QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType) [with Func1 = void (Qtros::*)(const QString&, const QString&, int); Func2 = void (MainWindow::*)(std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > >); typename QtPrivate::FunctionPointer<Func>::Object = Qtros; typename QtPrivate::FunctionPointer<Func2>::Object = MainWindow]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.095146] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:24:12:\x1b[m\x1b[K   required from here\n'}
+[7.095350] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Signal and slot arguments are not compatible.\n'}
+[7.095840] (test_tool) StderrLine: {'line': b'  230 |         static_assert(\x1b[01;31m\x1b[K(QtPrivate::CheckCompatibleArguments<typename SignalType::Arguments, typename SlotType::Arguments>::value)\x1b[m\x1b[K,\n'}
+[7.095960] (test_tool) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[7.096075] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KQtPrivate::CheckCompatibleArguments<QtPrivate::List<const QString&, const QString&, int>, QtPrivate::List<std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > > > >::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[7.096261] (test_tool) StderrLine: {'line': b'/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstatic QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType) [with Func1 = void (QListWidget::*)(QListWidgetItem*); Func2 = void (MainWindow::*)(QListWidgetItem*, std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > >); typename QtPrivate::FunctionPointer<Func>::Object = QListWidget; typename QtPrivate::FunctionPointer<Func2>::Object = MainWindow]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.096697] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:27:12:\x1b[m\x1b[K   required from here\n'}
+[7.096814] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:228:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: The slot requires more arguments than the signal provides.\n'}
+[7.096935] (test_tool) StderrLine: {'line': b'  228 |         static_assert(\x1b[01;31m\x1b[Kint(SignalType::ArgumentCount) >= int(SlotType::ArgumentCount)\x1b[m\x1b[K,\n'}
+[7.097052] (test_tool) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.097152] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:228:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(((int)QtPrivate::FunctionPointer<void (QListWidget::*)(QListWidgetItem*)>::ArgumentCount) >= ((int)QtPrivate::FunctionPointer<void (MainWindow::*)(QListWidgetItem*, std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > >)>::ArgumentCount))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[7.097257] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Signal and slot arguments are not compatible.\n'}
+[7.097366] (test_tool) StderrLine: {'line': b'  230 |         static_assert(\x1b[01;31m\x1b[K(QtPrivate::CheckCompatibleArguments<typename SignalType::Arguments, typename SlotType::Arguments>::value)\x1b[m\x1b[K,\n'}
+[7.097467] (test_tool) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[7.097566] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KQtPrivate::CheckCompatibleArguments<QtPrivate::List<QListWidgetItem*>, QtPrivate::List<QListWidgetItem*, std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > > > >::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[7.097668] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h:49\x1b[m\x1b[K,\n'}
+[7.097766] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:44\x1b[m\x1b[K,\n'}
+[7.097882] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:44\x1b[m\x1b[K,\n'}
+[7.097981] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[7.098080] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[7.098178] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[7.098277] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[7.098376] (test_tool) StderrLine: {'line': b'/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct QtPrivate::List_Left<QtPrivate::List<>, 1>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.098476] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:72:118:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct QtPrivate::List_Left<QtPrivate::List<QListWidgetItem*>, 2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.098576] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:241:28:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType) [with Func1 = void (QListWidget::*)(QListWidgetItem*); Func2 = void (MainWindow::*)(QListWidgetItem*, std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > >); typename QtPrivate::FunctionPointer<Func>::Object = QListWidget; typename QtPrivate::FunctionPointer<Func2>::Object = MainWindow]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.098686] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:27:12:\x1b[m\x1b[K   required from here\n'}
+[7.098785] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:72:118:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[KCar\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct QtPrivate::List<>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.098885] (test_tool) StderrLine: {'line': b'   72 |         typedef typename List_Append<List<typename L::Car>,typename List_Left<typename L::Cdr, N - 1>::Value>::Value \x1b[01;31m\x1b[KValue\x1b[m\x1b[K;\n'}
+[7.098984] (test_tool) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.137301] (-) TimerEvent: {}
+[7.237844] (-) TimerEvent: {}
+[7.338420] (-) TimerEvent: {}
+[7.439048] (-) TimerEvent: {}
+[7.539592] (-) TimerEvent: {}
+[7.640168] (-) TimerEvent: {}
+[7.740759] (-) TimerEvent: {}
+[7.841298] (-) TimerEvent: {}
+[7.897428] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1\n'}
+[7.898112] (test_tool) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2\n'}
+[7.898522] (test_tool) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.902372] (test_tool) CommandEnded: {'returncode': 2}
+[7.941479] (-) TimerEvent: {}
+[7.973294] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 2}
+[7.984736] (-) EventReactorShutdown: {}

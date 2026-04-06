@@ -28,7 +28,7 @@ private:
     Ui::MainWindow *ui;
     QListWidgetItem *item;
     QTimer *Timer;
-    QStringList *nodes;
+    QStringList nodes;
     QString *outputs ;
     QProcess process;
     

@@ -1,0 +1,111 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found WrapOpenGL: TRUE  
+-- Found XKB: /usr/lib/x86_64-linux-gnu/libxkbcommon.so (found suitable version "1.4.0", minimum required is "0.5.0") 
+-- Found WrapVulkanHeaders: /usr/include  
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 23%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 23%] Built target dummy_test_autogen
+[ 23%] Built target dummy_test_1_autogen
+[ 38%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o[0m
+[ 53%] Built target test_tool_autogen
+[ 69%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:28:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KMainWindow::ui[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   28 |     Ui::MainWindow *[01;35m[Kui[m[K;
+      |                     [01;35m[K^~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:14:47:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[Krclcpp::Node[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   14 |     , ui(new Ui::MainWindow) ,Node("iris_tool"[01;35m[K)[m[K
+      |                                               [01;35m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:12:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   12 | [01;35m[KMainWindow[m[K::MainWindow(QWidget *parent)
+      | [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:27:40:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid QListWidget::itemChanged(QListWidgetItem*)[m[K’
+   27 |     connect(ui->node_list,QListWidget::[01;31m[KitemChanged[m[K,this,&MainWindow::onItemChanged);
+      |                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onItemChanged(QListWidgetItem*, rcl_interfaces::msg::Log_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:108:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kif[m[K’
+  108 |     [01;31m[Kif[m[K (item->checkState() == Qt::Checked) {
+      |     [01;31m[K^~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:115:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  115 |     }[01;31m[Kelse[m[K {
+      |      [01;31m[K^~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:117:44:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  117 |             index = ui->node_list->row(item[01;31m[K)[m[K;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:118:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQListWidgetItem::text(<unresolved overloaded function type>)[m[K’
+  118 |             QString unselected_node=[01;31m[Kitem->text(index)[m[K;
+      |                                     [01;31m[K~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:5[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:84:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQString QListWidgetItem::text() const[m[K’
+   84 |     inline QString [01;36m[Ktext[m[K() const
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:84:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:105:97:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  105 | void MainWindow::onItemChanged(QListWidgetItem *item, [01;35m[Kconst rcl_interfaces::msg::Log::SharedPtr msg[m[K)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[ 84%] [32m[1mLinking CXX executable dummy_test[0m
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h: In instantiation of ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType) [with Func1 = void (Qtros::*)(const QString&, const QString&, int); Func2 = void (MainWindow::*)(std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > >); typename QtPrivate::FunctionPointer<Func>::Object = Qtros; typename QtPrivate::FunctionPointer<Func2>::Object = MainWindow][m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:24:12:[m[K   required from here
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Signal and slot arguments are not compatible.
+  230 |         static_assert([01;31m[K(QtPrivate::CheckCompatibleArguments<typename SignalType::Arguments, typename SlotType::Arguments>::value)[m[K,
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:[m[K [01;36m[Knote: [m[K‘[01m[KQtPrivate::CheckCompatibleArguments<QtPrivate::List<const QString&, const QString&, int>, QtPrivate::List<std::shared_ptr<rcl_interfaces::msg::Log_<std::allocator<void> > > > >::value[m[K’ evaluates to false
+[ 92%] [32m[1mLinking CXX executable dummy_test_1[0m
+[ 92%] Built target dummy_test_1
+[ 92%] Built target dummy_test
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
