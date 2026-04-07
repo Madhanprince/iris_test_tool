@@ -68,7 +68,7 @@ include CMakeFiles/test_tool_autogen.dir/progress.make
 
 CMakeFiles/test_tool_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maddy/iris_test_tool/build/test_tool/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target test_tool"
-	/usr/bin/cmake -E cmake_autogen /home/maddy/iris_test_tool/build/test_tool/CMakeFiles/test_tool_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/maddy/iris_test_tool/build/test_tool/CMakeFiles/test_tool_autogen.dir/AutogenInfo.json Debug
 
 test_tool_autogen: CMakeFiles/test_tool_autogen
 test_tool_autogen: CMakeFiles/test_tool_autogen.dir/build.make

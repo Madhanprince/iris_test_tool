@@ -10,7 +10,7 @@
 #include "qt_ros.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui { class MainWindow; } //Qt puts all generated UI classes inside a namespace called Ui
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow, public rclcpp::Node
@@ -18,10 +18,10 @@ class MainWindow : public QMainWindow, public rclcpp::Node
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr , rclcpp::Node node_);
     ~MainWindow();
 
-    rclcpp::Node::SharedPtr node ;
+    rclcpp::Node::SharedPtr node_ ;
     rclcpp::Subscription<rcl_interfaces::msg::Log>::SharedPtr subscription;
 
 private:

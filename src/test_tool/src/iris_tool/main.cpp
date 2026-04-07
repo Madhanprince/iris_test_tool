@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     rclcpp::init(argc, argv);
-    MainWindow w;
-    w.show(); // Show the main window on the screen
     auto node = std::make_shared<MainWindow>();
+    MainWindow w(node);
+    w.show(); // Show the main window on the screen
     std::thread ros_thread([node]() {
         rclcpp::spin(node);
     });
