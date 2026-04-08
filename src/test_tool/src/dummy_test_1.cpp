@@ -9,7 +9,7 @@ class LidarNode : public rclcpp::Node
 public:
     LidarNode() : Node("dummy_node_1"), count_(0)
     {
-        publisher_ = this->create_publisher<sensor_msgs::msg::LaserScan>("dummy", 10);
+        publisher_ = this->create_publisher<sensor_msgs::msg::LaserScan>("dummy_1", 10);
         timer_ = this->create_wall_timer(1s, std::bind(&LidarNode::timer_callback, this));
 
         RCLCPP_INFO(this->get_logger(), "Lidar node started");

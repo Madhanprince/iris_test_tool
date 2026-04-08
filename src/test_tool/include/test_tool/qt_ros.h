@@ -6,7 +6,7 @@
 #include <QObject>
 
 
-class Qtros : public QObject, public rclcpp::Node
+class Qtros : public QObject , public rclcpp::Node
 {
     Q_OBJECT   // needed for signals
 

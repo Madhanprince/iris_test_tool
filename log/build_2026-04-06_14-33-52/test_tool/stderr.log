@@ -1,9 +1,0 @@
-/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::MainWindow(QWidget*)':
-mainwindow.cpp:(.text+0x2d6): undefined reference to `Qtros::Qtros()'
-/usr/bin/ld: mainwindow.cpp:(.text+0x2fb): undefined reference to `Qtros::logReceived(QString const&, QString const&, int)'
-/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `QMetaObject::Connection QObject::connect<void (Qtros::*)(QString const&, QString const&, int), void (MainWindow::*)(QString const&, QString const&, int)>(QtPrivate::FunctionPointer<void (Qtros::*)(QString const&, QString const&, int)>::Object const*, void (Qtros::*)(QString const&, QString const&, int), QtPrivate::FunctionPointer<void (MainWindow::*)(QString const&, QString const&, int)>::Object const*, void (MainWindow::*)(QString const&, QString const&, int), Qt::ConnectionType)':
-mainwindow.cpp:(.text._ZN7QObject7connectIM5QtrosFvRK7QStringS4_iEM10MainWindowFvS4_S4_iEEEN11QMetaObject10ConnectionEPKN9QtPrivate15FunctionPointerIT_E6ObjectESE_PKNSD_IT0_E6ObjectESJ_N2Qt14ConnectionTypeE[_ZN7QObject7connectIM5QtrosFvRK7QStringS4_iEM10MainWindowFvS4_S4_iEEEN11QMetaObject10ConnectionEPKN9QtPrivate15FunctionPointerIT_E6ObjectESE_PKNSD_IT0_E6ObjectESJ_N2Qt14ConnectionTypeE]+0x8b): undefined reference to `Qtros::staticMetaObject'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:212: test_tool] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

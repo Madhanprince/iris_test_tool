@@ -1,0 +1,31 @@
+[0.024s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.134s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.137s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.155s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.188s] [ 21%] Built target dummy_test_1_autogen
+[0.237s] [ 21%] Built target dummy_test_autogen
+[0.260s] [ 42%] Built target dummy_test_1
+[0.291s] [ 64%] Built target dummy_test
+[0.735s] [ 64%] Built target test_tool_autogen
+[0.791s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[0.791s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.791s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[11.955s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[11.956s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kit[m[K’ was not declared in this scope; did you mean ‘[01m[Kint[m[K’?
+[11.956s]    26 |     [01;31m[Kit[m[K will emit a signal logReceived which is connected to the onLogReceived slot in MainWindow.
+[11.956s]       |     [01;31m[K^~[m[K
+[11.956s]       |     [32m[Kint[m[K
+[11.969s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onItemChanged(QListWidgetItem*, rcl_interfaces::msg::Log_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.970s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:120:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMainWindow::onLogReceived(const SharedPtr&)[m[K’
+[11.970s]   120 |             [01;31m[KonLogReceived(msg)[m[K;/*  */
+[11.970s]       |             [01;31m[K~~~~~~~~~~~~~^~~~~[m[K
+[11.970s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[11.971s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:38:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MainWindow::onLogReceived(const QString&, const QString&, int)[m[K’
+[11.971s]    38 |     void [01;36m[KonLogReceived[m[K(const QString &msg,const QString &node,int level);
+[11.971s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[11.971s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:38:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[13.642s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[13.643s] gmake[2]: *** Waiting for unfinished jobs....
+[13.649s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[13.650s] gmake: *** [Makefile:146: all] Error 2
+[13.659s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
