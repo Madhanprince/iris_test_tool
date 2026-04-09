@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o.d"
   "CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o"
   "CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o.d"
+  "CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o"
+  "CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o.d"
   "CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o.d"
   "test_tool"

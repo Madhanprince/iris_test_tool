@@ -9,6 +9,7 @@
 #include <rcl_interfaces/msg/log.hpp>
 #include "qt_ros.h"
 #include <memory>
+#include <map>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; } //Qt puts all generated UI classes inside a namespace called Ui
@@ -31,10 +32,11 @@ private:
     QProcess process;
 
     std::shared_ptr<Qtros> qtros;
+    std::map<std::string, int> clicked_node;
 
     void refreshNodeList();
     void pages(int row);
-    void onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg);
+    void onItemChanged(QListWidgetItem *item);
     void onLogReceived(const QString &msg,const QString &node,int level);
 };
 #endif // MAINWINDOW_H

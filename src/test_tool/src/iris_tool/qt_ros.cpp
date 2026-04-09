@@ -9,8 +9,8 @@ Qtros::Qtros() : Node("iris_tool") {
 
 void Qtros::logscallback(const rcl_interfaces::msg::Log::SharedPtr msg) {
     emit logReceived(
-        QString::fromStdString(msg->name),
         QString::fromStdString(msg->msg),
+        QString::fromStdString("/"+msg->name),
         msg->level
     );// Emit the signal with the received message
 

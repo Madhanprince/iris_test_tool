@@ -7,6 +7,7 @@
 #include <QDebug>
 #include <QString>
 
+
 using namespace std::chrono_literals;
 
 MainWindow::MainWindow(QWidget *parent)
@@ -28,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->node_list,&QListWidget::itemChanged,this,&MainWindow::onItemChanged);
 
     Timer = new QTimer(this);
-    connect(Timer, &QTimer::timeout, this, &MainWindow::refreshNodeList);
+    connect(Timer, &QTimer::timeout, this, &MainWindow::refreshNodeList); //timer to refrest the list if the ant node running if it that can be added to the list 
     Timer->start(500ms);
 
 }
@@ -70,7 +71,7 @@ void MainWindow::refreshNodeList()
 {
     QProcess process;
     process.start("ros2", QStringList() << "node" << "list");
-    // process.waitForFinished();
+    process.waitForFinished();
 
     QString output = process.readAllStandardOutput();
     QStringList nodes = output.split("\n", Qt::SkipEmptyParts);
@@ -89,7 +90,8 @@ void MainWindow::refreshNodeList()
         }
         if (!exists) {
             QListWidgetItem *item = new QListWidgetItem(node, ui->node_list);
-            item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+            item->setFlags(item->flags() | Qt::ItemIsUserCheckable); 
+            //it used to create the checkbox using the flags()
             item->setCheckState(Qt::Unchecked);
         }
     }//
@@ -105,45 +107,46 @@ void MainWindow::refreshNodeList()
     }
 }
 
-void MainWindow::onItemChanged(QListWidgetItem *item, const rcl_interfaces::msg::Log::SharedPtr msg)
+void MainWindow::onItemChanged(QListWidgetItem *item)
 {
+    QString nodename =item->text();
+    std::string node =nodename.toStdString();
+    int index =ui->node_list->row(item);
+
     if (item->checkState() == Qt::Checked) {
-
-    for (const QString &selected_node : nodes) {
-
-        QListWidgetItem *listItem = ui->node_list->item(nodes.indexOf(selected_node));
-
-        if (!listItem) continue; 
-      
-
-        if (QString::fromStdString(msg->name) == listItem->text()) {
-            onLogReceived(QString(msg->msg.c_str()), selected_node, msg->level);/*  */
+        if(clicked_node.find(node) == clicked_node.end())
+        {
+            clicked_node.insert({node, index}); 
         }
-    }
+        std::cout << "Checked : " << "\n";
 
-    } else {
-
+    } 
+    else {
         if (item->checkState() == Qt::Unchecked) {
-            QString unselected_node = item->text();
-            return; // Skip processing logs for this node
+            if(clicked_node.find(node) != clicked_node.end())
+            {
+                clicked_node.erase(node);
+            }
+            std::cout << "Unchecked : " << "\n";
         }
     }
 }
 
 
-void MainWindow::onLogReceived(const QString &msg,const QString &node,int level)
+void MainWindow::onLogReceived(const QString &msg,const QString &name,int level)
 {
-    std::cout<<"started"<<std::endl;
-    QString logMessage = QString("[%1] %2: %3").arg(msg)
-                                        .arg(node)
-                                        .arg(level);
-    if (level >= 40) {
-        ui->plainTextEdit_3->appendPlainText(logMessage); // ERROR
-    }
-    else if (level >= 30) {
-        ui->plainTextEdit_2->appendPlainText(logMessage); // WARN
-    }
-    else {
-        ui->plainTextEdit->appendPlainText(logMessage);   // INFO
+    if (clicked_node.find(name.toStdString())!=clicked_node.end()){
+        QString logMessage = QString("[%1] %2: %3").arg(msg)
+                                                .arg(name)
+                                                .arg(level);
+        if (level >= 40) {
+            ui->plainTextEdit_3->appendPlainText(logMessage); // ERROR
+        }
+        else if (level >= 30) {
+            ui->plainTextEdit_2->appendPlainText(logMessage); // WARN
+        }
+        else {
+            ui->plainTextEdit->appendPlainText(logMessage);   // INFO
+        }
     }
 }

@@ -1,0 +1,38 @@
+[0.027s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.263s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.264s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.264s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.310s] [ 21%] Built target dummy_test_autogen
+[0.312s] [ 21%] Built target dummy_test_1_autogen
+[0.360s] [ 42%] Built target dummy_test
+[0.364s] [ 64%] Built target dummy_test_1
+[0.969s] [ 64%] Built target test_tool_autogen
+[0.994s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[1.031s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[1.031s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[1.032s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[12.686s] [ 92%] [32m[1mLinking CXX executable test_tool[0m
+[15.499s] [100%] Built target test_tool
+[15.519s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[15.534s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+[15.545s] -- Install configuration: "Debug"
+[15.547s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool
+[15.572s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool" to ""
+[15.574s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test
+[15.576s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test_1
+[15.576s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool
+[15.576s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool
+[15.577s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh
+[15.577s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv
+[15.577s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh
+[15.578s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv
+[15.578s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash
+[15.578s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh
+[15.578s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh
+[15.578s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv
+[15.578s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv
+[15.579s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool
+[15.579s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake
+[15.579s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake
+[15.579s] -- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml
+[15.582s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool

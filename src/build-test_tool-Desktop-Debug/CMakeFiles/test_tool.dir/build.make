@@ -111,11 +111,26 @@ CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp -o CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.s
 
+CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o: CMakeFiles/test_tool.dir/flags.make
+CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o: /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/qt_ros.cpp
+CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o: CMakeFiles/test_tool.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o -MF CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o.d -o CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o -c /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/qt_ros.cpp
+
+CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/qt_ros.cpp > CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.i
+
+CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/qt_ros.cpp -o CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.s
+
 # Object files for target test_tool
 test_tool_OBJECTS = \
 "CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o" \
-"CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o"
+"CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o" \
+"CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o"
 
 # External object files for target test_tool
 test_tool_EXTERNAL_OBJECTS =
@@ -123,12 +138,91 @@ test_tool_EXTERNAL_OBJECTS =
 test_tool: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o
 test_tool: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o
 test_tool: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o
+test_tool: CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o
 test_tool: CMakeFiles/test_tool.dir/build.make
 test_tool: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+test_tool: /opt/ros/humble/lib/librclcpp.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 test_tool: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 test_tool: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
+test_tool: /opt/ros/humble/lib/liblibstatistics_collector.so
+test_tool: /opt/ros/humble/lib/librcl.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/librmw_implementation.so
+test_tool: /opt/ros/humble/lib/libament_index_cpp.so
+test_tool: /opt/ros/humble/lib/librcl_logging_spdlog.so
+test_tool: /opt/ros/humble/lib/librcl_logging_interface.so
+test_tool: /opt/ros/humble/lib/librcl_yaml_param_parser.so
+test_tool: /opt/ros/humble/lib/libyaml.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_py.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/libtracetools.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
+test_tool: /opt/ros/humble/lib/libfastcdr.so.1.0.29
+test_tool: /opt/ros/humble/lib/librmw.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
+test_tool: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+test_tool: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+test_tool: /opt/ros/humble/lib/librosidl_typesupport_c.so
+test_tool: /opt/ros/humble/lib/librcpputils.so
+test_tool: /opt/ros/humble/lib/librosidl_runtime_c.so
+test_tool: /opt/ros/humble/lib/librcutils.so
 test_tool: CMakeFiles/test_tool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test_tool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_tool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
