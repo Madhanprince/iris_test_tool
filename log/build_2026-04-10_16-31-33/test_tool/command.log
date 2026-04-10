@@ -1,0 +1,6 @@
+Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maddy/iris_test_tool/src/test_tool -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/test_tool
+Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maddy/iris_test_tool/src/test_tool -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/test_tool
+Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool

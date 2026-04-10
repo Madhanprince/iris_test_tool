@@ -48,12 +48,13 @@ std::shared_ptr<Qtros> MainWindow::getNode(){
 
 void MainWindow::pages(int row)
 {
+    std::cout<<"Selected row"<<std::endl;
     if (row == 0) {
         ui->stackedWidget->setCurrentIndex(row);
     }
     else if (row == 1) {
         ui->stackedWidget->setCurrentIndex(row);
-        // refreshNodeList();
+        refreshNodeList();
     }
     else if (row == 2) {
         ui->stackedWidget->setCurrentIndex(row);
@@ -66,30 +67,24 @@ void MainWindow::pages(int row)
     }
 }
 
-
 void MainWindow::refreshNodeList()
 {
-    QProcess process;
-    process.start("ros2", QStringList() << "node" << "list");
-    process.waitForFinished();
-
-    QString output = process.readAllStandardOutput();
-    QStringList nodes = output.split("\n", Qt::SkipEmptyParts);
-
+    auto get_nodes = qtros->get_node_names();
     // 🔹 Add new nodes
-    for (const QString &node : nodes) {
+    for (const auto &node : get_nodes) {
+        QString qnode = QString::fromStdString(node);
 
         bool exists = false;
         for (int i = 0; i < ui->node_list->count(); i++) { 
             //Qt the initial condition here are no items to check 
             // exists remains false then we add the new node 
-            if (ui->node_list->item(i)->text() == node) {
+            if (ui->node_list->item(i)->text() == qnode) {
                 exists = true;
                 // break;
             }
         }
         if (!exists) {
-            QListWidgetItem *item = new QListWidgetItem(node, ui->node_list);
+            QListWidgetItem *item = new QListWidgetItem(qnode, ui->node_list);
             item->setFlags(item->flags() | Qt::ItemIsUserCheckable); 
             //it used to create the checkbox using the flags()
             item->setCheckState(Qt::Unchecked);
@@ -99,9 +94,9 @@ void MainWindow::refreshNodeList()
     // 🔹 Remove stopped nodes
     for (int i = ui->node_list->count() - 1; i >= 0; i--) { //checks from the revers index {node_list count()-1}
 
-        QListWidgetItem *item = ui->node_list->item(i);
+        QListWidgetItem *item = ui->node_list->item(i); //get the index of the nodes present in the list  
 
-        if (!nodes.contains(item->text())) {
+        if (!nodes.contains(item->text())) { //using the index the text present in that index can be get  
             delete ui->node_list->takeItem(i);
         }
     }
@@ -114,7 +109,7 @@ void MainWindow::onItemChanged(QListWidgetItem *item)
     int index =ui->node_list->row(item);
 
     if (item->checkState() == Qt::Checked) {
-        if(clicked_node.find(node) == clicked_node.end())
+        if(clicked_node.find(node) == clicked_node.end()) // only the cliked nodes will be stored in map<> function 
         {
             clicked_node.insert({node, index}); 
         }
@@ -123,7 +118,8 @@ void MainWindow::onItemChanged(QListWidgetItem *item)
     } 
     else {
         if (item->checkState() == Qt::Unchecked) {
-            if(clicked_node.find(node) != clicked_node.end())
+            if(clicked_node.find(node) != clicked_node.end()) // it checks the nodes in side the map<> function when it uncheked the 
+            //unclicked nodes present inside the map<> function it will be removed 
             {
                 clicked_node.erase(node);
             }
