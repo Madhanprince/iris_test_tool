@@ -1,0 +1,17 @@
+[  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 21%] Built target dummy_test_1_autogen
+[ 21%] Built target test_tool_autogen
+[ 21%] Built target dummy_test_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 42%] Built target dummy_test_1
+[ 50%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[ 71%] Built target dummy_test
+[ 78%] [32m[1mLinking CXX executable test_tool[0m
+/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::MainWindow(QWidget*)':
+/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:29: undefined reference to `MainWindow::onItemChanged(QListWidgetItem*)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:228: test_tool] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

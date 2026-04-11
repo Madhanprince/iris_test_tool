@@ -1,0 +1,19 @@
+[0.023s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.186s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.195s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.195s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.225s] [ 21%] Built target dummy_test_1_autogen
+[0.226s] [ 21%] Built target test_tool_autogen
+[0.226s] [ 21%] Built target dummy_test_autogen
+[0.248s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.268s] [ 42%] Built target dummy_test_1
+[0.291s] [ 50%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.308s] [ 71%] Built target dummy_test
+[9.450s] [ 78%] [32m[1mLinking CXX executable test_tool[0m
+[11.906s] /usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::MainWindow(QWidget*)':
+[11.906s] /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:29: undefined reference to `MainWindow::onItemChanged(QListWidgetItem*)'
+[12.042s] collect2: error: ld returned 1 exit status
+[12.046s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:228: test_tool] Error 1
+[12.046s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[12.047s] gmake: *** [Makefile:146: all] Error 2
+[12.050s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

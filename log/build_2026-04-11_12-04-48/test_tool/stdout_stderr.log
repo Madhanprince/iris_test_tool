@@ -1,0 +1,27 @@
+[  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 21%] Built target dummy_test_autogen
+[ 21%] Built target dummy_test_1_autogen
+[ 42%] Built target dummy_test
+[ 64%] Built target dummy_test_1
+[ 64%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h: In instantiation of ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType) [with Func1 = void (QListWidget::*)(QListWidgetItem*); Func2 = void (MainWindow::*)(QListWidgetItem); typename QtPrivate::FunctionPointer<Func>::Object = QListWidget; typename QtPrivate::FunctionPointer<Func2>::Object = MainWindow][m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:29:12:[m[K   required from here
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Signal and slot arguments are not compatible.
+  230 |         static_assert([01;31m[K(QtPrivate::CheckCompatibleArguments<typename SignalType::Arguments, typename SlotType::Arguments>::value)[m[K,
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:230:123:[m[K [01;36m[Knote: [m[K‘[01m[KQtPrivate::CheckCompatibleArguments<QtPrivate::List<QListWidgetItem*>, QtPrivate::List<QListWidgetItem> >::value[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

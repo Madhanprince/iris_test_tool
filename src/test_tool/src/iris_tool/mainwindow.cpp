@@ -48,7 +48,7 @@ std::shared_ptr<Qtros> MainWindow::getNode(){
 
 void MainWindow::pages(int row)
 {
-    std::cout<<"Selected row"<<std::endl;
+    // std::cout<<"Selected row"<<std::endl;
     if (row == 0) {
         ui->stackedWidget->setCurrentIndex(row);
     }
@@ -68,8 +68,12 @@ void MainWindow::pages(int row)
 }
 
 void MainWindow::refreshNodeList()
-{
+{   
+    std::cout<<"5678"<<std::endl;
     auto get_nodes = qtros->get_node_names();
+    for (const auto & name : get_nodes) {
+        std::cout<<name<<std::endl;
+    }
     // 🔹 Add new nodes
     for (const auto &node : get_nodes) {
         QString qnode = QString::fromStdString(node);
@@ -84,7 +88,7 @@ void MainWindow::refreshNodeList()
             }
         }
         if (!exists) {
-            QListWidgetItem *item = new QListWidgetItem(qnode, ui->node_list);
+            QListWidgetItem *item = new QListWidgetItem(qnode, ui->node_list);//ui-> node_list (it insert the item in the listwidget)
             item->setFlags(item->flags() | Qt::ItemIsUserCheckable); 
             //it used to create the checkbox using the flags()
             item->setCheckState(Qt::Unchecked);
@@ -104,6 +108,7 @@ void MainWindow::refreshNodeList()
 
 void MainWindow::onItemChanged(QListWidgetItem *item)
 {
+    std::cout<<"1234"<<std::endl;
     QString nodename =item->text();
     std::string node =nodename.toStdString();
     int index =ui->node_list->row(item);

@@ -1,0 +1,18 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:23:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQListWidget::setCurrentRow()[m[K’
+   23 |     [01;31m[Kui->listWidget->setCurrentRow()[m[K; //Default page
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:5[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:219:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QListWidget::setCurrentRow(int)[m[K’
+  219 |     void [01;36m[KsetCurrentRow[m[K(int row);
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:219:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:220:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QListWidget::setCurrentRow(int, QItemSelectionModel::SelectionFlags)[m[K’
+  220 |     void [01;36m[KsetCurrentRow[m[K(int row, QItemSelectionModel::SelectionFlags command);
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:220:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

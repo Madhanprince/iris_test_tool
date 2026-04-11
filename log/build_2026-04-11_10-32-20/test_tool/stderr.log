@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::MainWindow(QWidget*)':
+/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:29: undefined reference to `MainWindow::onItemChanged(QListWidgetItem*)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:228: test_tool] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
