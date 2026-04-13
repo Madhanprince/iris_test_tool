@@ -1,0 +1,79 @@
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:35:25:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+   35 |     std::map<std::string[01;31m[K>[m[K clicked_node;
+      |                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:62[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:54[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+  100 |     class [01;36m[Kmap[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:35:25:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+   35 |     std::map<std::string[01;31m[K>[m[K clicked_node;
+      |                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:62[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:54[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+  100 |     class [01;36m[Kmap[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:35:25:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+   35 |     std::map<std::string[01;31m[K>[m[K clicked_node;
+      |                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:62[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:54[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+  100 |     class [01;36m[Kmap[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onItemChanged(QListWidgetItem*)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:137:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  137 |         if (clicked_node.[01;31m[Kfind[m[K(node) == clicked_node.end()) {
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:137:53:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  137 |         if (clicked_node.find(node) == clicked_node.[01;31m[Kend[m[K()) {
+      |                                                     [01;31m[K^~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:138:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinsert[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  138 |             clicked_node.[01;31m[Kinsert[m[K({node});
+      |                          [01;31m[K^~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:144:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  144 |         if (clicked_node.[01;31m[Kfind[m[K(node) != clicked_node.end()) {
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:144:53:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  144 |         if (clicked_node.find(node) != clicked_node.[01;31m[Kend[m[K()) {
+      |                                                     [01;31m[K^~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:145:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kerase[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  145 |             clicked_node.[01;31m[Kerase[m[K(node);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onLogReceived(const QString&, const QString&, int)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:153:22:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  153 |     if (clicked_node.[01;31m[Kfind[m[K(name.toStdString())!=clicked_node.end()){
+      |                      [01;31m[K^~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:153:61:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  153 |     if (clicked_node.find(name.toStdString())!=clicked_node.[01;31m[Kend[m[K()){
+      |                                                             [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

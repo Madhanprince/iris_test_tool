@@ -1,0 +1,103 @@
+[0.018s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.087s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.090s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.093s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.120s] [ 21%] Built target dummy_test_1_autogen
+[0.121s] [ 21%] Built target dummy_test_autogen
+[0.157s] [ 42%] Built target dummy_test_1
+[0.160s] [ 64%] Built target dummy_test
+[0.874s] [ 64%] Built target test_tool_autogen
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.930s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[0.930s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[0.934s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[9.382s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+[9.382s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[9.383s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:35:25:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+[9.383s]    35 |     std::map<std::string[01;31m[K>[m[K clicked_node;
+[9.383s]       |                         [01;31m[K^[m[K
+[9.383s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[9.383s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:62[m[K,
+[9.383s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:54[m[K,
+[9.383s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+[9.384s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+[9.384s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+[9.384s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[9.384s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+[9.384s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[9.384s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+[9.385s]   100 |     class [01;36m[Kmap[m[K
+[9.385s]       |           [01;36m[K^~~[m[K
+[9.438s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[9.438s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:35:25:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+[9.438s]    35 |     std::map<std::string[01;31m[K>[m[K clicked_node;
+[9.438s]       |                         [01;31m[K^[m[K
+[9.438s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[9.438s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:62[m[K,
+[9.438s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:54[m[K,
+[9.439s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+[9.439s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+[9.439s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+[9.439s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[9.439s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[9.439s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+[9.439s]   100 |     class [01;36m[Kmap[m[K
+[9.440s]       |           [01;36m[K^~~[m[K
+[9.674s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[9.674s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:35:25:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+[9.674s]    35 |     std::map<std::string[01;31m[K>[m[K clicked_node;
+[9.674s]       |                         [01;31m[K^[m[K
+[9.674s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[9.674s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:62[m[K,
+[9.674s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:54[m[K,
+[9.675s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:45[m[K,
+[9.675s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:44[m[K,
+[9.675s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:1[m[K,
+[9.675s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[9.675s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[9.675s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+[9.675s]   100 |     class [01;36m[Kmap[m[K
+[9.675s]       |           [01;36m[K^~~[m[K
+[10.064s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::refreshNodeList()[m[K’:
+[10.065s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:116:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.065s]   116 |             if (clicked_node.[01;31m[Kfind[m[K(nodeName) != clicked_node.end()) {
+[10.065s]       |                              [01;31m[K^~~~[m[K
+[10.065s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:116:61:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.065s]   116 |             if (clicked_node.find(nodeName) != clicked_node.[01;31m[Kend[m[K()) {
+[10.065s]       |                                                             [01;31m[K^~~[m[K
+[10.065s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:117:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kerase[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.066s]   117 |                 clicked_node.[01;31m[Kerase[m[K(nodeName);
+[10.066s]       |                              [01;31m[K^~~~~[m[K
+[10.066s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onItemChanged(QListWidgetItem*)[m[K’:
+[10.066s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:137:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.066s]   137 |         if (clicked_node.[01;31m[Kfind[m[K(node) == clicked_node.end()) {
+[10.067s]       |                          [01;31m[K^~~~[m[K
+[10.067s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:137:53:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.067s]   137 |         if (clicked_node.find(node) == clicked_node.[01;31m[Kend[m[K()) {
+[10.067s]       |                                                     [01;31m[K^~~[m[K
+[10.067s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:138:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinsert[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.067s]   138 |             clicked_node.[01;31m[Kinsert[m[K({node});
+[10.067s]       |                          [01;31m[K^~~~~~[m[K
+[10.067s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:144:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.067s]   144 |         if (clicked_node.[01;31m[Kfind[m[K(node) != clicked_node.end()) {
+[10.068s]       |                          [01;31m[K^~~~[m[K
+[10.068s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:144:53:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.068s]   144 |         if (clicked_node.find(node) != clicked_node.[01;31m[Kend[m[K()) {
+[10.068s]       |                                                     [01;31m[K^~~[m[K
+[10.068s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:145:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kerase[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.068s]   145 |             clicked_node.[01;31m[Kerase[m[K(node);
+[10.068s]       |                          [01;31m[K^~~~~[m[K
+[10.069s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::onLogReceived(const QString&, const QString&, int)[m[K’:
+[10.069s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:153:22:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.069s]   153 |     if (clicked_node.[01;31m[Kfind[m[K(name.toStdString())!=clicked_node.end()){
+[10.069s]       |                      [01;31m[K^~~~[m[K
+[10.069s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:153:61:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MainWindow*)this)->MainWindow::clicked_node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[10.069s]   153 |     if (clicked_node.find(name.toStdString())!=clicked_node.[01;31m[Kend[m[K()){
+[10.069s]       |                                                             [01;31m[K^~~[m[K
+[10.609s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+[10.609s] gmake[2]: *** Waiting for unfinished jobs....
+[10.699s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o] Error 1
+[11.355s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[11.355s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[11.356s] gmake: *** [Makefile:146: all] Error 2
+[11.360s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -3,8 +3,16 @@
         {
             "name": "Linux",
             "includePath": [
-              "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**",
+                "${workspaceFolder}/**",
+
+                // ROS2
+                "/opt/ros/humble/include",
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/rviz_common",
+                "/opt/ros/humble/include/rviz_rendering",
+                "/opt/ros/humble/include/rviz_default_plugins",
+
+                // Qt5
                 "/usr/include/x86_64-linux-gnu/qt5",
                 "/usr/include/x86_64-linux-gnu/qt5/QtCore",
                 "/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -13,7 +21,7 @@
             "defines": [],
             "compilerPath": "/usr/bin/clang-14",
             "cStandard": "c17",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "linux-clang-x64"
         }
     ],

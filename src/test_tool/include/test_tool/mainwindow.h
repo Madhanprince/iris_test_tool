@@ -32,7 +32,7 @@ private:
     QProcess process;
 
     std::shared_ptr<Qtros> qtros;
-    std::map<std::string, int> clicked_node;
+    std::set<std::string> clicked_node;
 
     void refreshNodeList();
     void pages(int row);
