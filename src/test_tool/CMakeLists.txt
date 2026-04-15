@@ -15,14 +15,21 @@ set(CMAKE_AUTORCC ON) # Automatically process Qt resource files (.qrc)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON) # Enforce C++17
 
+# Prevent the "already defined" error
+set(QT_NO_CREATE_VERSIONLESS_TARGETS ON)
+
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED) # ROS2 build system
 find_package(rcl_interfaces REQUIRED) # ROS2 message types
 find_package(std_msgs REQUIRED) # ROS2 message types
 find_package(sensor_msgs REQUIRED) # ROS2 message types
+find_package(rviz_common REQUIRED)
+find_package(rviz_rendering REQUIRED)
+find_package(rviz_default_plugins REQUIRED)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets) # Find Qt version
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets) # Load correct Qt Widgets module
+# 2. Force Qt5 to match ROS Humble / RViz
+find_package(Qt5 REQUIRED COMPONENTS Widgets)
+
 
 set(PROJECT_SOURCES # List of all project source files
     src/iris_tool/main.cpp
@@ -38,15 +45,15 @@ set(PROJECT_SOURCES # List of all project source files
 add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source files
 
 target_include_directories(test_tool PUBLIC include/test_tool) # Include header directory
-target_link_libraries(test_tool Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library
+target_link_libraries(test_tool Qt5::Widgets rviz_common::rviz_common)
 ament_target_dependencies(test_tool rclcpp std_msgs rcl_interfaces sensor_msgs)
 
 add_executable(dummy_test src/dummy_test.cpp)
-target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  
+target_link_libraries(dummy_test Qt5::Widgets) 
 ament_target_dependencies(dummy_test rclcpp std_msgs rcl_interfaces sensor_msgs)
 
 add_executable(dummy_test_1 src/dummy_test_1.cpp)
-target_link_libraries( Qt${QT_VERSION_MAJOR}::Widgets) # Link Qt Widgets library  
+target_link_libraries(dummy_test_1 Qt5::Widgets) 
 ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
 
 

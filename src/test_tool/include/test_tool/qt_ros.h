@@ -4,6 +4,9 @@
 #include <rclcpp/rclcpp.hpp>
 #include <rcl_interfaces/msg/log.hpp>
 #include <QObject>
+#include <rviz_common/render_panel.hpp>
+#include <rviz_common/visualization_manager.hpp>
+#include <rviz_common/display.hpp>
 
 
 class Qtros : public QObject , public rclcpp::Node

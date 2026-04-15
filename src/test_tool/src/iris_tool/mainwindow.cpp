@@ -7,6 +7,8 @@
 #include <QDebug>
 #include <QString>
 #include <QDebug>
+#include <rviz_common/visualization_manager.hpp>
+
 
 
 using namespace std::chrono_literals;
@@ -58,6 +60,10 @@ void MainWindow::pages(int row)
     }
     else if (row == 2) {
         ui->stackedWidget->setCurrentIndex(row);
+        if (!rviz_initialized) {
+            initRViz();
+            rviz_initialized = true;
+        }
     }
     else if (row == 3) {
         ui->stackedWidget->setCurrentIndex(row);
@@ -170,3 +176,71 @@ void MainWindow::onLogReceived(const QString &msg,const QString &name,int level)
     }
 }
 
+
+void MainWindow::initRViz()
+{
+    render_panel = new rviz_common::RenderPanel();
+    QVBoxLayout *layout = new QVBoxLayout(ui->widget_2);
+    ui->widget_2->setLayout(layout);
+    layout->addWidget(render_panel);
+
+    this->winId();
+    render_panel->winId();
+    QApplication::processEvents();
+
+    render_panel->getRenderWindow()->initialize();
+    QApplication::processEvents();
+
+    auto ros_node_abs =
+        std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
+            "rviz_internal_node"
+        );
+    auto clock = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
+
+    visualizationManager_ = new rviz_common::VisualizationManager(
+        render_panel,
+        ros_node_abs,
+        nullptr,
+        clock
+    );
+
+    visualizationManager_->initialize();
+    render_panel->initialize(visualizationManager_);
+
+    // ✅ Set Orbit camera as default view controller
+    visualizationManager_->getViewManager()->setCurrentViewControllerType(
+        "rviz_default_plugins/Orbit"
+    );
+
+    //Activate the Move Camera tool so mouse drag rotates/pans
+    auto *tool_manager = visualizationManager_->getToolManager();
+    tool_manager->addTool("rviz_default_plugins/MoveCamera");
+    tool_manager->setCurrentTool(
+        tool_manager->getTool(
+            tool_manager->numTools() - 1   // the one we just added
+        )
+    );
+
+    visualizationManager_->startUpdate();
+    setupDisplays();
+
+}
+
+void MainWindow::setupDisplays()
+{
+    visualizationManager_->setFixedFrame("map");
+
+    auto *grid = visualizationManager_->createDisplay(
+        "rviz_default_plugins/Grid", "Grid", true);
+    Q_UNUSED(grid);
+
+    auto *laser = visualizationManager_->createDisplay(
+        "rviz_default_plugins/LaserScan", "LaserScan", true);
+    if (laser)
+        laser->subProp("Topic")->setValue("/scan");
+
+    auto *map = visualizationManager_->createDisplay(
+        "rviz_default_plugins/Map", "Map", true);
+    if (map)
+        map->subProp("Topic")->setValue("/map");
+}

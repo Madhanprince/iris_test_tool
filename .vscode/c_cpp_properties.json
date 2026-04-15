@@ -5,12 +5,26 @@
             "includePath": [
                 "${workspaceFolder}/**",
 
-                // ROS2
+                // ROS2 Core
                 "/opt/ros/humble/include",
+                "/opt/ros/humble/include/rcl",
                 "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/rcl_interfaces",
+                "/opt/ros/humble/include/rcutils",
+                "/opt/ros/humble/include/rmw",
+
+                // TF2
+                "/opt/ros/humble/include/tf2",
+                "/opt/ros/humble/include/tf2_ros",
+
+                // RViz
                 "/opt/ros/humble/include/rviz_common",
                 "/opt/ros/humble/include/rviz_rendering",
                 "/opt/ros/humble/include/rviz_default_plugins",
+
+                // 🔥 OGRE (VERY IMPORTANT — fixes OgreVector3 error)
+                "/opt/ros/humble/opt/rviz_ogre_vendor/include",
+                "/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE",
 
                 // Qt5
                 "/usr/include/x86_64-linux-gnu/qt5",

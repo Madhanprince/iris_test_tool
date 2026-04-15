@@ -1,0 +1,8 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:180:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QWidget[m[K’ has no member named ‘[01m[KaddWidget[m[K’; did you mean ‘[01m[KQWidget[m[K’?
+  180 |     ui->widget_2->[01;31m[KaddWidget[m[K(render_panel);
+      |                   [01;31m[K^~~~~~~~~[m[K
+      |                   [32m[KQWidget[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

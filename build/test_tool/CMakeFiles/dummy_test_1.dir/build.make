@@ -108,12 +108,15 @@ dummy_test_1_EXTERNAL_OBJECTS =
 dummy_test_1: CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o
 dummy_test_1: CMakeFiles/dummy_test_1.dir/src/dummy_test_1.cpp.o
 dummy_test_1: CMakeFiles/dummy_test_1.dir/build.make
+dummy_test_1: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
 dummy_test_1: /opt/ros/humble/lib/librclcpp.so
 dummy_test_1: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 dummy_test_1: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 dummy_test_1: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 dummy_test_1: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 dummy_test_1: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
+dummy_test_1: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
+dummy_test_1: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 dummy_test_1: /opt/ros/humble/lib/liblibstatistics_collector.so
 dummy_test_1: /opt/ros/humble/lib/librcl.so
 dummy_test_1: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so

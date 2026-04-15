@@ -97,8 +97,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:UNINITIALIZED=ON
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/home/maddy/iris_test_tool/install/test_tool
@@ -640,7 +640,7 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libmap_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a library.
 _ogre_main_static_library_abs:FILEPATH=/opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
@@ -783,6 +783,15 @@ foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/humble/share/image_transport/cmake
+
+//The directory containing a CMake configuration file for interactive_markers.
+interactive_markers_DIR:PATH=/opt/ros/humble/share/interactive_markers/cmake
+
+//The directory containing a CMake configuration file for laser_geometry.
+laser_geometry_DIR:PATH=/opt/ros/humble/share/laser_geometry/cmake
+
 //The directory containing a CMake configuration file for libcurl_vendor.
 libcurl_vendor_DIR:PATH=/opt/ros/humble/share/libcurl_vendor/cmake
 
@@ -792,8 +801,14 @@ libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/c
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 
+//The directory containing a CMake configuration file for map_msgs.
+map_msgs_DIR:PATH=/opt/ros/humble/share/map_msgs/cmake
+
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
 
 //Path to a library.
 onelib:FILEPATH=/opt/ros/humble/lib/x86_64-linux-gnu/liburdfdom_world.so
@@ -936,6 +951,9 @@ rviz_assimp_vendor_DIR:PATH=/opt/ros/humble/share/rviz_assimp_vendor/cmake
 //The directory containing a CMake configuration file for rviz_common.
 rviz_common_DIR:PATH=/opt/ros/humble/share/rviz_common/cmake
 
+//The directory containing a CMake configuration file for rviz_default_plugins.
+rviz_default_plugins_DIR:PATH=/opt/ros/humble/share/rviz_default_plugins/cmake
+
 //The directory containing a CMake configuration file for rviz_ogre_vendor.
 rviz_ogre_vendor_DIR:PATH=/opt/ros/humble/share/rviz_ogre_vendor/cmake
 
@@ -998,6 +1016,9 @@ urdfdom_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/urdfdom/cmake
 
 //The directory containing a CMake configuration file for urdfdom_headers.
 urdfdom_headers_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/urdfdom_headers/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/humble/share/visualization_msgs/cmake
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint

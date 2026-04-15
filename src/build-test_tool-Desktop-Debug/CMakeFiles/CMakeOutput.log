@@ -276,3 +276,87 @@ int main(void)
   return 0;
 }
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f1804/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f1804.dir/build.make CMakeFiles/cmTC_f1804.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f1804.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu++17 -o CMakeFiles/cmTC_f1804.dir/CheckFunctionExists.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_f1804
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1804.dir/link.txt --verbose=1
+/usr/bin/g++  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_f1804.dir/CheckFunctionExists.cxx.o -o cmTC_f1804  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4e8db/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e8db.dir/build.make CMakeFiles/cmTC_4e8db.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e8db.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++   -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu++17 -o CMakeFiles/cmTC_4e8db.dir/CheckFunctionExists.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_4e8db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e8db.dir/link.txt --verbose=1
+/usr/bin/g++  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_4e8db.dir/CheckFunctionExists.cxx.o -o cmTC_4e8db 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf574/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf574.dir/build.make CMakeFiles/cmTC_cf574.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf574.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++   -DCHECK_FUNCTION_EXISTS=connect -std=gnu++17 -o CMakeFiles/cmTC_cf574.dir/CheckFunctionExists.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_cf574
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf574.dir/link.txt --verbose=1
+/usr/bin/g++  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_cf574.dir/CheckFunctionExists.cxx.o -o cmTC_cf574 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4eba7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4eba7.dir/build.make CMakeFiles/cmTC_4eba7.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4eba7.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++   -DCHECK_FUNCTION_EXISTS=remove -std=gnu++17 -o CMakeFiles/cmTC_4eba7.dir/CheckFunctionExists.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_4eba7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eba7.dir/link.txt --verbose=1
+/usr/bin/g++  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_4eba7.dir/CheckFunctionExists.cxx.o -o cmTC_4eba7 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_90fe8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_90fe8.dir/build.make CMakeFiles/cmTC_90fe8.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_90fe8.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++   -DCHECK_FUNCTION_EXISTS=shmat -std=gnu++17 -o CMakeFiles/cmTC_90fe8.dir/CheckFunctionExists.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_90fe8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90fe8.dir/link.txt --verbose=1
+/usr/bin/g++  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_90fe8.dir/CheckFunctionExists.cxx.o -o cmTC_90fe8 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bccf0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bccf0.dir/build.make CMakeFiles/cmTC_bccf0.dir/build
+gmake[1]: Entering directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bccf0.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=gnu++17 -o CMakeFiles/cmTC_bccf0.dir/CheckFunctionExists.cxx.o -c /home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_bccf0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bccf0.dir/link.txt --verbose=1
+/usr/bin/g++  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_bccf0.dir/CheckFunctionExists.cxx.o -o cmTC_bccf0  -lICE 
+gmake[1]: Leaving directory '/home/maddy/iris_test_tool/src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp'
+
+
+
