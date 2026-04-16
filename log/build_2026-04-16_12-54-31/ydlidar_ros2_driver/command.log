@@ -1,0 +1,2 @@
+Invoking command in '/home/maddy/iris_test_tool/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maddy/iris_test_tool/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/ydlidar_ros2_driver
+Invoked command in '/home/maddy/iris_test_tool/build/ydlidar_ros2_driver' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maddy/iris_test_tool/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/ydlidar_ros2_driver
