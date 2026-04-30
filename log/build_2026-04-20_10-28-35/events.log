@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000528] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict()}
+[0.000633] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.014555] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.016628] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.018459] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('USER', 'maddy'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maddy'), ('OLDPWD', '/home/maddy'), ('LESS', '-R'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/maddy/iris_test_tool/install'), ('LOGNAME', 'maddy'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/346_interop'), ('NAME', 'RMCCORPDE-DT024'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/maddy/iris_test_tool/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('P9K_SSH', '0'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/0'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/maddy/iris_test_tool/install/ydlidar_sdk:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble')]), 'shell': False}
+[0.098132] (-) TimerEvent: {}
+[0.113882] (test_tool) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[0.114393] (test_tool) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[0.120198] (test_tool) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool\x1b[0m\n'}
+[0.149034] (test_tool) StdoutLine: {'line': b'[ 21%] Built target dummy_test_1_autogen\n'}
+[0.152862] (test_tool) StdoutLine: {'line': b'[ 21%] Built target dummy_test_autogen\n'}
+[0.174005] (test_tool) StdoutLine: {'line': b'[ 21%] Built target test_tool_autogen\n'}
+[0.198334] (-) TimerEvent: {}
+[0.201168] (test_tool) StdoutLine: {'line': b'[ 42%] Built target dummy_test_1\n'}
+[0.204925] (test_tool) StdoutLine: {'line': b'[ 64%] Built target dummy_test\n'}
+[0.206967] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool\x1b[0m\n'}
+[0.256814] (test_tool) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o\x1b[0m\n'}
+[0.298573] (-) TimerEvent: {}
+[0.399425] (-) TimerEvent: {}
+[0.500014] (-) TimerEvent: {}
+[0.600582] (-) TimerEvent: {}
+[0.701155] (-) TimerEvent: {}
+[0.801791] (-) TimerEvent: {}
+[0.902330] (-) TimerEvent: {}
+[1.002872] (-) TimerEvent: {}
+[1.103423] (-) TimerEvent: {}
+[1.204012] (-) TimerEvent: {}
+[1.304534] (-) TimerEvent: {}
+[1.405025] (-) TimerEvent: {}
+[1.505500] (-) TimerEvent: {}
+[1.606018] (-) TimerEvent: {}
+[1.706508] (-) TimerEvent: {}
+[1.806973] (-) TimerEvent: {}
+[1.907457] (-) TimerEvent: {}
+[2.008052] (-) TimerEvent: {}
+[2.108496] (-) TimerEvent: {}
+[2.208971] (-) TimerEvent: {}
+[2.309516] (-) TimerEvent: {}
+[2.410136] (-) TimerEvent: {}
+[2.510624] (-) TimerEvent: {}
+[2.611110] (-) TimerEvent: {}
+[2.711647] (-) TimerEvent: {}
+[2.812193] (-) TimerEvent: {}
+[2.912851] (-) TimerEvent: {}
+[3.013406] (-) TimerEvent: {}
+[3.113992] (-) TimerEvent: {}
+[3.214565] (-) TimerEvent: {}
+[3.315085] (-) TimerEvent: {}
+[3.415627] (-) TimerEvent: {}
+[3.516248] (-) TimerEvent: {}
+[3.616813] (-) TimerEvent: {}
+[3.717322] (-) TimerEvent: {}
+[3.817837] (-) TimerEvent: {}
+[3.918321] (-) TimerEvent: {}
+[4.018848] (-) TimerEvent: {}
+[4.119381] (-) TimerEvent: {}
+[4.219955] (-) TimerEvent: {}
+[4.320533] (-) TimerEvent: {}
+[4.421074] (-) TimerEvent: {}
+[4.521599] (-) TimerEvent: {}
+[4.622101] (-) TimerEvent: {}
+[4.722655] (-) TimerEvent: {}
+[4.823141] (-) TimerEvent: {}
+[4.923639] (-) TimerEvent: {}
+[5.024185] (-) TimerEvent: {}
+[5.124699] (-) TimerEvent: {}
+[5.225202] (-) TimerEvent: {}
+[5.325708] (-) TimerEvent: {}
+[5.426203] (-) TimerEvent: {}
+[5.526677] (-) TimerEvent: {}
+[5.627165] (-) TimerEvent: {}
+[5.727692] (-) TimerEvent: {}
+[5.828336] (-) TimerEvent: {}
+[5.928850] (-) TimerEvent: {}
+[6.029343] (-) TimerEvent: {}
+[6.129833] (-) TimerEvent: {}
+[6.230317] (-) TimerEvent: {}
+[6.330825] (-) TimerEvent: {}
+[6.431326] (-) TimerEvent: {}
+[6.531833] (-) TimerEvent: {}
+[6.632423] (-) TimerEvent: {}
+[6.732928] (-) TimerEvent: {}
+[6.833446] (-) TimerEvent: {}
+[6.933973] (-) TimerEvent: {}
+[7.034513] (-) TimerEvent: {}
+[7.135061] (-) TimerEvent: {}
+[7.235570] (-) TimerEvent: {}
+[7.336137] (-) TimerEvent: {}
+[7.436642] (-) TimerEvent: {}
+[7.537148] (-) TimerEvent: {}
+[7.637684] (-) TimerEvent: {}
+[7.738199] (-) TimerEvent: {}
+[7.838716] (-) TimerEvent: {}
+[7.939223] (-) TimerEvent: {}
+[8.039713] (-) TimerEvent: {}
+[8.140354] (-) TimerEvent: {}
+[8.240906] (-) TimerEvent: {}
+[8.341424] (-) TimerEvent: {}
+[8.441949] (-) TimerEvent: {}
+[8.542457] (-) TimerEvent: {}
+[8.642967] (-) TimerEvent: {}
+[8.743493] (-) TimerEvent: {}
+[8.844012] (-) TimerEvent: {}
+[8.944503] (-) TimerEvent: {}
+[8.965074] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[8.965381] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[8.965487] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:40\x1b[m\x1b[K,\n'}
+[8.965617] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[8.965717] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[8.965814] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[8.965909] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:142\x1b[m\x1b[K,\n'}
+[8.966005] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:43\x1b[m\x1b[K,\n'}
+[8.966100] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43\x1b[m\x1b[K,\n'}
+[8.966195] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:43\x1b[m\x1b[K,\n'}
+[8.966290] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[8.966384] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[8.966480] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[8.966574] (test_tool) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = rviz_common::ros_integration::RosNodeAbstraction; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = rviz_common::ros_integration::RosNodeAbstraction]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.966675] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = rviz_common::ros_integration::RosNodeAbstraction; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = rviz_common::ros_integration::RosNodeAbstraction; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<rviz_common::ros_integration::RosNodeAbstraction>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.966775] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = rviz_common::ros_integration::RosNodeAbstraction; _Alloc = std::allocator<rviz_common::ros_integration::RosNodeAbstraction>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.966886] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = rviz_common::ros_integration::RosNodeAbstraction; _Alloc = std::allocator<rviz_common::ros_integration::RosNodeAbstraction>; _Args = {std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.967004] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<rviz_common::ros_integration::RosNodeAbstraction>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = rviz_common::ros_integration::RosNodeAbstraction; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.967110] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<rviz_common::ros_integration::RosNodeAbstraction>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = rviz_common::ros_integration::RosNodeAbstraction]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.967217] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = rviz_common::ros_integration::RosNodeAbstraction; _Alloc = std::allocator<rviz_common::ros_integration::RosNodeAbstraction>; _Args = {std::shared_ptr<rclcpp::Node>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.967326] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = rviz_common::ros_integration::RosNodeAbstraction; _Args = {std::shared_ptr<rclcpp::Node>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.967434] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:211:75:\x1b[m\x1b[K   required from here\n'}
+[8.967532] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krviz_common::ros_integration::RosNodeAbstraction::RosNodeAbstraction(std::shared_ptr<rclcpp::Node>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.967631] (test_tool) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[8.967777] (test_tool) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.967899] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/transformation/frame_transformer.hpp:46\x1b[m\x1b[K,\n'}
+[8.968004] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/frame_manager_iface.hpp:62\x1b[m\x1b[K,\n'}
+[8.968102] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/display_context.hpp:42\x1b[m\x1b[K,\n'}
+[8.968199] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:44\x1b[m\x1b[K,\n'}
+[8.968297] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/qt_ros.h:8\x1b[m\x1b[K,\n'}
+[8.968395] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:10\x1b[m\x1b[K,\n'}
+[8.968522] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[8.968623] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp:64:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krviz_common::ros_integration::RosNodeAbstraction::RosNodeAbstraction(const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.968724] (test_tool) StderrLine: {'line': b'   64 |   explicit \x1b[01;36m\x1b[KRosNodeAbstraction\x1b[m\x1b[K(const std::string & node_name);\n'}
+[8.968823] (test_tool) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.968930] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp:64:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst string&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[8.969029] (test_tool) StderrLine: {'line': b'   64 |   explicit RosNodeAbstraction(\x1b[01;36m\x1b[Kconst std::string & node_name\x1b[m\x1b[K);\n'}
+[8.969124] (test_tool) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.969222] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krviz_common::ros_integration::RosNodeAbstraction::RosNodeAbstraction(const rviz_common::ros_integration::RosNodeAbstraction&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.969320] (test_tool) StderrLine: {'line': b'   49 | class \x1b[01;36m\x1b[KRosNodeAbstraction\x1b[m\x1b[K : public RosNodeAbstractionIface\n'}
+[8.969415] (test_tool) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.969510] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rviz_common::ros_integration::RosNodeAbstraction&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.969624] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krviz_common::ros_integration::RosNodeAbstraction::RosNodeAbstraction(rviz_common::ros_integration::RosNodeAbstraction&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.969723] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krviz_common::ros_integration::RosNodeAbstraction&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.044716] (-) TimerEvent: {}
+[9.145236] (-) TimerEvent: {}
+[9.245734] (-) TimerEvent: {}
+[9.346256] (-) TimerEvent: {}
+[9.446759] (-) TimerEvent: {}
+[9.468345] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1\n'}
+[9.468764] (test_tool) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2\n'}
+[9.469068] (test_tool) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.472415] (test_tool) CommandEnded: {'returncode': 2}
+[9.487990] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 2}
+[9.498972] (-) EventReactorShutdown: {}

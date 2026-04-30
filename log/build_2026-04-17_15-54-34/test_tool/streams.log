@@ -1,0 +1,70 @@
+[0.020s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.102s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.102s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.102s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.133s] [ 21%] Built target dummy_test_1_autogen
+[0.136s] [ 21%] Built target dummy_test_autogen
+[0.152s] [ 21%] Built target test_tool_autogen
+[0.171s] [ 42%] Built target dummy_test_1
+[0.176s] [ 64%] Built target dummy_test
+[0.177s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.218s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[7.181s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[7.181s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:285:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbtn_interact[m[K’ is not captured
+[7.181s]   285 |     connect([01;31m[Kbtn_interact[m[K, &QPushButton::clicked, this, [=]() {
+[7.182s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[7.182s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:40:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.182s]   256 |     QTimer::singleShot(300, this, [this[01;36m[K][m[K() {
+[7.182s]       |                                        [01;36m[K^[m[K
+[7.182s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:202:18:[m[K [01;36m[Knote: [m[K‘[01m[KQPushButton* btn_interact[m[K’ declared here
+[7.182s]   202 |     QPushButton *[01;36m[Kbtn_interact[m[K = new QPushButton("Interact");
+[7.182s]       |                  [01;36m[K^~~~~~~~~~~~[m[K
+[7.183s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:289:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbtn_move[m[K’ is not captured
+[7.183s]   289 |     connect([01;31m[Kbtn_move[m[K, &QPushButton::clicked, this, [=]() {
+[7.183s]       |             [01;31m[K^~~~~~~~[m[K
+[7.183s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:40:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.183s]   256 |     QTimer::singleShot(300, this, [this[01;36m[K][m[K() {
+[7.183s]       |                                        [01;36m[K^[m[K
+[7.183s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:203:18:[m[K [01;36m[Knote: [m[K‘[01m[KQPushButton* btn_move[m[K’ declared here
+[7.183s]   203 |     QPushButton *[01;36m[Kbtn_move[m[K     = new QPushButton("Move");
+[7.183s]       |                  [01;36m[K^~~~~~~~[m[K
+[7.184s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:293:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbtn_select[m[K’ is not captured
+[7.184s]   293 |     connect([01;31m[Kbtn_select[m[K, &QPushButton::clicked, this, [=]() {
+[7.184s]       |             [01;31m[K^~~~~~~~~~[m[K
+[7.184s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:40:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.184s]   256 |     QTimer::singleShot(300, this, [this[01;36m[K][m[K() {
+[7.184s]       |                                        [01;36m[K^[m[K
+[7.184s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:204:18:[m[K [01;36m[Knote: [m[K‘[01m[KQPushButton* btn_select[m[K’ declared here
+[7.184s]   204 |     QPushButton *[01;36m[Kbtn_select[m[K   = new QPushButton("Select");
+[7.184s]       |                  [01;36m[K^~~~~~~~~~[m[K
+[7.184s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:297:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbtn_measure[m[K’ is not captured
+[7.185s]   297 |     connect([01;31m[Kbtn_measure[m[K, &QPushButton::clicked, this, [=]() {
+[7.185s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[7.185s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:40:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.185s]   256 |     QTimer::singleShot(300, this, [this[01;36m[K][m[K() {
+[7.185s]       |                                        [01;36m[K^[m[K
+[7.185s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:205:18:[m[K [01;36m[Knote: [m[K‘[01m[KQPushButton* btn_measure[m[K’ declared here
+[7.185s]   205 |     QPushButton *[01;36m[Kbtn_measure[m[K  = new QPushButton("Measure");
+[7.185s]       |                  [01;36m[K^~~~~~~~~~~[m[K
+[7.185s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:301:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbtn_pose[m[K’ is not captured
+[7.185s]   301 |     connect([01;31m[Kbtn_pose[m[K, &QPushButton::clicked, this, [=]() {
+[7.186s]       |             [01;31m[K^~~~~~~~[m[K
+[7.186s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:40:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.186s]   256 |     QTimer::singleShot(300, this, [this[01;36m[K][m[K() {
+[7.186s]       |                                        [01;36m[K^[m[K
+[7.186s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:206:18:[m[K [01;36m[Knote: [m[K‘[01m[KQPushButton* btn_pose[m[K’ declared here
+[7.186s]   206 |     QPushButton *[01;36m[Kbtn_pose[m[K     = new QPushButton("2D Pose");
+[7.186s]       |                  [01;36m[K^~~~~~~~[m[K
+[7.186s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:305:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbtn_goal[m[K’ is not captured
+[7.186s]   305 |     connect([01;31m[Kbtn_goal[m[K, &QPushButton::clicked, this, [=]() {
+[7.186s]       |             [01;31m[K^~~~~~~~[m[K
+[7.187s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:40:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.187s]   256 |     QTimer::singleShot(300, this, [this[01;36m[K][m[K() {
+[7.187s]       |                                        [01;36m[K^[m[K
+[7.187s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:207:18:[m[K [01;36m[Knote: [m[K‘[01m[KQPushButton* btn_goal[m[K’ declared here
+[7.187s]   207 |     QPushButton *[01;36m[Kbtn_goal[m[K     = new QPushButton("Goal");
+[7.187s]       |                  [01;36m[K^~~~~~~~[m[K
+[9.182s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[9.182s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[9.182s] gmake: *** [Makefile:146: all] Error 2
+[9.185s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

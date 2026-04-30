@@ -60,16 +60,24 @@ void MainWindow::pages(int row)
     }
     else if (row == 2) {
         ui->stackedWidget->setCurrentIndex(row);
-        if (!rviz_initialized) {
-            initRViz();
-            rviz_initialized = true;
+        if (!rviz_initialized_mapping) {
+            initRViz_mapping();
+            rviz_initialized_mapping = true;
         }
     }
     else if (row == 3) {
         ui->stackedWidget->setCurrentIndex(row);
+        if (!rviz_initialized_localization) {
+            initRViz_localization();
+            rviz_initialized_localization = true;
+        }
     }
     else if (row == 4) {
         ui->stackedWidget->setCurrentIndex(row);
+        if (!rviz_initialized_navigation) {
+            initRViz_navigation();
+            rviz_initialized_navigation = true;
+        }
     }
 }
 
@@ -177,11 +185,35 @@ void MainWindow::onLogReceived(const QString &msg,const QString &name,int level)
 }
 
 
-void MainWindow::initRViz()
+void MainWindow::initRViz_mapping()
 {
-    render_panel = new rviz_common::RenderPanel();
     QVBoxLayout *layout = new QVBoxLayout(ui->widget_2);
     ui->widget_2->setLayout(layout);
+
+    QToolBar *toolbar = new QToolBar(this);
+
+    toolbar->setMovable(false);
+    toolbar->setFloatable(false);
+
+    toolbar->setIconSize(QSize(24,24));
+
+    // Optional appearance
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+
+    layout->addWidget(toolbar); 
+    QAction *Start_Mapping = new QAction("Start Mapping", this);
+    QAction *Stop_Mapping = new QAction("Stop Mapping", this);
+    QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+    QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+    QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+    QAction *Safty_Points = new QAction("Safety Points", this); 
+
+    toolbar->addAction(Cleaning_Points);
+    toolbar->addAction(Goal_Pose);
+    toolbar->addAction(Pose_Estimate);
+    toolbar->addAction(Safty_Points);
+
+    render_panel = new rviz_common::RenderPanel();
     layout->addWidget(render_panel);
 
     this->winId();
@@ -191,20 +223,22 @@ void MainWindow::initRViz()
     render_panel->getRenderWindow()->initialize();
     QApplication::processEvents();
 
-    auto ros_node_abs =
+    auto ros_node_mapping =
         std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
-            "rviz_internal_node"
+            "rviz_internal_mappingnode"
         );
+    std::weak_ptr<rviz_common::ros_integration::RosNodeAbstraction> ros_weak = ros_node_mapping;
     auto clock = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
 
     visualizationManager_ = new rviz_common::VisualizationManager(
         render_panel,
-        ros_node_abs,
+        ros_weak,
         nullptr,
         clock
     );
 
     visualizationManager_->initialize();
+    auto *tool_manager = visualizationManager_->getToolManager();
     render_panel->initialize(visualizationManager_);
 
     // ✅ Set Orbit camera as default view controller
@@ -213,13 +247,39 @@ void MainWindow::initRViz()
     );
 
     //Activate the Move Camera tool so mouse drag rotates/pans
-    auto *tool_manager = visualizationManager_->getToolManager();
     tool_manager->addTool("rviz_default_plugins/MoveCamera");
-    tool_manager->setCurrentTool(
-        tool_manager->getTool(
-            tool_manager->numTools() - 1   // the one we just added
-        )
-    );
+    tool_manager->setCurrentTool(tool_manager->getTool( tool_manager->numTools() - 1));// the one we just added
+
+    //Tools plugins that need to be initiated first if it not it may crash and become null pointer  
+    cleaning_points_plugins = tool_manager->addTool(
+                "rviz_default_plugins/PublishPoint");
+    goal_pose_plugins = tool_manager->addTool(
+                "rviz_default_plugins/SetGoal");
+    pose_estimate_plugins = tool_manager->addTool(
+                "rviz_default_plugins/SetInitialPose");
+
+    connect(Cleaning_Points, &QAction::triggered, this, [=]() 
+    {
+        if (cleaning_points_plugins) {
+        tool_manager->setCurrentTool(cleaning_points_plugins);
+        }
+    });
+
+    connect(Goal_Pose, &QAction::triggered,
+        this, [=]()
+    {
+        if(goal_pose_plugins){
+            tool_manager->setCurrentTool(goal_pose_plugins);
+        }      
+    });
+
+    connect(Pose_Estimate, &QAction::triggered,
+        this, [=]()
+    {
+        if(goal_pose_plugins){
+            tool_manager->setCurrentTool(pose_estimate_plugins);
+        }
+    });
 
     visualizationManager_->startUpdate();
     setupDisplays();
@@ -243,4 +303,203 @@ void MainWindow::setupDisplays()
         "rviz_default_plugins/Map", "Map", true);
     if (map)
         map->subProp("Topic")->setValue("/map");
+}
+
+
+void MainWindow::initRViz_navigation()
+{
+    QVBoxLayout *layout = new QVBoxLayout(ui->widget_3);
+    ui->widget_2->setLayout(layout);
+
+    QToolBar *toolbar = new QToolBar(this);
+
+    toolbar->setMovable(false);
+    toolbar->setFloatable(false);
+
+    toolbar->setIconSize(QSize(24,24));
+
+    // Optional appearance
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+
+    layout->addWidget(toolbar); 
+    QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+    QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+    QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+    QAction *Safty_Points = new QAction("Safety Points", this); 
+
+    toolbar->addAction(Cleaning_Points);
+    toolbar->addAction(Goal_Pose);
+    toolbar->addAction(Pose_Estimate);
+    toolbar->addAction(Safty_Points);
+
+    render_panel = new rviz_common::RenderPanel();
+    layout->addWidget(render_panel);
+
+    this->winId();
+    render_panel->winId();
+    QApplication::processEvents();
+
+    render_panel->getRenderWindow()->initialize();
+    QApplication::processEvents();
+
+    auto ros_node_navigation =
+        std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
+            "rviz_internal_navigationnode"
+        );
+    std::weak_ptr<rviz_common::ros_integration::RosNodeAbstraction> ros_weak = ros_node_navigation;
+    auto clock = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
+
+    visualizationManager_ = new rviz_common::VisualizationManager(
+        render_panel,
+        ros_weak,
+        nullptr,
+        clock
+    );
+
+    visualizationManager_->initialize();
+    auto *tool_manager = visualizationManager_->getToolManager();
+    render_panel->initialize(visualizationManager_);
+
+    // ✅ Set Orbit camera as default view controller
+    visualizationManager_->getViewManager()->setCurrentViewControllerType(
+        "rviz_default_plugins/Orbit"
+    );
+
+    //Activate the Move Camera tool so mouse drag rotates/pans
+    tool_manager->addTool("rviz_default_plugins/MoveCamera");
+    tool_manager->setCurrentTool(tool_manager->getTool( tool_manager->numTools() - 1));// the one we just added
+
+    //Tools plugins that need to be initiated first if it not it may crash and become null pointer  
+    cleaning_points_plugins = tool_manager->addTool(
+                "rviz_default_plugins/PublishPoint");
+    goal_pose_plugins = tool_manager->addTool(
+                "rviz_default_plugins/SetGoal");
+    pose_estimate_plugins = tool_manager->addTool(
+                "rviz_default_plugins/SetInitialPose");
+
+    connect(Cleaning_Points, &QAction::triggered, this, [=]() 
+    {
+        if (cleaning_points_plugins) {
+        tool_manager->setCurrentTool(cleaning_points_plugins);
+        }
+    });
+
+    connect(Goal_Pose, &QAction::triggered,
+        this, [=]()
+    {
+        if(goal_pose_plugins){
+            tool_manager->setCurrentTool(goal_pose_plugins);
+        }      
+    });
+
+    connect(Pose_Estimate, &QAction::triggered,
+        this, [=]()
+    {
+        if(goal_pose_plugins){
+            tool_manager->setCurrentTool(pose_estimate_plugins);
+        }
+    });
+
+    visualizationManager_->startUpdate();
+    setupDisplays();
+
+}
+
+void MainWindow::initRViz_localization()
+{
+    QVBoxLayout *layout = new QVBoxLayout(ui->widget_4);
+    ui->widget_2->setLayout(layout);
+
+    QToolBar *toolbar = new QToolBar(this);
+
+    toolbar->setMovable(false);
+    toolbar->setFloatable(false);
+
+    toolbar->setIconSize(QSize(24,24));
+
+    // Optional appearance
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+
+    layout->addWidget(toolbar); 
+    QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+    QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+    QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+    QAction *Safty_Points = new QAction("Safety Points", this); 
+
+    toolbar->addAction(Cleaning_Points);
+    toolbar->addAction(Goal_Pose);
+    toolbar->addAction(Pose_Estimate);
+    toolbar->addAction(Safty_Points);
+
+    render_panel = new rviz_common::RenderPanel();
+    layout->addWidget(render_panel);
+
+    this->winId();
+    render_panel->winId();
+    QApplication::processEvents();
+
+    render_panel->getRenderWindow()->initialize();
+    QApplication::processEvents();
+
+    auto ros_node_abs =
+        std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
+            "rviz_internal_localizationnode"
+        );
+    std::weak_ptr<rviz_common::ros_integration::RosNodeAbstraction> ros_weak = ros_node_abs;
+    auto clock = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
+
+    visualizationManager_ = new rviz_common::VisualizationManager(
+        render_panel,
+        ros_weak,
+        nullptr,
+        clock
+    );
+
+    visualizationManager_->initialize();
+    auto *tool_manager = visualizationManager_->getToolManager();
+    render_panel->initialize(visualizationManager_);
+
+    // ✅ Set Orbit camera as default view controller
+    visualizationManager_->getViewManager()->setCurrentViewControllerType(
+        "rviz_default_plugins/Orbit"
+    );
+
+    //Activate the Move Camera tool so mouse drag rotates/pans
+    tool_manager->addTool("rviz_default_plugins/MoveCamera");
+    tool_manager->setCurrentTool(tool_manager->getTool( tool_manager->numTools() - 1));// the one we just added
+
+    //Tools plugins that need to be initiated first if it not it may crash and become null pointer  
+    cleaning_points_plugins = tool_manager->addTool(
+                "rviz_default_plugins/PublishPoint");
+    goal_pose_plugins = tool_manager->addTool(
+                "rviz_default_plugins/SetGoal");
+    pose_estimate_plugins = tool_manager->addTool(
+                "rviz_default_plugins/SetInitialPose");
+
+    connect(Cleaning_Points, &QAction::triggered, this, [=]() 
+    {
+        if (cleaning_points_plugins) {
+        tool_manager->setCurrentTool(cleaning_points_plugins);
+        }
+    });
+
+    connect(Goal_Pose, &QAction::triggered,
+        this, [=]()
+    {
+        if(goal_pose_plugins){
+            tool_manager->setCurrentTool(goal_pose_plugins);
+        }      
+    });
+
+    connect(Pose_Estimate, &QAction::triggered,
+        this, [=]()
+    {
+        if(goal_pose_plugins){
+            tool_manager->setCurrentTool(pose_estimate_plugins);
+        }
+    });
+
+    visualizationManager_->startUpdate();
+    setupDisplays();
+
 }

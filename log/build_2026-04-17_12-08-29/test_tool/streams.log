@@ -1,0 +1,27 @@
+[0.021s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.101s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.106s] [ 21%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.106s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.135s] [ 21%] Built target dummy_test_autogen
+[0.138s] [ 21%] Built target dummy_test_1_autogen
+[0.152s] [ 21%] Built target test_tool_autogen
+[0.181s] [ 42%] Built target dummy_test_1
+[0.181s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.182s] [ 64%] Built target dummy_test
+[0.233s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[7.858s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz()[m[K’:
+[7.858s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:239:47:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KOgre::SceneManager*[m[K’ to ‘[01m[Krviz_common::DisplayContext*[m[K’
+[7.859s]   239 |         [01;31m[KvisualizationManager_->getSceneManager()[m[K,
+[7.859s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.859s]       |                                               [01;31m[K|[m[K
+[7.859s]       |                                               [01;31m[KOgre::SceneManager*[m[K
+[7.859s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/qt_ros.h:7[m[K,
+[7.859s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:10[m[K,
+[7.859s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[7.859s] [01m[K/opt/ros/humble/include/rviz_common/rviz_common/render_panel.hpp:80:36:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rviz_common::RenderPanel::initialize(rviz_common::DisplayContext*, bool)[m[K’
+[7.859s]    80 |   void initialize([01;36m[KDisplayContext * manager[m[K, bool use_main_scene = false);
+[7.859s]       |                   [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[9.494s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[9.494s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[9.495s] gmake: *** [Makefile:146: all] Error 2
+[9.498s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

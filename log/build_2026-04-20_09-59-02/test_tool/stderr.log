@@ -1,0 +1,14 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:191:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass rviz_rendering::RenderWindow[m[K’
+  191 |     render_panel->getRenderWindow()[01;31m[K->[m[Kinitialize();
+      |                                    [01;31m[K^~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/qt_ros.h:7[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rviz_common/rviz_common/render_panel.hpp:51:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass rviz_rendering::RenderWindow[m[K’
+   51 | class [01;36m[KRenderWindow[m[K;
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -10,13 +10,18 @@
 #include "qt_ros.h"
 #include <memory>
 #include <map>
+#include <QToolBar>
 #include <rviz_common/render_panel.hpp>
 #include <rviz_common/visualization_manager.hpp>
+#include <rviz_common/tool_manager.hpp>
 #include <rviz_common/display.hpp>
+#include <rviz_common/display_context.hpp>
 #include <rviz_common/ros_integration/ros_node_abstraction.hpp>
-#include <rviz_common/tool_manager.hpp>        // ← add
-#include <rviz_common/view_manager.hpp>        // ← add
+#include <rviz_common/view_manager.hpp>
 #include <rviz_rendering/render_window.hpp>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; } //Qt puts all generated UI classes inside a namespace called Ui
@@ -41,18 +46,27 @@ private:
     QListWidgetItem *item;
     QTimer *Timer;
     QStringList nodes;
+    QToolBar *toolbar;
 
-    bool rviz_initialized = false;
+    bool rviz_initialized_mapping = false;
+    bool rviz_initialized_localization =false;
+    bool rviz_initialized_navigation =false;
     std::shared_ptr<Qtros> qtros;
     std::set<std::string> clicked_node;
     rviz_common::RenderPanel *render_panel = nullptr;
     rviz_common::VisualizationManager *visualizationManager_ = nullptr;
+    rviz_common::ToolManager *tool_manager = nullptr;
+    rviz_common::Tool *cleaning_points_plugins = nullptr;
+    rviz_common::Tool *goal_pose_plugins = nullptr;
+    rviz_common::Tool *pose_estimate_plugins = nullptr; 
 
     void refreshNodeList();
     void pages(int row);
     void onItemChanged(QListWidgetItem *item);
     void onLogReceived(const QString &msg,const QString &node,int level);
-    void initRViz();
+    void initRViz_mapping();
+    void initRViz_navigation();
+    void initRViz_localization();
     void setupDisplays();
 };
 #endif // MAINWINDOW_H

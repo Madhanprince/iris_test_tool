@@ -1,4 +1,7 @@
 {
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
-    "cmake.sourceDirectory": "/home/maddy/iris_test_tool/src/test_tool"
+    "cmake.sourceDirectory": "/home/maddy/iris_test_tool/src/test_tool",
+    "github.copilot.advanced": {
+    "authType": "github"
+        }
 }

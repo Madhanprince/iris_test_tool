@@ -57,7 +57,11 @@ target_link_libraries(dummy_test_1 Qt5::Widgets)
 ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
 
 
-install(TARGETS test_tool dummy_test dummy_test_1 DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
+install(TARGETS test_tool dummy_test dummy_test_1 
+  DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
+  
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
 
 # Optional testing section used by ROS2 lint tools
 if(BUILD_TESTING)
