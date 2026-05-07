@@ -1,0 +1,27 @@
+[0.021s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.117s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.118s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.120s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.163s] [ 21%] Built target dummy_test_autogen
+[0.176s] [ 21%] Built target dummy_test_1_autogen
+[0.234s] [ 42%] Built target dummy_test
+[0.246s] [ 64%] Built target dummy_test_1
+[1.061s] [ 64%] Built target test_tool_autogen
+[1.123s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[1.125s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[1.127s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[11.157s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_mapping()[m[K’:
+[11.157s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:218:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KStart_Mapping[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[11.157s]   218 |     QAction *[01;35m[KStart_Mapping[m[K = new QAction("Start Mapping", this);
+[11.157s]       |              [01;35m[K^~~~~~~~~~~~~[m[K
+[11.157s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:219:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KStop_Mapping[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[11.157s]   219 |     QAction *[01;35m[KStop_Mapping[m[K = new QAction("Stop Mapping", this);
+[11.158s]       |              [01;35m[K^~~~~~~~~~~~[m[K
+[14.575s] [ 92%] [32m[1mLinking CXX executable test_tool[0m
+[18.401s] /usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::pages(int)':
+[18.401s] /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:78: undefined reference to `MainWindow::initRViz_localization()'
+[18.554s] collect2: error: ld returned 1 exit status
+[18.556s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:289: test_tool] Error 1
+[18.556s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[18.557s] gmake: *** [Makefile:146: all] Error 2
+[18.561s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

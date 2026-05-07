@@ -54,7 +54,9 @@ private:
     std::shared_ptr<Qtros> qtros;
     std::set<std::string> clicked_node;
     rviz_common::RenderPanel *render_panel = nullptr;
+    rviz_common::RenderPanel *render_panel_2 = nullptr;
     rviz_common::VisualizationManager *visualizationManager_ = nullptr;
+    rviz_common::VisualizationManager *visualizationManager_2 = nullptr;
     rviz_common::ToolManager *tool_manager = nullptr;
     rviz_common::Tool *cleaning_points_plugins = nullptr;
     rviz_common::Tool *goal_pose_plugins = nullptr;
@@ -68,5 +70,9 @@ private:
     void initRViz_navigation();
     void initRViz_localization();
     void setupDisplays();
+    void setupDisplays_2();
+
+    // void visual_manager();
+
 };
 #endif // MAINWINDOW_H

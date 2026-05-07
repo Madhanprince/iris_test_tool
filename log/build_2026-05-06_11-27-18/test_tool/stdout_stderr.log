@@ -1,0 +1,25 @@
+[ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 21%] Built target dummy_test_1_autogen
+[ 21%] Built target dummy_test_autogen
+[ 42%] Built target dummy_test_1
+[ 64%] Built target dummy_test
+[ 64%] Built target test_tool_autogen
+[ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_mapping()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:204:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KStart_Mapping[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  204 |     QAction *[01;35m[KStart_Mapping[m[K = new QAction("Start Mapping", this);
+      |              [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:205:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KStop_Mapping[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  205 |     QAction *[01;35m[KStop_Mapping[m[K = new QAction("Stop Mapping", this);
+      |              [01;35m[K^~~~~~~~~~~~[m[K
+[ 92%] [32m[1mLinking CXX executable test_tool[0m
+/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::pages(int)':
+/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:78: undefined reference to `MainWindow::initRViz_navigation()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:289: test_tool] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
