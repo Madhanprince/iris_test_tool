@@ -1,6 +1,0 @@
-Invoking command in '/home/maddy/iris_test_tool/build/ydlidar_sdk': /usr/bin/cmake /home/maddy/iris_test_tool/YDLidar-SDK -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/ydlidar_sdk
-Invoked command in '/home/maddy/iris_test_tool/build/ydlidar_sdk' returned '0': /usr/bin/cmake /home/maddy/iris_test_tool/YDLidar-SDK -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/ydlidar_sdk
-Invoking command in '/home/maddy/iris_test_tool/build/ydlidar_sdk': /usr/bin/cmake --build /home/maddy/iris_test_tool/build/ydlidar_sdk -- -j8 -l8
-Invoked command in '/home/maddy/iris_test_tool/build/ydlidar_sdk' returned '0': /usr/bin/cmake --build /home/maddy/iris_test_tool/build/ydlidar_sdk -- -j8 -l8
-Invoking command in '/home/maddy/iris_test_tool/build/ydlidar_sdk': /usr/bin/cmake --install /home/maddy/iris_test_tool/build/ydlidar_sdk
-Invoked command in '/home/maddy/iris_test_tool/build/ydlidar_sdk' returned '0': /usr/bin/cmake --install /home/maddy/iris_test_tool/build/ydlidar_sdk

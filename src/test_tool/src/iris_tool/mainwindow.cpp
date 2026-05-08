@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->listWidget, &QListWidget::currentRowChanged, // Sidebar → Page Switching
             this, [=](int row){
                 pages(row);
-    });
+            });
     ui->listWidget->setCurrentRow(0); //Default page
 
     qtros = std::make_shared<Qtros>();
@@ -61,11 +61,11 @@ void MainWindow::pages(int row)
     }
 
     else if (row == 2) {
-        // ui->stackedWidget->setCurrentIndex(row);
-        //     if (!rviz_initialized_mapping) {
+        ui->stackedWidget->setCurrentIndex(row);
+            if (!rviz_initialized_mapping) {
                 initRViz_mapping();
-            //     rviz_initialized_mapping = true;
-            // }
+                rviz_initialized_mapping = true;
+            }
     }
     else if (row == 3) {
         ui->stackedWidget->setCurrentIndex(row);
@@ -75,13 +75,13 @@ void MainWindow::pages(int row)
             }
     }
 
-    // // else if (row == 4) {
-    // //     ui->stackedWidget->setCurrentIndex(row);
-    // //     if (!rviz_initialized_navigation) {
-    //         initRViz_localization();
-    // //         rviz_initialized_navigation = true;
-    // //     }
-    // // }
+    else if (row == 4) {
+        ui->stackedWidget->setCurrentIndex(row);
+        if (!rviz_initialized_navigation) {
+            initRViz_localization();
+          rviz_initialized_navigation = true;
+        }
+    }
 }
 
 void MainWindow::refreshNodeList()
@@ -188,8 +188,8 @@ void MainWindow::onLogReceived(const QString &msg,const QString &name,int level)
 void MainWindow::initRViz_mapping()
 
 {
-    QVBoxLayout *layout = new QVBoxLayout(ui->widget_2);
-    ui->widget_2->setLayout(layout);
+    QVBoxLayout *layout = new QVBoxLayout(ui->widget_4);
+    ui->widget_4->setLayout(layout);   // ✅ FIXED
 
     QToolBar *toolbar = new QToolBar(this);
 
@@ -198,29 +198,27 @@ void MainWindow::initRViz_mapping()
     toolbar->setIconSize(QSize(24,24));
     toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
-    layout->addWidget(toolbar); 
+    layout->addWidget(toolbar);
 
-    QAction *Start_Mapping = new QAction("Start Mapping", this);
-    QAction *Stop_Mapping = new QAction("Stop Mapping", this);
     QAction *Cleaning_Points = new QAction("Cleaning Points", this);
     QAction *Goal_Pose = new QAction("2D Goal Pose", this);
     QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
-    QAction *Safty_Points = new QAction("Safety Points", this); 
+    QAction *Safty_Points = new QAction("Safety Points", this);
 
     toolbar->addAction(Cleaning_Points);
     toolbar->addAction(Goal_Pose);
     toolbar->addAction(Pose_Estimate);
     toolbar->addAction(Safty_Points);
 
-    // render_panel = new rviz_common::RenderPanel();
-    // layout->addWidget(render_panel);
+    render_panel = new rviz_common::RenderPanel();
+    layout->addWidget(render_panel);
 
-    // this->winId();
-    // render_panel->winId();
-    // QApplication::processEvents();
+    this->winId();
+    render_panel->winId();
+    QApplication::processEvents();
 
-    // render_panel->getRenderWindow()->initialize(); // Initialize the Ogre window for this panel
-    // QApplication::processEvents();
+    render_panel->getRenderWindow()->initialize(); // Initialize the Ogre window for this panel
+    QApplication::processEvents();
 
     // auto ros_node_mapping =
     //     std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
@@ -237,20 +235,20 @@ void MainWindow::initRViz_mapping()
     // );
 
     // visualizationManager_->initialize();
-    // render_panel->initialize(visualizationManager_2);
-    // auto *tool_manager = visualizationManager_2->getToolManager();
+    render_panel->initialize(visualizationManager_2);
+    auto *tool_manager_1 = visualizationManager_2->getToolManager(); 
 
-    // // ✅ Set Orbit camera as default view controller
-    // visualizationManager_2->getViewManager()->setCurrentViewControllerType(
-    //     "rviz_default_plugins/Orbit"
-    // );
+    // ✅ Set Orbit camera as default view controller
+    visualizationManager_2->getViewManager()->setCurrentViewControllerType(
+        "rviz_default_plugins/Orbit"
+    );
 
-    // //Activate the Move Camera tool so mouse drag rotates/pans
-    // tool_manager->addTool("rviz_default_plugins/MoveCamera");
-    // tool_manager->setCurrentTool(tool_manager->getTool( tool_manager->numTools() - 1));// the one we just added
+    //Activate the Move Camera tool so mouse drag rotates/pans
+    tool_manager_1->addTool("rviz_default_plugins/MoveCamera");
+    tool_manager_1->setCurrentTool(tool_manager_1->getTool( tool_manager_1->numTools() - 1));// the one we just added
 
-    // //Tools plugins that need to be initiated first if it not it may crash and become null pointer  
-    // cleaning_points_plugins = tool_manager->addTool(
+    //Tools plugins that need to be initiated first if it not it may crash and become null pointer  
+    // cleaning_points_plugins = tool_manager_1->addTool(
     //             "rviz_default_plugins/PublishPoint");
     // goal_pose_plugins = tool_manager->addTool(
     //             "rviz_default_plugins/SetGoal");
@@ -327,7 +325,7 @@ void MainWindow::initRViz_navigation()
     toolbar->addAction(Pose_Estimate_1);
     toolbar->addAction(Safty_Points_1);
 
-    // ✅ Correct panel
+    // Correct panel
     render_panel_2 = new rviz_common::RenderPanel();
     layout->addWidget(render_panel_2);
 
@@ -418,4 +416,42 @@ void MainWindow::setupDisplays_2()
         "rviz_default_plugins/Map", "Map", true);
     if (map)
         map->subProp("Topic")->setValue("/map");
+}
+
+void MainWindow::initRViz_localization()
+{
+    QVBoxLayout *layout =
+    qobject_cast<QVBoxLayout*>(ui->widget->layout());
+    if (!layout)
+    {
+        QVBoxLayout* layout = new QVBoxLayout(ui->widget);
+        layout->setContentsMargins(0,0,0,0);
+        layout->setSpacing(0);
+    }
+
+    if (!toolbar)
+    {
+        toolbar = new QToolBar(this);
+
+        toolbar->setMovable(false);
+        toolbar->setFloatable(false);
+        toolbar->setIconSize(QSize(24,24));
+        toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+
+        layout->addWidget(toolbar);
+
+        QAction *Start_Mapping = new QAction("Start Mapping", this);
+        QAction *Stop_Mapping = new QAction("Stop Mapping", this);
+        QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+        QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+        QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+        QAction *Safty_Points = new QAction("Safety Points", this);
+
+        toolbar->addAction(Start_Mapping);
+        toolbar->addAction(Stop_Mapping);
+        toolbar->addAction(Cleaning_Points);
+        toolbar->addAction(Goal_Pose);
+        toolbar->addAction(Pose_Estimate);
+        toolbar->addAction(Safty_Points);
+    }
 }

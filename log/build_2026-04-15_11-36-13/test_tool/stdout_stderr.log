@@ -1,9 +1,0 @@
-[31mCMake Error at CMakeLists.txt:35:
-  Parse error.  Expected "(", got newline with text "
-
-  ".
-
-[0m
--- Configuring incomplete, errors occurred!
-See also "/home/maddy/iris_test_tool/build/test_tool/CMakeFiles/CMakeOutput.log".
-gmake: *** [Makefile:526: cmake_check_build_system] Error 1
