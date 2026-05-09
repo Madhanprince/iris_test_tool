@@ -62,6 +62,9 @@ private:
     rviz_common::Tool *cleaning_points_plugins = nullptr;
     rviz_common::Tool *goal_pose_plugins = nullptr;
     rviz_common::Tool *pose_estimate_plugins = nullptr; 
+    std::weak_ptr<rviz_common::ros_integration::RosNodeAbstraction> ros_weak;
+    rclcpp::Clock::SharedPtr rivz_clock;
+
 
     void refreshNodeList();
     void pages(int row);
@@ -73,7 +76,10 @@ private:
     void setupDisplays();
     void setupDisplays_2();
 
-    // void visual_manager();
+    void visual_manager(
+        rviz_common::RenderPanel * visual_panel, 
+        std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface> ros_weak_ptr, // Added "Iface"
+        rclcpp::Clock::SharedPtr sys_clock); // Simplified Clock type
 
 };
 #endif // MAINWINDOW_H

@@ -1,0 +1,26 @@
+[  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 21%] Built target dummy_test_1_autogen
+[ 21%] Built target dummy_test_autogen
+[ 21%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 42%] Built target dummy_test
+[ 64%] Built target dummy_test_1
+[ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:43[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:43[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::setupDisplays_2()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:411:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid2[m[K’ was not declared in this scope; did you mean ‘[01m[Kgrid[m[K’?
+  411 |     Q_UNUSED([01;31m[Kgrid2[m[K);
+      |              [01;31m[K^~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:409:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgrid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  409 |     auto *[01;35m[Kgrid[m[K = visualizationManager_->createDisplay(
+      |           [01;35m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

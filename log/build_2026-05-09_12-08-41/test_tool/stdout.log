@@ -1,0 +1,5 @@
+[  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[  7%] Built target test_tool_autogen
+[ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 14%] Built target dummy_test_1_autogen
+[ 21%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m

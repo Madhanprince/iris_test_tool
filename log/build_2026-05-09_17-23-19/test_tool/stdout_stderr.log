@@ -1,0 +1,99 @@
+[  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 21%] Built target dummy_test_1_autogen
+[ 21%] Built target dummy_test_autogen
+[ 42%] Built target dummy_test_1
+[ 64%] Built target dummy_test
+[ 64%] Built target test_tool_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:66:46:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a member of ‘[01m[Krclcpp::node_interfaces[m[K’; did you mean ‘[01m[Krclcpp[m[K’?
+   66 |     std::shared_ptr<rclcpp::node_interfaces::[01;31m[Krclcpp[m[K::Clock> rivz_clock ;
+      |                                              [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:8[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:24:11:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp[m[K’ declared here
+   24 | namespace [01;36m[Krclcpp[m[K
+      |           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:66:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |     std::shared_ptr<rclcpp::node_interfaces::rclcpp::Clock[01;31m[K>[m[K rivz_clock ;
+      |                                                           [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:66:46:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a member of ‘[01m[Krclcpp::node_interfaces[m[K’; did you mean ‘[01m[Krclcpp[m[K’?
+   66 |     std::shared_ptr<rclcpp::node_interfaces::[01;31m[Krclcpp[m[K::Clock> rivz_clock ;
+      |                                              [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:8[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:24:11:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp[m[K’ declared here
+   24 | namespace [01;36m[Krclcpp[m[K
+      |           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:66:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |     std::shared_ptr<rclcpp::node_interfaces::rclcpp::Clock[01;31m[K>[m[K rivz_clock ;
+      |                                                           [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:66:46:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a member of ‘[01m[Krclcpp::node_interfaces[m[K’; did you mean ‘[01m[Krclcpp[m[K’?
+   66 |     std::shared_ptr<rclcpp::node_interfaces::[01;31m[Krclcpp[m[K::Clock> rivz_clock ;
+      |                                              [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:8[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:24:11:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp[m[K’ declared here
+   24 | namespace [01;36m[Krclcpp[m[K
+      |           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:66:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |     std::shared_ptr<rclcpp::node_interfaces::rclcpp::Clock[01;31m[K>[m[K rivz_clock ;
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:36:49:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<rclcpp::Clock>[m[K’ to ‘[01m[Kint[m[K’ in assignment
+   36 |     rivz_clock = [01;31m[Kstd::make_shared<rclcpp::Clock>(RCL_ROS_TIME)[m[K;
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+      |                                                 [01;31m[K|[m[K
+      |                                                 [01;31m[Kstd::shared_ptr<rclcpp::Clock>[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_mapping()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:266:44:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Krclcpp::Clock::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Clock>[m[K’}
+  266 |     visual_manager(render_panel, ros_weak, [01;31m[Krivz_clock[m[K);
+      |                                            [01;31m[K^~~~~~~~~~[m[K
+      |                                            [01;31m[K|[m[K
+      |                                            [01;31m[Kint[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:202:30:[m[K [01;36m[Knote: [m[K  initializing argument 3 of ‘[01m[Kvoid MainWindow::visual_manager(rviz_common::RenderPanel*, std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface>, rclcpp::Clock::SharedPtr)[m[K’
+  202 |     [01;36m[Krclcpp::Clock::SharedPtr sys_clock[m[K) // Simplified Clock type
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_navigation()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:388:46:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Krclcpp::Clock::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Clock>[m[K’}
+  388 |     visual_manager(render_panel_2, ros_weak ,[01;31m[Krivz_clock[m[K);
+      |                                              [01;31m[K^~~~~~~~~~[m[K
+      |                                              [01;31m[K|[m[K
+      |                                              [01;31m[Kint[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:202:30:[m[K [01;36m[Knote: [m[K  initializing argument 3 of ‘[01m[Kvoid MainWindow::visual_manager(rviz_common::RenderPanel*, std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface>, rclcpp::Clock::SharedPtr)[m[K’
+  202 |     [01;36m[Krclcpp::Clock::SharedPtr sys_clock[m[K) // Simplified Clock type
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,31 @@
+[0.032s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.155s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.155s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.155s] [ 21%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.196s] [ 21%] Built target dummy_test_1_autogen
+[0.197s] [ 21%] Built target dummy_test_autogen
+[0.264s] [ 42%] Built target dummy_test
+[0.273s] [ 64%] Built target dummy_test_1
+[1.140s] [ 64%] Built target test_tool_autogen
+[1.172s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[1.252s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[1.256s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[1.257s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[2.716s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:241:5:[m[K [01;31m[Kerror: [m[Kextended character ✅ is not valid in an identifier
+[2.716s]   241 |     [01;31m[K✅[m[K Set Orbit camera as default view controller
+[2.716s]       |     [01;31m[K^[m[K
+[16.621s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_mapping()[m[K’:
+[16.622s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:241:5:[m[K [01;31m[Kerror: [m[K‘[01m[K✅[m[K’ was not declared in this scope
+[16.622s]   241 |     [01;31m[K✅[m[K Set Orbit camera as default view controller
+[16.623s]       |     [01;31m[K^~[m[K
+[16.643s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:246:5:[m[K [01;31m[Kerror: [m[K‘[01m[KActivate[m[K’ was not declared in this scope
+[16.643s]   246 |     [01;31m[KActivate[m[K the Move Camera tool so mouse drag rotates/pans
+[16.643s]       |     [01;31m[K^~~~~~~~[m[K
+[16.653s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:250:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTools[m[K’ was not declared in this scope
+[16.653s]   250 |     [01;31m[KTools[m[K plugins that need to be initiated first if it not it may crash and become null pointer
+[16.654s]       |     [01;31m[K^~~~~[m[K
+[20.693s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[20.693s] gmake[2]: *** Waiting for unfinished jobs....
+[22.229s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[22.230s] gmake: *** [Makefile:146: all] Error 2
+[22.240s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

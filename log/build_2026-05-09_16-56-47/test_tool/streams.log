@@ -1,0 +1,26 @@
+[0.020s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.107s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.108s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.112s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.146s] [ 21%] Built target dummy_test_autogen
+[0.151s] [ 21%] Built target dummy_test_1_autogen
+[0.156s] [ 21%] Built target test_tool_autogen
+[0.182s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.209s] [ 42%] Built target dummy_test
+[0.209s] [ 64%] Built target dummy_test_1
+[0.240s] gmake[2]: Warning: File '/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp' has modification time 1.8 s in the future
+[0.257s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[8.643s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:199:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MainWindow::visual_manager(rviz_common::RenderPanel*, std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface>, rclcpp::Clock::SharedPtr)[m[K’
+[8.644s]   199 | void [01;31m[KMainWindow[m[K::visual_manager(
+[8.644s]       |      [01;31m[K^~~~~~~~~~[m[K
+[8.644s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[8.644s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:76:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid MainWindow::visual_manager()[m[K’
+[8.644s]    76 |     void [01;36m[Kvisual_manager[m[K();
+[8.644s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[8.644s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:36:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MainWindow[m[K’ defined here
+[8.644s]    36 | class [01;36m[KMainWindow[m[K : public QMainWindow
+[8.645s]       |       [01;36m[K^~~~~~~~~~[m[K
+[10.601s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[10.601s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[10.601s] gmake: *** [Makefile:146: all] Error 2
+[10.605s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
