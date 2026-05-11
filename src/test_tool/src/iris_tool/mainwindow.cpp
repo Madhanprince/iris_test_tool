@@ -82,13 +82,13 @@ void MainWindow::pages(int row)
             }
     }
 
-    // else if (row == 4) {
-    //     ui->stackedWidget->setCurrentIndex(row);
-    //     if (!rviz_initialized_localization) {
-    //         initRViz_localization();
-    //       rviz_initialized_localization = true;
-    //     }
-    // }
+    else if (row == 4) {
+        ui->stackedWidget->setCurrentIndex(row);
+        if (!rviz_initialized_localization) {
+            initRViz_localization();
+          rviz_initialized_localization = true;
+        }
+    }
 }
 
 void MainWindow::refreshNodeList()
@@ -192,31 +192,22 @@ void MainWindow::onLogReceived(const QString &msg,const QString &name,int level)
 }
 
 void MainWindow::visual_manager(
-    rviz_common::RenderPanel * visual_panel, 
+    rviz_common::RenderPanel* visual_panel, 
     std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface> ros_weak_ptr, // Added "Iface"
     rclcpp::Clock::SharedPtr sys_clock) // Simplified Clock type
 {
-    if (visualizationManager_) return; 
     visualizationManager_ = new rviz_common::VisualizationManager(
         visual_panel,
         ros_weak_ptr,
         nullptr,
-        sys_clock
+        sys_clock );
     visualizationManager_->initialize();
-     // Default view controller (can be overridden per-page if needed)
-    visualizationManager_->getViewManager()
-        ->setCurrentViewControllerType("rviz_default_plugins/Orbit");
-
-    // Always have MoveCamera available
-    auto* tm = visualizationManager_->getToolManager();
-    tm->addTool("rviz_default_plugins/MoveCamera");
-    tm->setCurrentTool(tm->getTool(tm->numTools() - 1));
+    visual_panel->initialize(visualizationManager_);
 }
 
 void MainWindow::initRViz_mapping()
 {   
-    if (visualizationManager_) return;
-    
+
     QVBoxLayout *layout = new QVBoxLayout(ui->widget_4);
     ui->widget_4->setLayout(layout);   // ✅ FIXED
 
@@ -239,19 +230,17 @@ void MainWindow::initRViz_mapping()
     toolbar->addAction(Pose_Estimate);
     toolbar->addAction(Safty_Points);
 
-    render_panel = new rviz_common::RenderPanel();
-    layout->addWidget(render_panel);
+    render_panel_1 = new rviz_common::RenderPanel();
+    layout->addWidget(render_panel_1);
 
     this->winId();
-    render_panel->winId();
+    render_panel_1->winId();
     QApplication::processEvents();
 
-    render_panel->getRenderWindow()->initialize(); // Initialize the Ogre window for this panel
+    render_panel_1->getRenderWindow()->initialize(); // Initialize the Ogre window for this panel
     QApplication::processEvents();
 
-    visual_manager(render_panel, ros_weak, rivz_clock);
-
-    render_panel->initialize(visualizationManager_);
+    visual_manager(render_panel_1, ros_weak, rivz_clock);
     auto *tool_manager_1 = visualizationManager_->getToolManager(); 
 
     // ✅ Set Orbit camera as default view controller
@@ -274,7 +263,7 @@ void MainWindow::initRViz_mapping()
     connect(Cleaning_Points, &QAction::triggered, this, [=]() 
     {
         if (cleaning_points_plugins) {
-        tool_manager->setCurrentTool(cleaning_points_plugins);
+        tool_manager_1->setCurrentTool(cleaning_points_plugins);
         }
     });
 
@@ -282,7 +271,7 @@ void MainWindow::initRViz_mapping()
         this, [=]()
     {
         if(goal_pose_plugins){
-            tool_manager->setCurrentTool(goal_pose_plugins);
+            tool_manager_1->setCurrentTool(goal_pose_plugins);
         }      
     });
 
@@ -290,7 +279,7 @@ void MainWindow::initRViz_mapping()
         this, [=]()
     {
         if(goal_pose_plugins){
-            tool_manager->setCurrentTool(pose_estimate_plugins);
+            tool_manager_1->setCurrentTool(pose_estimate_plugins);
         }
     });
 
@@ -320,7 +309,6 @@ void MainWindow::setupDisplays()
 
 void MainWindow::initRViz_navigation()
 {
-    if (visualizationManager_2) return;
     QVBoxLayout *layout = new QVBoxLayout(ui->widget_3);
     ui->widget_3->setLayout(layout);   // ✅ FIXED
 
@@ -333,15 +321,15 @@ void MainWindow::initRViz_navigation()
 
     layout->addWidget(toolbar);
 
-    QAction *Cleaning_Points_1 = new QAction("Cleaning Points", this);
-    QAction *Goal_Pose_1 = new QAction("2D Goal Pose", this);
-    QAction *Pose_Estimate_1 = new QAction("2D Pose Estimate", this);
-    QAction *Safty_Points_1 = new QAction("Safety Points", this);
+    QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+    QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+    QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+    QAction *Safty_Points = new QAction("Safety Points", this);
 
-    toolbar->addAction(Cleaning_Points_1);
-    toolbar->addAction(Goal_Pose_1);
-    toolbar->addAction(Pose_Estimate_1);
-    toolbar->addAction(Safty_Points_1);
+    toolbar->addAction(Cleaning_Points);
+    toolbar->addAction(Goal_Pose);
+    toolbar->addAction(Pose_Estimate);
+    toolbar->addAction(Safty_Points);
 
     // Correct panel
     render_panel_2 = new rviz_common::RenderPanel();
@@ -354,9 +342,6 @@ void MainWindow::initRViz_navigation()
     QApplication::processEvents();
 
     visual_manager(render_panel_2, ros_weak ,rivz_clock);
-
-    render_panel_2->initialize(visualizationManager_);
-
     auto *tool_manager_2 = visualizationManager_->getToolManager();
 
     visualizationManager_->getViewManager()->setCurrentViewControllerType(
@@ -379,19 +364,19 @@ void MainWindow::initRViz_navigation()
         tool_manager_2->addTool("rviz_default_plugins/SetInitialPose");
 
     // Connections
-    connect(Cleaning_Points_1, &QAction::triggered, this, [=]()
+    connect(Cleaning_Points, &QAction::triggered, this, [=]()
     {
         if (cleaning_points_plugins)
             tool_manager_2->setCurrentTool(cleaning_points_plugins);
     });
 
-    connect(Goal_Pose_1, &QAction::triggered, this, [=]()
+    connect(Goal_Pose, &QAction::triggered, this, [=]()
     {
         if (goal_pose_plugins)
             tool_manager_2->setCurrentTool(goal_pose_plugins);
     });
 
-    connect(Pose_Estimate_1, &QAction::triggered, this, [=]()
+    connect(Pose_Estimate, &QAction::triggered, this, [=]()
     {
         if (pose_estimate_plugins)   
             tool_manager_2->setCurrentTool(pose_estimate_plugins);
@@ -423,91 +408,82 @@ void MainWindow::setupDisplays_2()
 
 void MainWindow::initRViz_localization()
 {
-    QVBoxLayout *layout =
-    qobject_cast<QVBoxLayout*>(ui->widget->layout());
-    if (!layout)
-    {
-        QVBoxLayout* layout = new QVBoxLayout(ui->widget);
-        layout->setContentsMargins(0,0,0,0);
-        layout->setSpacing(0);
-    }
+    QVBoxLayout *layout = new QVBoxLayout(ui->widget_2);
+    ui->widget_2->setLayout(layout);
+    layout->setContentsMargins(0,0,0,0);
+    layout->setSpacing(0);
 
-    if (!toolbar)
-    {
-        toolbar = new QToolBar(this);
+    toolbar = new QToolBar(this);
 
-        toolbar->setMovable(false);
-        toolbar->setFloatable(false);
-        toolbar->setIconSize(QSize(24,24));
-        toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    toolbar->setMovable(false);
+    toolbar->setFloatable(false);
+    toolbar->setIconSize(QSize(24,24));
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
-        layout->addWidget(toolbar);
+    layout->addWidget(toolbar);
 
-        QAction *Start_Mapping = new QAction("Start Mapping", this);
-        QAction *Stop_Mapping = new QAction("Stop Mapping", this);
-        QAction *Cleaning_Points = new QAction("Cleaning Points", this);
-        QAction *Goal_Pose = new QAction("2D Goal Pose", this);
-        QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
-        QAction *Safty_Points = new QAction("Safety Points", this);
+    QAction *Start_Mapping = new QAction("Start Mapping", this);
+    QAction *Stop_Mapping = new QAction("Stop Mapping", this);
+    QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+    QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+    QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+    QAction *Safty_Points = new QAction("Safety Points", this);
 
-        toolbar->addAction(Start_Mapping);
-        toolbar->addAction(Stop_Mapping);
-        toolbar->addAction(Cleaning_Points);
-        toolbar->addAction(Goal_Pose);
-        toolbar->addAction(Pose_Estimate);
-        toolbar->addAction(Safty_Points);
-    }
-     render_panel_2 = new rviz_common::RenderPanel();
-    layout->addWidget(render_panel_2);
+    toolbar->addAction(Start_Mapping);
+    toolbar->addAction(Stop_Mapping);
+    toolbar->addAction(Cleaning_Points);
+    toolbar->addAction(Goal_Pose);
+    toolbar->addAction(Pose_Estimate);
+    toolbar->addAction(Safty_Points);
 
-    render_panel_2->winId();
+    render_panel_3 = new rviz_common::RenderPanel();
+    layout->addWidget(render_panel_3);
+
+    render_panel_3->winId();
     QApplication::processEvents();
 
-    render_panel_2->getRenderWindow()->initialize();
+    render_panel_3->getRenderWindow()->initialize();
     QApplication::processEvents();
 
-    visual_manager(render_panel_2, ros_weak ,rivz_clock);
-
-    render_panel_2->initialize(visualizationManager_);
-
-    auto *tool_manager_2 = visualizationManager_->getToolManager();
+    visual_manager(render_panel_3, ros_weak ,rivz_clock);
+    auto *tool_manager_3 = visualizationManager_->getToolManager();
 
     visualizationManager_->getViewManager()->setCurrentViewControllerType(
         "rviz_default_plugins/Orbit"
     );
 
-    tool_manager_2->addTool("rviz_default_plugins/MoveCamera"); 
-    tool_manager_2->setCurrentTool(
-        tool_manager_2->getTool(tool_manager_2->numTools() - 1)
+    tool_manager_3->addTool("rviz_default_plugins/MoveCamera"); 
+    tool_manager_3->setCurrentTool(
+            tool_manager_3->getTool(tool_manager_3->numTools() - 1)
     );
 
     // Tools
     cleaning_points_plugins =
-        tool_manager_2->addTool("rviz_default_plugins/PublishPoint");
+        tool_manager_3->addTool("rviz_default_plugins/PublishPoint");
 
     goal_pose_plugins =
-        tool_manager_2->addTool("rviz_default_plugins/SetGoal");
+        tool_manager_3->addTool("rviz_default_plugins/SetGoal");
 
     pose_estimate_plugins =
-        tool_manager_2->addTool("rviz_default_plugins/SetInitialPose");
+        tool_manager_3->addTool("rviz_default_plugins/SetInitialPose");
 
     // Connections
-    connect(Cleaning_Points_1, &QAction::triggered, this, [=]()
+    connect(Cleaning_Points, &QAction::triggered, this, [=]()
     {
         if (cleaning_points_plugins)
-            tool_manager_2->setCurrentTool(cleaning_points_plugins);
+            tool_manager_3->setCurrentTool(cleaning_points_plugins);
     });
 
-    connect(Goal_Pose_1, &QAction::triggered, this, [=]()
+    connect(Goal_Pose, &QAction::triggered, this, [=]()
     {
         if (goal_pose_plugins)
-            tool_manager_2->setCurrentTool(goal_pose_plugins);
+            tool_manager_3->setCurrentTool(goal_pose_plugins);
     });
 
-    connect(Pose_Estimate_1, &QAction::triggered, this, [=]()
+    connect(Pose_Estimate, &QAction::triggered, this, [=]()
     {
         if (pose_estimate_plugins)   
-            tool_manager_2->setCurrentTool(pose_estimate_plugins);
+            tool_manager_3->setCurrentTool(pose_estimate_plugins);
     });
 
     visualizationManager_->startUpdate();  
@@ -515,7 +491,7 @@ void MainWindow::initRViz_localization()
     setupDisplays_3();  
 }
 
-void MainWindow::setupDisplays_2()
+void MainWindow::setupDisplays_3()
 {
     visualizationManager_->setFixedFrame("map");
 

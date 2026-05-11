@@ -53,7 +53,7 @@ private:
     bool rviz_initialized_navigation =false;
     std::shared_ptr<Qtros> qtros;
     std::set<std::string> clicked_node;
-    rviz_common::RenderPanel *render_panel = nullptr;
+    rviz_common::RenderPanel *render_panel_1 = nullptr;
     rviz_common::RenderPanel *render_panel_2 = nullptr;
     rviz_common::RenderPanel *render_panel_3 = nullptr;
     rviz_common::VisualizationManager *visualizationManager_ = nullptr;
@@ -77,6 +77,7 @@ private:
     void initRViz_localization();
     void setupDisplays();
     void setupDisplays_2();
+    void setupDisplays_3();
 
     void visual_manager(
         rviz_common::RenderPanel * visual_panel, 

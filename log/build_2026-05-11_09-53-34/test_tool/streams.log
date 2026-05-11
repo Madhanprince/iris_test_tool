@@ -1,0 +1,80 @@
+[0.024s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.175s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.175s] [ 21%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.175s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.208s] [ 21%] Built target dummy_test_1_autogen
+[0.208s] [ 21%] Built target dummy_test_autogen
+[0.250s] [ 42%] Built target dummy_test_1
+[0.253s] [ 64%] Built target dummy_test
+[0.885s] [ 64%] Built target test_tool_autogen
+[0.917s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.963s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[0.963s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[0.968s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[11.656s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::visual_manager(rviz_common::RenderPanel*, std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface>, rclcpp::Clock::SharedPtr)[m[K’:
+[11.656s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:204:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KvisualizationManager_[m[K’
+[11.656s]   204 |         sys_clock
+[11.656s]       |                  [01;31m[K^[m[K
+[11.656s]       |                  [32m[K)[m[K
+[11.657s]   205 |     [32m[KvisualizationManager_[m[K->initialize();
+[11.657s]       |     [32m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.657s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:200:66:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[11.657s]   200 |     visualizationManager_ = new rviz_common::VisualizationManager[01;36m[K([m[K
+[11.657s]       |                                                                  [01;36m[K^[m[K
+[11.658s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:205:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krviz_common::VisualizationManager::VisualizationManager()[m[K’
+[11.658s]   205 |     visualizationManager_->initialize([01;31m[K)[m[K;
+[11.658s]       |                                       [01;31m[K^[m[K
+[11.658s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/qt_ros.h:8[m[K,
+[11.658s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:10[m[K,
+[11.659s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[11.659s] [01m[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krviz_common::VisualizationManager::VisualizationManager(rviz_common::RenderPanel*, rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr, rviz_common::WindowManagerInterface*, rclcpp::Clock::SharedPtr)[m[K’
+[11.659s]   103 |   explicit [01;36m[KVisualizationManager[m[K(
+[11.659s]       |            [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[11.659s] [01m[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:103:12:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[11.674s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[11.674s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:269:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_1[m[K’?
+[11.675s]   269 |         [01;31m[Ktool_manager[m[K->setCurrentTool(cleaning_points_plugins);
+[11.675s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[11.675s]       |         [32m[Ktool_manager_1[m[K
+[11.684s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[11.684s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:277:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_1[m[K’?
+[11.685s]   277 |             [01;31m[Ktool_manager[m[K->setCurrentTool(goal_pose_plugins);
+[11.685s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[11.685s]       |             [32m[Ktool_manager_1[m[K
+[11.694s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[11.695s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:285:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_1[m[K’?
+[11.695s]   285 |             [01;31m[Ktool_manager[m[K->setCurrentTool(pose_estimate_plugins);
+[11.695s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[11.695s]       |             [32m[Ktool_manager_1[m[K
+[11.706s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_navigation()[m[K’:
+[11.706s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:315:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvisualizationManager_2[m[K’ was not declared in this scope; did you mean ‘[01m[KvisualizationManager_[m[K’?
+[11.706s]   315 |     if ([01;31m[KvisualizationManager_2[m[K) return;
+[11.707s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.707s]       |         [32m[KvisualizationManager_[m[K
+[11.744s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_localization()[m[K’:
+[11.744s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:487:13:[m[K [01;31m[Kerror: [m[K‘[01m[KCleaning_Points_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kcleaning_points_plugins[m[K’?
+[11.744s]   487 |     connect([01;31m[KCleaning_Points_1[m[K, &QAction::triggered, this, [=]()
+[11.745s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[11.745s]       |             [32m[Kcleaning_points_plugins[m[K
+[11.764s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:493:13:[m[K [01;31m[Kerror: [m[K‘[01m[KGoal_Pose_1[m[K’ was not declared in this scope
+[11.764s]   493 |     connect([01;31m[KGoal_Pose_1[m[K, &QAction::triggered, this, [=]()
+[11.764s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.780s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:499:13:[m[K [01;31m[Kerror: [m[K‘[01m[KPose_Estimate_1[m[K’ was not declared in this scope
+[11.780s]   499 |     connect([01;31m[KPose_Estimate_1[m[K, &QAction::triggered, this, [=]()
+[11.780s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.788s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:507:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetupDisplays_3[m[K’ was not declared in this scope; did you mean ‘[01m[KsetupDisplays_2[m[K’?
+[11.788s]   507 |     [01;31m[KsetupDisplays_3[m[K();
+[11.789s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.789s]       |     [32m[KsetupDisplays_2[m[K
+[11.789s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K At global scope:
+[11.789s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:510:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid MainWindow::setupDisplays_2()[m[K’
+[11.790s]   510 | void [01;31m[KMainWindow[m[K::setupDisplays_2()
+[11.790s]       |      [01;31m[K^~~~~~~~~~[m[K
+[11.790s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:397:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid MainWindow::setupDisplays_2()[m[K’ previously defined here
+[11.790s]   397 | void [01;36m[KMainWindow[m[K::setupDisplays_2()
+[11.790s]       |      [01;36m[K^~~~~~~~~~[m[K
+[13.870s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[13.870s] gmake[2]: *** Waiting for unfinished jobs....
+[14.175s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[14.175s] gmake: *** [Makefile:146: all] Error 2
+[14.181s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
