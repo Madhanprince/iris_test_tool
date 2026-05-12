@@ -1,0 +1,66 @@
+[0.019s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.053s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.228s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.453s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.459s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.467s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.481s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.499s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.558s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.560s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.716s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.795s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.832s] -- Found rviz_common: 11.2.26 (/opt/ros/humble/share/rviz_common/cmake)
+[8.963s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[8.967s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[8.969s] -- Found OGRE
+[8.969s] --   static     : OFF
+[8.969s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[8.969s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.970s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[8.970s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[8.970s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[8.970s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.970s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[8.971s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.971s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.971s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[8.971s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[13.898s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[15.761s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[15.900s] -- Found rviz_default_plugins: 11.2.26 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[16.021s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[16.114s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[16.115s] -- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool
+[16.115s] -- Configured cppcheck exclude dirs and/or files: 
+[16.116s] -- Added test 'flake8' to check Python code syntax and style conventions
+[16.117s] -- Added test 'lint_cmake' to check CMake code style
+[16.117s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[16.119s] -- Added test 'uncrustify' to check C / C++ code style
+[16.119s] -- Configured uncrustify additional arguments: 
+[16.120s] -- Added test 'xmllint' to check XML markup files
+[16.121s] -- Configuring done
+[16.191s] -- Generating done
+[16.204s] -- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[16.257s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[16.257s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[16.261s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[16.282s] [ 21%] Built target dummy_test_1_autogen
+[16.287s] [ 21%] Built target dummy_test_autogen
+[16.299s] [35m[1mConsolidate compiler generated dependencies of target dummy_test_1[0m
+[16.306s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[16.327s] [ 42%] Built target dummy_test_1
+[16.339s] [ 64%] Built target dummy_test
+[16.858s] [ 64%] Built target test_tool_autogen
+[16.875s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[16.927s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[16.927s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[17.747s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:12:10:[m[K [01;31m[Kfatal error: [m[KOgreOverlayManager.h: No such file or directory
+[17.747s]    12 | #include [01;31m[K<OgreOverlayManager.h>[m[K
+[17.747s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.747s] compilation terminated.
+[17.754s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[17.754s] gmake[2]: *** Waiting for unfinished jobs....
+[27.351s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[27.351s] gmake: *** [Makefile:146: all] Error 2
+[27.356s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -140,6 +140,8 @@ test_tool: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o
 test_tool: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o
 test_tool: CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o
 test_tool: CMakeFiles/test_tool.dir/build.make
+test_tool: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+test_tool: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
 test_tool: /opt/ros/humble/lib/librviz_common.so
 test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 test_tool: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so

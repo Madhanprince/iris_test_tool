@@ -36,19 +36,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 60,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 48,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 49,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -66,7 +66,7 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 47,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -169,6 +169,11 @@
 					"path" : "/opt/ros/humble/include/sensor_msgs"
 				},
 				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rviz_common"
+				},
+				{
 					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/usr/include/x86_64-linux-gnu/qt5"
@@ -192,11 +197,6 @@
 					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
-				},
-				{
-					"backtrace" : 3,
-					"isSystem" : true,
-					"path" : "/opt/ros/humble/include/rviz_common"
 				},
 				{
 					"backtrace" : 3,
@@ -469,7 +469,17 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:",
+				"fragment" : "-Wl,-rpath,/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/x86_64-linux-gnu:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so",
 				"role" : "libraries"
 			},
 			{
@@ -535,10 +545,12 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 3,
 				"fragment" : "/opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so",
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 3,
 				"fragment" : "/opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so",
 				"role" : "libraries"
 			},

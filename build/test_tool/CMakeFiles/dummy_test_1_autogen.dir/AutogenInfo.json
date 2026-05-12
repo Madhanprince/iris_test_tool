@@ -1556,6 +1556,8 @@
 		"/opt/ros/humble/share/map_msgs/cmake/export_map_msgs__rosidl_generator_pyExport-none.cmake",
 		"/opt/ros/humble/share/map_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake",
 		"/opt/ros/humble/share/map_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake",
+		"/opt/ros/humble/share/rviz_ogre_vendor/cmake/rviz_ogre_vendorConfig-version.cmake",
+		"/opt/ros/humble/share/rviz_ogre_vendor/cmake/rviz_ogre_vendorConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",

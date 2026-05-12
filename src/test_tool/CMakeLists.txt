@@ -26,6 +26,7 @@ find_package(sensor_msgs REQUIRED) # ROS2 message types
 find_package(rviz_common REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
+find_package(rviz_ogre_vendor REQUIRED)
 
 # 2. Force Qt5 to match ROS Humble / RViz
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
@@ -39,14 +40,32 @@ set(PROJECT_SOURCES # List of all project source files
 
     include/test_tool/mainwindow.h
     include/test_tool/qt_ros.h
-
 )
 
 add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source files
 
-target_include_directories(test_tool PUBLIC include/test_tool) # Include header directory
-target_link_libraries(test_tool Qt5::Widgets rviz_common::rviz_common)
-ament_target_dependencies(test_tool rclcpp std_msgs rcl_interfaces sensor_msgs)
+# ✅ FIXED: Added explicit Ogre include paths so the compiler can find OgreOverlayManager.h
+
+target_include_directories(test_tool PUBLIC 
+  "${CMAKE_CURRENT_SOURCE_DIR}/include/test_tool"
+) 
+
+target_link_libraries(test_tool 
+  Qt5::Widgets 
+  rviz_common::rviz_common  
+  rviz_ogre_vendor::OgreMain
+  rviz_ogre_vendor::OgreOverlay
+)
+
+# ✅ FIXED: Appended rviz_common and rviz_ogre_vendor here to ensure target macro properties export completely
+ament_target_dependencies(test_tool 
+  rclcpp 
+  std_msgs 
+  rcl_interfaces 
+  sensor_msgs
+  rviz_common
+  rviz_ogre_vendor
+)
 
 add_executable(dummy_test src/dummy_test.cpp)
 target_link_libraries(dummy_test Qt5::Widgets) 
@@ -55,7 +74,6 @@ ament_target_dependencies(dummy_test rclcpp std_msgs rcl_interfaces sensor_msgs)
 add_executable(dummy_test_1 src/dummy_test_1.cpp)
 target_link_libraries(dummy_test_1 Qt5::Widgets) 
 ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
-
 
 install(TARGETS test_tool dummy_test dummy_test_1 
   DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works

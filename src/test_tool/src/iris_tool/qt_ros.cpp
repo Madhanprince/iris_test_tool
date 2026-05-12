@@ -5,12 +5,6 @@ Qtros::Qtros() : Node("iris_tool") {
     
     Qtros::subscription = this->create_subscription<rcl_interfaces::msg::Log>(
         "/rosout", 10, std::bind(&Qtros::logscallback, this, std::placeholders::_1));
-
-    // auto ros_node_abs =
-    //     std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
-    //         "rviz_node"
-    //     );
-    // auto clock = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
 }
 
 void Qtros::logscallback(const rcl_interfaces::msg::Log::SharedPtr msg) {

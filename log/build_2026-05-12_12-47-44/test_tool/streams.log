@@ -1,0 +1,98 @@
+[0.022s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.168s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.169s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.173s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.224s] [ 21%] Built target dummy_test_1_autogen
+[0.225s] [ 21%] Built target dummy_test_autogen
+[0.248s] [ 21%] Built target test_tool_autogen
+[0.281s] [ 42%] Built target dummy_test_1
+[0.282s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.283s] [ 64%] Built target dummy_test
+[0.330s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o[0m
+[0.330s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[10.333s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[10.334s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:30:12:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMainWindow::connect()[m[K’
+[10.334s]    30 |     [01;31m[Kconnect()[m[K
+[10.334s]       |     [01;31m[K~~~~~~~^~[m[K
+[10.334s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[10.334s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[10.334s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[10.334s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[10.334s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[10.335s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[10.336s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[10.336s]       |                                           [01;36m[K^~~~~~~[m[K
+[10.336s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.336s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:30:12:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[10.337s]    30 |     [01;36m[Kconnect()[m[K
+[10.337s]       |     [01;36m[K~~~~~~~^~[m[K
+[10.337s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[10.337s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[10.337s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[10.338s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[10.338s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[10.338s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[10.338s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[10.339s]       |             [01;36m[K^~~~~~~[m[K
+[10.340s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.340s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:30:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[10.340s]    30 |     [01;36m[Kconnect()[m[K
+[10.340s]       |     [01;36m[K~~~~~~~^~[m[K
+[10.340s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[10.341s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[10.341s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[10.341s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[10.341s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[10.342s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[10.342s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[10.342s]       |             [01;36m[K^~~~~~~[m[K
+[10.342s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.342s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:30:12:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[10.343s]    30 |     [01;36m[Kconnect()[m[K
+[10.343s]       |     [01;36m[K~~~~~~~^~[m[K
+[10.343s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[10.343s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[10.344s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[10.344s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[10.344s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[10.344s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[10.344s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[10.345s]       |             [01;36m[K^~~~~~~[m[K
+[10.345s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.345s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:30:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[10.345s]    30 |     [01;36m[Kconnect()[m[K
+[10.345s]       |     [01;36m[K~~~~~~~^~[m[K
+[10.346s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[10.346s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[10.346s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[10.346s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[10.346s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[10.347s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[10.347s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[10.347s]       |             [01;36m[K^~~~~~~[m[K
+[10.347s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.347s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:30:12:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[10.348s]    30 |     [01;36m[Kconnect()[m[K
+[10.348s]       |     [01;36m[K~~~~~~~^~[m[K
+[10.348s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[10.348s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[10.348s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[10.349s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[10.349s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[10.349s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[10.349s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[10.350s]       |                                    [01;36m[K^~~~~~~[m[K
+[10.350s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[10.350s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[10.350s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[10.350s]       |                                    [01;36m[K^~~~~~~[m[K
+[10.351s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[10.351s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[10.351s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[10.351s]       |                                [01;36m[K^~~~~~~[m[K
+[10.351s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[12.404s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[12.404s] gmake[2]: *** Waiting for unfinished jobs....
+[20.191s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[20.191s] gmake: *** [Makefile:146: all] Error 2
+[20.198s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
