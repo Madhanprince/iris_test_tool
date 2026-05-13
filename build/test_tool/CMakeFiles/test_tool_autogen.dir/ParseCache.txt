@@ -1878,6 +1878,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow

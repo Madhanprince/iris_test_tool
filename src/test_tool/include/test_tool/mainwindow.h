@@ -11,6 +11,7 @@
 #include <memory>
 #include <map>
 #include <QToolBar>
+#include <QAction>
 #include <rviz_common/render_panel.hpp>
 #include <rviz_common/visualization_manager.hpp>
 #include <rviz_common/tool_manager.hpp>
@@ -66,6 +67,10 @@ private:
     std::weak_ptr<rviz_common::ros_integration::RosNodeAbstraction> ros_weak;
     std::shared_ptr<rviz_common::ros_integration::RosNodeAbstraction> ros_node_mapping;
     rclcpp::Clock::SharedPtr rivz_clock;
+    QAction *Cleaning_Points ;
+    QAction *Goal_Pose ;
+    QAction *Pose_Estimate; 
+    QAction *Safty_Points ;
 
 
     void refreshNodeList();

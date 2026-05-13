@@ -22,9 +22,12 @@
                 "/opt/ros/humble/include/rviz_rendering",
                 "/opt/ros/humble/include/rviz_default_plugins",
 
-                // 🔥 OGRE (VERY IMPORTANT — fixes OgreVector3 error)
+                // 🔥 OGRE
                 "/opt/ros/humble/opt/rviz_ogre_vendor/include",
                 "/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE",
+
+                // 🔥 OGRE Overlay
+                "/opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/Overlay",
 
                 // Qt5
                 "/usr/include/x86_64-linux-gnu/qt5",

@@ -1,0 +1,22 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_navigation()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:392:41:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  392 |     void MainWindow::initRViz_navigation[01;31m[K([m[K)
+      |                                         [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:473:33:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  473 | void MainWindow::setupDisplays_2[01;31m[K([m[K)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:492:39:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  492 | void MainWindow::initRViz_localization[01;31m[K([m[K)
+      |                                       [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:577:33:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  577 | void MainWindow::setupDisplays_3[01;31m[K([m[K)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:594:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  594 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:391:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  391 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

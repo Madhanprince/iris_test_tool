@@ -1,0 +1,20 @@
+[0.032s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.209s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.212s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.213s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.250s] [ 21%] Built target dummy_test_autogen
+[0.250s] [ 21%] Built target dummy_test_1_autogen
+[0.256s] [ 21%] Built target test_tool_autogen
+[0.293s] [ 64%] Built target dummy_test_1
+[0.293s] [ 64%] Built target dummy_test
+[0.313s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[10.728s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:632:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid MainWindow::setupDisplays_2()[m[K’
+[10.728s]   632 | void [01;31m[KMainWindow[m[K::setupDisplays_2()
+[10.728s]       |      [01;31m[K^~~~~~~~~~[m[K
+[10.728s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:589:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid MainWindow::setupDisplays_2()[m[K’ previously defined here
+[10.728s]   589 | void [01;36m[KMainWindow[m[K::setupDisplays_2()
+[10.729s]       |      [01;36m[K^~~~~~~~~~[m[K
+[13.278s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[13.278s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[13.279s] gmake: *** [Makefile:146: all] Error 2
+[13.284s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

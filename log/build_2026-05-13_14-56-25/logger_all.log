@@ -1,0 +1,927 @@
+[0.254s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_BUILD_TYPE=Debug']
+[0.254s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Debug'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a66f8217cd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a66f835d060>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a66f835d060>>)
+[18.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[18.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[18.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[18.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[18.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[18.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[18.803s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maddy/iris_test_tool'
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[18.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[18.804s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[18.820s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[18.820s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[18.821s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extensions ['ignore', 'ignore_ament_install']
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'ignore'
+[18.822s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'ignore_ament_install'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extensions ['colcon_pkg']
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'colcon_pkg'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extensions ['colcon_meta']
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'colcon_meta'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extensions ['ros']
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'ros'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extensions ['cmake', 'python']
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'cmake'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'python'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extensions ['python_setup_py']
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(picturees) by extension 'python_setup_py'
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[18.823s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[18.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extensions ['ignore', 'ignore_ament_install']
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'ignore'
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'ignore_ament_install'
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extensions ['colcon_pkg']
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'colcon_pkg'
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extensions ['colcon_meta']
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'colcon_meta'
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extensions ['ros']
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'ros'
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extensions ['cmake', 'python']
+[18.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'cmake'
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'python'
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extensions ['python_setup_py']
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug) by extension 'python_setup_py'
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extensions ['ignore', 'ignore_ament_install']
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'ignore'
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'ignore_ament_install'
+[18.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extensions ['colcon_pkg']
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'colcon_pkg'
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extensions ['colcon_meta']
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'colcon_meta'
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extensions ['ros']
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'ros'
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extensions ['cmake', 'python']
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'cmake'
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'python'
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extensions ['python_setup_py']
+[18.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles) by extension 'python_setup_py'
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extensions ['ignore', 'ignore_ament_install']
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'ignore'
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'ignore_ament_install'
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extensions ['colcon_pkg']
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'colcon_pkg'
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extensions ['colcon_meta']
+[18.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'colcon_meta'
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extensions ['ros']
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'ros'
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extensions ['cmake', 'python']
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'cmake'
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'python'
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extensions ['python_setup_py']
+[18.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1) by extension 'python_setup_py'
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['ignore', 'ignore_ament_install']
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ignore'
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ignore_ament_install'
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['colcon_pkg']
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'colcon_pkg'
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['colcon_meta']
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'colcon_meta'
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['ros']
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ros'
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['cmake', 'python']
+[18.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'cmake'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'python'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['python_setup_py']
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'python_setup_py'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extensions ['ignore', 'ignore_ament_install']
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'ignore'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'ignore_ament_install'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extensions ['ros']
+[18.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'ros'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extensions ['cmake', 'python']
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'cmake'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'python'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extensions ['ignore', 'ignore_ament_install']
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'ignore'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'ignore_ament_install'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extensions ['colcon_pkg']
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'colcon_pkg'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extensions ['colcon_meta']
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'colcon_meta'
+[18.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extensions ['ros']
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'ros'
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extensions ['cmake', 'python']
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'cmake'
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'python'
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extensions ['python_setup_py']
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckFunctionExists) by extension 'python_setup_py'
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extensions ['ignore', 'ignore_ament_install']
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'ignore'
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'ignore_ament_install'
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extensions ['colcon_pkg']
+[18.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'colcon_pkg'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extensions ['colcon_meta']
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'colcon_meta'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extensions ['ros']
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'ros'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extensions ['cmake', 'python']
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'cmake'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'python'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extensions ['python_setup_py']
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/CheckLibraryExists) by extension 'python_setup_py'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extensions ['ignore', 'ignore_ament_install']
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'ignore'
+[18.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'ignore_ament_install'
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extensions ['colcon_pkg']
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'colcon_pkg'
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extensions ['colcon_meta']
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'colcon_meta'
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extensions ['ros']
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'ros'
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extensions ['cmake', 'python']
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'cmake'
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'python'
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extensions ['python_setup_py']
+[18.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/Progress) by extension 'python_setup_py'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'ignore'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'ignore_ament_install'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extensions ['colcon_pkg']
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'colcon_pkg'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extensions ['colcon_meta']
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'colcon_meta'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extensions ['ros']
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'ros'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extensions ['cmake', 'python']
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'cmake'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'python'
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extensions ['python_setup_py']
+[18.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir) by extension 'python_setup_py'
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'ignore'
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'ignore_ament_install'
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extensions ['colcon_pkg']
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'colcon_pkg'
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extensions ['colcon_meta']
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'colcon_meta'
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extensions ['ros']
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'ros'
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extensions ['cmake', 'python']
+[18.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'cmake'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'python'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extensions ['python_setup_py']
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/dummy_test_autogen) by extension 'python_setup_py'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extensions ['ignore', 'ignore_ament_install']
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'ignore'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'ignore_ament_install'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extensions ['colcon_pkg']
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'colcon_pkg'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extensions ['colcon_meta']
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'colcon_meta'
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extensions ['ros']
+[18.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'ros'
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extensions ['cmake', 'python']
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'cmake'
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'python'
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extensions ['python_setup_py']
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test.dir/src) by extension 'python_setup_py'
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'ignore'
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'ignore_ament_install'
+[18.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extensions ['colcon_pkg']
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'colcon_pkg'
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extensions ['colcon_meta']
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'colcon_meta'
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extensions ['ros']
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'ros'
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extensions ['cmake', 'python']
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'cmake'
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'python'
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extensions ['python_setup_py']
+[18.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir) by extension 'python_setup_py'
+[18.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'ignore'
+[18.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'ignore_ament_install'
+[18.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extensions ['colcon_pkg']
+[18.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'colcon_pkg'
+[18.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extensions ['colcon_meta']
+[18.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'colcon_meta'
+[18.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extensions ['ros']
+[18.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'ros'
+[18.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extensions ['cmake', 'python']
+[18.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'cmake'
+[18.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'python'
+[18.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extensions ['python_setup_py']
+[18.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen) by extension 'python_setup_py'
+[18.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extensions ['ignore', 'ignore_ament_install']
+[18.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'ignore'
+[18.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'ignore_ament_install'
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extensions ['colcon_pkg']
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'colcon_pkg'
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extensions ['colcon_meta']
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'colcon_meta'
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extensions ['ros']
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'ros'
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extensions ['cmake', 'python']
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'cmake'
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'python'
+[18.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extensions ['python_setup_py']
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1.dir/src) by extension 'python_setup_py'
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'ignore'
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'ignore_ament_install'
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extensions ['colcon_pkg']
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'colcon_pkg'
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extensions ['colcon_meta']
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'colcon_meta'
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extensions ['ros']
+[18.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'ros'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extensions ['cmake', 'python']
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'cmake'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'python'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extensions ['python_setup_py']
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_1_autogen.dir) by extension 'python_setup_py'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'ignore'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'ignore_ament_install'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extensions ['colcon_pkg']
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'colcon_pkg'
+[18.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extensions ['colcon_meta']
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'colcon_meta'
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extensions ['ros']
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'ros'
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extensions ['cmake', 'python']
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'cmake'
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'python'
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extensions ['python_setup_py']
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/dummy_test_autogen.dir) by extension 'python_setup_py'
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'ignore'
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'ignore_ament_install'
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extensions ['colcon_pkg']
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'colcon_pkg'
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extensions ['colcon_meta']
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'colcon_meta'
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extensions ['ros']
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'ros'
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extensions ['cmake', 'python']
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'cmake'
+[18.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'python'
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extensions ['python_setup_py']
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir) by extension 'python_setup_py'
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'ignore'
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'ignore_ament_install'
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extensions ['colcon_pkg']
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'colcon_pkg'
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extensions ['colcon_meta']
+[18.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'colcon_meta'
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extensions ['ros']
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'ros'
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extensions ['cmake', 'python']
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'cmake'
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'python'
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extensions ['python_setup_py']
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/lidar_node_autogen) by extension 'python_setup_py'
+[18.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extensions ['ignore', 'ignore_ament_install']
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'ignore'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'ignore_ament_install'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extensions ['colcon_pkg']
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'colcon_pkg'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extensions ['colcon_meta']
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'colcon_meta'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extensions ['ros']
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'ros'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extensions ['cmake', 'python']
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'cmake'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'python'
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extensions ['python_setup_py']
+[18.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node.dir/src) by extension 'python_setup_py'
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'ignore'
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'ignore_ament_install'
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extensions ['colcon_pkg']
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'colcon_pkg'
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extensions ['colcon_meta']
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'colcon_meta'
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extensions ['ros']
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'ros'
+[18.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extensions ['cmake', 'python']
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'cmake'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'python'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extensions ['python_setup_py']
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/lidar_node_autogen.dir) by extension 'python_setup_py'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'ignore'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'ignore_ament_install'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extensions ['colcon_pkg']
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'colcon_pkg'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extensions ['colcon_meta']
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'colcon_meta'
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extensions ['ros']
+[18.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'ros'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extensions ['cmake', 'python']
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'cmake'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'python'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extensions ['python_setup_py']
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir) by extension 'python_setup_py'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extensions ['ignore', 'ignore_ament_install']
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'ignore'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'ignore_ament_install'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extensions ['colcon_pkg']
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'colcon_pkg'
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extensions ['colcon_meta']
+[18.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'colcon_meta'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extensions ['ros']
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'ros'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extensions ['cmake', 'python']
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'cmake'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'python'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extensions ['python_setup_py']
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src) by extension 'python_setup_py'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extensions ['ignore', 'ignore_ament_install']
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'ignore'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'ignore_ament_install'
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extensions ['colcon_pkg']
+[18.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'colcon_pkg'
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extensions ['colcon_meta']
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'colcon_meta'
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extensions ['ros']
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'ros'
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extensions ['cmake', 'python']
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'cmake'
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'python'
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extensions ['python_setup_py']
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/src/iris_tool) by extension 'python_setup_py'
+[18.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'ignore'
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'ignore_ament_install'
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extensions ['colcon_pkg']
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'colcon_pkg'
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extensions ['colcon_meta']
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'colcon_meta'
+[18.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extensions ['ros']
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'ros'
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extensions ['cmake', 'python']
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'cmake'
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'python'
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extensions ['python_setup_py']
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool.dir/test_tool_autogen) by extension 'python_setup_py'
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'ignore'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'ignore_ament_install'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extensions ['colcon_pkg']
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'colcon_pkg'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extensions ['colcon_meta']
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'colcon_meta'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extensions ['ros']
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'ros'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extensions ['cmake', 'python']
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'cmake'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'python'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extensions ['python_setup_py']
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_autogen.dir) by extension 'python_setup_py'
+[18.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'ignore'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'ignore_ament_install'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extensions ['colcon_pkg']
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'colcon_pkg'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extensions ['colcon_meta']
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'colcon_meta'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extensions ['ros']
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'ros'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extensions ['cmake', 'python']
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'cmake'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'python'
+[18.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extensions ['python_setup_py']
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/test_tool_uninstall.dir) by extension 'python_setup_py'
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extensions ['ignore', 'ignore_ament_install']
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'ignore'
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'ignore_ament_install'
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extensions ['colcon_pkg']
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'colcon_pkg'
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extensions ['colcon_meta']
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'colcon_meta'
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extensions ['ros']
+[18.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'ros'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extensions ['cmake', 'python']
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'cmake'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'python'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extensions ['python_setup_py']
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/CMakeFiles/uninstall.dir) by extension 'python_setup_py'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extensions ['ignore', 'ignore_ament_install']
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'ignore'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'ignore_ament_install'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extensions ['colcon_pkg']
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'colcon_pkg'
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extensions ['colcon_meta']
+[18.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'colcon_meta'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extensions ['ros']
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'ros'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extensions ['cmake', 'python']
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'cmake'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'python'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extensions ['python_setup_py']
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing) by extension 'python_setup_py'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extensions ['ignore', 'ignore_ament_install']
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'ignore'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'ignore_ament_install'
+[18.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extensions ['colcon_pkg']
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'colcon_pkg'
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extensions ['colcon_meta']
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'colcon_meta'
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extensions ['ros']
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'ros'
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extensions ['cmake', 'python']
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'cmake'
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'python'
+[18.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extensions ['python_setup_py']
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/Testing/Temporary) by extension 'python_setup_py'
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extensions ['ignore', 'ignore_ament_install']
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'ignore'
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'ignore_ament_install'
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extensions ['colcon_pkg']
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'colcon_pkg'
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extensions ['colcon_meta']
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'colcon_meta'
+[18.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extensions ['ros']
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'ros'
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extensions ['cmake', 'python']
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'cmake'
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'python'
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extensions ['python_setup_py']
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core) by extension 'python_setup_py'
+[18.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extensions ['ignore', 'ignore_ament_install']
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'ignore'
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'ignore_ament_install'
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extensions ['colcon_pkg']
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'colcon_pkg'
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extensions ['colcon_meta']
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'colcon_meta'
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extensions ['ros']
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'ros'
+[18.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extensions ['cmake', 'python']
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'cmake'
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'python'
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extensions ['python_setup_py']
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_core/stamps) by extension 'python_setup_py'
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extensions ['ignore', 'ignore_ament_install']
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'ignore'
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'ignore_ament_install'
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extensions ['colcon_pkg']
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'colcon_pkg'
+[18.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extensions ['colcon_meta']
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'colcon_meta'
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extensions ['ros']
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'ros'
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extensions ['cmake', 'python']
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'cmake'
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'python'
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extensions ['python_setup_py']
+[18.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_environment_hooks) by extension 'python_setup_py'
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extensions ['ignore', 'ignore_ament_install']
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'ignore'
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'ignore_ament_install'
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extensions ['colcon_pkg']
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'colcon_pkg'
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extensions ['colcon_meta']
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'colcon_meta'
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extensions ['ros']
+[18.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'ros'
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extensions ['cmake', 'python']
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'cmake'
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'python'
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extensions ['python_setup_py']
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index) by extension 'python_setup_py'
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extensions ['ignore', 'ignore_ament_install']
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'ignore'
+[18.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'ignore_ament_install'
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extensions ['colcon_pkg']
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'colcon_pkg'
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extensions ['colcon_meta']
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'colcon_meta'
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extensions ['ros']
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'ros'
+[18.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extensions ['cmake', 'python']
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'cmake'
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'python'
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extensions ['python_setup_py']
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share) by extension 'python_setup_py'
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extensions ['ignore', 'ignore_ament_install']
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'ignore'
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'ignore_ament_install'
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extensions ['colcon_pkg']
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'colcon_pkg'
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extensions ['colcon_meta']
+[18.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'colcon_meta'
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extensions ['ros']
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'ros'
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extensions ['cmake', 'python']
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'cmake'
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'python'
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extensions ['python_setup_py']
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index) by extension 'python_setup_py'
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extensions ['ignore', 'ignore_ament_install']
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'ignore'
+[18.875s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'ignore_ament_install'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extensions ['colcon_pkg']
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'colcon_pkg'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extensions ['colcon_meta']
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'colcon_meta'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extensions ['ros']
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'ros'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extensions ['cmake', 'python']
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'cmake'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'python'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extensions ['python_setup_py']
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index) by extension 'python_setup_py'
+[18.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['ignore', 'ignore_ament_install']
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'ignore'
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'ignore_ament_install'
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['colcon_pkg']
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'colcon_pkg'
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['colcon_meta']
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'colcon_meta'
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['ros']
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'ros'
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['cmake', 'python']
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'cmake'
+[18.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'python'
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['python_setup_py']
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'python_setup_py'
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['ignore', 'ignore_ament_install']
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'ignore'
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'ignore_ament_install'
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['colcon_pkg']
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'colcon_pkg'
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['colcon_meta']
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'colcon_meta'
+[18.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['ros']
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'ros'
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['cmake', 'python']
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'cmake'
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'python'
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['python_setup_py']
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'python_setup_py'
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['ignore', 'ignore_ament_install']
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'ignore'
+[18.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'ignore_ament_install'
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['colcon_pkg']
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'colcon_pkg'
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['colcon_meta']
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'colcon_meta'
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['ros']
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'ros'
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['cmake', 'python']
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'cmake'
+[18.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'python'
+[18.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['python_setup_py']
+[18.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'python_setup_py'
+[18.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extensions ['ignore', 'ignore_ament_install']
+[18.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'ignore'
+[18.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'ignore_ament_install'
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extensions ['colcon_pkg']
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'colcon_pkg'
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extensions ['colcon_meta']
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'colcon_meta'
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extensions ['ros']
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'ros'
+[18.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extensions ['cmake', 'python']
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'cmake'
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'python'
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extensions ['python_setup_py']
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_package_templates) by extension 'python_setup_py'
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extensions ['ignore', 'ignore_ament_install']
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'ignore'
+[18.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'ignore_ament_install'
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extensions ['colcon_pkg']
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'colcon_pkg'
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extensions ['colcon_meta']
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'colcon_meta'
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extensions ['ros']
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'ros'
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extensions ['cmake', 'python']
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'cmake'
+[18.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'python'
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extensions ['python_setup_py']
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cmake_uninstall_target) by extension 'python_setup_py'
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extensions ['ignore', 'ignore_ament_install']
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'ignore'
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'ignore_ament_install'
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extensions ['colcon_pkg']
+[18.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'colcon_pkg'
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extensions ['colcon_meta']
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'colcon_meta'
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extensions ['ros']
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'ros'
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extensions ['cmake', 'python']
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'cmake'
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'python'
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extensions ['python_setup_py']
+[18.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_cppcheck) by extension 'python_setup_py'
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extensions ['ignore', 'ignore_ament_install']
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'ignore'
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'ignore_ament_install'
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extensions ['colcon_pkg']
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'colcon_pkg'
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extensions ['colcon_meta']
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'colcon_meta'
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extensions ['ros']
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'ros'
+[18.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extensions ['cmake', 'python']
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'cmake'
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'python'
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extensions ['python_setup_py']
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_flake8) by extension 'python_setup_py'
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extensions ['ignore', 'ignore_ament_install']
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'ignore'
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'ignore_ament_install'
+[18.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extensions ['colcon_pkg']
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'colcon_pkg'
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extensions ['colcon_meta']
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'colcon_meta'
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extensions ['ros']
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'ros'
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extensions ['cmake', 'python']
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'cmake'
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'python'
+[18.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extensions ['python_setup_py']
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_lint_cmake) by extension 'python_setup_py'
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extensions ['ignore', 'ignore_ament_install']
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'ignore'
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'ignore_ament_install'
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extensions ['colcon_pkg']
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'colcon_pkg'
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extensions ['colcon_meta']
+[18.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'colcon_meta'
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extensions ['ros']
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'ros'
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extensions ['cmake', 'python']
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'cmake'
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'python'
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extensions ['python_setup_py']
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_pep257) by extension 'python_setup_py'
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extensions ['ignore', 'ignore_ament_install']
+[18.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'ignore'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'ignore_ament_install'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extensions ['colcon_pkg']
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'colcon_pkg'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extensions ['colcon_meta']
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'colcon_meta'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extensions ['ros']
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'ros'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extensions ['cmake', 'python']
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'cmake'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'python'
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extensions ['python_setup_py']
+[18.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_uncrustify) by extension 'python_setup_py'
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extensions ['ignore', 'ignore_ament_install']
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'ignore'
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'ignore_ament_install'
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extensions ['colcon_pkg']
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'colcon_pkg'
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extensions ['colcon_meta']
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'colcon_meta'
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extensions ['ros']
+[18.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'ros'
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extensions ['cmake', 'python']
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'cmake'
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'python'
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extensions ['python_setup_py']
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/ament_xmllint) by extension 'python_setup_py'
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'ignore'
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'ignore_ament_install'
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extensions ['colcon_pkg']
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'colcon_pkg'
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extensions ['colcon_meta']
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'colcon_meta'
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extensions ['ros']
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'ros'
+[18.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extensions ['cmake', 'python']
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'cmake'
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'python'
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extensions ['python_setup_py']
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen) by extension 'python_setup_py'
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extensions ['ignore', 'ignore_ament_install']
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'ignore'
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'ignore_ament_install'
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extensions ['colcon_pkg']
+[18.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'colcon_pkg'
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extensions ['colcon_meta']
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'colcon_meta'
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extensions ['ros']
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'ros'
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extensions ['cmake', 'python']
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'cmake'
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'python'
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extensions ['python_setup_py']
+[18.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_1_autogen/include) by extension 'python_setup_py'
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'ignore'
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'ignore_ament_install'
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extensions ['colcon_pkg']
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'colcon_pkg'
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extensions ['colcon_meta']
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'colcon_meta'
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extensions ['ros']
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'ros'
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extensions ['cmake', 'python']
+[18.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'cmake'
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'python'
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extensions ['python_setup_py']
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen) by extension 'python_setup_py'
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extensions ['ignore', 'ignore_ament_install']
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'ignore'
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'ignore_ament_install'
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extensions ['colcon_pkg']
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'colcon_pkg'
+[18.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extensions ['colcon_meta']
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'colcon_meta'
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extensions ['ros']
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'ros'
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extensions ['cmake', 'python']
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'cmake'
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'python'
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extensions ['python_setup_py']
+[18.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/dummy_test_autogen/include) by extension 'python_setup_py'
+[18.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'ignore'
+[18.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'ignore_ament_install'
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extensions ['colcon_pkg']
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'colcon_pkg'
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extensions ['colcon_meta']
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'colcon_meta'
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extensions ['ros']
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'ros'
+[18.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extensions ['cmake', 'python']
+[18.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'cmake'
+[18.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'python'
+[18.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extensions ['python_setup_py']
+[18.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/lidar_node_autogen) by extension 'python_setup_py'
+[18.904s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extensions ['ignore', 'ignore_ament_install']
+[18.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'ignore'
+[18.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'ignore_ament_install'
+[18.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extensions ['colcon_pkg']
+[18.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'colcon_pkg'
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extensions ['colcon_meta']
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'colcon_meta'
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extensions ['ros']
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'ros'
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extensions ['cmake', 'python']
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'cmake'
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'python'
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extensions ['python_setup_py']
+[18.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen) by extension 'python_setup_py'
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extensions ['ignore', 'ignore_ament_install']
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'ignore'
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'ignore_ament_install'
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extensions ['colcon_pkg']
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'colcon_pkg'
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extensions ['colcon_meta']
+[18.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'colcon_meta'
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extensions ['ros']
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'ros'
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extensions ['cmake', 'python']
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'cmake'
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'python'
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extensions ['python_setup_py']
+[18.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/TSGLY7GWS2) by extension 'python_setup_py'
+[18.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extensions ['ignore', 'ignore_ament_install']
+[18.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'ignore'
+[18.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'ignore_ament_install'
+[18.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extensions ['colcon_pkg']
+[18.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'colcon_pkg'
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extensions ['colcon_meta']
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'colcon_meta'
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extensions ['ros']
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'ros'
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extensions ['cmake', 'python']
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'cmake'
+[18.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'python'
+[18.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extensions ['python_setup_py']
+[18.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/build-test_tool-Desktop-Debug/test_tool_autogen/include) by extension 'python_setup_py'
+[18.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extensions ['ignore', 'ignore_ament_install']
+[18.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extension 'ignore'
+[18.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extension 'ignore_ament_install'
+[18.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extensions ['colcon_pkg']
+[18.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extension 'colcon_pkg'
+[18.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extensions ['colcon_meta']
+[18.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extension 'colcon_meta'
+[18.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extensions ['ros']
+[18.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tool) by extension 'ros'
+[18.919s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_tool' with type 'ros.ament_cmake' and name 'test_tool'
+[18.919s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[18.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[18.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[18.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[18.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[18.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[18.987s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[18.990s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/maddy/iris_test_tool/install
+[0.726s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 339 installed packages in /opt/ros/humble
+[0.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Debug']'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'cmake_target' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'cmake_clean_cache' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'cmake_clean_first' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'cmake_force_configure' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'ament_cmake_args' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'catkin_cmake_args' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'test_tool' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.812s] DEBUG:colcon.colcon_core.verb:Building package 'test_tool' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maddy/iris_test_tool/build/test_tool', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maddy/iris_test_tool/install/test_tool', 'merge_install': False, 'path': '/home/maddy/iris_test_tool/src/test_tool', 'symlink_install': False, 'test_result_base': None}
+[0.812s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.814s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.814s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maddy/iris_test_tool/src/test_tool' with build type 'ament_cmake'
+[0.814s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maddy/iris_test_tool/src/test_tool'
+[0.820s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.821s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.821s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[19.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[19.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+[19.432s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_tool)
+[19.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+[19.438s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool' for CMake module files
+[19.439s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool' for CMake config files
+[19.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_tool', 'cmake_prefix_path')
+[19.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/hook/cmake_prefix_path.ps1'
+[19.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/hook/cmake_prefix_path.dsv'
+[19.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/hook/cmake_prefix_path.sh'
+[19.444s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/lib'
+[19.444s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/bin'
+[19.444s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/lib/pkgconfig/test_tool.pc'
+[19.445s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/lib/python3.10/site-packages'
+[19.445s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/bin'
+[19.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.ps1'
+[19.447s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv'
+[19.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.sh'
+[19.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.bash'
+[19.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.zsh'
+[19.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maddy/iris_test_tool/install/test_tool/share/colcon-core/packages/test_tool)
+[19.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_tool)
+[19.452s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool' for CMake module files
+[19.452s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool' for CMake config files
+[19.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_tool', 'cmake_prefix_path')
+[19.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/hook/cmake_prefix_path.ps1'
+[19.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/hook/cmake_prefix_path.dsv'
+[19.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/hook/cmake_prefix_path.sh'
+[19.455s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/lib'
+[19.455s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/bin'
+[19.455s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/lib/pkgconfig/test_tool.pc'
+[19.455s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/lib/python3.10/site-packages'
+[19.456s] Level 1:colcon.colcon_core.environment:checking '/home/maddy/iris_test_tool/install/test_tool/bin'
+[19.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.ps1'
+[19.457s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv'
+[19.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.sh'
+[19.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.bash'
+[19.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.zsh'
+[19.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maddy/iris_test_tool/install/test_tool/share/colcon-core/packages/test_tool)
+[19.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.461s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[19.461s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[19.529s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.529s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.529s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.529s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[19.529s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.530s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/iris_test_tool/install/local_setup.ps1'
+[19.531s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maddy/iris_test_tool/install/_local_setup_util_ps1.py'
+[19.533s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/iris_test_tool/install/setup.ps1'
+[19.534s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/iris_test_tool/install/local_setup.sh'
+[19.535s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maddy/iris_test_tool/install/_local_setup_util_sh.py'
+[19.536s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/iris_test_tool/install/setup.sh'
+[19.537s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/iris_test_tool/install/local_setup.bash'
+[19.538s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/iris_test_tool/install/setup.bash'
+[19.539s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maddy/iris_test_tool/install/local_setup.zsh'
+[19.540s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maddy/iris_test_tool/install/setup.zsh'

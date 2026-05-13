@@ -1,0 +1,7 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:12:10:[m[K [01;31m[Kfatal error: [m[KOgreOverlayManager.h: No such file or directory
+   12 | #include [01;31m[K<OgreOverlayManager.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

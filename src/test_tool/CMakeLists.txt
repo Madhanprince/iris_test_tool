@@ -27,6 +27,7 @@ find_package(rviz_common REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
 find_package(rviz_ogre_vendor REQUIRED)
+find_package(OGRE REQUIRED Overlay)
 
 # 2. Force Qt5 to match ROS Humble / RViz
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
