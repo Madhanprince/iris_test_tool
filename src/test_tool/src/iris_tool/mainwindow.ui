@@ -62,7 +62,7 @@
          <x>12</x>
          <y>30</y>
          <width>591</width>
-         <height>31</height>
+         <height>32</height>
         </rect>
        </property>
        <property name="minimumSize">
@@ -699,16 +699,11 @@ QPlainTextEdit {
           </layout>
          </widget>
          <widget class="QWidget" name="Mapping">
-          <widget class="QWidget" name="widget_2" native="true">
-           <property name="geometry">
-            <rect>
-             <x>9</x>
-             <y>9</y>
-             <width>543</width>
-             <height>440</height>
-            </rect>
-           </property>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QWidget" name="widget_2" native="true"/>
+           </item>
+          </layout>
          </widget>
         </widget>
        </item>

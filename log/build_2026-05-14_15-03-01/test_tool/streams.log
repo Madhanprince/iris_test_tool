@@ -1,0 +1,52 @@
+[0.017s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.095s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.099s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.104s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.134s] [ 21%] Built target dummy_test_autogen
+[0.141s] [ 21%] Built target dummy_test_1_autogen
+[0.151s] [ 21%] Built target test_tool_autogen
+[0.178s] [ 42%] Built target dummy_test
+[0.182s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.185s] [ 64%] Built target dummy_test_1
+[0.230s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[9.672s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[9.672s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:41:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klayout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[9.672s]    41 |     QVBoxLayout *[01;35m[Klayout[m[K =
+[9.673s]       |                  [01;35m[K^~~~~~[m[K
+[9.673s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:43:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoolbar[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[9.673s]    43 |     QToolBar *[01;35m[Ktoolbar[m[K = new QToolBar(this);
+[9.673s]       |               [01;35m[K^~~~~~~[m[K
+[9.700s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::visual_manager(rviz_common::RenderPanel*, std::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface>, rclcpp::Clock::SharedPtr)[m[K’:
+[9.700s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:201:31:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KQLayout* QWidget::layout() const[m[K’
+[9.700s]   201 |       ui->widget_4->setLayout([01;31m[Klayout[m[K);   // ✅ FIXED
+[9.700s]       |                               [01;31m[K^~~~~~[m[K
+[9.701s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[9.701s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[9.701s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[9.701s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[9.701s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:537:14:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.701s]   537 |     QLayout *[01;36m[Klayout[m[K() const;
+[9.701s]       |              [01;36m[K^~~~~~[m[K
+[9.706s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_mapping()[m[K’:
+[9.706s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:298:29:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KQLayout* QWidget::layout() const[m[K’
+[9.706s]   298 |     ui->widget_4->setLayout([01;31m[Klayout[m[K);   // ✅ FIXED
+[9.707s]       |                             [01;31m[K^~~~~~[m[K
+[9.707s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44[m[K,
+[9.707s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+[9.707s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4[m[K,
+[9.707s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[9.707s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:537:14:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.707s]   537 |     QLayout *[01;36m[Klayout[m[K() const;
+[9.708s]       |              [01;36m[K^~~~~~[m[K
+[9.708s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:307:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KQLayout* QWidget::layout() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[9.708s]   307 |     [01;31m[Klayout[m[K->addWidget(toolbar);
+[9.708s]       |     [01;31m[K^~~~~~[m[K
+[9.708s]       |           [32m[K()[m[K
+[9.709s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:319:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KQLayout* QWidget::layout() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[9.709s]   319 |     [01;31m[Klayout[m[K->addWidget(render_panel_1);
+[9.709s]       |     [01;31m[K^~~~~~[m[K
+[9.709s]       |           [32m[K()[m[K
+[12.288s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[12.288s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[12.289s] gmake: *** [Makefile:146: all] Error 2
+[12.292s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

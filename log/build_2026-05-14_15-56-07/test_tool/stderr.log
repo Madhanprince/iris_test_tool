@@ -1,0 +1,33 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:355:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_2[m[K’?
+  355 |             [01;31m[Ktool_manager_1[m[K->setCurrentTool(cleaning_points_plugins);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Ktool_manager_2[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:361:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_2[m[K’?
+  361 |             [01;31m[Ktool_manager_1[m[K->setCurrentTool(goal_pose_plugins);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Ktool_manager_2[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:367:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_2[m[K’?
+  367 |             [01;31m[Ktool_manager_1[m[K->setCurrentTool(pose_estimate_plugins);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Ktool_manager_2[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:448:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_2[m[K’?
+  448 |             [01;31m[Ktool_manager_1[m[K->setCurrentTool(cleaning_points_plugins);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Ktool_manager_2[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:454:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_2[m[K’?
+  454 |             [01;31m[Ktool_manager_1[m[K->setCurrentTool(goal_pose_plugins);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Ktool_manager_2[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:460:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool_manager_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktool_manager_2[m[K’?
+  460 |             [01;31m[Ktool_manager_1[m[K->setCurrentTool(pose_estimate_plugins);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Ktool_manager_2[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

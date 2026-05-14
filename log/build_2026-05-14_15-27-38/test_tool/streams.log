@@ -1,0 +1,42 @@
+[0.021s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.097s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.097s] [ 14%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.098s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.128s] [ 21%] Built target dummy_test_autogen
+[0.130s] [ 21%] Built target dummy_test_1_autogen
+[0.172s] [ 42%] Built target dummy_test_1
+[0.173s] [ 64%] Built target dummy_test
+[0.825s] [ 64%] Built target test_tool_autogen
+[0.847s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.899s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.899s] [ 78%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[0.901s] [ 85%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[11.318s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1[m[K:
+[11.318s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:57:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KQToolBar* MainWindow::toolbar[m[K’
+[11.319s]    57 |     QToolBar *toolbar =[01;31m[Knullptr[m[K;
+[11.319s]       |                        [01;31m[K^~~~~~~[m[K
+[11.319s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:50:15:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KQToolBar* MainWindow::toolbar[m[K’
+[11.319s]    50 |     QToolBar *[01;36m[Ktoolbar[m[K;
+[11.319s]       |               [01;36m[K^~~~~~~[m[K
+[11.476s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10[m[K,
+[11.477s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[11.477s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:57:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KQToolBar* MainWindow::toolbar[m[K’
+[11.477s]    57 |     QToolBar *toolbar =[01;31m[Knullptr[m[K;
+[11.477s]       |                        [01;31m[K^~~~~~~[m[K
+[11.477s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:50:15:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KQToolBar* MainWindow::toolbar[m[K’
+[11.477s]    50 |     QToolBar *[01;36m[Ktoolbar[m[K;
+[11.477s]       |               [01;36m[K^~~~~~~[m[K
+[11.515s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[11.515s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:57:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KQToolBar* MainWindow::toolbar[m[K’
+[11.515s]    57 |     QToolBar *toolbar =[01;31m[Knullptr[m[K;
+[11.515s]       |                        [01;31m[K^~~~~~~[m[K
+[11.515s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:50:15:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KQToolBar* MainWindow::toolbar[m[K’
+[11.515s]    50 |     QToolBar *[01;36m[Ktoolbar[m[K;
+[11.516s]       |               [01;36m[K^~~~~~~[m[K
+[13.543s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o] Error 1
+[13.543s] gmake[2]: *** Waiting for unfinished jobs....
+[13.607s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+[15.725s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[15.725s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[15.725s] gmake: *** [Makefile:146: all] Error 2
+[15.728s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
