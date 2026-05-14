@@ -1,0 +1,23 @@
+[0.018s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.093s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.095s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.096s] [ 21%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.122s] [ 21%] Built target dummy_test_autogen
+[0.126s] [ 21%] Built target dummy_test_1_autogen
+[0.139s] [ 21%] Built target test_tool_autogen
+[0.169s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.174s] [ 50%] Built target dummy_test_1
+[0.174s] [ 64%] Built target dummy_test
+[0.233s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[9.300s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_navigation()[m[K’:
+[9.300s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:305:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoolbar_nav[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[9.301s]   305 |          QToolBar *[01;35m[Ktoolbar_nav[m[K = new QToolBar(ui->widget_3);
+[9.301s]       |                    [01;35m[K^~~~~~~~~~~[m[K
+[9.301s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:337:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KQLayout* QWidget::layout() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[9.301s]   337 |     [01;31m[Klayout[m[K->addWidget(render_panel_1);
+[9.301s]       |     [01;31m[K^~~~~~[m[K
+[9.301s]       |           [32m[K()[m[K
+[11.812s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[11.813s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[11.813s] gmake: *** [Makefile:146: all] Error 2
+[11.816s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

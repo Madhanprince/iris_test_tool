@@ -47,8 +47,8 @@ private:
     QListWidgetItem *item;
     QTimer *Timer;
     QStringList nodes;
-    QToolBar *toolbar =nullptr;
-    QVBoxLayout *layout ;
+    QToolBar *toolbar_map =nullptr;
+    QVBoxLayout *layout_map =nullptr;
         
 
     bool rviz_initialized_mapping = false;

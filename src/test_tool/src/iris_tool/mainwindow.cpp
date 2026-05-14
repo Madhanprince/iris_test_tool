@@ -37,10 +37,9 @@ MainWindow::MainWindow(QWidget *parent)
     rivz_clock = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
 
     render_panel_1 = new rviz_common::RenderPanel();
-    toolbar = new QToolBar(ui->widget_4);
-    layout = qobject_cast<QVBoxLayout*>(ui->widget_4->layout());
-    layout = new QVBoxLayout(ui->widget_4);
-    ui->widget_4->setLayout(layout);
+    toolbar_map = new QToolBar(ui->widget_4);
+    layout_map = new QVBoxLayout(ui->widget_4);
+    ui->widget_4->setLayout(layout_map);
     visual_manager(render_panel_1, ros_weak, rivz_clock);
 
     connect(ui->node_list,&QListWidget::itemChanged,this,&MainWindow::onItemChanged);
@@ -254,8 +253,20 @@ void MainWindow::visual_manager(
 
 void MainWindow::initRViz_mapping()
 {  
-    layout->addWidget(toolbar);
-    layout->addWidget(render_panel_1);
+    layout_map->addWidget(toolbar_map);
+
+    QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+    QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+    QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+    QAction *Safty_Points = new QAction("Safety Points", this);
+
+    toolbar_map->addAction(Cleaning_Points);
+    toolbar_map->addAction(Goal_Pose);
+    toolbar_map->addAction(Pose_Estimate);
+    toolbar_map->addAction(Safty_Points);
+
+    layout_map->addWidget(render_panel_1);
+
     setupDisplays();
 }
 
@@ -280,17 +291,18 @@ void MainWindow::setupDisplays()
 
 void MainWindow::initRViz_navigation()
 { 
-    QVBoxLayout *layout =
+    QVBoxLayout *layout_nav =
         qobject_cast<QVBoxLayout*>(ui->widget_3->layout());
+    QToolBar *toolbar_nav ;
     // Safely converts (casts) that generic layout pointer into a specific Vertical Layout pointer.
     // If widget_3 is actually using a QHBoxLayout or QGridLayout, this returns 'nullptr'.
 
-    if (!layout) {
-        layout = new QVBoxLayout(ui->widget_3);
-        ui->widget_3->setLayout(layout);
+    if (!layout_nav) {
+        layout_nav = new QVBoxLayout(ui->widget_3);
+        ui->widget_3->setLayout(layout_nav);
     }
-    if(!toolbar){
-        layout->addWidget(toolbar);
+    if(!toolbar_nav){
+         QToolBar *toolbar_nav = new QToolBar(ui->widget_3);
     }
 
     QAction *Cleaning_Points = new QAction("Cleaning Points", this);
@@ -298,10 +310,10 @@ void MainWindow::initRViz_navigation()
     QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
     QAction *Safty_Points = new QAction("Safety Points", this);
 
-    toolbar->addAction(Cleaning_Points);
-    toolbar->addAction(Goal_Pose);
-    toolbar->addAction(Pose_Estimate);
-    toolbar->addAction(Safty_Points);
+    toolbar_nav->addAction(Cleaning_Points);
+    toolbar_nav->addAction(Goal_Pose);
+    toolbar_nav->addAction(Pose_Estimate);
+    toolbar_nav->addAction(Safty_Points);
 
         // Setup Tools
     auto *tool_manager = visualizationManager_->getToolManager();
@@ -322,7 +334,7 @@ void MainWindow::initRViz_navigation()
             "rviz_default_plugins/SetInitialPose");
    
     render_panel_1->setParent(ui->widget_3);// REUSE EXISTING RVIZ PANEL
-    layout->addWidget(render_panel_1);
+    layout_nav->addWidget(render_panel_1);
     
     connect(Cleaning_Points, &QAction::triggered, this, [=]()
     {
@@ -365,87 +377,87 @@ void MainWindow::setupDisplays_2()
         map->subProp("Topic")->setValue("/map");
 }
 
-void MainWindow::initRViz_localization()
-{
-    QVBoxLayout *layout =
-        qobject_cast<QVBoxLayout*>(ui->widget_2->layout());
+// void MainWindow::initRViz_localization()
+// {
+//     QVBoxLayout *layout =
+//         qobject_cast<QVBoxLayout*>(ui->widget_2->layout());
 
-    if (!layout) {
-        layout = new QVBoxLayout(ui->widget_2);
-        ui->widget_2->setLayout(layout);
-    }
+//     if (!layout) {
+//         layout = new QVBoxLayout(ui->widget_2);
+//         ui->widget_2->setLayout(layout);
+//     }
 
-    if(!toolbar){
-        layout->addWidget(toolbar);
+//     if(!toolbar){
+//         layout->addWidget(toolbar);
 
-        QAction *Cleaning_Points = new QAction("Cleaning Points", this);
-        QAction *Goal_Pose = new QAction("2D Goal Pose", this);
-        QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
-        QAction *Safty_Points = new QAction("Safety Points", this);
+//         QAction *Cleaning_Points = new QAction("Cleaning Points", this);
+//         QAction *Goal_Pose = new QAction("2D Goal Pose", this);
+//         QAction *Pose_Estimate = new QAction("2D Pose Estimate", this);
+//         QAction *Safty_Points = new QAction("Safety Points", this);
 
-        toolbar->addAction(Cleaning_Points);
-        toolbar->addAction(Goal_Pose);
-        toolbar->addAction(Pose_Estimate);
-        toolbar->addAction(Safty_Points);
-    }
+//         toolbar->addAction(Cleaning_Points);
+//         toolbar->addAction(Goal_Pose);
+//         toolbar->addAction(Pose_Estimate);
+//         toolbar->addAction(Safty_Points);
+//     }
 
-    render_panel_1->setParent(ui->widget_2);// REUSE EXISTING RVIZ PANEL
-    layout->addWidget(render_panel_1);
+//     render_panel_1->setParent(ui->widget_2);// REUSE EXISTING RVIZ PANEL
+//     layout->addWidget(render_panel_1);
 
-    auto *tool_manager =visualizationManager_->getToolManager();
+//     auto *tool_manager =visualizationManager_->getToolManager();
 
-    tool_manager->addTool(
-        "rviz_default_plugins/MoveCamera");
+//     tool_manager->addTool(
+//         "rviz_default_plugins/MoveCamera");
 
-    tool_manager->setCurrentTool(tool_manager->getTool(
-        tool_manager->numTools() - 1));
+//     tool_manager->setCurrentTool(tool_manager->getTool(
+//         tool_manager->numTools() - 1));
 
-    cleaning_points_plugins =tool_manager->addTool(
-        "rviz_default_plugins/PublishPoint");
+//     cleaning_points_plugins =tool_manager->addTool(
+//         "rviz_default_plugins/PublishPoint");
 
-    goal_pose_plugins =tool_manager->addTool(
-        "rviz_default_plugins/SetGoal");
+//     goal_pose_plugins =tool_manager->addTool(
+//         "rviz_default_plugins/SetGoal");
 
-    pose_estimate_plugins =tool_manager->addTool(
-        "rviz_default_plugins/SetInitialPose");
+//     pose_estimate_plugins =tool_manager->addTool(
+//         "rviz_default_plugins/SetInitialPose");
 
-    // Connections
-    connect(Cleaning_Points, &QAction::triggered, this, [=]()
-    {
-        if (cleaning_points_plugins)
-            tool_manager->setCurrentTool(cleaning_points_plugins);
-    });
+//     // Connections
+//     connect(Cleaning_Points, &QAction::triggered, this, [=]()
+//     {
+//         if (cleaning_points_plugins)
+//             tool_manager->setCurrentTool(cleaning_points_plugins);
+//     });
 
-    connect(Goal_Pose, &QAction::triggered, this, [=]()
-    {
-        if (goal_pose_plugins)
-            tool_manager->setCurrentTool(goal_pose_plugins);
-    });
+//     connect(Goal_Pose, &QAction::triggered, this, [=]()
+//     {
+//         if (goal_pose_plugins)
+//             tool_manager->setCurrentTool(goal_pose_plugins);
+//     });
 
-    connect(Pose_Estimate, &QAction::triggered, this, [=]()
-    {
-        if (pose_estimate_plugins)   
-            tool_manager->setCurrentTool(pose_estimate_plugins);
-    });
+//     connect(Pose_Estimate, &QAction::triggered, this, [=]()
+//     {
+//         if (pose_estimate_plugins)   
+//             tool_manager->setCurrentTool(pose_estimate_plugins);
+//     });
 
-    setupDisplays_3();  
-}
+//     setupDisplays_3();  
+// }
 
-void MainWindow::setupDisplays_3()
-{
-    visualizationManager_->setFixedFrame("map");
+// void MainWindow::setupDisplays_3()
+// {
+//     visualizationManager_->setFixedFrame("map");
 
-    auto *grid2 = visualizationManager_->createDisplay(
-        "rviz_default_plugins/Grid", "Grid2", true);
-    Q_UNUSED(grid2);
+//     auto *grid2 = visualizationManager_->createDisplay(
+//         "rviz_default_plugins/Grid", "Grid2", true);
+//     Q_UNUSED(grid2);
 
-    auto *laser = visualizationManager_->createDisplay(
-        "rviz_default_plugins/LaserScan", "LaserScan", true);
-    if (laser)
-        laser->subProp("Topic")->setValue("/scan");
+//     auto *laser = visualizationManager_->createDisplay(
+//         "rviz_default_plugins/LaserScan", "LaserScan", true);
+//     if (laser)
+//         laser->subProp("Topic")->setValue("/scan");
 
-    auto *map = visualizationManager_->createDisplay(
-        "rviz_default_plugins/Map", "Map", true);
-    if (map)
-        map->subProp("Topic")->setValue("/map");
-}
+//     auto *map = visualizationManager_->createDisplay(
+//         "rviz_default_plugins/Map", "Map", true);
+//     if (map)
+//         map->subProp("Topic")->setValue("/map");
+// }
