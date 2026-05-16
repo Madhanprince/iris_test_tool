@@ -1,0 +1,26 @@
+[0.033s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.243s] [  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.244s] [ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.246s] [ 21%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.281s] [ 21%] Built target dummy_test_1_autogen
+[0.281s] [ 21%] Built target dummy_test_autogen
+[0.291s] [ 21%] Built target test_tool_autogen
+[0.325s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.331s] [ 64%] Built target dummy_test
+[0.332s] [ 64%] Built target dummy_test_1
+[0.387s] [ 71%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[13.694s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_navigation()[m[K’:
+[13.695s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:304:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoolbar_nav[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[13.695s]   304 |          QToolBar *[01;35m[Ktoolbar_nav[m[K = new QToolBar(ui->widget_3);
+[13.695s]       |                    [01;35m[K^~~~~~~~~~~[m[K
+[17.864s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:303:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktoolbar_nav[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+[17.864s]   303 |     [01;35m[Kif[m[K(!toolbar_nav){
+[17.865s]       |     [01;35m[K^~[m[K
+[18.749s] [ 78%] [32m[1mLinking CXX executable test_tool[0m
+[23.491s] /usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o: in function `MainWindow::pages(int)':
+[23.491s] /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:90: undefined reference to `MainWindow::initRViz_localization()'
+[23.675s] collect2: error: ld returned 1 exit status
+[23.678s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:291: test_tool] Error 1
+[23.678s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[23.678s] gmake: *** [Makefile:146: all] Error 2
+[23.682s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

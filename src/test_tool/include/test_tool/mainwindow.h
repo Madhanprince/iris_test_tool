@@ -48,6 +48,8 @@ private:
     QTimer *Timer;
     QStringList nodes;
     QToolBar *toolbar_map =nullptr;
+    QToolBar *toolbar_nav = nullptr;
+    QToolBar *toolbar_local = nullptr;
     QVBoxLayout *layout_map =nullptr;
         
 
@@ -57,12 +59,8 @@ private:
     std::shared_ptr<Qtros> qtros;
     std::set<std::string> clicked_node;
     rviz_common::RenderPanel *render_panel_1 = nullptr;
-    rviz_common::RenderPanel *render_panel_2 = nullptr;
-    rviz_common::RenderPanel *render_panel_3 = nullptr;
     rviz_common::VisualizationManager *visualizationManager_ = nullptr;
-    rviz_common::ToolManager *tool_manager = nullptr;
-    rviz_common::ToolManager *tool_manager_2 = nullptr;
-    rviz_common::ToolManager *tool_manager_3 = nullptr;
+    rviz_common::ToolManager *tool_manager = nullptr;;
     rviz_common::Tool *cleaning_points_plugins = nullptr;
     rviz_common::Tool *goal_pose_plugins = nullptr;
     rviz_common::Tool *pose_estimate_plugins = nullptr; 

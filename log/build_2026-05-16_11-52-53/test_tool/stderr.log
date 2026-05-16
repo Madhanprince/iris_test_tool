@@ -1,0 +1,8 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_localization()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:404:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ktoolbar[m[K’ was not declared in this scope; did you mean ‘[01m[KQToolBar[m[K’?
+  404 |         layout_local->addWidget([01;31m[Ktoolbar[m[K);
+      |                                 [01;31m[K^~~~~~~[m[K
+      |                                 [32m[KQToolBar[m[K
+gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

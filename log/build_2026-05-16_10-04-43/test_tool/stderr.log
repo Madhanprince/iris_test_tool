@@ -1,0 +1,7 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::initRViz_navigation()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:308:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoolbar_nav[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  308 |          QToolBar *[01;35m[Ktoolbar_nav[m[K = new QToolBar(ui->widget_3);
+      |                    [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:307:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktoolbar_nav[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  307 |     [01;35m[Kif[m[K(!toolbar_nav){
+      |     [01;35m[K^~[m[K
