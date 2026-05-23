@@ -1,0 +1,25 @@
+[0.016s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.086s] [  6%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.087s] [ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.090s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.104s] 
+[0.105s] AutoUic error
+[0.105s] -------------
+[0.105s] The source files
+[0.105s]   "SRC:/src/iris_tool/A2/a2_service.cpp"
+[0.105s]   "SRC:/include/test_tool/A2/a2_service.h"
+[0.106s] contain the same include string "ui_mainwindow.h", but
+[0.106s] the uic file would be generated from different user interface files
+[0.106s]   "SRC:/src/iris_tool/A2/mainwindow.ui" and
+[0.106s]   "SRC:/include/test_tool/A2/mainwindow.ui".
+[0.106s] Consider to
+[0.107s]   - add a directory prefix to a "ui_<NAME>.h" include (e.g "sub/ui_<NAME>.h")
+[0.107s]   - rename the <NAME>.ui file(s) and adjust the "ui_<NAME>.h" include(s)
+[0.107s] 
+[0.107s] gmake[2]: *** [CMakeFiles/test_tool_autogen.dir/build.make:71: CMakeFiles/test_tool_autogen] Error 1
+[0.107s] gmake[1]: *** [CMakeFiles/Makefile2:222: CMakeFiles/test_tool_autogen.dir/all] Error 2
+[0.108s] gmake[1]: *** Waiting for unfinished jobs....
+[0.117s] [ 20%] Built target dummy_test_1_autogen
+[0.117s] [ 20%] Built target dummy_test_autogen
+[0.119s] gmake: *** [Makefile:146: all] Error 2
+[0.122s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

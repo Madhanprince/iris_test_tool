@@ -1,0 +1,48 @@
+[0.025s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.123s] [  6%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.125s] [ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.135s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.163s] [ 18%] Built target dummy_test_autogen
+[0.175s] [ 18%] Built target dummy_test_1_autogen
+[0.212s] [ 18%] Built target test_tool_autogen
+[0.228s] [ 37%] Built target dummy_test
+[0.242s] [ 56%] Built target dummy_test_1
+[0.258s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.323s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.323s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[2.926s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In constructor ‘[01m[KA5_service::A5_service(QWidget*)[m[K’:
+[2.926s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:50:44:[m[K [01;31m[Kerror: [m[K‘[01m[KQLayout::Direction[m[K’ has not been declared
+[2.926s]    50 |     auto ensureLayout = [](QGroupBox *box, [01;31m[KQLayout[m[K::Direction dir)->QLayout* {
+[2.926s]       |                                            [01;31m[K^~~~~~~[m[K
+[2.926s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[2.926s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:52:33:[m[K [01;31m[Kerror: [m[K‘[01m[KLeftToRight[m[K’ is not a member of ‘[01m[KQLayout[m[K’
+[2.927s]    52 |             if (dir == QLayout::[01;31m[KLeftToRight[m[K)
+[2.927s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[2.927s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In constructor ‘[01m[KA5_service::A5_service(QWidget*)[m[K’:
+[2.927s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:60:60:[m[K [01;31m[Kerror: [m[K‘[01m[KTopToBottom[m[K’ is not a member of ‘[01m[KQLayout[m[K’
+[2.927s]    60 |     QLayout *ultraLayout = ensureLayout(ultraBox, QLayout::[01;31m[KTopToBottom[m[K);
+[2.927s]       |                                                            [01;31m[K^~~~~~~~~~~[m[K
+[2.928s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:61:56:[m[K [01;31m[Kerror: [m[K‘[01m[KLeftToRight[m[K’ is not a member of ‘[01m[KQLayout[m[K’
+[2.928s]    61 |     QLayout *encLayout = ensureLayout(encBox, QLayout::[01;31m[KLeftToRight[m[K);
+[2.928s]       |                                                        [01;31m[K^~~~~~~~~~~[m[K
+[2.928s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:62:56:[m[K [01;31m[Kerror: [m[K‘[01m[KLeftToRight[m[K’ is not a member of ‘[01m[KQLayout[m[K’
+[2.928s]    62 |     QLayout *ledLayout = ensureLayout(ledBox, QLayout::[01;31m[KLeftToRight[m[K);
+[2.928s]       |                                                        [01;31m[K^~~~~~~~~~~[m[K
+[2.929s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:63:60:[m[K [01;31m[Kerror: [m[K‘[01m[KTopToBottom[m[K’ is not a member of ‘[01m[KQLayout[m[K’
+[2.929s]    63 |     QLayout *waterLayout = ensureLayout(waterBox, QLayout::[01;31m[KTopToBottom[m[K);
+[2.929s]       |                                                            [01;31m[K^~~~~~~~~~~[m[K
+[2.930s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:98:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QLayout[m[K’ has no member named ‘[01m[KaddSpacing[m[K’; did you mean ‘[01m[KsetSpacing[m[K’?
+[2.931s]    98 |     encLayout->[01;31m[KaddSpacing[m[K(16);
+[2.931s]       |                [01;31m[K^~~~~~~~~~[m[K
+[2.931s]       |                [32m[KsetSpacing[m[K
+[2.931s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:100:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QLayout[m[K’ has no member named ‘[01m[KaddStretch[m[K’
+[2.931s]   100 |     encLayout->[01;31m[KaddStretch[m[K();
+[2.931s]       |                [01;31m[K^~~~~~~~~~[m[K
+[2.945s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:113:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass QLayout[m[K’ has no member named ‘[01m[KaddStretch[m[K’
+[2.945s]   113 |     ledLayout->[01;31m[KaddStretch[m[K();
+[2.945s]       |                [01;31m[K^~~~~~~~~~[m[K
+[3.143s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:146: CMakeFiles/test_tool.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[3.143s] gmake[2]: *** Waiting for unfinished jobs....
+[17.164s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[17.164s] gmake: *** [Makefile:146: all] Error 2
+[17.168s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

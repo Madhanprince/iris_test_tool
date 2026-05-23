@@ -1,0 +1,23 @@
+[  6%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+
+AutoUic error
+-------------
+The source files
+  "SRC:/src/iris_tool/A2/a2_service.cpp"
+  "SRC:/include/test_tool/A2/a2_service.h"
+contain the same include string "ui_mainwindow.h", but
+the uic file would be generated from different user interface files
+  "SRC:/src/iris_tool/A2/mainwindow.ui" and
+  "SRC:/include/test_tool/A2/mainwindow.ui".
+Consider to
+  - add a directory prefix to a "ui_<NAME>.h" include (e.g "sub/ui_<NAME>.h")
+  - rename the <NAME>.ui file(s) and adjust the "ui_<NAME>.h" include(s)
+
+gmake[2]: *** [CMakeFiles/test_tool_autogen.dir/build.make:71: CMakeFiles/test_tool_autogen] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:222: CMakeFiles/test_tool_autogen.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 20%] Built target dummy_test_1_autogen
+[ 20%] Built target dummy_test_autogen
+gmake: *** [Makefile:146: all] Error 2

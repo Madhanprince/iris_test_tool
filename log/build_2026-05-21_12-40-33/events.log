@@ -1,0 +1,762 @@
+[0.000000] (-) TimerEvent: {}
+[0.001172] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict()}
+[0.001276] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.018175] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.020107] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.021322] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('TMUX', '/tmp/tmux-1000/default,1147,0'), ('USER', 'maddy'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/maddy'), ('LESS', '-R'), ('OLDPWD', '/home/maddy/iris_test_tool'), ('TERM_PROGRAM_VERSION', '3.2a'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'maddy'), ('NAME', 'RMCCORPDE-DT024'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/372_interop'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/4'), ('ROS_VERSION', '2'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('P9K_SSH', '0'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/4'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('TMUX_PANE', '%3'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099500] (-) TimerEvent: {}
+[0.144100] (test_tool) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199692] (-) TimerEvent: {}
+[0.300127] (-) TimerEvent: {}
+[0.345658] (test_tool) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400307] (-) TimerEvent: {}
+[0.500763] (-) TimerEvent: {}
+[0.601201] (-) TimerEvent: {}
+[0.616611] (test_tool) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.622850] (test_tool) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.639981] (test_tool) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.664262] (test_tool) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.691404] (test_tool) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701340] (-) TimerEvent: {}
+[0.767781] (test_tool) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.771913] (test_tool) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801487] (-) TimerEvent: {}
+[0.901910] (-) TimerEvent: {}
+[1.002407] (-) TimerEvent: {}
+[1.102923] (-) TimerEvent: {}
+[1.203437] (-) TimerEvent: {}
+[1.304062] (-) TimerEvent: {}
+[1.404546] (-) TimerEvent: {}
+[1.505028] (-) TimerEvent: {}
+[1.605517] (-) TimerEvent: {}
+[1.705977] (-) TimerEvent: {}
+[1.806429] (-) TimerEvent: {}
+[1.906878] (-) TimerEvent: {}
+[2.007344] (-) TimerEvent: {}
+[2.107811] (-) TimerEvent: {}
+[2.208249] (-) TimerEvent: {}
+[2.308684] (-) TimerEvent: {}
+[2.409136] (-) TimerEvent: {}
+[2.509662] (-) TimerEvent: {}
+[2.610144] (-) TimerEvent: {}
+[2.710637] (-) TimerEvent: {}
+[2.811146] (-) TimerEvent: {}
+[2.911632] (-) TimerEvent: {}
+[3.012105] (-) TimerEvent: {}
+[3.112583] (-) TimerEvent: {}
+[3.213046] (-) TimerEvent: {}
+[3.313539] (-) TimerEvent: {}
+[3.413987] (-) TimerEvent: {}
+[3.514435] (-) TimerEvent: {}
+[3.614942] (-) TimerEvent: {}
+[3.715478] (-) TimerEvent: {}
+[3.815943] (-) TimerEvent: {}
+[3.916427] (-) TimerEvent: {}
+[4.016880] (-) TimerEvent: {}
+[4.117330] (-) TimerEvent: {}
+[4.217784] (-) TimerEvent: {}
+[4.318221] (-) TimerEvent: {}
+[4.418668] (-) TimerEvent: {}
+[4.519138] (-) TimerEvent: {}
+[4.619589] (-) TimerEvent: {}
+[4.720044] (-) TimerEvent: {}
+[4.820532] (-) TimerEvent: {}
+[4.921033] (-) TimerEvent: {}
+[5.021565] (-) TimerEvent: {}
+[5.122050] (-) TimerEvent: {}
+[5.222592] (-) TimerEvent: {}
+[5.323199] (-) TimerEvent: {}
+[5.423725] (-) TimerEvent: {}
+[5.524259] (-) TimerEvent: {}
+[5.624763] (-) TimerEvent: {}
+[5.725326] (-) TimerEvent: {}
+[5.825972] (-) TimerEvent: {}
+[5.926443] (-) TimerEvent: {}
+[6.027007] (-) TimerEvent: {}
+[6.127558] (-) TimerEvent: {}
+[6.228139] (-) TimerEvent: {}
+[6.328724] (-) TimerEvent: {}
+[6.429282] (-) TimerEvent: {}
+[6.529792] (-) TimerEvent: {}
+[6.630296] (-) TimerEvent: {}
+[6.730781] (-) TimerEvent: {}
+[6.831277] (-) TimerEvent: {}
+[6.931759] (-) TimerEvent: {}
+[7.032231] (-) TimerEvent: {}
+[7.132661] (-) TimerEvent: {}
+[7.233144] (-) TimerEvent: {}
+[7.333630] (-) TimerEvent: {}
+[7.434102] (-) TimerEvent: {}
+[7.534594] (-) TimerEvent: {}
+[7.635054] (-) TimerEvent: {}
+[7.735524] (-) TimerEvent: {}
+[7.836033] (-) TimerEvent: {}
+[7.936511] (-) TimerEvent: {}
+[8.036992] (-) TimerEvent: {}
+[8.137489] (-) TimerEvent: {}
+[8.237943] (-) TimerEvent: {}
+[8.338498] (-) TimerEvent: {}
+[8.438964] (-) TimerEvent: {}
+[8.539461] (-) TimerEvent: {}
+[8.632188] (test_tool) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.639586] (-) TimerEvent: {}
+[8.740093] (-) TimerEvent: {}
+[8.744292] (test_tool) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[8.813300] (test_tool) StdoutLine: {'line': b'-- Found rviz_common: 11.2.26 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[8.840275] (-) TimerEvent: {}
+[8.940763] (-) TimerEvent: {}
+[8.992452] (test_tool) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[9.000205] (test_tool) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[9.003614] (test_tool) StdoutLine: {'line': b'-- Found OGRE\n'}
+[9.004012] (test_tool) StdoutLine: {'line': b'--   static     : OFF\n'}
+[9.004312] (test_tool) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[9.004566] (test_tool) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[9.004806] (test_tool) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[9.005236] (test_tool) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[9.005413] (test_tool) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[9.005536] (test_tool) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[9.005657] (test_tool) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[9.005774] (test_tool) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[9.005893] (test_tool) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[9.006010] (test_tool) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[9.006128] (test_tool) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[9.040934] (-) TimerEvent: {}
+[9.141470] (-) TimerEvent: {}
+[9.241894] (-) TimerEvent: {}
+[9.342305] (-) TimerEvent: {}
+[9.442761] (-) TimerEvent: {}
+[9.543239] (-) TimerEvent: {}
+[9.643695] (-) TimerEvent: {}
+[9.744219] (-) TimerEvent: {}
+[9.844730] (-) TimerEvent: {}
+[9.945226] (-) TimerEvent: {}
+[10.045672] (-) TimerEvent: {}
+[10.146183] (-) TimerEvent: {}
+[10.246634] (-) TimerEvent: {}
+[10.347104] (-) TimerEvent: {}
+[10.447661] (-) TimerEvent: {}
+[10.548190] (-) TimerEvent: {}
+[10.648654] (-) TimerEvent: {}
+[10.749099] (-) TimerEvent: {}
+[10.849552] (-) TimerEvent: {}
+[10.950000] (-) TimerEvent: {}
+[11.050502] (-) TimerEvent: {}
+[11.150964] (-) TimerEvent: {}
+[11.251507] (-) TimerEvent: {}
+[11.351953] (-) TimerEvent: {}
+[11.452459] (-) TimerEvent: {}
+[11.552952] (-) TimerEvent: {}
+[11.653544] (-) TimerEvent: {}
+[11.754010] (-) TimerEvent: {}
+[11.854489] (-) TimerEvent: {}
+[11.954955] (-) TimerEvent: {}
+[12.055475] (-) TimerEvent: {}
+[12.155933] (-) TimerEvent: {}
+[12.256454] (-) TimerEvent: {}
+[12.356913] (-) TimerEvent: {}
+[12.457372] (-) TimerEvent: {}
+[12.557825] (-) TimerEvent: {}
+[12.658303] (-) TimerEvent: {}
+[12.758816] (-) TimerEvent: {}
+[12.859306] (-) TimerEvent: {}
+[12.959840] (-) TimerEvent: {}
+[13.060302] (-) TimerEvent: {}
+[13.160747] (-) TimerEvent: {}
+[13.261199] (-) TimerEvent: {}
+[13.361654] (-) TimerEvent: {}
+[13.462135] (-) TimerEvent: {}
+[13.562597] (-) TimerEvent: {}
+[13.583935] (test_tool) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[13.662752] (-) TimerEvent: {}
+[13.763262] (-) TimerEvent: {}
+[13.863726] (-) TimerEvent: {}
+[13.964213] (-) TimerEvent: {}
+[14.064890] (-) TimerEvent: {}
+[14.165457] (-) TimerEvent: {}
+[14.265902] (-) TimerEvent: {}
+[14.366405] (-) TimerEvent: {}
+[14.466859] (-) TimerEvent: {}
+[14.567449] (-) TimerEvent: {}
+[14.667910] (-) TimerEvent: {}
+[14.768331] (-) TimerEvent: {}
+[14.868757] (-) TimerEvent: {}
+[14.969157] (-) TimerEvent: {}
+[15.069660] (-) TimerEvent: {}
+[15.170226] (-) TimerEvent: {}
+[15.270806] (-) TimerEvent: {}
+[15.371305] (-) TimerEvent: {}
+[15.463348] (test_tool) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[15.471460] (-) TimerEvent: {}
+[15.571872] (-) TimerEvent: {}
+[15.644453] (test_tool) StdoutLine: {'line': b'-- Found rviz_default_plugins: 11.2.26 (/opt/ros/humble/share/rviz_default_plugins/cmake)\n'}
+[15.672071] (-) TimerEvent: {}
+[15.772573] (-) TimerEvent: {}
+[15.781586] (test_tool) StdoutLine: {'line': b'-- Found OGRE\n'}
+[15.781861] (test_tool) StdoutLine: {'line': b'--   static     : OFF\n'}
+[15.781977] (test_tool) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[15.782170] (test_tool) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[15.782291] (test_tool) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[15.789522] (test_tool) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[15.872759] (-) TimerEvent: {}
+[15.889572] (test_tool) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[15.890043] (test_tool) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool\n'}
+[15.890217] (test_tool) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[15.891010] (test_tool) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[15.892223] (test_tool) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[15.893144] (test_tool) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[15.895812] (test_tool) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[15.895971] (test_tool) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[15.896769] (test_tool) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[15.898647] (test_tool) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.972930] (-) TimerEvent: {}
+[16.025852] (test_tool) StdoutLine: {'line': b'-- Generating done\n'}
+[16.042379] (test_tool) StdoutLine: {'line': b'-- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool\n'}
+[16.073131] (-) TimerEvent: {}
+[16.100462] (test_tool) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[16.100709] (test_tool) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool\x1b[0m\n'}
+[16.102844] (test_tool) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[16.130082] (test_tool) StdoutLine: {'line': b'[ 20%] Built target dummy_test_1_autogen\n'}
+[16.130715] (test_tool) StdoutLine: {'line': b'[ 20%] Built target dummy_test_autogen\n'}
+[16.145941] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dummy_test\x1b[0m\n'}
+[16.150303] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dummy_test_1\x1b[0m\n'}
+[16.173105] (test_tool) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/dummy_test.dir/src/test_node/dummy_test.cpp.o\x1b[0m\n'}
+[16.173412] (-) TimerEvent: {}
+[16.173651] (test_tool) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[16.177210] (test_tool) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[16.179726] (test_tool) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/dummy_test_1.dir/src/test_node/dummy_test_1.cpp.o\x1b[0m\n'}
+[16.273594] (-) TimerEvent: {}
+[16.374087] (-) TimerEvent: {}
+[16.474593] (-) TimerEvent: {}
+[16.575150] (-) TimerEvent: {}
+[16.675773] (-) TimerEvent: {}
+[16.776403] (-) TimerEvent: {}
+[16.830715] (test_tool) StdoutLine: {'line': b'AutoMoc: /home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:26: Note: No relevant classes found. No output generated.\n'}
+[16.853177] (test_tool) StdoutLine: {'line': b'[ 46%] Built target test_tool_autogen\n'}
+[16.876578] (-) TimerEvent: {}
+[16.877566] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool\x1b[0m\n'}
+[16.931945] (test_tool) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[16.932316] (test_tool) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o\x1b[0m\n'}
+[16.935374] (test_tool) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o\x1b[0m\n'}
+[16.935721] (test_tool) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o\x1b[0m\n'}
+[16.936554] (test_tool) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o\x1b[0m\n'}
+[16.976765] (-) TimerEvent: {}
+[17.077733] (-) TimerEvent: {}
+[17.178318] (-) TimerEvent: {}
+[17.278798] (-) TimerEvent: {}
+[17.379338] (-) TimerEvent: {}
+[17.480889] (-) TimerEvent: {}
+[17.581933] (-) TimerEvent: {}
+[17.684459] (-) TimerEvent: {}
+[17.787100] (-) TimerEvent: {}
+[17.887632] (-) TimerEvent: {}
+[17.992063] (-) TimerEvent: {}
+[18.093628] (-) TimerEvent: {}
+[18.194098] (-) TimerEvent: {}
+[18.294604] (-) TimerEvent: {}
+[18.395290] (-) TimerEvent: {}
+[18.495771] (-) TimerEvent: {}
+[18.599266] (-) TimerEvent: {}
+[18.699743] (-) TimerEvent: {}
+[18.800220] (-) TimerEvent: {}
+[18.902066] (-) TimerEvent: {}
+[19.003439] (-) TimerEvent: {}
+[19.103924] (-) TimerEvent: {}
+[19.208324] (-) TimerEvent: {}
+[19.309762] (-) TimerEvent: {}
+[19.415147] (-) TimerEvent: {}
+[19.515631] (-) TimerEvent: {}
+[19.616197] (-) TimerEvent: {}
+[19.719310] (-) TimerEvent: {}
+[19.821482] (-) TimerEvent: {}
+[19.922099] (-) TimerEvent: {}
+[20.025099] (-) TimerEvent: {}
+[20.125615] (-) TimerEvent: {}
+[20.226849] (-) TimerEvent: {}
+[20.328065] (-) TimerEvent: {}
+[20.428788] (-) TimerEvent: {}
+[20.530414] (-) TimerEvent: {}
+[20.635138] (-) TimerEvent: {}
+[20.739122] (-) TimerEvent: {}
+[20.839629] (-) TimerEvent: {}
+[20.943138] (-) TimerEvent: {}
+[21.043650] (-) TimerEvent: {}
+[21.145790] (-) TimerEvent: {}
+[21.246474] (-) TimerEvent: {}
+[21.347184] (-) TimerEvent: {}
+[21.448844] (-) TimerEvent: {}
+[21.555058] (-) TimerEvent: {}
+[21.659125] (-) TimerEvent: {}
+[21.759668] (-) TimerEvent: {}
+[21.860163] (-) TimerEvent: {}
+[21.963144] (-) TimerEvent: {}
+[22.063684] (-) TimerEvent: {}
+[22.164662] (-) TimerEvent: {}
+[22.265842] (-) TimerEvent: {}
+[22.367105] (-) TimerEvent: {}
+[22.470396] (-) TimerEvent: {}
+[22.571206] (-) TimerEvent: {}
+[22.671763] (-) TimerEvent: {}
+[22.772255] (-) TimerEvent: {}
+[22.875209] (-) TimerEvent: {}
+[22.975720] (-) TimerEvent: {}
+[23.076319] (-) TimerEvent: {}
+[23.177730] (-) TimerEvent: {}
+[23.278814] (-) TimerEvent: {}
+[23.379649] (-) TimerEvent: {}
+[23.480243] (-) TimerEvent: {}
+[23.587105] (-) TimerEvent: {}
+[23.687572] (-) TimerEvent: {}
+[23.788062] (-) TimerEvent: {}
+[23.888732] (-) TimerEvent: {}
+[23.995119] (-) TimerEvent: {}
+[24.095613] (-) TimerEvent: {}
+[24.199108] (-) TimerEvent: {}
+[24.299618] (-) TimerEvent: {}
+[24.400105] (-) TimerEvent: {}
+[24.505638] (-) TimerEvent: {}
+[24.607564] (-) TimerEvent: {}
+[24.708521] (-) TimerEvent: {}
+[24.808984] (-) TimerEvent: {}
+[24.913397] (-) TimerEvent: {}
+[25.014565] (-) TimerEvent: {}
+[25.119776] (-) TimerEvent: {}
+[25.223153] (-) TimerEvent: {}
+[25.324144] (-) TimerEvent: {}
+[25.424878] (-) TimerEvent: {}
+[25.528026] (-) TimerEvent: {}
+[25.635178] (-) TimerEvent: {}
+[25.735809] (-) TimerEvent: {}
+[25.841013] (-) TimerEvent: {}
+[25.942276] (-) TimerEvent: {}
+[26.044069] (-) TimerEvent: {}
+[26.146609] (-) TimerEvent: {}
+[26.251525] (-) TimerEvent: {}
+[26.353901] (-) TimerEvent: {}
+[26.455676] (-) TimerEvent: {}
+[26.556997] (-) TimerEvent: {}
+[26.657888] (-) TimerEvent: {}
+[26.758514] (-) TimerEvent: {}
+[26.859858] (-) TimerEvent: {}
+[26.960409] (-) TimerEvent: {}
+[27.061379] (-) TimerEvent: {}
+[27.161869] (-) TimerEvent: {}
+[27.262593] (-) TimerEvent: {}
+[27.363430] (-) TimerEvent: {}
+[27.465165] (-) TimerEvent: {}
+[27.567145] (-) TimerEvent: {}
+[27.667740] (-) TimerEvent: {}
+[27.768407] (-) TimerEvent: {}
+[27.868985] (-) TimerEvent: {}
+[27.971339] (-) TimerEvent: {}
+[28.072113] (-) TimerEvent: {}
+[28.174690] (-) TimerEvent: {}
+[28.275595] (-) TimerEvent: {}
+[28.379107] (-) TimerEvent: {}
+[28.479608] (-) TimerEvent: {}
+[28.580079] (-) TimerEvent: {}
+[28.681250] (-) TimerEvent: {}
+[28.783515] (-) TimerEvent: {}
+[28.891134] (-) TimerEvent: {}
+[28.991631] (-) TimerEvent: {}
+[29.092140] (-) TimerEvent: {}
+[29.192871] (-) TimerEvent: {}
+[29.293577] (-) TimerEvent: {}
+[29.399126] (-) TimerEvent: {}
+[29.499655] (-) TimerEvent: {}
+[29.600131] (-) TimerEvent: {}
+[29.703109] (-) TimerEvent: {}
+[29.803583] (-) TimerEvent: {}
+[29.904488] (-) TimerEvent: {}
+[30.007316] (-) TimerEvent: {}
+[30.107831] (-) TimerEvent: {}
+[30.211819] (-) TimerEvent: {}
+[30.312314] (-) TimerEvent: {}
+[30.415272] (-) TimerEvent: {}
+[30.515779] (-) TimerEvent: {}
+[30.616305] (-) TimerEvent: {}
+[30.719325] (-) TimerEvent: {}
+[30.819829] (-) TimerEvent: {}
+[30.923111] (-) TimerEvent: {}
+[31.023603] (-) TimerEvent: {}
+[31.124151] (-) TimerEvent: {}
+[31.227109] (-) TimerEvent: {}
+[31.327664] (-) TimerEvent: {}
+[31.431114] (-) TimerEvent: {}
+[31.531582] (-) TimerEvent: {}
+[31.632046] (-) TimerEvent: {}
+[31.735106] (-) TimerEvent: {}
+[31.835553] (-) TimerEvent: {}
+[31.936051] (-) TimerEvent: {}
+[32.036987] (-) TimerEvent: {}
+[32.139557] (-) TimerEvent: {}
+[32.240167] (-) TimerEvent: {}
+[32.343108] (-) TimerEvent: {}
+[32.443566] (-) TimerEvent: {}
+[32.547475] (-) TimerEvent: {}
+[32.631687] (test_tool) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable dummy_test\x1b[0m\n'}
+[32.651122] (-) TimerEvent: {}
+[32.692770] (test_tool) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable dummy_test_1\x1b[0m\n'}
+[32.751298] (-) TimerEvent: {}
+[32.852123] (-) TimerEvent: {}
+[32.952943] (-) TimerEvent: {}
+[33.059134] (-) TimerEvent: {}
+[33.159814] (-) TimerEvent: {}
+[33.223502] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h:44\x1b[m\x1b[K,\n'}
+[33.223920] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:44\x1b[m\x1b[K,\n'}
+[33.224149] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[33.224388] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[33.224602] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[33.224819] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1\x1b[m\x1b[K:\n'}
+[33.225103] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:17:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic data member \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>::staticMetaObject\x1b[m\x1b[K\xe2\x80\x99 in unnamed class [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.225392] (test_tool) StderrLine: {'line': b'   17 |     \x1b[01;31m\x1b[KQ_OBJECT\x1b[m\x1b[K\n'}
+[33.225610] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[33.225819] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:24\x1b[m\x1b[K,\n'}
+[33.226035] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1\x1b[m\x1b[K:\n'}
+[33.226252] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kunnamed class defined here\n'}
+[33.226520] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;36m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.226734] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.226948] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:20:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[33.231483] (test_tool) StderrLine: {'line': b'   20 |     A2_service\x1b[34m\x1b[K(\x1b[m\x1b[KQWidget\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K*\x1b[m\x1b[Kparent = nullptr);\n'}
+[33.231755] (test_tool) StderrLine: {'line': b'      |               \x1b[34m\x1b[K~\x1b[m\x1b[K       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[33.231976] (test_tool) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[33.232501] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.232729] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;35m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.232942] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.233153] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.233369] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.233656] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.233870] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.234084] (test_tool) StderrLine: {'line': b'   24 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusLights\x1b[m\x1b[K;\n'}
+[33.234295] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.234499] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.234945] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.235367] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.235621] (test_tool) StderrLine: {'line': b'   25 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusTexts\x1b[m\x1b[K;\n'}
+[33.235836] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.236115] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.236328] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.236536] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:26:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kabstract declarator \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>\x1b[m\x1b[K\xe2\x80\x99 used as declaration\n'}
+[33.236746] (test_tool) StderrLine: {'line': b'   26 | }\x1b[01;31m\x1b[K;\x1b[m\x1b[K // <--- FIX 1: Added the missing closing brace and semicolon for the class\n'}
+[33.236943] (test_tool) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.251169] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1\x1b[m\x1b[K:\n'}
+[33.251557] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:63:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.251804] (test_tool) StderrLine: {'line': b'   63 |     rviz_common::ToolManager *tool_manager = nullptr;\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[33.252015] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.252291] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[33.254604] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:74:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Ka2_page\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.254967] (test_tool) StderrLine: {'line': b'   74 |     A2_service *\x1b[01;31m\x1b[Ka2_page\x1b[m\x1b[K;\n'}
+[33.255240] (test_tool) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[33.256049] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:5:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected id-expression before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[33.256288] (test_tool) StderrLine: {'line': b'    5 | A2_service::A2_service\x1b[01;31m\x1b[K(\x1b[m\x1b[KQWidget *parent)\n'}
+[33.256493] (test_tool) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.259949] (-) TimerEvent: {}
+[33.329562] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h:44\x1b[m\x1b[K,\n'}
+[33.331846] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:44\x1b[m\x1b[K,\n'}
+[33.332124] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[33.332361] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[33.332609] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[33.332850] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1\x1b[m\x1b[K:\n'}
+[33.333058] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:17:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic data member \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>::staticMetaObject\x1b[m\x1b[K\xe2\x80\x99 in unnamed class [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.333268] (test_tool) StderrLine: {'line': b'   17 |     \x1b[01;31m\x1b[KQ_OBJECT\x1b[m\x1b[K\n'}
+[33.333456] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[33.335238] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:24\x1b[m\x1b[K,\n'}
+[33.335556] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1\x1b[m\x1b[K:\n'}
+[33.335750] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kunnamed class defined here\n'}
+[33.335957] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;36m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.336140] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.336321] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:20:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[33.336823] (test_tool) StderrLine: {'line': b'   20 |     A2_service\x1b[34m\x1b[K(\x1b[m\x1b[KQWidget\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K*\x1b[m\x1b[Kparent = nullptr);\n'}
+[33.337041] (test_tool) StderrLine: {'line': b'      |               \x1b[34m\x1b[K~\x1b[m\x1b[K       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[33.337254] (test_tool) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[33.338451] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.339259] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;35m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.339678] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.339891] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.340106] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.340319] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.340594] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.340807] (test_tool) StderrLine: {'line': b'   24 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusLights\x1b[m\x1b[K;\n'}
+[33.341005] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.341193] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.341397] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.341603] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.341808] (test_tool) StderrLine: {'line': b'   25 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusTexts\x1b[m\x1b[K;\n'}
+[33.342035] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.342239] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.347113] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.347501] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:26:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kabstract declarator \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>\x1b[m\x1b[K\xe2\x80\x99 used as declaration\n'}
+[33.347714] (test_tool) StderrLine: {'line': b'   26 | }\x1b[01;31m\x1b[K;\x1b[m\x1b[K // <--- FIX 1: Added the missing closing brace and semicolon for the class\n'}
+[33.347925] (test_tool) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.360145] (-) TimerEvent: {}
+[33.365197] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1\x1b[m\x1b[K:\n'}
+[33.365570] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:63:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.365786] (test_tool) StderrLine: {'line': b'   63 |     rviz_common::ToolManager *tool_manager = nullptr;\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[33.365993] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.366197] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[33.375210] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:74:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Ka2_page\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.375547] (test_tool) StderrLine: {'line': b'   74 |     A2_service *\x1b[01;31m\x1b[Ka2_page\x1b[m\x1b[K;\n'}
+[33.375731] (test_tool) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[33.396224] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h:44\x1b[m\x1b[K,\n'}
+[33.396725] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:44\x1b[m\x1b[K,\n'}
+[33.399248] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[33.399484] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[33.399649] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[33.399812] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[33.400072] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:17:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic data member \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>::staticMetaObject\x1b[m\x1b[K\xe2\x80\x99 in unnamed class [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.400496] (test_tool) StderrLine: {'line': b'   17 |     \x1b[01;31m\x1b[KQ_OBJECT\x1b[m\x1b[K\n'}
+[33.400796] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[33.401151] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:24\x1b[m\x1b[K,\n'}
+[33.401320] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[33.401479] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kunnamed class defined here\n'}
+[33.401640] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;36m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.401797] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.401954] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:20:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[33.402114] (test_tool) StderrLine: {'line': b'   20 |     A2_service\x1b[34m\x1b[K(\x1b[m\x1b[KQWidget\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K*\x1b[m\x1b[Kparent = nullptr);\n'}
+[33.402271] (test_tool) StderrLine: {'line': b'      |               \x1b[34m\x1b[K~\x1b[m\x1b[K       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[33.402460] (test_tool) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[33.402617] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.402776] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;35m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.402932] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.403213] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.403375] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.403541] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.403693] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.403868] (test_tool) StderrLine: {'line': b'   24 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusLights\x1b[m\x1b[K;\n'}
+[33.404017] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.404179] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.404330] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.404481] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.404642] (test_tool) StderrLine: {'line': b'   25 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusTexts\x1b[m\x1b[K;\n'}
+[33.404789] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.404938] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.405089] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.405251] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:26:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kabstract declarator \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>\x1b[m\x1b[K\xe2\x80\x99 used as declaration\n'}
+[33.405404] (test_tool) StderrLine: {'line': b'   26 | }\x1b[01;31m\x1b[K;\x1b[m\x1b[K // <--- FIX 1: Added the missing closing brace and semicolon for the class\n'}
+[33.405565] (test_tool) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.427124] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[33.427449] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:63:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.427624] (test_tool) StderrLine: {'line': b'   63 |     rviz_common::ToolManager *tool_manager = nullptr;\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[33.427773] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.427975] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[33.430916] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:74:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Ka2_page\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.431368] (test_tool) StderrLine: {'line': b'   74 |     A2_service *\x1b[01;31m\x1b[Ka2_page\x1b[m\x1b[K;\n'}
+[33.431618] (test_tool) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[33.463112] (-) TimerEvent: {}
+[33.527116] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.527551] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:20:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.527778] (test_tool) StderrLine: {'line': b'   20 |             this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=](int row){\n'}
+[33.527967] (test_tool) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.528260] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:20:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.554061] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MainWindow::pages(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.559419] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:89:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected expression-list or type-id\n'}
+[33.559750] (test_tool) StderrLine: {'line': b'   89 |             A2_service *a2_page =new A2_service(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[33.559941] (test_tool) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.560122] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:89:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected type-specifier before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[33.560314] (test_tool) StderrLine: {'line': b'   89 |             A2_service *a2_page =new A2_service()\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[33.560513] (test_tool) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.563238] (-) TimerEvent: {}
+[33.604672] (test_tool) StdoutLine: {'line': b'[ 93%] Built target dummy_test_1\n'}
+[33.606163] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.606503] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:250:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.606811] (test_tool) StderrLine: {'line': b'  250 |         connect(Cleaning_Points, &QAction::triggered, this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.607041] (test_tool) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.607289] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:250:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.608855] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.609088] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.609282] (test_tool) StderrLine: {'line': b'  256 |         connect(Goal_Pose, &QAction::triggered, this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.609460] (test_tool) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.609653] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:256:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.611066] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.611540] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:262:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.611757] (test_tool) StderrLine: {'line': b'  262 |         connect(Pose_Estimate, &QAction::triggered, this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.611958] (test_tool) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.612158] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:262:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.616779] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.618918] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:342:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.619366] (test_tool) StderrLine: {'line': b'  342 |         connect(Cleaning_Points, &QAction::triggered, this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.619576] (test_tool) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.619775] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:342:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.619995] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.620208] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:348:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.620412] (test_tool) StderrLine: {'line': b'  348 |         connect(Goal_Pose, &QAction::triggered, this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.620623] (test_tool) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.620823] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:348:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.623966] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.624344] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:354:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.624560] (test_tool) StderrLine: {'line': b'  354 |         connect(Pose_Estimate, &QAction::triggered, this, \x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.624815] (test_tool) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.625007] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:354:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.627957] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.631311] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:451:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.631687] (test_tool) StderrLine: {'line': b'  451 |         connect(Cleaning_Points,&QAction::triggered,this,\x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.631899] (test_tool) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.632105] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:451:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.632316] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.632537] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:458:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.636005] (test_tool) StderrLine: {'line': b'  458 |         connect(Goal_Pose,&QAction::triggered,this,\x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.636253] (test_tool) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.636457] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:458:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.636657] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[33.636861] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:465:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit capture of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 via \xe2\x80\x98\x1b[01m\x1b[K[=]\x1b[m\x1b[K\xe2\x80\x99 is deprecated in C++20 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated\x07-Wdeprecated\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.637063] (test_tool) StderrLine: {'line': b'  465 |         connect(Pose_Estimate,&QAction::triggered,this,\x1b[01;35m\x1b[K[\x1b[m\x1b[K=]()\n'}
+[33.637264] (test_tool) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.637463] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:465:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kadd explicit \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K*this\x1b[m\x1b[K\xe2\x80\x99 capture\n'}
+[33.664771] (-) TimerEvent: {}
+[33.671530] (test_tool) StdoutLine: {'line': b'[ 93%] Built target dummy_test\n'}
+[33.675049] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h:44\x1b[m\x1b[K,\n'}
+[33.675859] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:44\x1b[m\x1b[K,\n'}
+[33.676083] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[33.676287] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[33.676486] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:4\x1b[m\x1b[K,\n'}
+[33.676689] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10\x1b[m\x1b[K,\n'}
+[33.676892] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:3\x1b[m\x1b[K:\n'}
+[33.677089] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:17:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic data member \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>::staticMetaObject\x1b[m\x1b[K\xe2\x80\x99 in unnamed class [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.677303] (test_tool) StderrLine: {'line': b'   17 |     \x1b[01;31m\x1b[KQ_OBJECT\x1b[m\x1b[K\n'}
+[33.677502] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[33.677697] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:24\x1b[m\x1b[K,\n'}
+[33.677906] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10\x1b[m\x1b[K,\n'}
+[33.678102] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:3\x1b[m\x1b[K:\n'}
+[33.678350] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kunnamed class defined here\n'}
+[33.678538] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;36m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.678725] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.683276] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:20:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[33.683573] (test_tool) StderrLine: {'line': b'   20 |     A2_service\x1b[34m\x1b[K(\x1b[m\x1b[KQWidget\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K*\x1b[m\x1b[Kparent = nullptr);\n'}
+[33.683764] (test_tool) StderrLine: {'line': b'      |               \x1b[34m\x1b[K~\x1b[m\x1b[K       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[33.683959] (test_tool) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[33.684149] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.684334] (test_tool) StderrLine: {'line': b'   15 | class A2_service \x1b[01;35m\x1b[K:\x1b[m\x1b[K public QMainWindow\n'}
+[33.684512] (test_tool) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.684706] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.684903] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.685095] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:15:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQMainWindow <unnamed class>::<anonymous>\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.685307] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.685506] (test_tool) StderrLine: {'line': b'   24 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusLights\x1b[m\x1b[K;\n'}
+[33.685699] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.685903] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.686102] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusLights\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.686299] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with constructor not allowed in anonymous aggregate\n'}
+[33.686508] (test_tool) StderrLine: {'line': b'   25 |     QList<QLabel*> \x1b[01;31m\x1b[KstatusTexts\x1b[m\x1b[K;\n'}
+[33.686711] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.686903] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with destructor not allowed in anonymous aggregate\n'}
+[33.691356] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmember \xe2\x80\x98\x1b[01m\x1b[KQList<QLabel*> <unnamed class>::statusTexts\x1b[m\x1b[K\xe2\x80\x99 with copy assignment operator not allowed in anonymous aggregate\n'}
+[33.691580] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/A2/a2_service.h:26:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kabstract declarator \xe2\x80\x98\x1b[01m\x1b[K<unnamed class>\x1b[m\x1b[K\xe2\x80\x99 used as declaration\n'}
+[33.691741] (test_tool) StderrLine: {'line': b'   26 | }\x1b[01;31m\x1b[K;\x1b[m\x1b[K // <--- FIX 1: Added the missing closing brace and semicolon for the class\n'}
+[33.691912] (test_tool) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[33.698980] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/moc_mainwindow.cpp:10\x1b[m\x1b[K,\n'}
+[33.699345] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:3\x1b[m\x1b[K:\n'}
+[33.699560] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:63:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.699745] (test_tool) StderrLine: {'line': b'   63 |     rviz_common::ToolManager *tool_manager = nullptr;\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[33.699902] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.700055] (test_tool) StderrLine: {'line': b'      |                                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[33.707783] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/TSGLY7GWS2/../../../../src/test_tool/include/test_tool/mainwindow.h:74:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Ka2_page\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.708242] (test_tool) StderrLine: {'line': b'   74 |     A2_service *\x1b[01;31m\x1b[Ka2_page\x1b[m\x1b[K;\n'}
+[33.708453] (test_tool) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[33.764977] (-) TimerEvent: {}
+[33.865956] (-) TimerEvent: {}
+[33.966527] (-) TimerEvent: {}
+[34.067132] (-) TimerEvent: {}
+[34.167726] (-) TimerEvent: {}
+[34.268315] (-) TimerEvent: {}
+[34.368885] (-) TimerEvent: {}
+[34.469457] (-) TimerEvent: {}
+[34.570040] (-) TimerEvent: {}
+[34.670551] (-) TimerEvent: {}
+[34.771123] (-) TimerEvent: {}
+[34.872209] (-) TimerEvent: {}
+[34.972816] (-) TimerEvent: {}
+[35.073392] (-) TimerEvent: {}
+[35.174006] (-) TimerEvent: {}
+[35.274572] (-) TimerEvent: {}
+[35.375137] (-) TimerEvent: {}
+[35.477254] (-) TimerEvent: {}
+[35.577756] (-) TimerEvent: {}
+[35.678295] (-) TimerEvent: {}
+[35.778850] (-) TimerEvent: {}
+[35.879440] (-) TimerEvent: {}
+[35.964107] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:132: CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1\n'}
+[35.964489] (test_tool) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[35.979608] (-) TimerEvent: {}
+[35.988528] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o] Error 1\n'}
+[36.079763] (-) TimerEvent: {}
+[36.145464] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1\n'}
+[36.179950] (-) TimerEvent: {}
+[36.280467] (-) TimerEvent: {}
+[36.323183] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1\n'}
+[36.380648] (-) TimerEvent: {}
+[36.482207] (-) TimerEvent: {}
+[36.582727] (-) TimerEvent: {}
+[36.683363] (-) TimerEvent: {}
+[36.783886] (-) TimerEvent: {}
+[36.884391] (-) TimerEvent: {}
+[36.984896] (-) TimerEvent: {}
+[37.085412] (-) TimerEvent: {}
+[37.185906] (-) TimerEvent: {}
+[37.286447] (-) TimerEvent: {}
+[37.386973] (-) TimerEvent: {}
+[37.487501] (-) TimerEvent: {}
+[37.588057] (-) TimerEvent: {}
+[37.688713] (-) TimerEvent: {}
+[37.789226] (-) TimerEvent: {}
+[37.889741] (-) TimerEvent: {}
+[37.990266] (-) TimerEvent: {}
+[38.090863] (-) TimerEvent: {}
+[38.191405] (-) TimerEvent: {}
+[38.291907] (-) TimerEvent: {}
+[38.392430] (-) TimerEvent: {}
+[38.492948] (-) TimerEvent: {}
+[38.593484] (-) TimerEvent: {}
+[38.694000] (-) TimerEvent: {}
+[38.794528] (-) TimerEvent: {}
+[38.895077] (-) TimerEvent: {}
+[38.995582] (-) TimerEvent: {}
+[39.096075] (-) TimerEvent: {}
+[39.196596] (-) TimerEvent: {}
+[39.297224] (-) TimerEvent: {}
+[39.397811] (-) TimerEvent: {}
+[39.498422] (-) TimerEvent: {}
+[39.598904] (-) TimerEvent: {}
+[39.699471] (-) TimerEvent: {}
+[39.799927] (-) TimerEvent: {}
+[39.900405] (-) TimerEvent: {}
+[40.000908] (-) TimerEvent: {}
+[40.101425] (-) TimerEvent: {}
+[40.201998] (-) TimerEvent: {}
+[40.302498] (-) TimerEvent: {}
+[40.402971] (-) TimerEvent: {}
+[40.503507] (-) TimerEvent: {}
+[40.603995] (-) TimerEvent: {}
+[40.704473] (-) TimerEvent: {}
+[40.804950] (-) TimerEvent: {}
+[40.905451] (-) TimerEvent: {}
+[41.005934] (-) TimerEvent: {}
+[41.106475] (-) TimerEvent: {}
+[41.207049] (-) TimerEvent: {}
+[41.307548] (-) TimerEvent: {}
+[41.408020] (-) TimerEvent: {}
+[41.508528] (-) TimerEvent: {}
+[41.609071] (-) TimerEvent: {}
+[41.709544] (-) TimerEvent: {}
+[41.810058] (-) TimerEvent: {}
+[41.910568] (-) TimerEvent: {}
+[42.011087] (-) TimerEvent: {}
+[42.111610] (-) TimerEvent: {}
+[42.212142] (-) TimerEvent: {}
+[42.312666] (-) TimerEvent: {}
+[42.413167] (-) TimerEvent: {}
+[42.513664] (-) TimerEvent: {}
+[42.614158] (-) TimerEvent: {}
+[42.714662] (-) TimerEvent: {}
+[42.815187] (-) TimerEvent: {}
+[42.915680] (-) TimerEvent: {}
+[43.016162] (-) TimerEvent: {}
+[43.116650] (-) TimerEvent: {}
+[43.217140] (-) TimerEvent: {}
+[43.317640] (-) TimerEvent: {}
+[43.418195] (-) TimerEvent: {}
+[43.518727] (-) TimerEvent: {}
+[43.619262] (-) TimerEvent: {}
+[43.660173] (test_tool) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2\n'}
+[43.660694] (test_tool) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[43.664082] (test_tool) CommandEnded: {'returncode': 2}
+[43.692885] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 2}
+[43.696797] (-) EventReactorShutdown: {}

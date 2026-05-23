@@ -1,16 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <iostream>
-#include <QProcess>
 #include <QListWidget>
 #include <QListWidgetItem>
-#include <QDebug>
 #include <QString>
 #include <QDebug>
 #include <rviz_common/visualization_manager.hpp>
-#include <OgreSceneManager.h>
-#include <OgreException.h>
-#include <OGRE/Overlay/OgreOverlayManager.h>
+#include <A2/a2_service.h>
+#include <A5/a5_service.h>
+
 
 using namespace std::chrono_literals;
 
@@ -40,7 +38,6 @@ MainWindow::MainWindow(QWidget *parent)
     layout_map = new QVBoxLayout(ui->widget_4);
     ui->widget_4->setLayout(layout_map);
   
-
     visual_manager(render_panel_1, ros_weak, rivz_clock);
 
     connect(ui->node_list,&QListWidget::itemChanged,this,&MainWindow::onItemChanged);
@@ -75,7 +72,7 @@ void MainWindow::pages(int row)
     }
 
     else if (row == 2) {
-         ui->stackedWidget->setCurrentIndex(row);
+        ui->stackedWidget->setCurrentIndex(row);
         initRViz_mapping();                
     }
     else if (row == 3) {
@@ -85,6 +82,14 @@ void MainWindow::pages(int row)
     else if (row == 4) {
         ui->stackedWidget->setCurrentIndex(row);
         initRViz_localization();
+    }
+    else if (row == 5){
+        ui->stackedWidget->setCurrentIndex(row);
+        createStatusBox();
+    }
+    else if (row == 6){
+        ui->stackedWidget->setCurrentIndex(row);
+        createFaultBox();
     }
 }
 
@@ -497,4 +502,32 @@ void MainWindow::setupDisplays_3()
         "rviz_default_plugins/Map", "Map", true);
     if (map)
         map->subProp("Topic")->setValue("/map");
+}
+
+void MainWindow::createStatusBox()
+{
+    if (!a2_page) {
+        a2_page = new A2_service(ui->status_box);
+
+        if (!ui->status_box->layout()) {
+            ui->status_box->setLayout(new QVBoxLayout(ui->status_box));
+        }
+        ui->status_box->layout()->addWidget(a2_page);
+        
+    }
+}
+
+void MainWindow::createFaultBox()
+{
+    if (!a5_page) {
+        // Create the A5 widget with no parent; we'll parent it to the current stacked page
+        QWidget *currentPage = ui->stackedWidget->currentWidget();
+        a5_page = new A5_service(currentPage);
+
+        QWidget *target = currentPage ? currentPage : ui->fault_box;
+        if (!target->layout()) {
+            target->setLayout(new QVBoxLayout(target));
+        }
+        target->layout()->addWidget(a5_page);
+    }
 }

@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     rclcpp::init(argc, argv);
     
     MainWindow w;
-    w.show();
+    w.showMaximized(); 
 
     // Use a shared pointer to ensure the node stays alive
     auto qtnode = w.getNode(); 

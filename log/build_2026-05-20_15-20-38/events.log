@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000917] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict()}
+[0.001084] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.013210] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.014532] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.016153] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('TMUX', '/tmp/tmux-1000/default,18845,0'), ('USER', 'maddy'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/maddy'), ('LESS', '-R'), ('OLDPWD', '/home/maddy/iris_test_tool'), ('TERM_PROGRAM_VERSION', '3.2a'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('COLCON_PREFIX_PATH', '/home/maddy/iris_test_tool/install'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'maddy'), ('NAME', 'RMCCORPDE-DT024'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/375_interop'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/3'), ('ROS_VERSION', '2'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('P9K_SSH', '0'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('TMUX_PANE', '%1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('CMAKE_PREFIX_PATH', '/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.099081] (-) TimerEvent: {}
+[0.106936] (test_tool) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[0.107480] (test_tool) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[0.110748] (test_tool) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool\x1b[0m\n'}
+[0.141853] (test_tool) StdoutLine: {'line': b'[ 21%] Built target dummy_test_autogen\n'}
+[0.142280] (test_tool) StdoutLine: {'line': b'[ 21%] Built target dummy_test_1_autogen\n'}
+[0.172042] (test_tool) StdoutLine: {'line': b'[ 21%] Built target test_tool_autogen\n'}
+[0.188487] (test_tool) StdoutLine: {'line': b'[ 42%] Built target dummy_test\n'}
+[0.189818] (test_tool) StdoutLine: {'line': b'[ 64%] Built target dummy_test_1\n'}
+[0.199234] (-) TimerEvent: {}
+[0.201943] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool\x1b[0m\n'}
+[0.256990] (test_tool) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o\x1b[0m\n'}
+[0.299376] (-) TimerEvent: {}
+[0.399891] (-) TimerEvent: {}
+[0.500464] (-) TimerEvent: {}
+[0.600940] (-) TimerEvent: {}
+[0.701484] (-) TimerEvent: {}
+[0.802215] (-) TimerEvent: {}
+[0.902941] (-) TimerEvent: {}
+[1.003521] (-) TimerEvent: {}
+[1.104030] (-) TimerEvent: {}
+[1.204564] (-) TimerEvent: {}
+[1.305022] (-) TimerEvent: {}
+[1.405762] (-) TimerEvent: {}
+[1.506394] (-) TimerEvent: {}
+[1.606930] (-) TimerEvent: {}
+[1.707537] (-) TimerEvent: {}
+[1.808091] (-) TimerEvent: {}
+[1.908721] (-) TimerEvent: {}
+[2.009372] (-) TimerEvent: {}
+[2.109993] (-) TimerEvent: {}
+[2.210489] (-) TimerEvent: {}
+[2.311056] (-) TimerEvent: {}
+[2.411591] (-) TimerEvent: {}
+[2.512107] (-) TimerEvent: {}
+[2.612618] (-) TimerEvent: {}
+[2.713211] (-) TimerEvent: {}
+[2.813754] (-) TimerEvent: {}
+[2.914268] (-) TimerEvent: {}
+[3.014840] (-) TimerEvent: {}
+[3.115340] (-) TimerEvent: {}
+[3.215862] (-) TimerEvent: {}
+[3.316349] (-) TimerEvent: {}
+[3.416864] (-) TimerEvent: {}
+[3.517359] (-) TimerEvent: {}
+[3.617959] (-) TimerEvent: {}
+[3.718477] (-) TimerEvent: {}
+[3.819094] (-) TimerEvent: {}
+[3.919801] (-) TimerEvent: {}
+[4.020320] (-) TimerEvent: {}
+[4.120822] (-) TimerEvent: {}
+[4.221333] (-) TimerEvent: {}
+[4.321832] (-) TimerEvent: {}
+[4.422325] (-) TimerEvent: {}
+[4.522828] (-) TimerEvent: {}
+[4.623373] (-) TimerEvent: {}
+[4.724028] (-) TimerEvent: {}
+[4.824657] (-) TimerEvent: {}
+[4.925265] (-) TimerEvent: {}
+[5.025986] (-) TimerEvent: {}
+[5.126627] (-) TimerEvent: {}
+[5.227156] (-) TimerEvent: {}
+[5.328294] (-) TimerEvent: {}
+[5.428956] (-) TimerEvent: {}
+[5.529534] (-) TimerEvent: {}
+[5.630236] (-) TimerEvent: {}
+[5.730777] (-) TimerEvent: {}
+[5.831315] (-) TimerEvent: {}
+[5.931815] (-) TimerEvent: {}
+[6.032313] (-) TimerEvent: {}
+[6.132827] (-) TimerEvent: {}
+[6.233323] (-) TimerEvent: {}
+[6.333788] (-) TimerEvent: {}
+[6.434362] (-) TimerEvent: {}
+[6.534886] (-) TimerEvent: {}
+[6.635416] (-) TimerEvent: {}
+[6.735912] (-) TimerEvent: {}
+[6.836419] (-) TimerEvent: {}
+[6.936953] (-) TimerEvent: {}
+[7.037569] (-) TimerEvent: {}
+[7.138131] (-) TimerEvent: {}
+[7.238744] (-) TimerEvent: {}
+[7.339280] (-) TimerEvent: {}
+[7.439816] (-) TimerEvent: {}
+[7.540374] (-) TimerEvent: {}
+[7.640909] (-) TimerEvent: {}
+[7.741411] (-) TimerEvent: {}
+[7.842099] (-) TimerEvent: {}
+[7.942573] (-) TimerEvent: {}
+[8.043076] (-) TimerEvent: {}
+[8.143616] (-) TimerEvent: {}
+[8.244250] (-) TimerEvent: {}
+[8.344744] (-) TimerEvent: {}
+[8.445241] (-) TimerEvent: {}
+[8.545780] (-) TimerEvent: {}
+[8.637377] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1\x1b[m\x1b[K:\n'}
+[8.637758] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:62:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.637918] (test_tool) StderrLine: {'line': b'   62 | rviz_common::ToolManager *tool_manager = nullptr;\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.638037] (test_tool) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.638151] (test_tool) StderrLine: {'line': b'      |                                                  \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[8.645921] (-) TimerEvent: {}
+[8.746410] (-) TimerEvent: {}
+[8.846935] (-) TimerEvent: {}
+[8.947428] (-) TimerEvent: {}
+[9.047947] (-) TimerEvent: {}
+[9.148423] (-) TimerEvent: {}
+[9.248959] (-) TimerEvent: {}
+[9.349461] (-) TimerEvent: {}
+[9.450005] (-) TimerEvent: {}
+[9.550566] (-) TimerEvent: {}
+[9.651123] (-) TimerEvent: {}
+[9.751683] (-) TimerEvent: {}
+[9.852282] (-) TimerEvent: {}
+[9.952775] (-) TimerEvent: {}
+[10.053291] (-) TimerEvent: {}
+[10.153820] (-) TimerEvent: {}
+[10.254390] (-) TimerEvent: {}
+[10.355000] (-) TimerEvent: {}
+[10.455496] (-) TimerEvent: {}
+[10.556071] (-) TimerEvent: {}
+[10.656708] (-) TimerEvent: {}
+[10.757294] (-) TimerEvent: {}
+[10.857925] (-) TimerEvent: {}
+[10.958522] (-) TimerEvent: {}
+[11.059266] (-) TimerEvent: {}
+[11.159856] (-) TimerEvent: {}
+[11.260375] (-) TimerEvent: {}
+[11.360866] (-) TimerEvent: {}
+[11.461338] (-) TimerEvent: {}
+[11.561964] (-) TimerEvent: {}
+[11.662583] (-) TimerEvent: {}
+[11.763238] (-) TimerEvent: {}
+[11.863705] (-) TimerEvent: {}
+[11.964254] (-) TimerEvent: {}
+[12.064784] (-) TimerEvent: {}
+[12.165323] (-) TimerEvent: {}
+[12.265934] (-) TimerEvent: {}
+[12.366431] (-) TimerEvent: {}
+[12.466969] (-) TimerEvent: {}
+[12.567587] (-) TimerEvent: {}
+[12.668113] (-) TimerEvent: {}
+[12.775132] (-) TimerEvent: {}
+[12.875691] (-) TimerEvent: {}
+[12.976180] (-) TimerEvent: {}
+[13.076746] (-) TimerEvent: {}
+[13.177390] (-) TimerEvent: {}
+[13.278258] (-) TimerEvent: {}
+[13.378856] (-) TimerEvent: {}
+[13.479587] (-) TimerEvent: {}
+[13.539775] (test_tool) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable test_tool\x1b[0m\n'}
+[13.579764] (-) TimerEvent: {}
+[13.680409] (-) TimerEvent: {}
+[13.781044] (-) TimerEvent: {}
+[13.881586] (-) TimerEvent: {}
+[13.982106] (-) TimerEvent: {}
+[14.082821] (-) TimerEvent: {}
+[14.183613] (-) TimerEvent: {}
+[14.284349] (-) TimerEvent: {}
+[14.384964] (-) TimerEvent: {}
+[14.485543] (-) TimerEvent: {}
+[14.586203] (-) TimerEvent: {}
+[14.686868] (-) TimerEvent: {}
+[14.787464] (-) TimerEvent: {}
+[14.888270] (-) TimerEvent: {}
+[14.989234] (-) TimerEvent: {}
+[15.089801] (-) TimerEvent: {}
+[15.190393] (-) TimerEvent: {}
+[15.291019] (-) TimerEvent: {}
+[15.392071] (-) TimerEvent: {}
+[15.492735] (-) TimerEvent: {}
+[15.593370] (-) TimerEvent: {}
+[15.693979] (-) TimerEvent: {}
+[15.794891] (-) TimerEvent: {}
+[15.895483] (-) TimerEvent: {}
+[15.996123] (-) TimerEvent: {}
+[16.096825] (-) TimerEvent: {}
+[16.197420] (-) TimerEvent: {}
+[16.298092] (-) TimerEvent: {}
+[16.398760] (-) TimerEvent: {}
+[16.499302] (-) TimerEvent: {}
+[16.599827] (-) TimerEvent: {}
+[16.700373] (-) TimerEvent: {}
+[16.800906] (-) TimerEvent: {}
+[16.901519] (-) TimerEvent: {}
+[17.002079] (-) TimerEvent: {}
+[17.006955] (test_tool) StdoutLine: {'line': b'[100%] Built target test_tool\n'}
+[17.021303] (test_tool) CommandEnded: {'returncode': 0}
+[17.023115] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'install'}
+[17.034503] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maddy/iris_test_tool/build/test_tool'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('TMUX', '/tmp/tmux-1000/default,18845,0'), ('USER', 'maddy'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/maddy'), ('LESS', '-R'), ('OLDPWD', '/home/maddy/iris_test_tool'), ('TERM_PROGRAM_VERSION', '3.2a'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('COLCON_PREFIX_PATH', '/home/maddy/iris_test_tool/install'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'maddy'), ('NAME', 'RMCCORPDE-DT024'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/375_interop'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/3'), ('ROS_VERSION', '2'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('P9K_SSH', '0'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('TMUX_PANE', '%1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('CMAKE_PREFIX_PATH', '/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[17.044825] (test_tool) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[17.045258] (test_tool) StdoutLine: {'line': b'-- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool\n'}
+[17.072454] (test_tool) StdoutLine: {'line': b'-- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool" to ""\n'}
+[17.073188] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test\n'}
+[17.073423] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test_1\n'}
+[17.073831] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/launch\n'}
+[17.074379] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/launch/turtle_bot.py\n'}
+[17.074808] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/launch/test_nodes.py\n'}
+[17.074984] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool\n'}
+[17.075296] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool\n'}
+[17.075598] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh\n'}
+[17.075723] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv\n'}
+[17.075844] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh\n'}
+[17.076137] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv\n'}
+[17.076383] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash\n'}
+[17.076668] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh\n'}
+[17.076947] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh\n'}
+[17.077067] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv\n'}
+[17.077186] (test_tool) StdoutLine: {'line': b'-- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv\n'}
+[17.077303] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool\n'}
+[17.077430] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake\n'}
+[17.077552] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake\n'}
+[17.078365] (test_tool) StdoutLine: {'line': b'-- Up-to-date: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml\n'}
+[17.080010] (test_tool) CommandEnded: {'returncode': 0}
+[17.102169] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 0}
+[17.104200] (-) TimerEvent: {}
+[17.104398] (-) EventReactorShutdown: {}

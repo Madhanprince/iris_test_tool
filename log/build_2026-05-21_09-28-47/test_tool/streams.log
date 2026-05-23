@@ -1,0 +1,20 @@
+[0.017s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.087s] [  6%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.091s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.091s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.105s] 
+[0.105s] AutoUic error
+[0.105s] -------------
+[0.106s] "SRC:/include/test_tool/A2/a2_service.h"
+[0.106s] includes the uic file "ui_mainwindow.h",
+[0.106s] but the user interface file "mainwindow.ui"
+[0.106s] could not be found in the following directories
+[0.107s]   "SRC:/include/test_tool/A2"
+[0.107s] 
+[0.107s] gmake[2]: *** [CMakeFiles/test_tool_autogen.dir/build.make:71: CMakeFiles/test_tool_autogen] Error 1
+[0.107s] gmake[1]: *** [CMakeFiles/Makefile2:222: CMakeFiles/test_tool_autogen.dir/all] Error 2
+[0.107s] gmake[1]: *** Waiting for unfinished jobs....
+[0.117s] [ 20%] Built target dummy_test_autogen
+[0.118s] [ 20%] Built target dummy_test_1_autogen
+[0.119s] gmake: *** [Makefile:146: all] Error 2
+[0.124s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

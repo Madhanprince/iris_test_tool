@@ -1,0 +1,104 @@
+[0.017s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.050s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.207s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.419s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.422s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.431s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.444s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.461s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.503s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.504s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.070s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.131s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.166s] -- Found rviz_common: 11.2.26 (/opt/ros/humble/share/rviz_common/cmake)
+[8.290s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[8.294s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[8.296s] -- Found OGRE
+[8.296s] --   static     : OFF
+[8.296s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[8.296s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.297s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[8.297s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[8.297s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[8.297s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.297s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[8.297s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.297s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.298s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[8.298s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[12.776s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[14.552s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[14.659s] -- Found rviz_default_plugins: 11.2.26 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[14.753s] -- Found OGRE
+[14.753s] --   static     : OFF
+[14.753s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[14.753s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[14.753s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[14.760s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[14.846s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.846s] -- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include
+[14.846s] -- Configured cppcheck exclude dirs and/or files: 
+[14.847s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.848s] -- Added test 'lint_cmake' to check CMake code style
+[14.848s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.851s] -- Added test 'uncrustify' to check C / C++ code style
+[14.851s] -- Configured uncrustify additional arguments: 
+[14.852s] -- Added test 'xmllint' to check XML markup files
+[14.853s] -- Configuring done
+[14.937s] -- Generating done
+[14.957s] -- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[15.013s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[15.015s] [ 13%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[15.016s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[15.057s] [ 20%] Built target dummy_test_autogen
+[15.058s] [ 20%] Built target dummy_test_1_autogen
+[15.072s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[15.072s] [35m[1mConsolidate compiler generated dependencies of target dummy_test_1[0m
+[15.088s] [ 26%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o[0m
+[15.091s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o[0m
+[15.092s] [ 46%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/test_node/dummy_test.cpp.o[0m
+[15.092s] [ 46%] [32mBuilding CXX object CMakeFiles/dummy_test_1.dir/src/test_node/dummy_test_1.cpp.o[0m
+[15.806s] [ 46%] Built target test_tool_autogen
+[15.833s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[15.867s] gmake[2]: Warning: File 'test_tool_autogen/mocs_compilation.cpp' has modification time 19 s in the future
+[15.882s] [ 53%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[15.892s] [ 60%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[15.893s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[15.893s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o[0m
+[15.898s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[15.916s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmainwindow.h: No such file or directory
+[15.917s]     1 | #include [01;31m[K"mainwindow.h"[m[K
+[15.917s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.917s] compilation terminated.
+[15.917s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/qt_ros.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kqt_ros.h: No such file or directory
+[15.917s]     1 | #include [01;31m[K"qt_ros.h"[m[K
+[15.918s]       |          [01;31m[K^~~~~~~~~~[m[K
+[15.918s] compilation terminated.
+[15.918s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmainwindow.h: No such file or directory
+[15.918s]     1 | #include [01;31m[K"mainwindow.h"[m[K
+[15.919s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.919s] compilation terminated.
+[15.921s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmainwindow.h: No such file or directory
+[15.922s]     1 | #include [01;31m[K"mainwindow.h"[m[K
+[15.922s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.922s] compilation terminated.
+[15.922s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[15.922s] gmake[2]: *** Waiting for unfinished jobs....
+[15.923s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:118: CMakeFiles/test_tool.dir/src/iris_tool/qt_ros.cpp.o] Error 1
+[15.923s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:90: CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o] Error 1
+[15.923s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:132: CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[16.080s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+[16.080s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[16.081s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:1:10:[m[K [01;31m[Kfatal error: [m[Kmainwindow.h: No such file or directory
+[16.081s]     1 | #include [01;31m[K"mainwindow.h"[m[K
+[16.081s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[16.081s] compilation terminated.
+[16.082s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+[16.083s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[16.083s] gmake[1]: *** Waiting for unfinished jobs....
+[25.068s] [ 86%] [32m[1mLinking CXX executable dummy_test_1[0m
+[25.106s] [ 93%] [32m[1mLinking CXX executable dummy_test[0m
+[25.625s] [ 93%] Built target dummy_test
+[25.634s] [ 93%] Built target dummy_test_1
+[25.636s] gmake: *** [Makefile:146: all] Error 2
+[25.639s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -1,52 +1,61 @@
-cmake_minimum_required(VERSION 3.8) # Minimum CMake version required
+cmake_minimum_required(VERSION 3.8)
 
-project(test_tool VERSION 0.1 LANGUAGES CXX) # Project name and language
+project(test_tool VERSION 0.1 LANGUAGES CXX)
 
 # Enable compiler warnings for GCC / Clang
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic) # Recommended compile warnings
+  add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-set(CMAKE_INCLUDE_CURRENT_DIR ON) # Include current directory automatically
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set(CMAKE_AUTOUIC ON) # Automatically process Qt UI files (.ui)
-set(CMAKE_AUTOMOC ON) # Automatically process Qt signals/slots (Q_OBJECT)
-set(CMAKE_AUTORCC ON) # Automatically process Qt resource files (.qrc)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON) # Enforce C++17
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 
 # Prevent the "already defined" error
 set(QT_NO_CREATE_VERSIONLESS_TARGETS ON)
 
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED) # ROS2 build system
-find_package(rcl_interfaces REQUIRED) # ROS2 message types
-find_package(std_msgs REQUIRED) # ROS2 message types
-find_package(sensor_msgs REQUIRED) # ROS2 message types
+find_package(rclcpp REQUIRED)
+find_package(rcl_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(rviz_common REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
 find_package(rviz_ogre_vendor REQUIRED)
 find_package(OGRE REQUIRED Overlay)
 
-# 2. Force Qt5 to match ROS Humble / RViz
+# Force Qt5 to match ROS Humble / RViz
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
-
-set(PROJECT_SOURCES # List of all project source files
+set(PROJECT_SOURCES
     src/iris_tool/main.cpp
     src/iris_tool/mainwindow.cpp
     src/iris_tool/mainwindow.ui
     src/iris_tool/qt_ros.cpp
+    src/iris_tool/A2/a2_service.cpp
+    src/iris_tool/A5/a5_service.cpp
 
     include/test_tool/mainwindow.h
     include/test_tool/qt_ros.h
+    include/test_tool/A2/a2_service.h
+    include/test_tool/A5/a5_service.h
 )
 
-add_executable(test_tool ${PROJECT_SOURCES}) # Create executable from source files
+add_executable(test_tool ${PROJECT_SOURCES})
 
-# ✅ FIXED: Added explicit Ogre include paths so the compiler can find OgreOverlayManager.h
+# ✅ FIXED: Pointed directly to the UI folder so ui_mainwindow.h generates and links successfully
+set_target_properties(test_tool PROPERTIES
+    AUTOUIC_SEARCH_PATHS "${CMAKE_CURRENT_SOURCE_DIR}/src/iris_tool"
+)
 
+# ✅ FIXED: Standardized target directory to allow #include "test_tool/mainwindow.h"
 target_include_directories(test_tool PUBLIC 
   "${CMAKE_CURRENT_SOURCE_DIR}/include/test_tool"
 ) 
@@ -54,11 +63,8 @@ target_include_directories(test_tool PUBLIC
 target_link_libraries(test_tool 
   Qt5::Widgets 
   rviz_common::rviz_common  
-  rviz_ogre_vendor::OgreMain
-  rviz_ogre_vendor::OgreOverlay
 )
 
-# ✅ FIXED: Appended rviz_common and rviz_ogre_vendor here to ensure target macro properties export completely
 ament_target_dependencies(test_tool 
   rclcpp 
   std_msgs 
@@ -68,26 +74,26 @@ ament_target_dependencies(test_tool
   rviz_ogre_vendor
 )
 
-add_executable(dummy_test src/dummy_test.cpp)
-target_link_libraries(dummy_test Qt5::Widgets) 
+# Dummy test binaries
+add_executable(dummy_test src/test_node/dummy_test.cpp)
 ament_target_dependencies(dummy_test rclcpp std_msgs rcl_interfaces sensor_msgs)
 
-add_executable(dummy_test_1 src/dummy_test_1.cpp)
-target_link_libraries(dummy_test_1 Qt5::Widgets) 
+add_executable(dummy_test_1 src/test_node/dummy_test_1.cpp)
 ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
 
+# Installation
 install(TARGETS test_tool dummy_test dummy_test_1 
-  DESTINATION lib/${PROJECT_NAME}) # Install executable for ROS2 so "ros2 run" works
+  DESTINATION lib/${PROJECT_NAME})
   
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 
-# Optional testing section used by ROS2 lint tools
+# Testing configuration
 if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED) # Find ROS2 lint tools
-  set(ament_cmake_copyright_FOUND TRUE) # Skip copyright check
-  set(ament_cmake_cpplint_FOUND TRUE) # Skip cpplint
-  ament_lint_auto_find_test_dependencies() # Run lint dependencies
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
 endif()
 
-ament_package() # Declare this as a ROS2 package
+ament_package()

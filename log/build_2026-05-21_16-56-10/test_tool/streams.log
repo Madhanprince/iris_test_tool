@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.105s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.107s] [ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.107s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.138s] [ 20%] Built target dummy_test_autogen
+[0.141s] [ 20%] Built target dummy_test_1_autogen
+[0.174s] [ 20%] Built target test_tool_autogen
+[0.193s] [ 40%] Built target dummy_test
+[0.198s] [ 60%] Built target dummy_test_1
+[0.211s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.274s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[0.277s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[3.224s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In constructor ‘[01m[KA2_service::A2_service(QWidget*)[m[K’:
+[3.224s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:32:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ui::MainWindow[m[K’ has no member named ‘[01m[Kwidget_8[m[K’; did you mean ‘[01m[Kwidget_4[m[K’?
+[3.224s]    32 |     QHBoxLayout *rowLayout = new QHBoxLayout(ui->[01;31m[Kwidget_8[m[K);
+[3.224s]       |                                                  [01;31m[K^~~~~~~~[m[K
+[3.224s]       |                                                  [32m[Kwidget_4[m[K
+[3.225s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:45:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ui::MainWindow[m[K’ has no member named ‘[01m[Kwidget_8[m[K’; did you mean ‘[01m[Kwidget_4[m[K’?
+[3.225s]    45 |     ui->[01;31m[Kwidget_8[m[K->setLayout(rowLayout);
+[3.225s]       |         [01;31m[K^~~~~~~~[m[K
+[3.225s]       |         [32m[Kwidget_4[m[K
+[3.604s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:132: CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[3.604s] gmake[2]: *** Waiting for unfinished jobs....
+[14.059s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[14.059s] gmake: *** [Makefile:146: all] Error 2
+[14.063s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

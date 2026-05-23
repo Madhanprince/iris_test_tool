@@ -1652,6 +1652,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h",
+			"MU",
+			"A3UGQF3KCJ/moc_a2_service.cpp",
+			null
+		],
+		[
+			"/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h",
+			"MU",
+			"PVQ5PQUJCZ/moc_a5_service.cpp",
+			null
+		],
+		[
 			"/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h",
 			"MU",
 			"TSGLY7GWS2/moc_mainwindow.cpp",
@@ -1774,6 +1786,16 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/main.cpp",
 			"MU",
 			null
@@ -1790,7 +1812,7 @@
 		]
 	],
 	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [],
+	"UIC_SEARCH_PATHS" : [ "/home/maddy/iris_test_tool/src/test_tool/src/iris_tool" ],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

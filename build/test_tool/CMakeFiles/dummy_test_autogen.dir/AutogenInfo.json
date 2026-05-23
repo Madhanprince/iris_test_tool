@@ -1657,9 +1657,6 @@
 	[
 		"DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp",
 		"FASTCDR_DYN_LINK",
-		"QT_CORE_LIB",
-		"QT_GUI_LIB",
-		"QT_WIDGETS_LIB",
 		"RCUTILS_ENABLE_FAULT_INJECTION"
 	],
 	"MOC_DEPEND_FILTERS" : 
@@ -1677,11 +1674,6 @@
 		"/opt/ros/humble/include/std_msgs",
 		"/opt/ros/humble/include/rcl_interfaces",
 		"/opt/ros/humble/include/sensor_msgs",
-		"/usr/include/x86_64-linux-gnu/qt5",
-		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
-		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
-		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
-		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
 		"/opt/ros/humble/include/ament_index_cpp",
 		"/opt/ros/humble/include/libstatistics_collector",
 		"/opt/ros/humble/include/builtin_interfaces",
@@ -1742,7 +1734,7 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/maddy/iris_test_tool/src/test_tool/src/dummy_test.cpp",
+			"/home/maddy/iris_test_tool/src/test_tool/src/test_node/dummy_test.cpp",
 			"MU",
 			null
 		]

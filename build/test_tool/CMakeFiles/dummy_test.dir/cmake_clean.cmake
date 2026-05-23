@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "dummy_test_autogen"
   "CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o.d"
-  "CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o"
-  "CMakeFiles/dummy_test.dir/src/dummy_test.cpp.o.d"
+  "CMakeFiles/dummy_test.dir/src/test_node/dummy_test.cpp.o"
+  "CMakeFiles/dummy_test.dir/src/test_node/dummy_test.cpp.o.d"
   "dummy_test"
   "dummy_test.pdb"
 )

@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include <QListWidget>
 #include <QTimer>
-#include <QProcess>
 #include <rclcpp/rclcpp.hpp>
 #include <rcl_interfaces/msg/log.hpp>
 #include "qt_ros.h"
@@ -23,7 +22,6 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; } //Qt puts all generated UI classes inside a namespace called Ui
 QT_END_NAMESPACE
@@ -33,6 +31,8 @@ namespace rviz_common {
     class RenderPanel;
     class VisualizationManager;
 }
+class A2_service;  // Forward declaration to avoid circular include
+class A5_service; // Forward declaration for A5 (global scope)
 
 class MainWindow : public QMainWindow
 {
@@ -60,7 +60,7 @@ private:
     std::set<std::string> clicked_node;
     rviz_common::RenderPanel *render_panel_1 = nullptr;
     rviz_common::VisualizationManager *visualizationManager_ = nullptr;
-    rviz_common::ToolManager *tool_manager = nullptr;;
+    rviz_common::ToolManager *tool_manager = nullptr;
     rviz_common::Tool *cleaning_points_plugins = nullptr;
     rviz_common::Tool *goal_pose_plugins = nullptr;
     rviz_common::Tool *pose_estimate_plugins = nullptr; 
@@ -70,7 +70,9 @@ private:
     QAction *Cleaning_Points ;
     QAction *Goal_Pose ;
     QAction *Pose_Estimate; 
-    QAction *Safty_Points ;
+    QAction *Safty_Points ; 
+    A2_service *a2_page = nullptr;
+    A5_service *a5_page = nullptr;
 
 
     void refreshNodeList();
@@ -83,6 +85,8 @@ private:
     void setupDisplays();
     void setupDisplays_2();
     void setupDisplays_3();
+    void createStatusBox();
+    void createFaultBox();
 
     void visual_manager(
         rviz_common::RenderPanel * visual_panel, 

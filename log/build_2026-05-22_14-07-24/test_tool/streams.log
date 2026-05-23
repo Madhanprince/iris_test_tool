@@ -1,0 +1,33 @@
+[0.019s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.091s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.092s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.092s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
+[0.122s] [ 20%] Built target dummy_test_1_autogen
+[0.122s] [ 20%] Built target dummy_test_autogen
+[0.166s] [ 40%] Built target dummy_test
+[0.171s] [ 60%] Built target dummy_test_1
+[0.857s] [ 60%] Built target test_tool_autogen
+[0.879s] [35m[1mConsolidate compiler generated dependencies of target test_tool[0m
+[0.925s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.925s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o[0m
+[0.925s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[0.927s] [ 86%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/main.cpp.o[0m
+[12.785s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:8[m[K,
+[12.786s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+[12.786s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_autogen/mocs_compilation.cpp:2[m[K:
+[12.786s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[KA2_service[m[K’ does not name a type; did you mean ‘[01m[Krmw_service_t[m[K’?
+[12.786s]    74 |     [01;31m[KA2_service[m[K *a2_page = nullptr;
+[12.786s]       |     [01;31m[K^~~~~~~~~~[m[K
+[12.786s]       |     [32m[Krmw_service_t[m[K
+[12.917s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:8[m[K,
+[12.917s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[12.917s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[KA2_service[m[K’ does not name a type; did you mean ‘[01m[Krmw_service_t[m[K’?
+[12.917s]    74 |     [01;31m[KA2_service[m[K *a2_page = nullptr;
+[12.918s]       |     [01;31m[K^~~~~~~~~~[m[K
+[12.918s]       |     [32m[Krmw_service_t[m[K
+[15.901s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:76: CMakeFiles/test_tool.dir/test_tool_autogen/mocs_compilation.cpp.o] Error 1
+[15.901s] gmake[2]: *** Waiting for unfinished jobs....
+[15.930s] gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:132: CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[17.444s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
+[17.444s] gmake: *** [Makefile:146: all] Error 2
+[17.447s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

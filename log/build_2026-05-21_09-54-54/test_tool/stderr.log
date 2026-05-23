@@ -1,0 +1,18 @@
+
+AutoUic error
+-------------
+The source files
+  "SRC:/src/iris_tool/A2/a2_service.cpp"
+  "SRC:/include/test_tool/A2/a2_service.h"
+contain the same include string "ui_mainwindow.h", but
+the uic file would be generated from different user interface files
+  "SRC:/src/iris_tool/A2/mainwindow.ui" and
+  "SRC:/include/test_tool/A2/mainwindow.ui".
+Consider to
+  - add a directory prefix to a "ui_<NAME>.h" include (e.g "sub/ui_<NAME>.h")
+  - rename the <NAME>.ui file(s) and adjust the "ui_<NAME>.h" include(s)
+
+gmake[2]: *** [CMakeFiles/test_tool_autogen.dir/build.make:71: CMakeFiles/test_tool_autogen] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:222: CMakeFiles/test_tool_autogen.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
