@@ -23,7 +23,8 @@
                 "/usr/include/x86_64-linux-gnu/qt5/QtCore",
                 "/usr/include/x86_64-linux-gnu/qt5/QtGui",
                 "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
-                "/opt/ros/humble/include/rcl_yaml_param_parser"
+                "/opt/ros/humble/include/rcl_yaml_param_parser",
+                "/opt/ros/humble/include/rosidl_runtime_c"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang-14",

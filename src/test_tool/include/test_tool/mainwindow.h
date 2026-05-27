@@ -21,6 +21,7 @@
 #include <rviz_rendering/render_window.hpp>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include "ui_mainwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; } //Qt puts all generated UI classes inside a namespace called Ui
@@ -72,7 +73,7 @@ private:
     QAction *Pose_Estimate; 
     QAction *Safty_Points ; 
     A2_service *a2_page = nullptr;
-    A5_service *a5_page = nullptr;
+    // A5_service *a5_page = nullptr;
 
 
     void refreshNodeList();
@@ -85,8 +86,8 @@ private:
     void setupDisplays();
     void setupDisplays_2();
     void setupDisplays_3();
-    void createStatusBox();
-    void createFaultBox();
+    void a2_service();
+    void a5_service();
 
     void visual_manager(
         rviz_common::RenderPanel * visual_panel, 

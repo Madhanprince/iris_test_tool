@@ -85,12 +85,12 @@ void MainWindow::pages(int row)
     }
     else if (row == 5){
         ui->stackedWidget->setCurrentIndex(row);
-        createStatusBox();
+        a2_service();
     }
-    else if (row == 6){
-        ui->stackedWidget->setCurrentIndex(row);
-        createFaultBox();
-    }
+    // else if (row == 6){
+    //     ui->stackedWidget->setCurrentIndex(row);
+    //     a5_service();
+    // }
 }
 
 void MainWindow::refreshNodeList()
@@ -504,30 +504,31 @@ void MainWindow::setupDisplays_3()
         map->subProp("Topic")->setValue("/map");
 }
 
-void MainWindow::createStatusBox()
+void MainWindow::a2_service()
 {
     if (!a2_page) {
-        a2_page = new A2_service(ui->status_box);
+        a2_page = new A2_service(ui,ui->status_box);
 
         if (!ui->status_box->layout()) {
             ui->status_box->setLayout(new QVBoxLayout(ui->status_box));
         }
         ui->status_box->layout()->addWidget(a2_page);
-        
     }
 }
 
-void MainWindow::createFaultBox()
+void MainWindow::a5_service()
 {
-    if (!a5_page) {
-        // Create the A5 widget with no parent; we'll parent it to the current stacked page
-        QWidget *currentPage = ui->stackedWidget->currentWidget();
-        a5_page = new A5_service(currentPage);
+    // if (!a5_page) {
+    //     // Create the A5 widget with no parent; we'll parent it to the current stacked page
+    //     QWidget *currentPage = ui->stackedWidget->currentWidget();
+    //     a5_page = new A5_service(currentPage);
 
-        QWidget *target = currentPage ? currentPage : ui->fault_box;
-        if (!target->layout()) {
-            target->setLayout(new QVBoxLayout(target));
-        }
-        target->layout()->addWidget(a5_page);
-    }
+    //     QWidget *target = currentPage ? currentPage : ui->fault_box;
+    //     if (!target->layout()) {
+    //         target->setLayout(new QVBoxLayout(target));
+    //     }
+    //     target->layout()->addWidget(a5_page);
+    // }
 }
+
+

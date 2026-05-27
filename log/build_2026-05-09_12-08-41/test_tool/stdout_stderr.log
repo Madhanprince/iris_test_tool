@@ -1,9 +1,0 @@
-[  7%] [34m[1mAutomatic MOC and UIC for target test_tool[0m
-[  7%] Built target test_tool_autogen
-[ 14%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
-[ 14%] Built target dummy_test_1_autogen
-gmake[2]: Warning: File '/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp' has modification time 8.1 s in the future
-[ 21%] [32mBuilding CXX object CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o[0m
-gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:104: CMakeFiles/test_tool.dir/src/iris_tool/mainwindow.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

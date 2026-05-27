@@ -29,6 +29,7 @@ A5_service::A5_service(QWidget *parent)
     }
 
     // If any group missing, create local ones and add to mainLayout
+    
     if (!ultraBox) {
         ultraBox = new QGroupBox("Ultrasonic Sensors", this);
         mainLayout->addWidget(ultraBox);
@@ -115,7 +116,7 @@ A5_service::A5_service(QWidget *parent)
     // Populate water progress
     freshWaterBar = new QProgressBar;
     freshWaterBar->setRange(0,100);
-    freshWaterBar->setValue(0);
+    // freshWaterBar->setValue(0);
     waterLayout->addWidget(freshWaterBar);
 
     // If we used local group boxes we've already added them to mainLayout; otherwise mainLayout remains unused but that's fine.

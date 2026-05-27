@@ -1,7 +1,0 @@
-[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In constructor ‘[01m[KA2_service::A2_service(QWidget*)[m[K’:
-[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:12:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope
-   12 |     ui->setupUi([01;31m[Kw[m[K);
-      |                 [01;31m[K^[m[K
-gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:132: CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

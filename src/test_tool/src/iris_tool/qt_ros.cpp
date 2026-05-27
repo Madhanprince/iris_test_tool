@@ -14,5 +14,4 @@ void Qtros::logscallback(const rcl_interfaces::msg::Log::SharedPtr msg) {
         msg->level
     );// Emit the signal with the received message
 
-    
  }

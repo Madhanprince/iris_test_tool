@@ -1,7 +1,0 @@
-/usr/bin/ld: CMakeFiles/test_tool.dir/src/iris_tool/A2/a2_service.cpp.o: in function `A2_service::A2_service(QWidget*)':
-/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:10: undefined reference to `vtable for A2_service'
-/usr/bin/ld: /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:10: undefined reference to `vtable for A2_service'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:305: test_tool] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

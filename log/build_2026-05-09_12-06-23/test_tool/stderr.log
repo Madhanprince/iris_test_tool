@@ -1,4 +1,0 @@
-gmake[2]: *** Deleting file 'test_tool'
-gmake[2]: *** [CMakeFiles/test_tool.dir/build.make:289: test_tool] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

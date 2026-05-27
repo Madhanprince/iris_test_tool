@@ -1,5 +1,0 @@
-In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
-[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:62:54:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
-   62 | rviz_common::ToolManager *tool_manager = nullptr;[01;35m[K;[m[K
-      |                                                  [01;35m[K^[m[K
-      |                                                  [31m[K-[m[K

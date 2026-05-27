@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 3.8)
+# if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+#   set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../../arm64-toolchain.cmake")
+# endif()
 
 project(test_tool VERSION 0.1 LANGUAGES CXX)
 
 # Enable compiler warnings for GCC / Clang
+
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
@@ -28,8 +33,6 @@ find_package(sensor_msgs REQUIRED)
 find_package(rviz_common REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
-find_package(rviz_ogre_vendor REQUIRED)
-find_package(OGRE REQUIRED Overlay)
 
 # Force Qt5 to match ROS Humble / RViz
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
@@ -39,13 +42,13 @@ set(PROJECT_SOURCES
     src/iris_tool/mainwindow.cpp
     src/iris_tool/mainwindow.ui
     src/iris_tool/qt_ros.cpp
-    src/iris_tool/A2/a2_service.cpp
-    src/iris_tool/A5/a5_service.cpp
+    # src/iris_tool/A2/a2_service.cpp
+    # src/iris_tool/A5/a5_service.cpp
 
     include/test_tool/mainwindow.h
     include/test_tool/qt_ros.h
-    include/test_tool/A2/a2_service.h
-    include/test_tool/A5/a5_service.h
+    # include/test_tool/A2/a2_service.h
+    # include/test_tool/A5/a5_service.h
 )
 
 add_executable(test_tool ${PROJECT_SOURCES})
