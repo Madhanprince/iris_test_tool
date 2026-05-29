@@ -1,0 +1,101 @@
+[0.016s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.050s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.205s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.450s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.454s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.462s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.475s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.491s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.533s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.534s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.416s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.479s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.514s] -- Found rviz_common: 11.2.26 (/opt/ros/humble/share/rviz_common/cmake)
+[8.641s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[8.645s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[8.647s] -- Found OGRE
+[8.647s] --   static     : OFF
+[8.647s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[8.647s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.647s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[8.648s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[8.648s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[8.648s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.648s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[8.648s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.648s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.648s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[8.648s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[13.211s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[15.014s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[15.124s] -- Found rviz_default_plugins: 11.2.26 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[15.515s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[15.854s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.989s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.990s] [31mCMake Error at CMakeLists.txt:63 (add_executable):
+[15.991s]   add_executable cannot create target "test_tool" because another target with
+[15.991s]   the same name already exists.  The existing target is a custom target
+[15.991s]   created in source directory "/home/maddy/iris_test_tool/src/test_tool".
+[15.991s]   See documentation for policy CMP0002 for more details.
+[15.991s] 
+[15.991s] [0m
+[15.992s] [31mCMake Error at CMakeLists.txt:71 (target_include_directories):
+[15.992s]   target_include_directories called with non-compilable target type
+[15.992s] 
+[15.992s] [0m
+[15.992s] [31mCMake Error at CMakeLists.txt:75 (target_link_libraries):
+[15.992s]   Utility target "test_tool" must not be used as the target of a
+[15.993s]   target_link_libraries call.
+[15.993s] 
+[15.993s] [0m
+[15.993s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:128 (target_compile_definitions):
+[15.993s]   target_compile_definitions called with non-compilable target type
+[15.993s] Call Stack (most recent call first):
+[15.993s]   CMakeLists.txt:80 (ament_target_dependencies)
+[15.993s] 
+[15.994s] [0m
+[15.994s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:141 (target_include_directories):
+[15.994s]   target_include_directories called with non-compilable target type
+[15.994s] Call Stack (most recent call first):
+[15.994s]   CMakeLists.txt:80 (ament_target_dependencies)
+[15.994s] 
+[15.994s] [0m
+[15.994s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries):
+[15.994s]   Utility target "test_tool" must not be used as the target of a
+[15.994s]   target_link_libraries call.
+[15.994s] Call Stack (most recent call first):
+[15.995s]   CMakeLists.txt:80 (ament_target_dependencies)
+[15.995s] 
+[15.995s] [0m
+[15.995s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:147 (target_include_directories):
+[15.995s]   target_include_directories called with non-compilable target type
+[15.995s] Call Stack (most recent call first):
+[15.995s]   CMakeLists.txt:80 (ament_target_dependencies)
+[15.995s] 
+[15.995s] [0m
+[15.995s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:151 (target_link_libraries):
+[15.996s]   Utility target "test_tool" must not be used as the target of a
+[15.996s]   target_link_libraries call.
+[15.996s] Call Stack (most recent call first):
+[15.996s]   CMakeLists.txt:80 (ament_target_dependencies)
+[15.996s] 
+[15.996s] [0m
+[15.996s] [31mCMake Error at CMakeLists.txt:97 (install):
+[15.996s]   install TARGETS given target "test_tool" which is not an executable,
+[15.997s]   library, or module.
+[15.997s] 
+[15.997s] [0m
+[15.997s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[16.020s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[16.020s] -- Configured cppcheck include dirs: 
+[16.021s] -- Configured cppcheck exclude dirs and/or files: 
+[16.022s] -- Added test 'flake8' to check Python code syntax and style conventions
+[16.023s] -- Added test 'lint_cmake' to check CMake code style
+[16.024s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[16.028s] -- Added test 'uncrustify' to check C / C++ code style
+[16.028s] -- Configured uncrustify additional arguments: 
+[16.028s] -- Added test 'xmllint' to check XML markup files
+[16.031s] -- Configuring incomplete, errors occurred!
+[16.031s] See also "/home/maddy/iris_test_tool/build/test_tool/CMakeFiles/CMakeOutput.log".
+[16.044s] gmake: *** [Makefile:526: cmake_check_build_system] Error 1
+[16.047s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -1,0 +1,10 @@
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:80 (message):
+  rosidl_generate_interfaces() the passed absolute file
+  '/home/maddy/iris_test_tool/src/test_tool/msg/A2FunctionalStatus.msg' must
+  be represented as an absolute base path separated by a colon from the
+  relative path to the interface file
+Call Stack (most recent call first):
+  CMakeLists.txt:58 (rosidl_generate_interfaces)
+
+[0m
+gmake: *** [Makefile:526: cmake_check_build_system] Error 1

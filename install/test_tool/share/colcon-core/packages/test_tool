@@ -1,1 +1,1 @@
-rcl_interfaces:rclcpp:rviz2:rviz_common:rviz_default_plugins:rviz_ogre_vendor:sensor_msgs:std_msgs
+qt_ros:rcl_interfaces:rclcpp:rviz2:rviz_common:rviz_default_plugins:sensor_msgs:std_msgs:test_tool_msgs

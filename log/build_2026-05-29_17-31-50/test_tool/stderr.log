@@ -1,0 +1,269 @@
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/a2_functional_status.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__functions.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__struct.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__type_support.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/a2_fault_status.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__functions.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__struct.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__type_support.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__functions.c"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__functions.c"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_fastrtps_c.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_functional_status__type_support_c.cpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_fastrtps_c.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_fault_status__type_support_c.cpp"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_fastrtps_cpp.hpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_fastrtps_cpp.hpp"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_introspection_c.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_introspection_c.h"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_functional_status__type_support.c"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_fault_status__type_support.c"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_c/test_tool/msg/a2_functional_status__type_support.cpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_c/test_tool/msg/a2_fault_status__type_support.cpp"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_introspection_cpp.hpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_introspection_cpp.hpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_fault_status__type_support.cpp"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_cpp/test_tool/msg/a2_functional_status__type_support.cpp"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_cpp/test_tool/msg/a2_fault_status__type_support.cpp"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/msg/_a2_functional_status_s.c"
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/msg/_a2_fault_status_s.c"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/_test_tool_s.ep.rosidl_typesupport_fastrtps_c.c"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/_test_tool_s.ep.rosidl_typesupport_introspection_c.c"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/_test_tool_s.ep.rosidl_typesupport_c.c"
+
+  from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+  processed, set CMP0071 to NEW.  If any of the files should not be
+  processed, explicitly exclude them by setting the source file property
+  SKIP_AUTOGEN:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp:12[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_cpp/test_tool/msg/detail/a2_functional_status__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/msg/detail/brush_status__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"test_tool/msg/detail/brush_status__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/build.make:112: CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:394: CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: Warning: File 'rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp' has modification time 19 s in the future
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/srv/A2Command.hpp: No such file or directory
+    8 | #include [01;31m[K"test_tool/srv/A2Command.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/srv/A2Command.hpp: No such file or directory
+    8 | #include [01;31m[K"test_tool/srv/A2Command.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp:4[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_cpp/test_tool/msg/detail/a2_functional_status__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/msg/detail/brush_status__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"test_tool/msg/detail/brush_status__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp:4[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_cpp/test_tool/msg/detail/a2_fault_status__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/msg/detail/brush_faults__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"test_tool/msg/detail/brush_faults__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/build.make:126: CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:313: CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/srv/A2Command.hpp: No such file or directory
+    8 | #include [01;31m[K"test_tool/srv/A2Command.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,21 @@
+{
+  "package_name": "test_tool",
+  "output_dir": "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_adapter/test_tool:msg/A2FunctionalStatus.idl",
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_adapter/test_tool:msg/A2FaultStatus.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_adapter/test_tool/msg/A2FunctionalStatus.idl",
+    "/home/maddy/iris_test_tool/build/test_tool/rosidl_adapter/test_tool/msg/A2FaultStatus.idl"
+  ]
+}

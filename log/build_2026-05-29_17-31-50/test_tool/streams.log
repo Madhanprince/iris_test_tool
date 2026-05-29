@@ -1,0 +1,374 @@
+[0.017s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.049s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.215s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.453s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.457s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.465s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.478s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.494s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.538s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.539s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.302s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.364s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.399s] -- Found rviz_common: 11.2.26 (/opt/ros/humble/share/rviz_common/cmake)
+[8.525s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[8.528s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[8.530s] -- Found OGRE
+[8.530s] --   static     : OFF
+[8.530s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[8.531s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.531s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[8.531s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[8.531s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[8.531s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[8.532s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[8.532s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.532s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[8.532s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[8.532s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[13.068s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[14.882s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[14.990s] -- Found rviz_default_plugins: 11.2.26 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[15.085s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[15.381s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[15.721s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.883s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[15.909s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[15.909s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[15.909s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[15.929s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[15.945s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[15.946s] -- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include/test_tool
+[15.946s] -- Configured cppcheck exclude dirs and/or files: 
+[15.947s] -- Added test 'flake8' to check Python code syntax and style conventions
+[15.949s] -- Added test 'lint_cmake' to check CMake code style
+[15.949s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[15.954s] -- Added test 'uncrustify' to check C / C++ code style
+[15.954s] -- Configured uncrustify additional arguments: 
+[15.955s] -- Added test 'xmllint' to check XML markup files
+[15.957s] -- Configuring done
+[15.990s] [33mCMake Warning (dev) in CMakeLists.txt:
+[15.991s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[15.991s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[15.991s]   command to set the policy and suppress this warning.
+[15.991s] 
+[15.991s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[15.991s] 
+[15.991s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/a2_functional_status.h"
+[15.992s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__functions.h"
+[15.992s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__struct.h"
+[15.992s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__type_support.h"
+[15.992s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/a2_fault_status.h"
+[15.992s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__functions.h"
+[15.993s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__struct.h"
+[15.993s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__type_support.h"
+[15.994s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_functional_status__functions.c"
+[15.994s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_c/test_tool/msg/detail/a2_fault_status__functions.c"
+[15.994s] 
+[15.994s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[15.994s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[15.995s]   processed, explicitly exclude them by setting the source file property
+[15.995s]   SKIP_AUTOGEN:
+[15.995s] 
+[15.995s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[15.996s] 
+[15.996s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.996s] [0m
+[15.996s] [33mCMake Warning (dev) in CMakeLists.txt:
+[15.996s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[15.997s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[15.997s]   command to set the policy and suppress this warning.
+[15.997s] 
+[15.998s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[15.998s] 
+[15.998s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_fastrtps_c.h"
+[15.998s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_functional_status__type_support_c.cpp"
+[15.998s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_fastrtps_c.h"
+[15.998s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_c/test_tool/msg/detail/a2_fault_status__type_support_c.cpp"
+[15.998s] 
+[15.998s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[15.998s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[15.998s]   processed, explicitly exclude them by setting the source file property
+[15.999s]   SKIP_AUTOGEN:
+[15.999s] 
+[15.999s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[15.999s] 
+[15.999s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.999s] [0m
+[15.999s] [33mCMake Warning (dev) in CMakeLists.txt:
+[15.999s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[15.999s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.000s]   command to set the policy and suppress this warning.
+[16.000s] 
+[16.000s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.000s] 
+[16.000s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp"
+[16.000s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_fastrtps_cpp.hpp"
+[16.000s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp"
+[16.000s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_fastrtps_cpp.hpp"
+[16.000s] 
+[16.000s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.001s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.001s]   processed, explicitly exclude them by setting the source file property
+[16.001s]   SKIP_AUTOGEN:
+[16.001s] 
+[16.001s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.001s] 
+[16.001s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.001s] [0m
+[16.001s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.001s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.001s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.002s]   command to set the policy and suppress this warning.
+[16.002s] 
+[16.002s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.002s] 
+[16.002s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_introspection_c.h"
+[16.002s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_introspection_c.h"
+[16.002s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_functional_status__type_support.c"
+[16.002s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_c/test_tool/msg/detail/a2_fault_status__type_support.c"
+[16.002s] 
+[16.002s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.003s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.003s]   processed, explicitly exclude them by setting the source file property
+[16.003s]   SKIP_AUTOGEN:
+[16.003s] 
+[16.003s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.003s] 
+[16.003s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.003s] [0m
+[16.003s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.003s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.004s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.004s]   command to set the policy and suppress this warning.
+[16.004s] 
+[16.004s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.004s] 
+[16.004s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_c/test_tool/msg/a2_functional_status__type_support.cpp"
+[16.004s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_c/test_tool/msg/a2_fault_status__type_support.cpp"
+[16.004s] 
+[16.004s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.004s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.005s]   processed, explicitly exclude them by setting the source file property
+[16.005s]   SKIP_AUTOGEN:
+[16.005s] 
+[16.005s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.005s] 
+[16.005s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.005s] [0m
+[16.005s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.005s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.005s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.006s]   command to set the policy and suppress this warning.
+[16.006s] 
+[16.006s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.006s] 
+[16.006s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_introspection_cpp.hpp"
+[16.006s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_introspection_cpp.hpp"
+[16.006s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp"
+[16.006s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_fault_status__type_support.cpp"
+[16.006s] 
+[16.006s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.006s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.007s]   processed, explicitly exclude them by setting the source file property
+[16.007s]   SKIP_AUTOGEN:
+[16.007s] 
+[16.007s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.007s] 
+[16.007s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.007s] [0m
+[16.007s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.007s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.007s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.008s]   command to set the policy and suppress this warning.
+[16.008s] 
+[16.008s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.008s] 
+[16.008s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_cpp/test_tool/msg/a2_functional_status__type_support.cpp"
+[16.008s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_cpp/test_tool/msg/a2_fault_status__type_support.cpp"
+[16.008s] 
+[16.008s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.008s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.009s]   processed, explicitly exclude them by setting the source file property
+[16.009s]   SKIP_AUTOGEN:
+[16.009s] 
+[16.009s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.009s] 
+[16.009s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.009s] [0m
+[16.009s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.009s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.009s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.009s]   command to set the policy and suppress this warning.
+[16.010s] 
+[16.010s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.010s] 
+[16.010s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/msg/_a2_functional_status_s.c"
+[16.010s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/msg/_a2_fault_status_s.c"
+[16.010s] 
+[16.010s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.010s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.010s]   processed, explicitly exclude them by setting the source file property
+[16.010s]   SKIP_AUTOGEN:
+[16.011s] 
+[16.011s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.011s] 
+[16.011s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.011s] [0m
+[16.011s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.011s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.011s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.011s]   command to set the policy and suppress this warning.
+[16.012s] 
+[16.012s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.012s] 
+[16.012s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/_test_tool_s.ep.rosidl_typesupport_fastrtps_c.c"
+[16.012s] 
+[16.012s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.012s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.012s]   processed, explicitly exclude them by setting the source file property
+[16.013s]   SKIP_AUTOGEN:
+[16.013s] 
+[16.013s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.013s] 
+[16.013s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.013s] [0m
+[16.013s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.013s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.013s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.014s]   command to set the policy and suppress this warning.
+[16.014s] 
+[16.014s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.014s] 
+[16.014s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/_test_tool_s.ep.rosidl_typesupport_introspection_c.c"
+[16.014s] 
+[16.014s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.014s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.014s]   processed, explicitly exclude them by setting the source file property
+[16.015s]   SKIP_AUTOGEN:
+[16.015s] 
+[16.015s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.015s] 
+[16.015s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.016s] [0m
+[16.016s] [33mCMake Warning (dev) in CMakeLists.txt:
+[16.016s]   Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+[16.016s]   Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+[16.016s]   command to set the policy and suppress this warning.
+[16.016s] 
+[16.016s]   For compatibility, CMake is excluding the GENERATED source file(s):
+[16.017s] 
+[16.017s]     "/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_py/test_tool/_test_tool_s.ep.rosidl_typesupport_c.c"
+[16.017s] 
+[16.017s]   from processing by AUTOMOC and AUTOUIC.  If any of the files should be
+[16.017s]   processed, set CMP0071 to NEW.  If any of the files should not be
+[16.017s]   processed, explicitly exclude them by setting the source file property
+[16.017s]   SKIP_AUTOGEN:
+[16.018s] 
+[16.018s]     set_property(SOURCE file.h PROPERTY SKIP_AUTOGEN ON)
+[16.018s] 
+[16.018s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.018s] [0m
+[16.181s] -- Generating done
+[16.219s] -- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[16.290s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[16.290s] [  2%] [34m[1mAutomatic MOC and UIC for target test_tool__rosidl_generator_c[0m
+[16.291s] [  4%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[16.293s] [  5%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[16.295s] [  7%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[16.307s] [  7%] Built target ament_cmake_python_copy_test_tool
+[16.360s] [  7%] Built target test_tool__rosidl_generator_c_autogen
+[16.363s] [  7%] Built target dummy_test_autogen
+[16.364s] [  7%] Built target dummy_test_1_autogen
+[16.381s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[16.385s] [35m[1mConsolidate compiler generated dependencies of target dummy_test_1[0m
+[16.390s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[16.430s] [ 10%] [32mBuilding CXX object CMakeFiles/dummy_test_1.dir/src/test_node/dummy_test_1.cpp.o[0m
+[16.435s] [ 11%] [32mBuilding CXX object CMakeFiles/dummy_test_1.dir/dummy_test_1_autogen/mocs_compilation.cpp.o[0m
+[16.446s] [ 13%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/dummy_test_autogen/mocs_compilation.cpp.o[0m
+[16.457s] [ 14%] [32mBuilding CXX object CMakeFiles/dummy_test.dir/src/test_node/dummy_test.cpp.o[0m
+[16.966s] running egg_info
+[16.967s] creating test_tool.egg-info
+[16.968s] writing test_tool.egg-info/PKG-INFO
+[16.969s] writing dependency_links to test_tool.egg-info/dependency_links.txt
+[16.969s] writing top-level names to test_tool.egg-info/top_level.txt
+[16.970s] writing manifest file 'test_tool.egg-info/SOURCES.txt'
+[16.988s] reading manifest file 'test_tool.egg-info/SOURCES.txt'
+[16.989s] writing manifest file 'test_tool.egg-info/SOURCES.txt'
+[17.117s] [ 14%] Built target ament_cmake_python_build_test_tool_egg
+[17.383s] [ 14%] Built target test_tool__cpp
+[17.414s] [ 14%] Built target test_tool_node_autogen
+[17.432s] [ 17%] [34m[1mAutomatic MOC and UIC for target test_tool__rosidl_typesupport_cpp[0m
+[17.432s] [ 17%] [34m[1mAutomatic MOC and UIC for target test_tool__rosidl_typesupport_introspection_cpp[0m
+[17.435s] [ 19%] [34m[1mAutomatic MOC and UIC for target test_tool__rosidl_typesupport_fastrtps_cpp[0m
+[17.486s] [ 20%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[17.496s] [ 22%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/main.cpp.o[0m
+[17.507s] [ 22%] Built target test_tool__rosidl_typesupport_introspection_cpp_autogen
+[17.512s] [ 22%] Built target test_tool__rosidl_typesupport_fastrtps_cpp_autogen
+[17.523s] [ 22%] Built target test_tool__rosidl_typesupport_cpp_autogen
+[17.537s] [ 23%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[17.545s] [ 25%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.552s] [ 26%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/qt_ros.cpp.o[0m
+[17.584s] [ 28%] [32mBuilding CXX object CMakeFiles/test_tool__rosidl_generator_c.dir/test_tool__rosidl_generator_c_autogen/mocs_compilation.cpp.o[0m
+[17.627s] [ 29%] [32m[1mLinking CXX shared library libtest_tool__rosidl_generator_c.so[0m
+[17.945s] [ 29%] Built target test_tool__rosidl_generator_c
+[17.992s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[18.492s] [ 32%] [32mBuilding CXX object CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/test_tool__rosidl_typesupport_introspection_cpp_autogen/mocs_compilation.cpp.o[0m
+[18.574s] [ 34%] [32mBuilding CXX object CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp.o[0m
+[18.784s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp:12[m[K:
+[18.784s] [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_cpp/test_tool/msg/detail/a2_functional_status__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/msg/detail/brush_status__struct.hpp: No such file or directory
+[18.785s]    21 | #include [01;31m[K"test_tool/msg/detail/brush_status__struct.hpp"[m[K
+[18.785s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.785s] compilation terminated.
+[18.804s] gmake[2]: *** [CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/build.make:112: CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_tool/msg/detail/a2_functional_status__type_support.cpp.o] Error 1
+[18.805s] gmake[1]: *** [CMakeFiles/Makefile2:394: CMakeFiles/test_tool__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[18.805s] gmake[1]: *** Waiting for unfinished jobs....
+[18.845s] [ 35%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[19.016s] gmake[2]: Warning: File 'rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp' has modification time 19 s in the future
+[19.053s] [ 37%] [32mBuilding CXX object CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/test_tool__rosidl_typesupport_fastrtps_cpp_autogen/mocs_compilation.cpp.o[0m
+[19.134s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+[19.135s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[19.135s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/srv/A2Command.hpp: No such file or directory
+[19.135s]     8 | #include [01;31m[K"test_tool/srv/A2Command.hpp"[m[K
+[19.135s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.139s] compilation terminated.
+[19.152s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+[19.152s] gmake[2]: *** Waiting for unfinished jobs....
+[19.153s] [ 38%] [32mBuilding CXX object CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp.o[0m
+[19.174s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[19.174s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/srv/A2Command.hpp: No such file or directory
+[19.174s]     8 | #include [01;31m[K"test_tool/srv/A2Command.hpp"[m[K
+[19.174s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.174s] compilation terminated.
+[19.183s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[19.192s] [ 40%] [32mBuilding CXX object CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp.o[0m
+[19.314s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_functional_status__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[19.315s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp:4[m[K:
+[19.315s] [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_cpp/test_tool/msg/detail/a2_functional_status__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/msg/detail/brush_status__struct.hpp: No such file or directory
+[19.315s]    21 | #include [01;31m[K"test_tool/msg/detail/brush_status__struct.hpp"[m[K
+[19.315s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.316s] compilation terminated.
+[19.320s] gmake[2]: *** [CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_functional_status__type_support.cpp.o] Error 1
+[19.320s] gmake[2]: *** Waiting for unfinished jobs....
+[19.336s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/a2_fault_status__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[19.336s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp:4[m[K:
+[19.337s] [01m[K/home/maddy/iris_test_tool/build/test_tool/rosidl_generator_cpp/test_tool/msg/detail/a2_fault_status__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/msg/detail/brush_faults__struct.hpp: No such file or directory
+[19.337s]    21 | #include [01;31m[K"test_tool/msg/detail/brush_faults__struct.hpp"[m[K
+[19.337s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.337s] compilation terminated.
+[19.339s] gmake[2]: *** [CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/build.make:126: CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_tool/msg/detail/dds_fastrtps/a2_fault_status__type_support.cpp.o] Error 1
+[19.340s] gmake[1]: *** [CMakeFiles/Makefile2:313: CMakeFiles/test_tool__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[20.191s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[20.191s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktest_tool/srv/A2Command.hpp: No such file or directory
+[20.191s]     8 | #include [01;31m[K"test_tool/srv/A2Command.hpp"[m[K
+[20.192s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[20.192s] compilation terminated.
+[20.199s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[27.173s] [ 41%] [32m[1mLinking CXX executable dummy_test[0m
+[27.393s] [ 43%] [32m[1mLinking CXX executable dummy_test_1[0m
+[27.826s] [ 43%] Built target dummy_test
+[27.963s] [ 43%] Built target dummy_test_1
+[36.322s] gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/test_tool_node.dir/all] Error 2
+[36.323s] gmake: *** [Makefile:146: all] Error 2
+[36.327s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

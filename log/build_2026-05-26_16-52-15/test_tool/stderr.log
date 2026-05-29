@@ -1,9 +1,0 @@
-[31mCMake Error at /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake:130 (message):
-  Could not find toolchain file:
-  /home/maddy/iris_test_tool/arm64-toolchain.cmake
-Call Stack (most recent call first):
-  CMakeLists.txt:6 (project)
-
-[0m
-[0mCMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.[0m
-[0mCMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage[0m

@@ -4,8 +4,10 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QLabel>
-#include <QList>
 #include "mainwindow.h"
+#include "test_tool/srv/A2Command.hpp"
+#include "test_tool/msg/A2FunctionalStatus.hpp"
+#include "test_tool/msg/A2FaultStatus.hpp"
 
 
 class A2_service : public QWidget
@@ -15,11 +17,12 @@ public:
     explicit A2_service(Ui::MainWindow *mainUi,
                         QWidget *parent = nullptr);
     Ui::MainWindow *ui;      
-    rclcpp::Client<srv::BrushControl>::SharedPtr client_brush;    
-    rclcpp::Client<srv::VaccumControl>::SharedPtr client_vaccum_;  
+    rclcpp::Client<test_tool::srv::A2Command>::SharedPtr client_brush;    
+    rclcpp::Client<test_tool::srv::A2Command>::SharedPtr client_vaccum;  
     QHBoxLayout *rowLayout ;
     QLabel *light_layout; ;   
     QVector<QLabel*> lights;     
+    QVector<QLabel*> store_faults;     
     
     const QString ACTIVE_BUTTON_STYLE =
     "background-color:#22c55e;";
