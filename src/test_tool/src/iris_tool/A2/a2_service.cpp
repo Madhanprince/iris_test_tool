@@ -5,16 +5,19 @@
 #include "ui_mainwindow.h"
 
 
+
 A2_service::A2_service(Ui::MainWindow *mainUi,
+                       std::shared_ptr<Qtros> qtros_node,
                        QWidget *parent)
     : QWidget(parent),
-      ui(mainUi) // Initialize the UI pointer
+      ui(mainUi),
+      qtros(qtros_node)
 {
-    client_brush = qtros->create_client<test_tool::srv::A2Command>("a2_control/a2_command");
-    client_vaccum = qtros->create_client<test_tool::srv::A2Command>("a2_control/a2_command");
+    client_brush_ = qtros->create_client<iris_interfaces::srv::A2Command>("a2_control/a2_command");
+    client_vaccum_ = qtros->create_client<iris_interfaces::srv::A2Command>("a2_control/a2_command");
 
-    auto publisher = qtros->create_publisher<test_tool::msg::WaterLevel>("/water_level", 10);
-    auto brush_vaccum_status_subscriber = qtros->create_subscription<test_tool::msg::A2FunctionalStatus>(
+    publisher_ = qtros->create_publisher<iris_interfaces::msg::A2Command>("water_level", 10);
+    auto brush_vaccum_status_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FunctionalStatus>(
         "/a2_status",
         10,std::bind(
             &A2_service::a2_status_display,
@@ -22,7 +25,7 @@ A2_service::A2_service(Ui::MainWindow *mainUi,
             std::placeholders::_1
         )
     );
-    auto brush_vaccum_faults_subscriber = qtros->create_subscription<test_tool::msg::A2FunctionalStatus>(
+    auto brush_vaccum_faults_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FaultStatus>(
         "/a2_faults",
         10,std::bind(
             &A2_service::a2_faults_display,
@@ -38,13 +41,11 @@ A2_service::A2_service(Ui::MainWindow *mainUi,
     connect(ui->vaccum_off, &QPushButton::clicked, this, &A2_service::vaccum_off_control);
 
     a2_status_list();
-    a2_faults_list();
-
-} 
+}
 
 QStringList status_messages = {
     "Brush_Command_received", 
-    "Brush_Motor_ON" 
+    "Brush_Motor_ON",
     "Vaccum_Command_received", 
     "Vaccum_Motor_ON", 
     "Water_Pump", 
@@ -98,7 +99,7 @@ void A2_service::a2_status_list()
 }
 
 void A2_service::a2_status_display(
-    const test_tool::msg::A2FunctionalStatus::SharedPtr msg)
+    const iris_interfaces::msg::A2FunctionalStatus::SharedPtr msg)
 {
     lights[0]->setStyleSheet(
         msg->brush.brush_motor_command ?
@@ -111,12 +112,12 @@ void A2_service::a2_status_display(
     );
 
     lights[2]->setStyleSheet(
-        msg->vaccum.vaccum_motor_command ?
+        msg->vacuum.vacuum_motor_command ?
         LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
     );
 
     lights[3]->setStyleSheet(
-        msg->vaccum.vaccum_motor_status ?
+        msg->vacuum.vacuum_motor_status ?
         LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
     );
 
@@ -151,28 +152,28 @@ void A2_service::a2_status_display(
     );
 
     lights[10]->setStyleSheet(
-        msg->vaccum.squeeze_actuator.moving_down ?
+        msg->vacuum.squeeze_actuator.moving_down ?
         LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
     );
 
     lights[11]->setStyleSheet(
-        msg->vaccum.squeeze_actuator.moving_up ?
+        msg->vacuum.squeeze_actuator.moving_up ?
         LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
     );
 
     lights[12]->setStyleSheet(
-        msg->vaccum.squeeze_actuator.hold_up ?
+        msg->vacuum.squeeze_actuator.hold_up ?
         LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
     );
 
     lights[13]->setStyleSheet(
-        msg->vaccum.squeeze_actuator.hold_down ?
+        msg->vacuum.squeeze_actuator.hold_down ?
         LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
     );
 }
 
 void A2_service::a2_faults_display(
-    const test_tool::msg::A2FaultStatus::SharedPtr msg)
+    const iris_interfaces::msg::A2FaultStatus::SharedPtr msg)
 {
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
     QHBoxLayout *brushMotorFaultsLayout = new QHBoxLayout;
@@ -190,64 +191,66 @@ void A2_service::a2_faults_display(
 
     std::vector<uint8_t> fault_values = {
 
-    msg->brush_vaccum_motor_driver_digital_fault,
-    msg->brush_motor_actuator_fault,
+    msg->brush_vacuum_motor_driver_digital_fault,
+    msg->a2_fault_status,
     
-    msg->drive_brush_current_digital_fault,
-    msg->overcurrent_analog_fault,
-    msg->temperature_fault,
-    msg->undercurrent_analog_fault,
+    msg->brush.actuator_digital_fault,
+    msg->brush.drive_brush_current_digital_fault,
+    msg->brush.overcurrent_analog_fault,
+    msg->brush.temperature_fault,
+    msg->brush.undercurrent_analog_fault,
 
-    msg->squeegee_actuator_digital_fault,
-    msg->drive_brush_current_digital_fault,
-    msg->overcurrent_analog_fault,
-    msg->undercurrent_analog_fault,
+    msg->vacuum.squeeze_actuator_digital_fault,
+    msg->vacuum.drive_brush_current_digital_fault,
+    msg->vacuum.overcurrent_analog_fault,
+    msg->vacuum.undercurrent_analog_fault,
     msg->water_pump_digital_fault,
-    msg->deergent_pump_digital_fault,
+    msg->detergent_pump_digital_fault,
     msg->water_and_detergent_pump_flow_fault
+   
     };
 
-    if(msg != nullptr)
+    if(msg)
     {
-        if(msg->brush_vaccum_motor_driver_digital_fault){
-            faults_Label->setText("Brush_Vaccum_Motor_Driver_Digital_Fault");
+        if(msg->brush_vacuum_motor_driver_digital_fault){
+            faults_Label->setText("brush_vacuum_motor_driver_digital_fault");
             faults_Group->setLayout(new QVBoxLayout);
             faults_Group->layout()->addWidget(faults_Label);
         }
-    }else if(msg->brush_motor_actuator_fault){
-        faults_Label->setText("Brush_Motor_Actuator_Fault");
+    }else if(msg->a2_fault_status){
+        faults_Label->setText("A2_Fault_Status");
         faults_Group->setLayout(new QVBoxLayout);
         faults_Group->layout()->addWidget(faults_Label);
-     
-    }else if(msg->drive_brush_current_digital_fault){
+        
+    }else if(msg->brush.drive_brush_current_digital_fault){
         faults_Label->setText("Drive_Brush_Current_Digital_Fault");
         brushMotorFaultsLayout->addWidget(faults_Label);
        
-    }else if(msg->overcurrent_analog_fault){
+    }else if(msg->brush.overcurrent_analog_fault){
         faults_Label->setText("Overcurrent_Analog_Fault");
         brushMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->temperature_fault){
+    }else if(msg->brush.temperature_fault){
         faults_Label->setText("Temperature_Fault");
         brushMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->undercurrent_analog_fault){
+    }else if(msg->brush.undercurrent_analog_fault){
         faults_Label->setText("Undercurrent_Analog_Fault");
         brushMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->squeegee_actuator_digital_fault){
-        faults_Label->setText("Squeegee_Actuator_Digital_Fault");
+    }else if(msg->vacuum.squeeze_actuator_digital_fault){
+        faults_Label->setText("squeeze_actuator_digital_fault");
         vaccumMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->drive_brush_current_digital_fault){
+    }else if(msg->vacuum.drive_brush_current_digital_fault){
         faults_Label->setText("Drive_Brush_Current_Digital_Fault");
         vaccumMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->overcurrent_analog_fault){
+    }else if(msg->vacuum.overcurrent_analog_fault){
         faults_Label->setText("Overcurrent_Analog_Fault");
         vaccumMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->undercurrent_analog_fault){
+    }else if(msg->vacuum.undercurrent_analog_fault){
         faults_Label->setText("Undercurrent_Analog_Fault");
         vaccumMotorFaultsLayout->addWidget(faults_Label);
 
@@ -255,8 +258,8 @@ void A2_service::a2_faults_display(
         faults_Label->setText("Water_Pump_Digital_Fault");
         vaccumMotorFaultsLayout->addWidget(faults_Label);
 
-    }else if(msg->deergent_pump_digital_fault){
-        faults_Label->setText("Deergent_Pump_Digital_Fault");
+    }else if(msg->detergent_pump_digital_fault){
+        faults_Label->setText("Detergent_Pump_Digital_Fault");
         vaccumMotorFaultsLayout->addWidget(faults_Label);
 
     }else if(msg->water_and_detergent_pump_flow_fault){
@@ -277,10 +280,10 @@ void A2_service::brush_on_control()
     ui->brush_off->setStyleSheet(
         "");
     
-    auto request = std::make_shared<test_tool::srv::A2Command::Request>();
-    request->brush_command = 0 ;
-    client_brush->async_send_request(request,
-        [this](rclcpp::Client<test_tool::srv::A2Command>::SharedFuture future)
+    auto request = std::make_shared<iris_interfaces::srv::A2Command::Request>();
+    request->brush_command = 1 ;
+    client_brush_->async_send_request(request,
+        [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
             if(response->brush_status){
@@ -304,10 +307,10 @@ void A2_service::brush_off_control()
     ui->brush_on->setStyleSheet(
         ""
     );
-    auto request = std::make_shared<test_tool::srv::A2Command::Request>();
-    request->brush_command = 1;
-    client_brush->async_send_request(request,
-        [this](rclcpp::Client<test_tool::srv::A2Command>::SharedFuture future)
+    auto request = std::make_shared<iris_interfaces::srv::A2Command::Request>();
+    request->brush_command = 0;
+    client_brush_->async_send_request(request,
+        [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
             if(response->brush_status){
@@ -335,15 +338,11 @@ void A2_service::vaccum_on_control()
     ui->vaccum_off->setStyleSheet(
         ""
     );
-    ui->vaccum_status->setStyleSheet(
-        "background-color:#bbf7d0;"
-    );
-    ui->vaccum_status->setText("Active");
-
-    auto request = std::make_shared<test_tool::srv::A2Command::Request>();
+   
+    auto request = std::make_shared<iris_interfaces::srv::A2Command::Request>();
     request->vacuum_command = 1;
     client_vaccum_->async_send_request(request,
-        [this](rclcpp::Client<test_tool::srv::A2Command>::SharedFuture future)
+        [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
             if(response->vacuum_status){
@@ -367,14 +366,10 @@ void A2_service::vaccum_off_control()
     ui->vaccum_on->setStyleSheet(
         ""
     );
-    ui->vaccum_status->setStyleSheet(
-        "background-color:#fecaca;"
-    );
-    ui->vaccum_status->setText("Inactive");
-    auto request = std::make_shared<test_tool::srv::A2Command::Request>();
+    auto request = std::make_shared<iris_interfaces::srv::A2Command::Request>();
     request->vacuum_command = 0;
     client_vaccum_->async_send_request(request,
-        [this](rclcpp::Client<test_tool::srv::A2Command>::SharedFuture future)
+        [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
             if(response->vacuum_status){
@@ -396,7 +391,8 @@ void A2_service::on_water_level_slider_valueChanged(int value)
 {
     ui->percentage->setText(QString::number(value) + "%");
 
-    auto message = std::make_shared<test_tool::msg::WaterLevel>();
-    message->percentage = value;
-    publisher->publish(*message);
+    auto message = std::make_shared<iris_interfaces::msg::A2Command>();
+    message->pump_flow_rate = value;
+    publisher_->publish(*message);
+    RCLCPP_INFO(rclcpp::get_logger("A2_service"), "Publishing water level: %d%%", value);
 }

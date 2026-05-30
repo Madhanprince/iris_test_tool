@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

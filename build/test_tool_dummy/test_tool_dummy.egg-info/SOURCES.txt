@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+../../build/test_tool_dummy/test_tool_dummy.egg-info/PKG-INFO
+../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt
+../../build/test_tool_dummy/test_tool_dummy.egg-info/dependency_links.txt
+../../build/test_tool_dummy/test_tool_dummy.egg-info/entry_points.txt
+../../build/test_tool_dummy/test_tool_dummy.egg-info/requires.txt
+../../build/test_tool_dummy/test_tool_dummy.egg-info/top_level.txt
+../../build/test_tool_dummy/test_tool_dummy.egg-info/zip-safe
+test_tool_dummy/__init__.py
+test_tool_dummy/a2_dummy.py

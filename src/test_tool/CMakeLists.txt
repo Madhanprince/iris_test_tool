@@ -32,6 +32,7 @@ find_package(rviz_common REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(iris_interfaces REQUIRED)
 
 # Force Qt5 to match ROS Humble / RViz
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
@@ -51,16 +52,6 @@ set(PROJECT_SOURCES
     # include/test_tool/A5/a5_service.h
 )
 
-set(msg_files
-  "msg/A2FunctionalStatus.msg"
-  "msg/A2FaultStatus.msg"
-)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  ${msg_files}
-)
-ament_export_dependencies(rosidl_default_runtime)
-
 add_executable(test_tool_node  ${PROJECT_SOURCES})
 
 # ✅ FIXED: Pointed directly to the UI folder so ui_mainwindow.h generates and links successfully
@@ -75,24 +66,26 @@ target_include_directories(test_tool_node PUBLIC
 
 target_link_libraries(test_tool_node 
   Qt5::Widgets 
-  rviz_common::rviz_common  
+  rviz_common::rviz_common 
 )
 
 ament_target_dependencies(test_tool_node 
   rclcpp 
   std_msgs 
-  rcl_interfaces 
+  iris_interfaces
   sensor_msgs
   rviz_common
-  rviz_ogre_vendor
+ 
 )
-
+ament_export_dependencies(rosidl_default_runtime)             
 # Dummy test binaries
 add_executable(dummy_test src/test_node/dummy_test.cpp)
 ament_target_dependencies(dummy_test rclcpp std_msgs rcl_interfaces sensor_msgs)
 
 add_executable(dummy_test_1 src/test_node/dummy_test_1.cpp)
 ament_target_dependencies(dummy_test_1 rclcpp std_msgs rcl_interfaces sensor_msgs)
+
+ament_export_dependencies(rosidl_default_runtime)
 
 # Installation
 install(TARGETS test_tool_node dummy_test dummy_test_1 

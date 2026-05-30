@@ -1,0 +1,32 @@
+[  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 20%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 20%] Built target dummy_test_autogen
+[ 20%] Built target dummy_test_1_autogen
+[ 40%] Built target dummy_test
+[ 60%] Built target dummy_test_1
+[ 60%] Built target test_tool_node_autogen
+[ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_list()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:86:13:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+   86 |             [01;31m[KLIGHT_RED_STYLE[m[K
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_display(iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+  106 |         [01;31m[KLIGHT_RED_STYLE[m[K : LIGHT_GREEN_STYLE
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:106:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+  106 |         LIGHT_RED_STYLE : [01;31m[KLIGHT_GREEN_STYLE[m[K
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:317:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+  317 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_GREEN_STYLE[m[K);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:324:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+  324 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_RED_STYLE[m[K);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

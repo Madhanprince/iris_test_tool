@@ -1,0 +1,15 @@
+[0.207s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.288s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.288s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.289s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.321s] [ 20%] Built target dummy_test_autogen
+[0.322s] [ 20%] Built target dummy_test_1_autogen
+[0.342s] [ 20%] Built target test_tool_node_autogen
+[0.373s] [ 40%] Built target dummy_test
+[0.380s] [ 60%] Built target dummy_test_1
+[0.394s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.495s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[2.679s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Interrupt
+[2.679s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Interrupt
+[2.680s] gmake: *** [Makefile:146: all] Interrupt
+[2.693s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '-2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -611,7 +611,7 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libmap_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib/libiris_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a library.
 _ogre_main_static_library_abs:FILEPATH=/opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
@@ -766,6 +766,9 @@ image_transport_DIR:PATH=/opt/ros/humble/share/image_transport/cmake
 //The directory containing a CMake configuration file for interactive_markers.
 interactive_markers_DIR:PATH=/opt/ros/humble/share/interactive_markers/cmake
 
+//The directory containing a CMake configuration file for iris_interfaces.
+iris_interfaces_DIR:PATH=/home/maddy/iris_test_tool/install/iris_interfaces/share/iris_interfaces/cmake
+
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/humble/share/laser_geometry/cmake
 
@@ -883,6 +886,9 @@ rosidl_adapter_DIR:PATH=/opt/ros/humble/share/rosidl_adapter/cmake
 //The directory containing a CMake configuration file for rosidl_cmake.
 rosidl_cmake_DIR:PATH=/opt/ros/humble/share/rosidl_cmake/cmake
 
+//The directory containing a CMake configuration file for rosidl_default_generators.
+rosidl_default_generators_DIR:PATH=/opt/ros/humble/share/rosidl_default_generators/cmake
+
 //The directory containing a CMake configuration file for rosidl_default_runtime.
 rosidl_default_runtime_DIR:PATH=/opt/ros/humble/share/rosidl_default_runtime/cmake
 
@@ -891,6 +897,9 @@ rosidl_generator_c_DIR:PATH=/opt/ros/humble/share/rosidl_generator_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_generator_cpp.
 rosidl_generator_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_generator_cpp/cmake
+
+//The directory containing a CMake configuration file for rosidl_generator_py.
+rosidl_generator_py_DIR:PATH=/opt/ros/humble/share/rosidl_generator_py/cmake
 
 //The directory containing a CMake configuration file for rosidl_runtime_c.
 rosidl_runtime_c_DIR:PATH=/opt/ros/humble/share/rosidl_runtime_c/cmake

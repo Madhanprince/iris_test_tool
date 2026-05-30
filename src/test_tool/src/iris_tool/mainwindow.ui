@@ -1313,7 +1313,7 @@ QWidget {
                       </widget>
                      </item>
                      <item>
-                      <widget class="QPushButton" name="vaccum_on">
+                      <widget class="QPushButton" name="vaccum_off">
                        <property name="styleSheet">
                         <string notr="true">QPushButton#btnOn {
     background-color: #22c55e;
@@ -1337,7 +1337,7 @@ QPushButton#btnOn:pressed {
                       </widget>
                      </item>
                      <item>
-                      <widget class="QPushButton" name="vaccum_off">
+                      <widget class="QPushButton" name="vaccum_on">
                        <property name="styleSheet">
                         <string notr="true">QPushButton#btnOn {
     background-color: #22c55e;
@@ -1733,7 +1733,7 @@ QWidget {
                   <string>TextLabel :</string>
                  </property>
                 </widget>
-                <widget class="QWidget" name="">
+                <widget class="QWidget" name="layoutWidget">
                  <property name="geometry">
                   <rect>
                    <x>24</x>

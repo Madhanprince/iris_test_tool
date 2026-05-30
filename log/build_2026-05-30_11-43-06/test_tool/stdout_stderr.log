@@ -1,0 +1,110 @@
+[  6%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 20%] Built target dummy_test_autogen
+[ 20%] Built target dummy_test_1_autogen
+[ 60%] Built target dummy_test_1
+[ 60%] Built target dummy_test
+AutoMoc: /home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:46: Note: No relevant classes found. No output generated.
+[ 60%] Built target test_tool_node_autogen
+[ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K:[m[K’ token
+   14 | class A2_service : public QWidget [01;31m[K:[m[K public QObject
+      |                                   [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K:[m[K’ token
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K:[m[K’ token
+   14 | class A2_service : public QWidget [01;31m[K:[m[K public QObject
+      |                                   [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K:[m[K’ token
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:9:39:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+    9 |                        QWidget *parent[01;31m[K)[m[K
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:62:33:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+   62 | void A2_service::a2_status_list([01;31m[K)[m[K
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:99:66:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+   99 |     const iris_interfaces::msg::A2FunctionalStatus::SharedPtr msg[01;31m[K)[m[K
+      |                                                                  [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:173:61:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  173 |     const iris_interfaces::msg::A2FaultStatus::SharedPtr msg[01;31m[K)[m[K
+      |                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:273:35:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  273 | void A2_service::brush_on_control([01;31m[K)[m[K
+      |                                   [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:299:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  299 | void A2_service::brush_off_control([01;31m[K)[m[K
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:330:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  330 | void A2_service::vaccum_on_control([01;31m[K)[m[K
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:362:37:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  362 | void A2_service::vaccum_off_control([01;31m[K)[m[K
+      |                                     [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:395:62:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  395 | void A2_service::on_water_level_slider_valueChanged(int value[01;31m[K)[m[K
+      |                                                              [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::a2_service()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:510:51:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass A2_service[m[K’
+  510 |         a2_page = new A2_service(ui,ui->status_box[01;31m[K)[m[K;
+      |                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass A2_service[m[K’
+   14 | class [01;36m[KA2_service[m[K : public QWidget : public QObject
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:515:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KA2_service*[m[K’ to ‘[01m[KQWidget*[m[K’
+  515 |         ui->status_box->layout()->addWidget([01;31m[Ka2_page[m[K);
+      |                                             [01;31m[K^~~~~~~[m[K
+      |                                             [01;31m[K|[m[K
+      |                                             [01;31m[KA2_service*[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h:44[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout:1[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/mainwindow.h:22[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h:116:29:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid QLayout::addWidget(QWidget*)[m[K’
+  116 |     void addWidget([01;36m[KQWidget *w[m[K);
+      |                    [01;36m[K~~~~~~~~~^[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

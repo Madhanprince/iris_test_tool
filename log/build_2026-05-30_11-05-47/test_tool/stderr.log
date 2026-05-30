@@ -1,0 +1,197 @@
+gmake[2]: Warning: File '/home/maddy/iris_test_tool/install/iris_interfaces/lib/libiris_interfaces__rosidl_typesupport_fastrtps_cpp.so' has modification time 14 s in the future
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:40:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kprivate[m[K’
+   40 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In constructor ‘[01m[KA2_service::A2_service(Ui::MainWindow*, QWidget*)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kqtros[m[K’ was not declared in this scope; did you mean ‘[01m[KQtros[m[K’?
+   13 |     client_brush_ = [01;31m[Kqtros[m[K->create_client<iris_interfaces::srv::A2Command>("a2_control/a2_command");
+      |                     [01;31m[K^~~~~[m[K
+      |                     [32m[KQtros[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   13 |     client_brush_ = qtros->create_client<iris_interfaces::srv::A2Command[01;31m[K>[m[K("a2_control/a2_command");
+      |                                                                         [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:14:74:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   14 |     client_vaccum_ = qtros->create_client<iris_interfaces::srv::A2Command[01;31m[K>[m[K("a2_control/a2_command");
+      |                                                                          [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:79:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::WaterTankLevels[01;31m[K>[m[K("/water_level", 10);
+      |                                                                               [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:81:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::WaterTankLevels>([01;35m[K"/water_level"[m[K, 10);
+      |                                                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:17:110:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   17 |     auto brush_vaccum_status_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FunctionalStatus[01;31m[K>[m[K(
+      |                                                                                                              [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:18:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   18 |         [01;35m[K"/a2_status"[m[K,
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:40:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kprivate[m[K’
+   40 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:23:9:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   23 |         [01;35m[K)[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:25:105:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   25 |     auto brush_vaccum_faults_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FaultStatus[01;31m[K>[m[K(
+      |                                                                                                         [01;31m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:26:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   26 |         [01;35m[K"/a2_faults"[m[K,
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:31:9:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   31 |         [01;35m[K)[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:34:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_water_level_slider_valueChanged[m[K’ is not a member of ‘[01m[KA2_service[m[K’
+   34 |     connect(ui->water_level_slider,&QSlider::valueChanged,this,&A2_service::[01;31m[Kon_water_level_slider_valueChanged[m[K);
+      |                                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:35:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kbrush_on_control[m[K’ is not a member of ‘[01m[KA2_service[m[K’
+   35 |     connect(ui->brush_on, &QPushButton::clicked, this, &A2_service::[01;31m[Kbrush_on_control[m[K);
+      |                                                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_list()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:83:13:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+   83 |             [01;31m[KLIGHT_RED_STYLE[m[K
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_display(iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+  103 |         [01;31m[KLIGHT_RED_STYLE[m[K : LIGHT_GREEN_STYLE
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+  103 |         LIGHT_RED_STYLE : [01;31m[KLIGHT_GREEN_STYLE[m[K
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:112:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvaccum[m[K’; did you mean ‘[01m[Kvacuum[m[K’?
+  112 |         msg->[01;31m[Kvaccum[m[K.vaccum_motor_command ?
+      |              [01;31m[K^~~~~~[m[K
+      |              [32m[Kvacuum[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:117:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvaccum[m[K’; did you mean ‘[01m[Kvacuum[m[K’?
+  117 |         msg->[01;31m[Kvaccum[m[K.vaccum_motor_status ?
+      |              [01;31m[K^~~~~~[m[K
+      |              [32m[Kvacuum[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:152:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvaccum[m[K’; did you mean ‘[01m[Kvacuum[m[K’?
+  152 |         msg->[01;31m[Kvaccum[m[K.squeeze_actuator.moving_down ?
+      |              [01;31m[K^~~~~~[m[K
+      |              [32m[Kvacuum[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:157:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvaccum[m[K’; did you mean ‘[01m[Kvacuum[m[K’?
+  157 |         msg->[01;31m[Kvaccum[m[K.squeeze_actuator.moving_up ?
+      |              [01;31m[K^~~~~~[m[K
+      |              [32m[Kvacuum[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:162:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvaccum[m[K’; did you mean ‘[01m[Kvacuum[m[K’?
+  162 |         msg->[01;31m[Kvaccum[m[K.squeeze_actuator.hold_up ?
+      |              [01;31m[K^~~~~~[m[K
+      |              [32m[Kvacuum[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:167:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvaccum[m[K’; did you mean ‘[01m[Kvacuum[m[K’?
+  167 |         msg->[01;31m[Kvaccum[m[K.squeeze_actuator.hold_down ?
+      |              [01;31m[K^~~~~~[m[K
+      |              [32m[Kvacuum[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_faults_display(iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:191:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbrush_vaccum_motor_driver_digital_fault[m[K’; did you mean ‘[01m[Kbrush_vacuum_motor_driver_digital_fault[m[K’?
+  191 |     msg->[01;31m[Kbrush_vaccum_motor_driver_digital_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |          [32m[Kbrush_vacuum_motor_driver_digital_fault[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:192:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbrush_motor_actuator_fault[m[K’
+  192 |     msg->[01;31m[Kbrush_motor_actuator_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:194:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdrive_brush_current_digital_fault[m[K’
+  194 |     msg->[01;31m[Kdrive_brush_current_digital_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:195:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kovercurrent_analog_fault[m[K’
+  195 |     msg->[01;31m[Kovercurrent_analog_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:196:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktemperature_fault[m[K’
+  196 |     msg->[01;31m[Ktemperature_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:197:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kundercurrent_analog_fault[m[K’
+  197 |     msg->[01;31m[Kundercurrent_analog_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:199:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksqueegee_actuator_digital_fault[m[K’
+  199 |     msg->[01;31m[Ksqueegee_actuator_digital_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:200:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdrive_brush_current_digital_fault[m[K’
+  200 |     msg->[01;31m[Kdrive_brush_current_digital_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:201:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kovercurrent_analog_fault[m[K’
+  201 |     msg->[01;31m[Kovercurrent_analog_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:202:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kundercurrent_analog_fault[m[K’
+  202 |     msg->[01;31m[Kundercurrent_analog_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:204:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdeergent_pump_digital_fault[m[K’; did you mean ‘[01m[Kdetergent_pump_digital_fault[m[K’?
+  204 |     msg->[01;31m[Kdeergent_pump_digital_fault[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |          [32m[Kdetergent_pump_digital_fault[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:206:5:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{<expression error>, <expression error>, <expression error>, <expression error>, <expression error>, <expression error>, <expression error>, <expression error>, <expression error>, <expression error>, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_pump_digital_fault, <expression error>, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_and_detergent_pump_flow_fault}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’
+  206 |     [01;31m[K}[m[K;
+      |     [01;31m[K^[m[K
+      |     [01;31m[K|[m[K
+      |     [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:210:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbrush_vaccum_motor_driver_digital_fault[m[K’; did you mean ‘[01m[Kbrush_vacuum_motor_driver_digital_fault[m[K’?
+  210 |         if(msg->[01;31m[Kbrush_vaccum_motor_driver_digital_fault[m[K){
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Kbrush_vacuum_motor_driver_digital_fault[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:215:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbrush_motor_actuator_fault[m[K’
+  215 |     }else if(msg->[01;31m[Kbrush_motor_actuator_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:220:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdrive_brush_current_digital_fault[m[K’
+  220 |     }else if(msg->[01;31m[Kdrive_brush_current_digital_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:224:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kovercurrent_analog_fault[m[K’
+  224 |     }else if(msg->[01;31m[Kovercurrent_analog_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:228:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktemperature_fault[m[K’
+  228 |     }else if(msg->[01;31m[Ktemperature_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:232:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kundercurrent_analog_fault[m[K’
+  232 |     }else if(msg->[01;31m[Kundercurrent_analog_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:236:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksqueegee_actuator_digital_fault[m[K’
+  236 |     }else if(msg->[01;31m[Ksqueegee_actuator_digital_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:240:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdrive_brush_current_digital_fault[m[K’
+  240 |     }else if(msg->[01;31m[Kdrive_brush_current_digital_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:244:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kovercurrent_analog_fault[m[K’
+  244 |     }else if(msg->[01;31m[Kovercurrent_analog_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:248:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kundercurrent_analog_fault[m[K’
+  248 |     }else if(msg->[01;31m[Kundercurrent_analog_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:256:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdeergent_pump_digital_fault[m[K’; did you mean ‘[01m[Kdetergent_pump_digital_fault[m[K’?
+  256 |     }else if(msg->[01;31m[Kdeergent_pump_digital_fault[m[K){
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                   [32m[Kdetergent_pump_digital_fault[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K At global scope:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:271:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A2_service::brush_on_control()[m[K’
+  271 | void [01;31m[KA2_service[m[K::brush_on_control()
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:271:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A2_service::brush_on_control()[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A2_service[m[K’ defined here
+   14 | class [01;36m[KA2_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:312:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+  312 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_GREEN_STYLE[m[K);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:319:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+  319 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_RED_STYLE[m[K);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K At global scope:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:393:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A2_service::on_water_level_slider_valueChanged(int)[m[K’
+  393 | void [01;31m[KA2_service[m[K::on_water_level_slider_valueChanged(int value)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:393:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A2_service::on_water_level_slider_valueChanged(int)[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A2_service[m[K’ defined here
+   14 | class [01;36m[KA2_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:40:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kprivate[m[K’
+   40 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

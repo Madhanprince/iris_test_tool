@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>test_tool_dummy</name>
+  <version>0.0.0</version>
+  <description>Dummy servers/publishers to test test_tool UI clients</description>
+  <maintainer email="you@example.com">You</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>iris_interfaces</depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>iris_interfaces</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+</package>

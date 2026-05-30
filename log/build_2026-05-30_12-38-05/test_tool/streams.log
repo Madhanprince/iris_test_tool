@@ -1,0 +1,44 @@
+[0.171s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.265s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.269s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.270s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.308s] [ 20%] Built target dummy_test_autogen
+[0.311s] [ 20%] Built target dummy_test_1_autogen
+[0.351s] [ 40%] Built target dummy_test
+[0.354s] [ 60%] Built target dummy_test_1
+[0.922s] [ 60%] Built target test_tool_node_autogen
+[0.953s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[1.010s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[1.010s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[1.010s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[27.816s] [ 86%] [32m[1mLinking CXX executable test_tool_node[0m
+[32.826s] [100%] Built target test_tool_node
+[32.843s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[32.856s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool
+[32.868s] -- Install configuration: ""
+[32.869s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool_node
+[32.883s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/test_tool_node" to ""
+[32.883s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test
+[32.885s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test" to ""
+[32.885s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test_1
+[32.888s] -- Set runtime path of "/home/maddy/iris_test_tool/install/test_tool/lib/test_tool/dummy_test_1" to ""
+[32.888s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/launch
+[32.888s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/launch/turtle_bot.py
+[32.888s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/launch/test_nodes.py
+[32.889s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/package_run_dependencies/test_tool
+[32.890s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/parent_prefix_path/test_tool
+[32.891s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.sh
+[32.892s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/ament_prefix_path.dsv
+[32.892s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.sh
+[32.892s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/environment/path.dsv
+[32.893s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.bash
+[32.893s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.sh
+[32.893s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.zsh
+[32.894s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/local_setup.dsv
+[32.894s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.dsv
+[32.895s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/ament_index/resource_index/packages/test_tool
+[32.895s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.896s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig.cmake
+[32.897s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/cmake/test_toolConfig-version.cmake
+[32.897s] -- Installing: /home/maddy/iris_test_tool/install/test_tool/share/test_tool/package.xml
+[32.900s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '0': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/maddy/iris_test_tool/build/test_tool

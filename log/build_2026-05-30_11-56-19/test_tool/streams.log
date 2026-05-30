@@ -1,0 +1,409 @@
+[0.194s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.282s] [  6%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.282s] [ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.284s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.316s] [ 20%] Built target dummy_test_autogen
+[0.319s] [ 20%] Built target dummy_test_1_autogen
+[0.331s] [ 20%] Built target test_tool_node_autogen
+[0.355s] [ 40%] Built target dummy_test
+[0.358s] [ 60%] Built target dummy_test_1
+[0.361s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.418s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[0.418s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[9.072s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+[9.072s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[9.072s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;35m[Kwarning: [m[Kdirect base ‘[01m[KQObject[m[K’ inaccessible in ‘[01m[KA2_service[m[K’ due to ambiguity [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Winaccessible-base-Winaccessible-base]8;;[m[K]
+[9.073s]    14 | class [01;35m[KA2_service[m[K : public QWidget , public QObject
+[9.073s]       |       [01;35m[K^~~~~~~~~~[m[K
+[9.076s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[9.076s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:[m[K In static member function ‘[01m[Kstatic void A2_service::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)[m[K’:
+[9.077s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:84:48:[m[K [01;31m[Kerror: [m[K‘[01m[KQObject[m[K’ is an ambiguous base of ‘[01m[KA2_service[m[K’
+[9.077s]    84 |         auto *_t = static_cast<A2_service *>(_o[01;31m[K)[m[K;
+[9.078s]       |                                                [01;31m[K^[m[K
+[9.078s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:[m[K In member function ‘[01m[Kvirtual const QMetaObject* A2_service::metaObject() const[m[K’:
+[9.079s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:109:21:[m[K [01;31m[Kerror: [m[K‘[01m[KQObject[m[K’ is an ambiguous base of ‘[01m[KA2_service[m[K’
+[9.079s]   109 |     return QObject::[01;31m[Kd_ptr[m[K->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+[9.079s]       |                     [01;31m[K^~~~~[m[K
+[9.079s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:109:50:[m[K [01;31m[Kerror: [m[K‘[01m[KQObject[m[K’ is an ambiguous base of ‘[01m[KA2_service[m[K’
+[9.080s]   109 |     return QObject::d_ptr->metaObject ? QObject::[01;31m[Kd_ptr[m[K->dynamicMetaObject() : &staticMetaObject;
+[9.080s]       |                                                  [01;31m[K^~~~~[m[K
+[9.080s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:[m[K In member function ‘[01m[Kvirtual void* A2_service::qt_metacast(const char*)[m[K’:
+[9.080s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:118:43:[m[K [01;31m[Kerror: [m[K‘[01m[KQObject[m[K’ is an ambiguous base of ‘[01m[KA2_service[m[K’
+[9.080s]   118 |         return static_cast< QObject*>(this[01;31m[K)[m[K;
+[9.081s]       |                                           [01;31m[K^[m[K
+[9.081s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:[m[K In member function ‘[01m[Kvirtual int A2_service::qt_metacall(QMetaObject::Call, int, void**)[m[K’:
+[9.081s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:129:31:[m[K [01;31m[Kerror: [m[K‘[01m[KQObject[m[K’ is an ambiguous base of ‘[01m[KA2_service[m[K’
+[9.081s]   129 |             [01;31m[Kqt_static_metacall(this, _c, _id, _a)[m[K;
+[9.081s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[9.087s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.088s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:14:7:[m[K [01;35m[Kwarning: [m[Kdirect base ‘[01m[KQObject[m[K’ inaccessible in ‘[01m[KA2_service[m[K’ due to ambiguity [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Winaccessible-base-Winaccessible-base]8;;[m[K]
+[9.088s]    14 | class [01;35m[KA2_service[m[K : public QWidget , public QObject
+[9.088s]       |       [01;35m[K^~~~~~~~~~[m[K
+[9.100s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In constructor ‘[01m[KA2_service::A2_service(Ui::MainWindow*, QWidget*)[m[K’:
+[9.100s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kqtros[m[K’ was not declared in this scope; did you mean ‘[01m[KQtros[m[K’?
+[9.100s]    13 |     client_brush_ = [01;31m[Kqtros[m[K->create_client<iris_interfaces::srv::A2Command>("a2_control/a2_command");
+[9.100s]       |                     [01;31m[K^~~~~[m[K
+[9.101s]       |                     [32m[KQtros[m[K
+[9.101s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.101s]    13 |     client_brush_ = qtros->create_client<iris_interfaces::srv::A2Command[01;31m[K>[m[K("a2_control/a2_command");
+[9.101s]       |                                                                         [01;31m[K^[m[K
+[9.101s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:14:74:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.102s]    14 |     client_vaccum_ = qtros->create_client<iris_interfaces::srv::A2Command[01;31m[K>[m[K("a2_control/a2_command");
+[9.102s]       |                                                                          [01;31m[K^[m[K
+[9.102s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:79:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.102s]    16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::WaterTankLevels[01;31m[K>[m[K("/water_level", 10);
+[9.102s]       |                                                                               [01;31m[K^[m[K
+[9.103s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:81:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[9.103s]    16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::WaterTankLevels>([01;35m[K"/water_level"[m[K, 10);
+[9.103s]       |                                                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[9.103s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:17:110:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.103s]    17 |     auto brush_vaccum_status_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FunctionalStatus[01;31m[K>[m[K(
+[9.103s]       |                                                                                                              [01;31m[K^[m[K
+[9.103s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:18:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[9.103s]    18 |         [01;35m[K"/a2_status"[m[K,
+[9.103s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[9.118s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:23:9:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[9.118s]    23 |         [01;35m[K)[m[K
+[9.118s]       |         [01;35m[K^[m[K
+[9.118s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:25:105:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.119s]    25 |     auto brush_vaccum_faults_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FaultStatus[01;31m[K>[m[K(
+[9.119s]       |                                                                                                         [01;31m[K^[m[K
+[9.119s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:26:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[9.119s]    26 |         [01;35m[K"/a2_faults"[m[K,
+[9.119s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[9.126s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:31:9:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[9.128s]    31 |         [01;35m[K)[m[K
+[9.131s]       |         [01;35m[K^[m[K
+[9.131s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:34:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kconnect[m[K’ is ambiguous
+[9.131s]    34 |     [01;31m[Kconnect[m[K(ui->water_level_slider,&QSlider::valueChanged,this,&A2_service::on_water_level_slider_valueChanged);
+[9.131s]       |     [01;31m[K^~~~~~~[m[K
+[9.131s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[9.131s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[9.131s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:5[m[K,
+[9.132s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.132s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.132s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.132s]       |             [01;36m[K^~~~~~~[m[K
+[9.132s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.132s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.132s]       |             [01;36m[K^~~~~~~[m[K
+[9.132s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.132s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.133s]       |             [01;36m[K^~~~~~~[m[K
+[9.133s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.133s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.133s]       |             [01;36m[K^~~~~~~[m[K
+[9.133s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.133s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.133s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.133s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.133s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.133s]       |                                [01;36m[K^~~~~~~[m[K
+[9.134s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.134s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.134s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.134s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.134s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.134s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.134s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.134s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.135s]       |             [01;36m[K^~~~~~~[m[K
+[9.135s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.135s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.135s]       |             [01;36m[K^~~~~~~[m[K
+[9.135s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.135s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.135s]       |             [01;36m[K^~~~~~~[m[K
+[9.136s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.136s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.136s]       |             [01;36m[K^~~~~~~[m[K
+[9.136s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.136s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.136s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.136s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.136s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.137s]       |                                [01;36m[K^~~~~~~[m[K
+[9.137s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.137s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.137s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.137s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.137s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.137s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.137s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:35:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kconnect[m[K’ is ambiguous
+[9.137s]    35 |     [01;31m[Kconnect[m[K(ui->brush_on, &QPushButton::clicked, this, &A2_service::brush_on_control);
+[9.138s]       |     [01;31m[K^~~~~~~[m[K
+[9.138s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[9.138s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[9.138s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:5[m[K,
+[9.138s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.138s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.138s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.138s]       |             [01;36m[K^~~~~~~[m[K
+[9.138s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.139s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.139s]       |             [01;36m[K^~~~~~~[m[K
+[9.139s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.139s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.139s]       |             [01;36m[K^~~~~~~[m[K
+[9.139s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.139s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.139s]       |             [01;36m[K^~~~~~~[m[K
+[9.139s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.140s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.140s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.140s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.140s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.140s]       |                                [01;36m[K^~~~~~~[m[K
+[9.140s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.140s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.140s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.140s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.140s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.141s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.141s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.141s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.141s]       |             [01;36m[K^~~~~~~[m[K
+[9.141s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.141s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.141s]       |             [01;36m[K^~~~~~~[m[K
+[9.141s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.141s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.142s]       |             [01;36m[K^~~~~~~[m[K
+[9.142s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.142s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.142s]       |             [01;36m[K^~~~~~~[m[K
+[9.142s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.142s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.142s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.142s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.143s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.143s]       |                                [01;36m[K^~~~~~~[m[K
+[9.143s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.143s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.143s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.143s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.143s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.143s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.143s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:36:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kconnect[m[K’ is ambiguous
+[9.143s]    36 |     [01;31m[Kconnect[m[K(ui->brush_off, &QPushButton::clicked, this, &A2_service::brush_off_control);
+[9.144s]       |     [01;31m[K^~~~~~~[m[K
+[9.144s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[9.144s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[9.144s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:5[m[K,
+[9.144s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.144s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.144s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.145s]       |             [01;36m[K^~~~~~~[m[K
+[9.145s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.145s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.145s]       |             [01;36m[K^~~~~~~[m[K
+[9.145s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.146s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.146s]       |             [01;36m[K^~~~~~~[m[K
+[9.146s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.146s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.147s]       |             [01;36m[K^~~~~~~[m[K
+[9.147s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.147s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.147s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.148s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.148s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.148s]       |                                [01;36m[K^~~~~~~[m[K
+[9.149s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.149s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.149s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.149s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.149s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.150s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.150s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.150s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.150s]       |             [01;36m[K^~~~~~~[m[K
+[9.151s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.151s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.151s]       |             [01;36m[K^~~~~~~[m[K
+[9.151s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.151s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.152s]       |             [01;36m[K^~~~~~~[m[K
+[9.152s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.152s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.152s]       |             [01;36m[K^~~~~~~[m[K
+[9.152s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.153s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.153s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.153s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.153s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.154s]       |                                [01;36m[K^~~~~~~[m[K
+[9.154s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.154s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.154s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.154s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.155s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.155s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.155s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:37:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kconnect[m[K’ is ambiguous
+[9.156s]    37 |     [01;31m[Kconnect[m[K(ui->vaccum_on, &QPushButton::clicked, this, &A2_service::vaccum_on_control);
+[9.156s]       |     [01;31m[K^~~~~~~[m[K
+[9.156s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[9.157s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[9.157s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:5[m[K,
+[9.157s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.157s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.157s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.158s]       |             [01;36m[K^~~~~~~[m[K
+[9.158s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.158s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.158s]       |             [01;36m[K^~~~~~~[m[K
+[9.158s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.159s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.159s]       |             [01;36m[K^~~~~~~[m[K
+[9.159s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.159s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.159s]       |             [01;36m[K^~~~~~~[m[K
+[9.160s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.160s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.160s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.160s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.161s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.161s]       |                                [01;36m[K^~~~~~~[m[K
+[9.161s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.161s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.161s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.162s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.162s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.162s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.162s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.162s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.163s]       |             [01;36m[K^~~~~~~[m[K
+[9.163s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.163s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.163s]       |             [01;36m[K^~~~~~~[m[K
+[9.163s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.164s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.164s]       |             [01;36m[K^~~~~~~[m[K
+[9.164s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.164s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.164s]       |             [01;36m[K^~~~~~~[m[K
+[9.165s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.165s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.165s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.165s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.165s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.166s]       |                                [01;36m[K^~~~~~~[m[K
+[9.166s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.166s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.166s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.166s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.167s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.167s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.167s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:38:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kconnect[m[K’ is ambiguous
+[9.167s]    38 |     [01;31m[Kconnect[m[K(ui->vaccum_off, &QPushButton::clicked, this, &A2_service::vaccum_off_control);
+[9.167s]       |     [01;31m[K^~~~~~~[m[K
+[9.168s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+[9.168s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[9.168s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:5[m[K,
+[9.168s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.168s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.169s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.169s]       |             [01;36m[K^~~~~~~[m[K
+[9.169s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.169s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.169s]       |             [01;36m[K^~~~~~~[m[K
+[9.170s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.170s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.170s]       |             [01;36m[K^~~~~~~[m[K
+[9.170s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.171s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.171s]       |             [01;36m[K^~~~~~~[m[K
+[9.171s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.171s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.171s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.171s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.172s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.172s]       |                                [01;36m[K^~~~~~~[m[K
+[9.172s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.172s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.172s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.173s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.173s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.173s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.173s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:322:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.173s]   322 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.174s]       |             [01;36m[K^~~~~~~[m[K
+[9.174s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:314:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(QtPrivate::FunctionPointer<Func2>::ArgumentCount == -1), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.174s]   314 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.174s]       |             [01;36m[K^~~~~~~[m[K
+[9.174s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:283:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<(((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0) && (! QtPrivate::FunctionPointer<Func2>::IsPointerToMemberFunction)), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const QObject*, Func2, Qt::ConnectionType)[m[K’
+[9.175s]   283 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, const QObject *context, Func2 slot,
+[9.175s]       |             [01;36m[K^~~~~~~[m[K
+[9.175s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:274:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static typename std::enable_if<((int)(QtPrivate::FunctionPointer<Func2>::ArgumentCount) >= 0), QMetaObject::Connection>::type QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, Func2)[m[K’
+[9.175s]   274 |             [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal, Func2 slot)
+[9.175s]       |             [01;36m[K^~~~~~~[m[K
+[9.176s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:242:43:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class Func1, class Func2> static QMetaObject::Connection QObject::connect(const typename QtPrivate::FunctionPointer<Func>::Object*, Func1, const typename QtPrivate::FunctionPointer<Func2>::Object*, Func2, Qt::ConnectionType)[m[K’
+[9.176s]   242 |     static inline QMetaObject::Connection [01;36m[Kconnect[m[K(const typename QtPrivate::FunctionPointer<Func1>::Object *sender, Func1 signal,
+[9.176s]       |                                           [01;36m[K^~~~~~~[m[K
+[9.176s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:481:32:[m[K [01;36m[Knote: [m[K                ‘[01m[KQMetaObject::Connection QObject::connect(const QObject*, const char*, const char*, Qt::ConnectionType) const[m[K’
+[9.176s]   481 | inline QMetaObject::Connection [01;36m[KQObject[m[K::connect(const QObject *asender, const char *asignal,
+[9.177s]       |                                [01;36m[K^~~~~~~[m[K
+[9.177s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:225:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const QMetaMethod&, const QObject*, const QMetaMethod&, Qt::ConnectionType)[m[K’
+[9.177s]   225 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const QMetaMethod &signal,
+[9.177s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.177s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:222:36:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstatic QMetaObject::Connection QObject::connect(const QObject*, const char*, const QObject*, const char*, Qt::ConnectionType)[m[K’
+[9.178s]   222 |     static QMetaObject::Connection [01;36m[Kconnect[m[K(const QObject *sender, const char *signal,
+[9.178s]       |                                    [01;36m[K^~~~~~~[m[K
+[9.178s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_list()[m[K’:
+[9.178s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:83:13:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+[9.179s]    83 |             [01;31m[KLIGHT_RED_STYLE[m[K
+[9.179s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.179s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_display(iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[9.179s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+[9.180s]   103 |         [01;31m[KLIGHT_RED_STYLE[m[K : LIGHT_GREEN_STYLE
+[9.180s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.206s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+[9.206s]   103 |         LIGHT_RED_STYLE : [01;31m[KLIGHT_GREEN_STYLE[m[K
+[9.207s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.208s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_faults_display(iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[9.209s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:200:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _vacuum_type = struct iris_interfaces::msg::VacuumFaults_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::VacuumFaults_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksqueegee_actuator_digital_fault[m[K’; did you mean ‘[01m[Ksqueeze_actuator_digital_fault[m[K’?
+[9.209s]   200 |     msg->vacuum.[01;31m[Ksqueegee_actuator_digital_fault[m[K,
+[9.209s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.209s]       |                 [32m[Ksqueeze_actuator_digital_fault[m[K
+[9.209s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:208:5:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush_vacuum_motor_driver_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::a2_fault_status, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::actuator_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::drive_brush_current_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::overcurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::temperature_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::undercurrent_analog_fault, <expression error>, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::drive_brush_current_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::overcurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::undercurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_pump_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::detergent_pump_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_and_detergent_pump_flow_fault}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’
+[9.210s]   208 |     [01;31m[K}[m[K;
+[9.210s]       |     [01;31m[K^[m[K
+[9.210s]       |     [01;31m[K|[m[K
+[9.210s]       |     [01;31m[K<brace-enclosed initializer list>[m[K
+[9.234s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In lambda function:
+[9.234s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:314:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+[9.234s]   314 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_GREEN_STYLE[m[K);
+[9.235s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.256s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:321:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+[9.256s]   321 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_RED_STYLE[m[K);
+[9.256s]       |                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.262s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::on_water_level_slider_valueChanged(int)[m[K’:
+[9.262s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:399:59:[m[K [01;31m[Kerror: [m[K‘[01m[KA2Command[m[K’ is not a member of ‘[01m[Kiris_interfaces::msg[m[K’; did you mean ‘[01m[Kiris_interfaces::srv::A2Command[m[K’?
+[9.263s]   399 |     auto message = std::make_shared<iris_interfaces::msg::[01;31m[KA2Command[m[K>();
+[9.263s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[9.263s] In file included from [01m[K/home/maddy/iris_test_tool/install/iris_interfaces/include/iris_interfaces/iris_interfaces/srv/a2_command.hpp:7[m[K,
+[9.263s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:9[m[K,
+[9.263s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.263s] [01m[K/home/maddy/iris_test_tool/install/iris_interfaces/include/iris_interfaces/iris_interfaces/srv/detail/a2_command__struct.hpp:280:8:[m[K [01;36m[Knote: [m[K‘[01m[Kiris_interfaces::srv::A2Command[m[K’ declared here
+[9.263s]   280 | struct [01;36m[KA2Command[m[K
+[9.264s]       |        [01;36m[K^~~~~~~~~[m[K
+[9.264s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:399:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[9.264s]   399 |     auto message = [01;31m[Kstd::make_shared<iris_interfaces::msg::A2Command>()[m[K;
+[9.264s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[9.264s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[9.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[9.264s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:4[m[K,
+[9.264s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[9.264s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[9.264s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[9.265s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[9.265s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[9.265s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:399:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[9.265s]   399 |     auto message = [01;31m[Kstd::make_shared<iris_interfaces::msg::A2Command>()[m[K;
+[9.265s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.292s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+[11.292s] gmake[2]: *** Waiting for unfinished jobs....
+[11.660s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[11.661s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[11.661s] gmake: *** [Makefile:146: all] Error 2
+[11.665s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

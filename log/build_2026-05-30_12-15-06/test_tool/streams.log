@@ -1,0 +1,137 @@
+[0.192s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.285s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.285s] [ 13%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.288s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.324s] [ 20%] Built target dummy_test_autogen
+[0.324s] [ 20%] Built target dummy_test_1_autogen
+[0.367s] [ 40%] Built target dummy_test_1
+[0.370s] [ 60%] Built target dummy_test
+[0.949s] [ 60%] Built target test_tool_node_autogen
+[1.005s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[1.007s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[1.007s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[11.889s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[11.902s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:45:[m[K [01;31m[Kerror: [m[K‘[01m[KWaterTankLevels[m[K’ is not a member of ‘[01m[Kiris_interfaces::msg[m[K’
+[11.902s]    25 |     rclcpp::Publisher<iris_interfaces::msg::[01;31m[KWaterTankLevels[m[K>::SharedPtr publisher_;
+[11.902s]       |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.902s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.903s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels[01;31m[K>[m[K::SharedPtr publisher_;
+[11.903s]       |                                                            [01;31m[K^[m[K
+[11.903s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.903s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels>::[01;31m[KSharedPtr[m[K publisher_;
+[11.904s]       |                                                               [01;31m[K^~~~~~~~~[m[K
+[11.904s]       |                                                                        [32m[K;[m[K
+[11.904s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+[11.904s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[11.905s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:45:[m[K [01;31m[Kerror: [m[K‘[01m[KWaterTankLevels[m[K’ is not a member of ‘[01m[Kiris_interfaces::msg[m[K’
+[11.905s]    25 |     rclcpp::Publisher<iris_interfaces::msg::[01;31m[KWaterTankLevels[m[K>::SharedPtr publisher_;
+[11.905s]       |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.905s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.906s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels[01;31m[K>[m[K::SharedPtr publisher_;
+[11.906s]       |                                                            [01;31m[K^[m[K
+[11.906s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.906s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels>::[01;31m[KSharedPtr[m[K publisher_;
+[11.906s]       |                                                               [01;31m[K^~~~~~~~~[m[K
+[11.915s]       |                                                                        [32m[K;[m[K
+[11.915s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:25:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.916s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels>::SharedPtr [01;31m[Kpublisher_[m[K;
+[11.916s]       |                                                                         [01;31m[K^~~~~~~~~~[m[K
+[11.916s]       |                                                                         [32m[Krmw_publisher_t[m[K
+[11.916s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.917s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels>::SharedPtr [01;31m[Kpublisher_[m[K;
+[11.917s]       |                                                                         [01;31m[K^~~~~~~~~~[m[K
+[11.917s]       |                                                                         [32m[Krmw_publisher_t[m[K
+[11.917s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In constructor ‘[01m[KA2_service::A2_service(Ui::MainWindow*, QWidget*)[m[K’:
+[11.918s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kqtros[m[K’ was not declared in this scope; did you mean ‘[01m[KQtros[m[K’?
+[11.918s]    13 |     client_brush_ = [01;31m[Kqtros[m[K->create_client<iris_interfaces::srv::A2Command>("a2_control/a2_command");
+[11.918s]       |                     [01;31m[K^~~~~[m[K
+[11.918s]       |                     [32m[KQtros[m[K
+[11.918s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[11.919s]    13 |     client_brush_ = qtros->create_client<iris_interfaces::srv::A2Command[01;31m[K>[m[K("a2_control/a2_command");
+[11.919s]       |                                                                         [01;31m[K^[m[K
+[11.919s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:14:74:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[11.919s]    14 |     client_vaccum_ = qtros->create_client<iris_interfaces::srv::A2Command[01;31m[K>[m[K("a2_control/a2_command");
+[11.920s]       |                                                                          [01;31m[K^[m[K
+[11.920s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.920s]    16 |     [01;31m[Kpublisher_[m[K = qtros->create_publisher<iris_interfaces::msg::A2Command>("a2_command", 10);
+[11.920s]       |     [01;31m[K^~~~~~~~~~[m[K
+[11.921s]       |     [32m[Krmw_publisher_t[m[K
+[11.921s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[11.921s]    16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::A2Command[01;31m[K>[m[K("a2_command", 10);
+[11.921s]       |                                                                         [01;31m[K^[m[K
+[11.921s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:75:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[11.922s]    16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::A2Command>([01;35m[K"a2_command"[m[K, 10);
+[11.922s]       |                                                                           [01;35m[K^~~~~~~~~~~~[m[K
+[11.922s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:17:110:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[11.922s]    17 |     auto brush_vaccum_status_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FunctionalStatus[01;31m[K>[m[K(
+[11.923s]       |                                                                                                              [01;31m[K^[m[K
+[11.923s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:18:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[11.923s]    18 |         [01;35m[K"/a2_status"[m[K,
+[11.924s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[11.930s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:23:9:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[11.930s]    23 |         [01;35m[K)[m[K
+[11.931s]       |         [01;35m[K^[m[K
+[11.932s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:25:105:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[11.932s]    25 |     auto brush_vaccum_faults_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FaultStatus[01;31m[K>[m[K(
+[11.932s]       |                                                                                                         [01;31m[K^[m[K
+[11.933s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:26:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[11.933s]    26 |         [01;35m[K"/a2_faults"[m[K,
+[11.933s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[11.943s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:31:9:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[11.943s]    31 |         [01;35m[K)[m[K
+[11.944s]       |         [01;35m[K^[m[K
+[11.973s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_list()[m[K’:
+[11.974s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:83:13:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+[11.974s]    83 |             [01;31m[KLIGHT_RED_STYLE[m[K
+[11.974s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.996s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_status_display(iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.996s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+[11.996s]   103 |         [01;31m[KLIGHT_RED_STYLE[m[K : LIGHT_GREEN_STYLE
+[11.997s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[12.020s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+[12.020s]   103 |         LIGHT_RED_STYLE : [01;31m[KLIGHT_GREEN_STYLE[m[K
+[12.020s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.022s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_faults_display(iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.022s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:200:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _vacuum_type = struct iris_interfaces::msg::VacuumFaults_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::VacuumFaults_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksqueegee_actuator_digital_fault[m[K’; did you mean ‘[01m[Ksqueeze_actuator_digital_fault[m[K’?
+[12.023s]   200 |     msg->vacuum.[01;31m[Ksqueegee_actuator_digital_fault[m[K,
+[12.023s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.023s]       |                 [32m[Ksqueeze_actuator_digital_fault[m[K
+[12.024s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:208:5:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush_vacuum_motor_driver_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::a2_fault_status, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::actuator_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::drive_brush_current_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::overcurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::temperature_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::undercurrent_analog_fault, <expression error>, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::drive_brush_current_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::overcurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::undercurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_pump_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::detergent_pump_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_and_detergent_pump_flow_fault}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’
+[12.024s]   208 |     [01;31m[K}[m[K;
+[12.024s]       |     [01;31m[K^[m[K
+[12.024s]       |     [01;31m[K|[m[K
+[12.025s]       |     [01;31m[K<brace-enclosed initializer list>[m[K
+[12.053s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In lambda function:
+[12.053s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:314:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_GREEN_STYLE[m[K’ was not declared in this scope
+[12.053s]   314 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_GREEN_STYLE[m[K);
+[12.054s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.071s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:321:42:[m[K [01;31m[Kerror: [m[K‘[01m[KLIGHT_RED_STYLE[m[K’ was not declared in this scope
+[12.071s]   321 |                 lights[1]->setStyleSheet([01;31m[KLIGHT_RED_STYLE[m[K);
+[12.071s]       |                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[12.096s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::on_water_level_slider_valueChanged(int)[m[K’:
+[12.096s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:401:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[12.096s]   401 |     [01;31m[Kpublisher_[m[K->publish(*message);
+[12.097s]       |     [01;31m[K^~~~~~~~~~[m[K
+[12.097s]       |     [32m[Krmw_publisher_t[m[K
+[12.327s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[12.328s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:45:[m[K [01;31m[Kerror: [m[K‘[01m[KWaterTankLevels[m[K’ is not a member of ‘[01m[Kiris_interfaces::msg[m[K’
+[12.328s]    25 |     rclcpp::Publisher<iris_interfaces::msg::[01;31m[KWaterTankLevels[m[K>::SharedPtr publisher_;
+[12.328s]       |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[12.328s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.329s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels[01;31m[K>[m[K::SharedPtr publisher_;
+[12.329s]       |                                                            [01;31m[K^[m[K
+[12.330s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[12.330s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels>::[01;31m[KSharedPtr[m[K publisher_;
+[12.330s]       |                                                               [01;31m[K^~~~~~~~~[m[K
+[12.331s]       |                                                                        [32m[K;[m[K
+[12.336s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:25:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[12.337s]    25 |     rclcpp::Publisher<iris_interfaces::msg::WaterTankLevels>::SharedPtr [01;31m[Kpublisher_[m[K;
+[12.337s]       |                                                                         [01;31m[K^~~~~~~~~~[m[K
+[12.337s]       |                                                                         [32m[Krmw_publisher_t[m[K
+[14.374s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+[14.375s] gmake[2]: *** Waiting for unfinished jobs....
+[14.936s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[15.116s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[15.117s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[15.118s] gmake: *** [Makefile:146: all] Error 2
+[15.127s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

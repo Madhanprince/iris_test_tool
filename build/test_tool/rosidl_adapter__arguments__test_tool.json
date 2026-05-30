@@ -1,7 +1,0 @@
-{
-  "package_name": "test_tool",
-  "non_idl_tuples": [
-    "/home/maddy/iris_test_tool/src/test_tool:msg/A2FunctionalStatus.msg",
-    "/home/maddy/iris_test_tool/src/test_tool:msg/A2FaultStatus.msg"
-  ]
-}

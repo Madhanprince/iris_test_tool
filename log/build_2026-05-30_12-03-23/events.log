@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.001178] (-) JobUnselected: {'identifier': 'iris_interfaces'}
+[0.001912] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict([('iris_interfaces', '/home/maddy/iris_test_tool/install/iris_interfaces')])}
+[0.002026] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.099097] (-) TimerEvent: {}
+[0.160592] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.161732] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.162849] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('USER', 'maddy'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maddy/iris_test_tool/install/iris_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maddy'), ('OLDPWD', '/home/maddy'), ('LESS', '-R'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maddy'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/357_interop'), ('NAME', 'RMCCORPDE-DT024'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('P9K_SSH', '0'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/0'), ('PYTHONPATH', '/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.199295] (-) TimerEvent: {}
+[0.246409] (test_tool) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[0.246754] (test_tool) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool_node\x1b[0m\n'}
+[0.246932] (test_tool) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[0.279024] (test_tool) StdoutLine: {'line': b'[ 20%] Built target dummy_test_1_autogen\n'}
+[0.279328] (test_tool) StdoutLine: {'line': b'[ 20%] Built target dummy_test_autogen\n'}
+[0.299530] (-) TimerEvent: {}
+[0.316665] (test_tool) StdoutLine: {'line': b'[ 40%] Built target dummy_test\n'}
+[0.318554] (test_tool) StdoutLine: {'line': b'[ 60%] Built target dummy_test_1\n'}
+[0.399877] (-) TimerEvent: {}
+[0.500585] (-) TimerEvent: {}
+[0.601315] (-) TimerEvent: {}
+[0.702152] (-) TimerEvent: {}
+[0.802907] (-) TimerEvent: {}
+[0.904600] (-) TimerEvent: {}
+[0.942818] (test_tool) StdoutLine: {'line': b'[ 60%] Built target test_tool_node_autogen\n'}
+[0.975919] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool_node\x1b[0m\n'}
+[1.004748] (-) TimerEvent: {}
+[1.048093] (test_tool) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[1.049874] (test_tool) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o\x1b[0m\n'}
+[1.104904] (-) TimerEvent: {}
+[1.205384] (-) TimerEvent: {}
+[1.305987] (-) TimerEvent: {}
+[1.406924] (-) TimerEvent: {}
+[1.507708] (-) TimerEvent: {}
+[1.608724] (-) TimerEvent: {}
+[1.709395] (-) TimerEvent: {}
+[1.809958] (-) TimerEvent: {}
+[1.910572] (-) TimerEvent: {}
+[2.011095] (-) TimerEvent: {}
+[2.111706] (-) TimerEvent: {}
+[2.212382] (-) TimerEvent: {}
+[2.312855] (-) TimerEvent: {}
+[2.413355] (-) TimerEvent: {}
+[2.513890] (-) TimerEvent: {}
+[2.614914] (-) TimerEvent: {}
+[2.715701] (-) TimerEvent: {}
+[2.816208] (-) TimerEvent: {}
+[2.916676] (-) TimerEvent: {}
+[3.017165] (-) TimerEvent: {}
+[3.117671] (-) TimerEvent: {}
+[3.218259] (-) TimerEvent: {}
+[3.318801] (-) TimerEvent: {}
+[3.419285] (-) TimerEvent: {}
+[3.519777] (-) TimerEvent: {}
+[3.620376] (-) TimerEvent: {}
+[3.721014] (-) TimerEvent: {}
+[3.821589] (-) TimerEvent: {}
+[3.922156] (-) TimerEvent: {}
+[4.022706] (-) TimerEvent: {}
+[4.123191] (-) TimerEvent: {}
+[4.223743] (-) TimerEvent: {}
+[4.324312] (-) TimerEvent: {}
+[4.424861] (-) TimerEvent: {}
+[4.525391] (-) TimerEvent: {}
+[4.625886] (-) TimerEvent: {}
+[4.726353] (-) TimerEvent: {}
+[4.826863] (-) TimerEvent: {}
+[4.927469] (-) TimerEvent: {}
+[5.028017] (-) TimerEvent: {}
+[5.128579] (-) TimerEvent: {}
+[5.229190] (-) TimerEvent: {}
+[5.329699] (-) TimerEvent: {}
+[5.430226] (-) TimerEvent: {}
+[5.530805] (-) TimerEvent: {}
+[5.631308] (-) TimerEvent: {}
+[5.731982] (-) TimerEvent: {}
+[5.832620] (-) TimerEvent: {}
+[5.933260] (-) TimerEvent: {}
+[6.033886] (-) TimerEvent: {}
+[6.134529] (-) TimerEvent: {}
+[6.235153] (-) TimerEvent: {}
+[6.335746] (-) TimerEvent: {}
+[6.436301] (-) TimerEvent: {}
+[6.536847] (-) TimerEvent: {}
+[6.637375] (-) TimerEvent: {}
+[6.737936] (-) TimerEvent: {}
+[6.838530] (-) TimerEvent: {}
+[6.939130] (-) TimerEvent: {}
+[7.039726] (-) TimerEvent: {}
+[7.140268] (-) TimerEvent: {}
+[7.240869] (-) TimerEvent: {}
+[7.341560] (-) TimerEvent: {}
+[7.442218] (-) TimerEvent: {}
+[7.542858] (-) TimerEvent: {}
+[7.643471] (-) TimerEvent: {}
+[7.744156] (-) TimerEvent: {}
+[7.844705] (-) TimerEvent: {}
+[7.945296] (-) TimerEvent: {}
+[8.045870] (-) TimerEvent: {}
+[8.146394] (-) TimerEvent: {}
+[8.246940] (-) TimerEvent: {}
+[8.347487] (-) TimerEvent: {}
+[8.448160] (-) TimerEvent: {}
+[8.549216] (-) TimerEvent: {}
+[8.649866] (-) TimerEvent: {}
+[8.750501] (-) TimerEvent: {}
+[8.851180] (-) TimerEvent: {}
+[8.951806] (-) TimerEvent: {}
+[9.052518] (-) TimerEvent: {}
+[9.153132] (-) TimerEvent: {}
+[9.253766] (-) TimerEvent: {}
+[9.354678] (-) TimerEvent: {}
+[9.455326] (-) TimerEvent: {}
+[9.555916] (-) TimerEvent: {}
+[9.656540] (-) TimerEvent: {}
+[9.757098] (-) TimerEvent: {}
+[9.857595] (-) TimerEvent: {}
+[9.958141] (-) TimerEvent: {}
+[10.058807] (-) TimerEvent: {}
+[10.159423] (-) TimerEvent: {}
+[10.259914] (-) TimerEvent: {}
+[10.332934] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KA2_service::A2_service(Ui::MainWindow*, QWidget*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.333264] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kqtros\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KQtros\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.333399] (test_tool) StderrLine: {'line': b'   13 |     client_brush_ = \x1b[01;31m\x1b[Kqtros\x1b[m\x1b[K->create_client<iris_interfaces::srv::A2Command>("a2_control/a2_command");\n'}
+[10.333522] (test_tool) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.333640] (test_tool) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KQtros\x1b[m\x1b[K\n'}
+[10.333756] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:13:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.333873] (test_tool) StderrLine: {'line': b'   13 |     client_brush_ = qtros->create_client<iris_interfaces::srv::A2Command\x1b[01;31m\x1b[K>\x1b[m\x1b[K("a2_control/a2_command");\n'}
+[10.334036] (test_tool) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.334307] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:14:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.334787] (test_tool) StderrLine: {'line': b'   14 |     client_vaccum_ = qtros->create_client<iris_interfaces::srv::A2Command\x1b[01;31m\x1b[K>\x1b[m\x1b[K("a2_control/a2_command");\n'}
+[10.334912] (test_tool) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.335027] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KA2Command\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kiris_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kiris_interfaces::srv::A2Command\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.335159] (test_tool) StderrLine: {'line': b'   16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::\x1b[01;31m\x1b[KA2Command\x1b[m\x1b[K>("/water_level", 10);\n'}
+[10.335301] (test_tool) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.335457] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/install/iris_interfaces/include/iris_interfaces/iris_interfaces/srv/a2_command.hpp:7\x1b[m\x1b[K,\n'}
+[10.335569] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:9\x1b[m\x1b[K,\n'}
+[10.335679] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1\x1b[m\x1b[K:\n'}
+[10.335789] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/install/iris_interfaces/include/iris_interfaces/iris_interfaces/srv/detail/a2_command__struct.hpp:280:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kiris_interfaces::srv::A2Command\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[10.335994] (test_tool) StderrLine: {'line': b'  280 | struct \x1b[01;36m\x1b[KA2Command\x1b[m\x1b[K\n'}
+[10.336127] (test_tool) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.336248] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:16:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.336361] (test_tool) StderrLine: {'line': b'   16 |     publisher_ = qtros->create_publisher<iris_interfaces::msg::A2Command>(\x1b[01;35m\x1b[K"/water_level"\x1b[m\x1b[K, 10);\n'}
+[10.336468] (test_tool) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.336575] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:17:110:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.336683] (test_tool) StderrLine: {'line': b'   17 |     auto brush_vaccum_status_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FunctionalStatus\x1b[01;31m\x1b[K>\x1b[m\x1b[K(\n'}
+[10.336801] (test_tool) StderrLine: {'line': b'      |                                                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.336904] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:18:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.337009] (test_tool) StderrLine: {'line': b'   18 |         \x1b[01;35m\x1b[K"/a2_status"\x1b[m\x1b[K,\n'}
+[10.337110] (test_tool) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.348423] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:23:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.348744] (test_tool) StderrLine: {'line': b'   23 |         \x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[10.348859] (test_tool) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[10.348980] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:25:105:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.349090] (test_tool) StderrLine: {'line': b'   25 |     auto brush_vaccum_faults_subscriber = qtros->create_subscription<iris_interfaces::msg::A2FaultStatus\x1b[01;31m\x1b[K>\x1b[m\x1b[K(\n'}
+[10.349197] (test_tool) StderrLine: {'line': b'      |                                                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.349301] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:26:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.349407] (test_tool) StderrLine: {'line': b'   26 |         \x1b[01;35m\x1b[K"/a2_faults"\x1b[m\x1b[K,\n'}
+[10.349509] (test_tool) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.355344] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:31:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.355630] (test_tool) StderrLine: {'line': b'   31 |         \x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[10.355746] (test_tool) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[10.360071] (-) TimerEvent: {}
+[10.379115] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid A2_service::a2_status_list()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.379403] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:83:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLIGHT_RED_STYLE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.379519] (test_tool) StderrLine: {'line': b'   83 |             \x1b[01;31m\x1b[KLIGHT_RED_STYLE\x1b[m\x1b[K\n'}
+[10.379653] (test_tool) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.396501] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid A2_service::a2_status_display(iris_interfaces::msg::A2FunctionalStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.396795] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLIGHT_RED_STYLE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.396913] (test_tool) StderrLine: {'line': b'  103 |         \x1b[01;31m\x1b[KLIGHT_RED_STYLE\x1b[m\x1b[K : LIGHT_GREEN_STYLE\n'}
+[10.397039] (test_tool) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.413122] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:103:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLIGHT_GREEN_STYLE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.413425] (test_tool) StderrLine: {'line': b'  103 |         LIGHT_RED_STYLE : \x1b[01;31m\x1b[KLIGHT_GREEN_STYLE\x1b[m\x1b[K\n'}
+[10.413539] (test_tool) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.414568] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid A2_service::a2_faults_display(iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.415063] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:200:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _vacuum_type = struct iris_interfaces::msg::VacuumFaults_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct iris_interfaces::msg::VacuumFaults_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksqueegee_actuator_digital_fault\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksqueeze_actuator_digital_fault\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.415371] (test_tool) StderrLine: {'line': b'  200 |     msg->vacuum.\x1b[01;31m\x1b[Ksqueegee_actuator_digital_fault\x1b[m\x1b[K,\n'}
+[10.415586] (test_tool) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.415834] (test_tool) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Ksqueeze_actuator_digital_fault\x1b[m\x1b[K\n'}
+[10.416066] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:208:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K{((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush_vacuum_motor_driver_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::a2_fault_status, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::actuator_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::drive_brush_current_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::overcurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::temperature_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::brush.iris_interfaces::msg::BrushFaults_<std::allocator<void> >::undercurrent_analog_fault, <expression error>, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::drive_brush_current_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::overcurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::vacuum.iris_interfaces::msg::VacuumFaults_<std::allocator<void> >::undercurrent_analog_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_pump_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::detergent_pump_digital_fault, ((const std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::water_and_detergent_pump_flow_fault}\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.416421] (test_tool) StderrLine: {'line': b'  208 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[10.416627] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.416835] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[10.417039] (test_tool) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\n'}
+[10.439106] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[10.439397] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:314:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLIGHT_GREEN_STYLE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.439516] (test_tool) StderrLine: {'line': b'  314 |                 lights[1]->setStyleSheet(\x1b[01;31m\x1b[KLIGHT_GREEN_STYLE\x1b[m\x1b[K);\n'}
+[10.439648] (test_tool) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.460288] (-) TimerEvent: {}
+[10.462877] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:321:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLIGHT_RED_STYLE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.463129] (test_tool) StderrLine: {'line': b'  321 |                 lights[1]->setStyleSheet(\x1b[01;31m\x1b[KLIGHT_RED_STYLE\x1b[m\x1b[K);\n'}
+[10.463237] (test_tool) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.470999] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid A2_service::on_water_level_slider_valueChanged(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.471592] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:399:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KA2Command\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kiris_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kiris_interfaces::srv::A2Command\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.471758] (test_tool) StderrLine: {'line': b'  399 |     auto message = std::make_shared<iris_interfaces::msg::\x1b[01;31m\x1b[KA2Command\x1b[m\x1b[K>();\n'}
+[10.471938] (test_tool) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.472062] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/install/iris_interfaces/include/iris_interfaces/iris_interfaces/srv/a2_command.hpp:7\x1b[m\x1b[K,\n'}
+[10.472165] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:9\x1b[m\x1b[K,\n'}
+[10.472278] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1\x1b[m\x1b[K:\n'}
+[10.472380] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/install/iris_interfaces/include/iris_interfaces/iris_interfaces/srv/detail/a2_command__struct.hpp:280:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kiris_interfaces::srv::A2Command\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[10.472485] (test_tool) StderrLine: {'line': b'  280 | struct \x1b[01;36m\x1b[KA2Command\x1b[m\x1b[K\n'}
+[10.472623] (test_tool) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.472752] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:399:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.472874] (test_tool) StderrLine: {'line': b'  399 |     auto message = \x1b[01;31m\x1b[Kstd::make_shared<iris_interfaces::msg::A2Command>()\x1b[m\x1b[K;\n'}
+[10.472976] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[10.473078] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[10.473179] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[10.473281] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:4\x1b[m\x1b[K,\n'}
+[10.473382] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1\x1b[m\x1b[K:\n'}
+[10.473506] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.473609] (test_tool) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[10.473710] (test_tool) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.473810] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[10.473911] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:399:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[10.474014] (test_tool) StderrLine: {'line': b'  399 |     auto message = \x1b[01;31m\x1b[Kstd::make_shared<iris_interfaces::msg::A2Command>()\x1b[m\x1b[K;\n'}
+[10.474115] (test_tool) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[10.560443] (-) TimerEvent: {}
+[10.661005] (-) TimerEvent: {}
+[10.761535] (-) TimerEvent: {}
+[10.862156] (-) TimerEvent: {}
+[10.962677] (-) TimerEvent: {}
+[11.063174] (-) TimerEvent: {}
+[11.163787] (-) TimerEvent: {}
+[11.264306] (-) TimerEvent: {}
+[11.364800] (-) TimerEvent: {}
+[11.465334] (-) TimerEvent: {}
+[11.565968] (-) TimerEvent: {}
+[11.666501] (-) TimerEvent: {}
+[11.767065] (-) TimerEvent: {}
+[11.867597] (-) TimerEvent: {}
+[11.968201] (-) TimerEvent: {}
+[12.068829] (-) TimerEvent: {}
+[12.169364] (-) TimerEvent: {}
+[12.269859] (-) TimerEvent: {}
+[12.370371] (-) TimerEvent: {}
+[12.470911] (-) TimerEvent: {}
+[12.518430] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1\n'}
+[12.518916] (test_tool) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2\n'}
+[12.519316] (test_tool) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.523092] (test_tool) CommandEnded: {'returncode': 2}
+[12.535354] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 2}
+[12.546571] (-) EventReactorShutdown: {}
