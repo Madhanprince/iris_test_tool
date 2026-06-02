@@ -507,7 +507,7 @@ void MainWindow::setupDisplays_3()
 void MainWindow::a2_service()
 {
     if (!a2_page) {
-        a2_page = new A2_service(ui, qtros, ui->status_box);
+        a2_page = new A2_service(ui, qtros, this);
 
         if (!ui->status_box->layout()) {
             ui->status_box->setLayout(new QVBoxLayout(ui->status_box));

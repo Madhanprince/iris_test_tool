@@ -185,8 +185,6 @@ void A2_service::create_faults_group_box(){
         brushMotorFaultsLayout = new QHBoxLayout;
         vaccumMotorFaultsLayout = new QHBoxLayout;
 
-        faults_Label = new QLabel;
-
         faults_Group =
             new QGroupBox("faults", this);
 
@@ -202,6 +200,7 @@ void A2_service::create_faults_group_box(){
         faults_mainLayout->addWidget(BrushMotor_faults_Group);
         faults_mainLayout->addWidget(VaccumMotor_faults_Group);
         std::cout << "Fault UI Created Once" << std::endl;
+
     }
 
     ui->fault_box->setLayout(faults_mainLayout);
@@ -210,81 +209,74 @@ void A2_service::create_faults_group_box(){
 void A2_service::a2_faults_display(
     const iris_interfaces::msg::A2FaultStatus::SharedPtr msg)
 {
-    
+    QStringList fault_names = {
+
+        "brush_vacuum_motor_driver_digital_fault",
+        "A2_Fault_Status",
+
+        "Actuator_Digital_Fault",
+        "Drive_Brush_Current_Digital_Fault",
+        "Overcurrent_Analog_Fault",
+        "Temperature_Fault",
+        "Undercurrent_Analog_Fault",
+
+        "Squeeze_Actuator_Digital_Fault",
+        "Drive_Brush_Current_Digital_Fault",
+        "Overcurrent_Analog_Fault",
+        "Undercurrent_Analog_Fault",
+
+        "Water_Pump_Digital_Fault",
+        "Detergent_Pump_Digital_Fault",
+        "Water_and_Detergent_Pump_Flow_Fault"
+    };
+
     std::vector<uint8_t> fault_values = {
 
-    msg->brush_vacuum_motor_driver_digital_fault,
-    msg->a2_fault_status,
-    
-    msg->brush.actuator_digital_fault,
-    msg->brush.drive_brush_current_digital_fault,
-    msg->brush.overcurrent_analog_fault,
-    msg->brush.temperature_fault,
-    msg->brush.undercurrent_analog_fault,
+        msg->brush_vacuum_motor_driver_digital_fault,
+        msg->a2_fault_status,
 
-    msg->vacuum.squeeze_actuator_digital_fault,
-    msg->vacuum.drive_brush_current_digital_fault,
-    msg->vacuum.overcurrent_analog_fault,
-    msg->vacuum.undercurrent_analog_fault,
-    msg->water_pump_digital_fault,
-    msg->detergent_pump_digital_fault,
-    msg->water_and_detergent_pump_flow_fault
-   
+        msg->brush.actuator_digital_fault,
+        msg->brush.drive_brush_current_digital_fault,
+        msg->brush.overcurrent_analog_fault,
+        msg->brush.temperature_fault,
+        msg->brush.undercurrent_analog_fault,
+
+        msg->vacuum.squeeze_actuator_digital_fault,
+        msg->vacuum.drive_brush_current_digital_fault,
+        msg->vacuum.overcurrent_analog_fault,
+        msg->vacuum.undercurrent_analog_fault,
+
+        msg->water_pump_digital_fault,
+        msg->detergent_pump_digital_fault,
+        msg->water_and_detergent_pump_flow_fault
     };
-    if(msg){
-        if(msg->brush_vacuum_motor_driver_digital_fault){
-            faults_Label->setText("brush_vacuum_motor_driver_digital_fault");
-            faults_Group_Layout->addWidget(faults_Label);
+
+    for(size_t i = 0; i < fault_values.size(); i++)
+    {
+        if(fault_values[i])
+        {
+            QLabel *faults_Label = new QLabel;
+
+            faults_Label->setText(fault_names[i]);
+
+            if(i <= 1)
+            {
+                faults_Group_Layout->addWidget(faults_Label);
+            }
+            else if(i >= 2 && i <= 6)
+            {
+                brushMotorFaultsLayout->addWidget(faults_Label);
+            }
+            else
+            {
+                vaccumMotorFaultsLayout->addWidget(faults_Label);
+            }
         }
-    }else if(msg->a2_fault_status){
-        faults_Label->setText("A2_Fault_Status");
-        faults_Group_Layout->addWidget(faults_Label);
-
-    }else if(msg->brush.drive_brush_current_digital_fault){
-        faults_Label->setText("Drive_Brush_Current_Digital_Fault");
-        brushMotorFaultsLayout->addWidget(faults_Label);
-       
-    }else if(msg->brush.overcurrent_analog_fault){
-        faults_Label->setText("Overcurrent_Analog_Fault");
-        brushMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->brush.temperature_fault){
-        faults_Label->setText("Temperature_Fault");
-        brushMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->brush.undercurrent_analog_fault){
-        faults_Label->setText("Undercurrent_Analog_Fault");
-        brushMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->vacuum.squeeze_actuator_digital_fault){
-        faults_Label->setText("squeeze_actuator_digital_fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->vacuum.drive_brush_current_digital_fault){
-        faults_Label->setText("Drive_Brush_Current_Digital_Fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->vacuum.overcurrent_analog_fault){
-        faults_Label->setText("Overcurrent_Analog_Fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->vacuum.undercurrent_analog_fault){
-        faults_Label->setText("Undercurrent_Analog_Fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->water_pump_digital_fault){
-        faults_Label->setText("Water_Pump_Digital_Fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->detergent_pump_digital_fault){
-        faults_Label->setText("Detergent_Pump_Digital_Fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
-
-    }else if(msg->water_and_detergent_pump_flow_fault){
-        faults_Label->setText("Water_and_Detergent_Pump_Flow_Fault");
-        vaccumMotorFaultsLayout->addWidget(faults_Label);
     }
 
+    faults_Group->setLayout(faults_Group_Layout);
+    BrushMotor_faults_Group->setLayout(brushMotorFaultsLayout);
+    VaccumMotor_faults_Group->setLayout(vaccumMotorFaultsLayout);
 }
 
 void A2_service::brush_on_control()
