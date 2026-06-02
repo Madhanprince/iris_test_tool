@@ -26,13 +26,25 @@ public:
     rclcpp::Client<iris_interfaces::srv::A2Command>::SharedPtr client_brush_;
     rclcpp::Client<iris_interfaces::srv::A2Command>::SharedPtr client_vaccum_;
     rclcpp::Publisher<iris_interfaces::msg::A2Command>::SharedPtr publisher_;
+    rclcpp::Subscription<iris_interfaces::msg::A2FunctionalStatus>::SharedPtr brush_vaccum_status_subscriber;
+    rclcpp::Subscription<iris_interfaces::msg::A2FaultStatus>::SharedPtr brush_vaccum_faults_subscriber;
     QHBoxLayout *rowLayout;
     QLabel *light_layout;
     QVector<QLabel*> lights;
+    bool ui_created = false;
+    QVBoxLayout *faults_mainLayout = nullptr;
+    QVBoxLayout *faults_Group_Layout = nullptr;
+    QHBoxLayout *brushMotorFaultsLayout = nullptr;
+    QHBoxLayout *vaccumMotorFaultsLayout = nullptr;
+    QLabel *faults_Label = nullptr;
+    QGroupBox *faults_Group = nullptr;
+    QGroupBox *BrushMotor_faults_Group = nullptr;
+    QGroupBox *VaccumMotor_faults_Group = nullptr;
 
     void a2_status_display(const iris_interfaces::msg::A2FunctionalStatus::SharedPtr msg);
     void a2_faults_display(const iris_interfaces::msg::A2FaultStatus::SharedPtr msg);
     void a2_status_list();
+    void create_faults_group_box();
 
     const QString ACTIVE_BUTTON_STYLE =
     "background-color:#22c55e;";

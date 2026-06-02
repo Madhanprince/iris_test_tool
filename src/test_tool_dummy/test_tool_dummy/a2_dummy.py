@@ -12,7 +12,7 @@ class A2DummyNode(Node):
         self.fault_pub = self.create_publisher(A2FaultStatus, '/a2_faults', 10)
 
         # periodic status publisher so UI sees current state even without requests
-        self.timer = self.create_timer(1.0, self.publish_status)
+        # self.timer = self.create_timer(1.0, self.publish_status)
 
         # internal state
         self.brush_status = 0
@@ -23,14 +23,14 @@ class A2DummyNode(Node):
         # Simple logic: brush_command==0 -> brush ON, vacuum_command==1 -> vacuum ON
         if hasattr(request, 'brush_command'):
             if request.brush_command == 0:
-                self.brush_status = 1
-            else:
                 self.brush_status = 0
-        if hasattr(request, 'vacuum_command'):
-            if request.vacuum_command == 1:
-                self.vacuum_status = 1
             else:
+                self.brush_status = 1
+        if hasattr(request, 'vacuum_command'):
+            if request.vacuum_command == 0:
                 self.vacuum_status = 0
+            else:
+                self.vacuum_status = 1
 
         response.brush_status = int(self.brush_status)
         response.vacuum_status = int(self.vacuum_status)
@@ -43,7 +43,7 @@ class A2DummyNode(Node):
         msg = A2FunctionalStatus()
         # brush submessage
         brush = BrushStatus()
-        brush.brush_motor_command = 0 if self.brush_status else 1
+        brush.brush_motor_command = int(self.brush_status)
         brush.brush_motor_status = int(self.brush_status)
         brush.brush_actuator = ActuatorStatus()
         brush.brush_actuator.moving_down = 0

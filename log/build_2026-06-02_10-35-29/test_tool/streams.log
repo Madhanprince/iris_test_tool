@@ -1,0 +1,61 @@
+[0.181s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.272s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.272s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.272s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.312s] [ 20%] Built target dummy_test_autogen
+[0.312s] [ 20%] Built target dummy_test_1_autogen
+[0.365s] [ 40%] Built target dummy_test
+[0.377s] [ 60%] Built target dummy_test_1
+[0.972s] [ 60%] Built target test_tool_node_autogen
+[1.028s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[1.032s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[1.034s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[11.295s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_faults_display(iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.296s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:247:9:[m[K [01;31m[Kerror: [m[K‘[01m[KbrushMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KBrushMotor_faults_Group[m[K’?
+[11.296s]   247 |         [01;31m[KbrushMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.296s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.296s]       |         [32m[KBrushMotor_faults_Group[m[K
+[11.325s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:251:9:[m[K [01;31m[Kerror: [m[K‘[01m[KbrushMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KBrushMotor_faults_Group[m[K’?
+[11.325s]   251 |         [01;31m[KbrushMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.326s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.326s]       |         [32m[KBrushMotor_faults_Group[m[K
+[11.354s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:255:9:[m[K [01;31m[Kerror: [m[K‘[01m[KbrushMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KBrushMotor_faults_Group[m[K’?
+[11.354s]   255 |         [01;31m[KbrushMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.355s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.355s]       |         [32m[KBrushMotor_faults_Group[m[K
+[11.383s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:259:9:[m[K [01;31m[Kerror: [m[K‘[01m[KbrushMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KBrushMotor_faults_Group[m[K’?
+[11.384s]   259 |         [01;31m[KbrushMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.384s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.384s]       |         [32m[KBrushMotor_faults_Group[m[K
+[11.413s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:263:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.413s]   263 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.413s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.414s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[11.439s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:267:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.439s]   267 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.440s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.440s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[11.465s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:271:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.465s]   271 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.465s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.465s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[11.487s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:275:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.488s]   275 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.488s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.488s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[11.503s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:279:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.503s]   279 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.504s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.504s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[11.521s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:283:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.521s]   283 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.521s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.521s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[11.537s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:287:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[11.537s]   287 |         [01;31m[KvaccumMotorFaultsLayout[m[K->addWidget(faults_Label);
+[11.537s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.537s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[19.534s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[19.535s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[19.535s] gmake: *** [Makefile:146: all] Error 2
+[19.541s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

@@ -1,0 +1,21 @@
+[0.194s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.299s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.300s] [ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.304s] [ 20%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.341s] [ 20%] Built target dummy_test_1_autogen
+[0.342s] [ 20%] Built target dummy_test_autogen
+[0.370s] [ 20%] Built target test_tool_node_autogen
+[0.395s] [ 40%] Built target dummy_test_1
+[0.395s] [ 60%] Built target dummy_test
+[0.411s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.500s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[8.425s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::create_faults_group_box()[m[K’:
+[8.425s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:183:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KQVBoxLayout*[m[K’ to ‘[01m[KQHBoxLayout*[m[K’ in assignment
+[8.426s]   183 |         mainLayout = [01;31m[Knew QVBoxLayout(this)[m[K;
+[8.426s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[8.426s]       |                      [01;31m[K|[m[K
+[8.426s]       |                      [01;31m[KQVBoxLayout*[m[K
+[15.799s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[15.799s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[15.800s] gmake: *** [Makefile:146: all] Error 2
+[15.804s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

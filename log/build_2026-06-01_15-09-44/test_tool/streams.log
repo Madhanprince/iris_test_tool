@@ -1,0 +1,39 @@
+[0.208s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.314s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.317s] [ 13%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.326s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.365s] [ 20%] Built target dummy_test_autogen
+[0.378s] [ 20%] Built target dummy_test_1_autogen
+[0.391s] [ 20%] Built target test_tool_node_autogen
+[0.474s] [ 40%] Built target dummy_test
+[0.478s] [ 60%] Built target dummy_test_1
+[0.487s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.566s] [ 66%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[9.082s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:[m[K In member function ‘[01m[Kvoid A2_service::a2_faults_display(iris_interfaces::msg::A2FaultStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[9.082s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:183:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[KQHBoxLayout[m[K’
+[9.082s]   183 |     [01;31m[KQHBoxLayout[m[K *brushMotorFaultsLayout = nullptr
+[9.083s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[9.098s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:194:9:[m[K [01;31m[Kerror: [m[K‘[01m[KbrushMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KBrushMotor_faults_Group[m[K’?
+[9.098s]   194 |         [01;31m[KbrushMotorFaultsLayout[m[K = new QHBoxLayout;
+[9.098s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.098s]       |         [32m[KBrushMotor_faults_Group[m[K
+[9.117s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:195:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvaccumMotorFaultsLayout[m[K’ was not declared in this scope; did you mean ‘[01m[KVaccumMotor_faults_Group[m[K’?
+[9.117s]   195 |         [01;31m[KvaccumMotorFaultsLayout[m[K = new QHBoxLayout;
+[9.117s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.117s]       |         [32m[KVaccumMotor_faults_Group[m[K
+[9.129s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:197:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfaults_Label[m[K’ was not declared in this scope
+[9.129s]   197 |         [01;31m[Kfaults_Label[m[K = new QLabel(this);
+[9.129s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[9.140s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:199:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfaults_Group[m[K’ was not declared in this scope
+[9.140s]   199 |         [01;31m[Kfaults_Group[m[K =
+[9.141s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[9.155s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:215:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kfaults_Group[m[K’ was not declared in this scope
+[9.155s]   215 |     mainLayout->addWidget([01;31m[Kfaults_Group[m[K);
+[9.156s]       |                           [01;31m[K^~~~~~~~~~~~[m[K
+[9.156s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:179:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.156s]   179 |     [01;35m[Kconst iris_interfaces::msg::A2FaultStatus::SharedPtr msg[m[K)
+[9.156s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[16.427s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[16.427s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[16.428s] gmake: *** [Makefile:146: all] Error 2
+[16.431s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

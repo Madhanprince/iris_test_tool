@@ -1,0 +1,33 @@
+[0.218s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.379s] [  6%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.379s] [ 13%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.386s] [ 20%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.429s] [ 20%] Built target dummy_test_autogen
+[0.431s] [ 20%] Built target dummy_test_1_autogen
+[0.482s] [ 40%] Built target dummy_test_1
+[0.485s] [ 60%] Built target dummy_test
+[1.243s] [ 60%] Built target test_tool_node_autogen
+[1.271s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[1.328s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[1.328s] [ 73%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[1.332s] [ 80%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[14.095s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp:1[m[K:
+[14.096s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:34:17:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KA2_service::ui_created[m[K’
+[14.096s]    34 |     static bool [01;31m[Kui_created[m[K = false;
+[14.096s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[14.121s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/moc_a2_service.cpp:10[m[K,
+[14.121s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:2[m[K:
+[14.122s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/A3UGQF3KCJ/../../../../src/test_tool/include/test_tool/A2/a2_service.h:34:17:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KA2_service::ui_created[m[K’
+[14.122s]    34 |     static bool [01;31m[Kui_created[m[K = false;
+[14.122s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[14.710s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:9[m[K:
+[14.710s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2/a2_service.h:34:17:[m[K [01;31m[Kerror: [m[KISO C++ forbids in-class initialization of non-const static member ‘[01m[KA2_service::ui_created[m[K’
+[14.710s]    34 |     static bool [01;31m[Kui_created[m[K = false;
+[14.711s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[16.900s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+[16.901s] gmake[2]: *** Waiting for unfinished jobs....
+[17.679s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[24.039s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:132: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o] Error 1
+[24.039s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[24.040s] gmake: *** [Makefile:146: all] Error 2
+[24.045s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

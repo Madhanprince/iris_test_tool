@@ -1544,9 +1544,6 @@ QSlider::handle:horizontal:hover {
              <layout class="QHBoxLayout" name="horizontalLayout_10">
               <item>
                <widget class="QGroupBox" name="status_box">
-                <property name="toolTip">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
                 <property name="styleSheet">
                  <string notr="true">QGroupBox {
     background-color: #ffffff;
@@ -1567,25 +1564,29 @@ QGroupBox::title {
     border-radius: 6px;
 }
 
+QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 5px 16px;
+    font-size: 12px;
+    min-height: 28px;
+}
+
+QPushButton:hover {
+    background-color: #f3f6ff;
+    border-color: #1a6bdb;
+    color: #1a6bdb;
+}
+
 QWidget {
     background-color: #f0f2f5;
     font-family: &quot;Segoe UI&quot;;
     font-size: 13px;
-}
-
-QLabel {
-    font-size: 12px;
-    color: #374151;
-    font-weight: 400;
-}
-QLabel {
-    font-size: 12px;
-    color: #111827;
-    font-weight: 400;
 }</string>
                 </property>
                 <property name="title">
-                 <string>Status</string>
+                 <string>GroupBox</string>
                 </property>
                </widget>
               </item>
@@ -1635,7 +1636,6 @@ QWidget {
                 <property name="title">
                  <string>Faults</string>
                 </property>
-                <layout class="QVBoxLayout" name="verticalLayout_13"/>
                </widget>
               </item>
              </layout>
