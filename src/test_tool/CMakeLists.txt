@@ -44,12 +44,12 @@ set(PROJECT_SOURCES
     src/iris_tool/mainwindow.ui
     src/iris_tool/qt_ros.cpp
     src/iris_tool/A2/a2_service.cpp
-    # src/iris_tool/A5/a5_service.cpp
+    src/iris_tool/A5/a5_service.cpp
 
     include/test_tool/mainwindow.h
     include/test_tool/qt_ros.h
     include/test_tool/A2/a2_service.h
-    # include/test_tool/A5/a5_service.h
+    include/test_tool/A5/a5_service.h
 )
 
 add_executable(test_tool_node  ${PROJECT_SOURCES})

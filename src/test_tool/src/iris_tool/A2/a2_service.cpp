@@ -54,12 +54,12 @@ QStringList status_messages = {
     "Brush Motor Actuator", 
     "Moving_up", 
     "Moving_Down", 
-    "Hold_Up", 
+    "Hold_up", 
     "Hold_Down", 
     "Squeegee Actuator", 
     "Moving_up", 
     "Moving_Down", 
-    "Hold_Up", 
+    "Hold_up", 
     "Hold_Down",
 };
 
@@ -74,7 +74,6 @@ void A2_service::a2_status_list()
             QLabel *actuatorLabel = new QLabel(msg);
             actuatorLabel->setStyleSheet("font-weight:600;font-size:12px;");
             mainLayout->addWidget(actuatorLabel);
-            continue;
         }
 
         QHBoxLayout *rowLayout = new QHBoxLayout;
@@ -104,76 +103,131 @@ void A2_service::a2_status_display(
 {
     std::cout << "Received A2 Status Update" << std::endl;
 
-    lights[0]->setStyleSheet(
-        msg->brush.brush_motor_command?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    if (msg->brush.brush_motor_command)
+    {
+        lights[0]->setStyleSheet(LIGHT_GREEN_STYLE);
+    }
+    else
+    {
+        lights[0]->setStyleSheet(LIGHT_RED_STYLE);
+    }
 
-    lights[1]->setStyleSheet(
-        msg->brush.brush_motor_status ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    if (msg->brush.brush_motor_status)
+    {
+        lights[1]->setStyleSheet(LIGHT_GREEN_STYLE);
+    }
+    else
+    {
+        lights[1]->setStyleSheet(LIGHT_RED_STYLE);
+    }
 
-    lights[2]->setStyleSheet(
-        msg->vacuum.vacuum_motor_command ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->vacuum.vacuum_motor_command)
+    // {
+    //     lights[2]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[2]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[3]->setStyleSheet(
-        msg->vacuum.vacuum_motor_status ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->vacuum.vacuum_motor_status)
+    // {
+    //     lights[3]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[3]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[4]->setStyleSheet(
-        msg->water_pump ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->water_pump)
+    // {
+    //     lights[4]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[4]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[5]->setStyleSheet(
-        msg->detergent_pump ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->detergent_pump)
+    // {
+    //     lights[5]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[5]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[6]->setStyleSheet(
-        msg->brush.brush_actuator.moving_down ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    if (msg->brush.brush_actuator.moving_up)
+    {
+        lights[7]->setStyleSheet(LIGHT_GREEN_STYLE);
+    }
+    else
+    {
+        lights[7]->setStyleSheet(LIGHT_RED_STYLE);
+    }
 
-    lights[7]->setStyleSheet(
-        msg->brush.brush_actuator.moving_up ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    if (msg->brush.brush_actuator.moving_down)
+    {
+        lights[8]->setStyleSheet(LIGHT_GREEN_STYLE);
+    }
+    else
+    {
+        lights[8]->setStyleSheet(LIGHT_RED_STYLE);
+    }
 
-    lights[8]->setStyleSheet(
-        msg->brush.brush_actuator.hold_up ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    if (msg->brush.brush_actuator.hold_up)
+    {
+        lights[9]->setStyleSheet(LIGHT_GREEN_STYLE);
+    }
+    else
+    {
+        lights[9]->setStyleSheet(LIGHT_RED_STYLE);
+    }
 
-    lights[9]->setStyleSheet(
-        msg->brush.brush_actuator.hold_down ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    if (msg->brush.brush_actuator.hold_down)
+    {
+        lights[10]->setStyleSheet(LIGHT_GREEN_STYLE);
+    }
+    else
+    {
+        lights[10]->setStyleSheet(LIGHT_RED_STYLE);
+    }
 
-    lights[10]->setStyleSheet(
-        msg->vacuum.squeeze_actuator.moving_down ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->vacuum.squeeze_actuator.moving_up)
+    // {
+    //     lights[11]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[11]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[11]->setStyleSheet(
-        msg->vacuum.squeeze_actuator.moving_up ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->vacuum.squeeze_actuator.moving_down)
+    // {
+    //     lights[12]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[12]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[12]->setStyleSheet(
-        msg->vacuum.squeeze_actuator.hold_up ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
+    // if (msg->vacuum.squeeze_actuator.hold_up)
+    // {
+    //     lights[13]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[13]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 
-    lights[13]->setStyleSheet(
-        msg->vacuum.squeeze_actuator.hold_down ?
-        LIGHT_RED_STYLE : LIGHT_GREEN_STYLE
-    );
-
+    // if (msg->vacuum.squeeze_actuator.hold_down)
+    // {
+    //     lights[14]->setStyleSheet(LIGHT_GREEN_STYLE);
+    // }
+    // else
+    // {
+    //     lights[14]->setStyleSheet(LIGHT_RED_STYLE);
+    // }
 }
 
 void A2_service::create_faults_group_box(){
@@ -292,7 +346,7 @@ void A2_service::brush_on_control()
         [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
-            if(response->brush_status){
+            if(response->brush_status == 1){
                 ui->brush_status->setStyleSheet(
                         "background-color:#bbf7d0;");
                 ui->brush_status->setText("Active");
@@ -319,7 +373,7 @@ void A2_service::brush_off_control()
         [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
-            if(response->brush_status){
+            if(response->brush_status == 0){
     
                 ui->brush_status->setStyleSheet(
                     "background-color:#fecaca"
@@ -350,7 +404,7 @@ void A2_service::vaccum_on_control()
         [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
-            if(response->vacuum_status){
+            if(response->vacuum_status == 1){
                 ui->vaccum_status->setStyleSheet(
                     "background-color:#bbf7d0;");
                 ui->vaccum_status->setText("Active");
@@ -377,7 +431,7 @@ void A2_service::vaccum_off_control()
         [this](rclcpp::Client<iris_interfaces::srv::A2Command>::SharedFuture future)
         {
             auto response = future.get();
-            if(response->vacuum_status){
+            if(response->vacuum_status == 0){
                 ui->vaccum_status->setStyleSheet(
                     "background-color:#fecaca;"
                 );

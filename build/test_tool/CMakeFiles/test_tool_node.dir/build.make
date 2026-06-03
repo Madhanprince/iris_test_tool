@@ -139,13 +139,28 @@ CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A2/a2_service.cpp -o CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.s
 
+CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o: CMakeFiles/test_tool_node.dir/flags.make
+CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o: /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp
+CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o: CMakeFiles/test_tool_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maddy/iris_test_tool/build/test_tool/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o -MF CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o.d -o CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o -c /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp
+
+CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp > CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.i
+
+CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp -o CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.s
+
 # Object files for target test_tool_node
 test_tool_node_OBJECTS = \
 "CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/test_tool_node.dir/src/iris_tool/main.cpp.o" \
 "CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o" \
 "CMakeFiles/test_tool_node.dir/src/iris_tool/qt_ros.cpp.o" \
-"CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o"
+"CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o" \
+"CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o"
 
 # External object files for target test_tool_node
 test_tool_node_EXTERNAL_OBJECTS =
@@ -155,6 +170,7 @@ test_tool_node: CMakeFiles/test_tool_node.dir/src/iris_tool/main.cpp.o
 test_tool_node: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o
 test_tool_node: CMakeFiles/test_tool_node.dir/src/iris_tool/qt_ros.cpp.o
 test_tool_node: CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o
+test_tool_node: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o
 test_tool_node: CMakeFiles/test_tool_node.dir/build.make
 test_tool_node: /home/maddy/iris_test_tool/install/iris_interfaces/lib/libiris_interfaces__rosidl_typesupport_fastrtps_c.so
 test_tool_node: /home/maddy/iris_test_tool/install/iris_interfaces/lib/libiris_interfaces__rosidl_typesupport_introspection_c.so
@@ -169,7 +185,6 @@ test_tool_node: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 test_tool_node: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 test_tool_node: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
 test_tool_node: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
-test_tool_node: /usr/lib/x86_64-linux-gnu/libfreeimage.so
 test_tool_node: /usr/lib/x86_64-linux-gnu/libfreetype.so
 test_tool_node: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 test_tool_node: /usr/lib/x86_64-linux-gnu/libGLX.so
@@ -317,7 +332,7 @@ test_tool_node: /opt/ros/humble/lib/librcpputils.so
 test_tool_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 test_tool_node: /opt/ros/humble/lib/librcutils.so
 test_tool_node: CMakeFiles/test_tool_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/iris_test_tool/build/test_tool/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_tool_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maddy/iris_test_tool/build/test_tool/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable test_tool_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_tool_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

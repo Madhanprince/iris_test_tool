@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "test_tool_node_autogen"
   "CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o"
   "CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o.d"
+  "CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o"
+  "CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o.d"
   "CMakeFiles/test_tool_node.dir/src/iris_tool/main.cpp.o"
   "CMakeFiles/test_tool_node.dir/src/iris_tool/main.cpp.o.d"
   "CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o"
