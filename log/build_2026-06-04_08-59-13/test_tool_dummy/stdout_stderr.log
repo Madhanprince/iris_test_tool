@@ -1,0 +1,26 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating ../../build/test_tool_dummy/test_tool_dummy.egg-info
+writing ../../build/test_tool_dummy/test_tool_dummy.egg-info/PKG-INFO
+writing dependency_links to ../../build/test_tool_dummy/test_tool_dummy.egg-info/dependency_links.txt
+writing entry points to ../../build/test_tool_dummy/test_tool_dummy.egg-info/entry_points.txt
+writing requirements to ../../build/test_tool_dummy/test_tool_dummy.egg-info/requires.txt
+writing top-level names to ../../build/test_tool_dummy/test_tool_dummy.egg-info/top_level.txt
+writing manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+reading manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+writing manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+running build
+running build_py
+copying test_tool_dummy/a2_dummy.py -> /home/maddy/iris_test_tool/build/test_tool_dummy/build/lib/test_tool_dummy
+copying test_tool_dummy/__init__.py -> /home/maddy/iris_test_tool/build/test_tool_dummy/build/lib/test_tool_dummy
+running install
+running install_lib
+copying /home/maddy/iris_test_tool/build/test_tool_dummy/build/lib/test_tool_dummy/__init__.py -> /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy
+byte-compiling /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy/a2_dummy.py to a2_dummy.cpython-310.pyc
+byte-compiling /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy/__init__.py to __init__.cpython-310.pyc
+running install_egg_info
+Copying ../../build/test_tool_dummy/test_tool_dummy.egg-info to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy-0.0.0-py3.10.egg-info
+running install_scripts
+Installing a2_dummy script to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/test_tool_dummy
+writing list of installed files to '/home/maddy/iris_test_tool/build/test_tool_dummy/install.log'

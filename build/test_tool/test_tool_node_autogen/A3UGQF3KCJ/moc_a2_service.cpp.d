@@ -887,6 +887,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/Qt \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
@@ -985,6 +986,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
@@ -1002,6 +1004,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \

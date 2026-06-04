@@ -87,10 +87,10 @@ void MainWindow::pages(int row)
         ui->stackedWidget->setCurrentIndex(row);
         a2_service();
     }
-    // else if (row == 6){
-    //     ui->stackedWidget->setCurrentIndex(row);
-    //     a5_service();
-    // }
+    else if (row == 6){
+        ui->stackedWidget->setCurrentIndex(row);
+        a5_service();
+    }
 }
 
 void MainWindow::refreshNodeList()
@@ -518,17 +518,30 @@ void MainWindow::a2_service()
 
 void MainWindow::a5_service()
 {
-    // if (!a5_page) {
-    //     // Create the A5 widget with no parent; we'll parent it to the current stacked page
-    //     QWidget *currentPage = ui->stackedWidget->currentWidget();
-    //     a5_page = new A5_service(currentPage);
-
-    //     QWidget *target = currentPage ? currentPage : ui->fault_box;
-    //     if (!target->layout()) {
-    //         target->setLayout(new QVBoxLayout(target));
-    //     }
-    //     target->layout()->addWidget(a5_page);
-    // }
+    if (!a5_page)
+    {
+        // Get current stacked page
+        QWidget *currentPage =
+            ui->stackedWidget->currentWidget();
+        // Create A5 widget
+        a5_page = new A5_service(currentPage);
+        // Try to get existing vertical layout
+        QVBoxLayout *layout =
+            qobject_cast<QVBoxLayout*>(currentPage->layout());
+        // If no layout exists create one
+        if (!layout)
+        {
+            layout = new QVBoxLayout(currentPage);
+            // remove extra spaces
+            layout->setContentsMargins(0,0,0,0);
+            layout->setSpacing(0);
+            currentPage->setLayout(layout);
+        }
+        // Add A5 widget to page
+        layout->addWidget(a5_page);
+        // Keep widget at top
+        layout->setAlignment(Qt::AlignTop);
+    }
 }
 
 

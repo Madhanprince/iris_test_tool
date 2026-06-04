@@ -1,0 +1,6 @@
+Invoking command in '/home/maddy/iris_test_tool/build/iris_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maddy/iris_test_tool/src/iris_interfaces -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/iris_interfaces
+Invoked command in '/home/maddy/iris_test_tool/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maddy/iris_test_tool/src/iris_interfaces -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/maddy/iris_test_tool/install/iris_interfaces
+Invoking command in '/home/maddy/iris_test_tool/build/iris_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/iris_interfaces -- -j8 -l8
+Invoked command in '/home/maddy/iris_test_tool/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/iris_interfaces -- -j8 -l8
+Invoking command in '/home/maddy/iris_test_tool/build/iris_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/iris_interfaces
+Invoked command in '/home/maddy/iris_test_tool/build/iris_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maddy/iris_test_tool/build/iris_interfaces

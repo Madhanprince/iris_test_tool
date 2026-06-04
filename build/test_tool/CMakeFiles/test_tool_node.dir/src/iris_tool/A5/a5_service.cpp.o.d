@@ -297,9 +297,7 @@ CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSizePolicy \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h

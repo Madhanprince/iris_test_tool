@@ -124,7 +124,7 @@ class A2DummyNode(Node):
         # ---------------- FAULT STATUS ----------------
         fault = A2FaultStatus()
 
-        fault.a2_fault_status = 0
+        fault.a2_fault_status = 1
 
         # Brush faults
         fault.brush = BrushFaults()

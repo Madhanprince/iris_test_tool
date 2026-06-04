@@ -73,7 +73,7 @@ private:
     QAction *Pose_Estimate; 
     QAction *Safty_Points ; 
     A2_service *a2_page = nullptr;
-    // A5_service *a5_page = nullptr;
+    A5_service *a5_page = nullptr;
 
 
     void refreshNodeList();

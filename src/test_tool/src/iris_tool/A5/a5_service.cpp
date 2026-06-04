@@ -1,144 +1,289 @@
 #include "A5/a5_service.h"
+
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGroupBox>
+#include <QLabel>
+#include <QPushButton>
+#include <QProgressBar>
+#include <QSizePolicy>
 #include <QString>
-#include <QFont>
-#include <QSpacerItem>
+#include "A5/a5_service.h"
 
 A5_service::A5_service(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    mainLayout->setContentsMargins(6,6,6,6);
-    mainLayout->setSpacing(8);
 
-    // Try to find group boxes in the parent UI (created by Qt Designer)
-    QWidget *p = parentWidget();
-
-    QGroupBox *ultraBox = nullptr;
-    QGroupBox *encBox = nullptr;
-    QGroupBox *ledBox = nullptr;
-    QGroupBox *waterBox = nullptr;
-
-    if (p) {
-        ultraBox = p->findChild<QGroupBox *>("groupBox_2");
-        encBox = p->findChild<QGroupBox *>("groupBox_3");
-        ledBox = p->findChild<QGroupBox *>("groupBox_4");
-        waterBox = p->findChild<QGroupBox *>("groupBox_5");
-    }
-
-    // If any group missing, create local ones and add to mainLayout
-    
-    if (!ultraBox) {
-        ultraBox = new QGroupBox("Ultrasonic Sensors", this);
-        mainLayout->addWidget(ultraBox);
-    }
-    if (!encBox) {
-        encBox = new QGroupBox("Wheel Encoders (live)", this);
-        mainLayout->addWidget(encBox);
-    }
-    if (!ledBox) {
-        ledBox = new QGroupBox("LED Commands", this);
-        mainLayout->addWidget(ledBox);
-    }
-    if (!waterBox) {
-        waterBox = new QGroupBox("Fresh Water Level", this);
-        mainLayout->addWidget(waterBox);
-    }
-
-    // Ensure each target box has a QBoxLayout so we can use spacing/stretch methods
-    auto ensureBoxLayout = [](QGroupBox *box, bool horizontal)->QBoxLayout* {
-        if (!box->layout()) {
-            if (horizontal)
-                box->setLayout(new QHBoxLayout(box));
-            else
-                box->setLayout(new QVBoxLayout(box));
-        }
-        return qobject_cast<QBoxLayout*>(box->layout());
-    };
-
-    QBoxLayout *ultraLayout = ensureBoxLayout(ultraBox, false);
-    QBoxLayout *encLayout = ensureBoxLayout(encBox, true);
-    QBoxLayout *ledLayout = ensureBoxLayout(ledBox, true);
-    QBoxLayout *waterLayout = ensureBoxLayout(waterBox, false);
-
-    // Populate Ultrasonic layout
-    const QString sensorNames[3] = {"Ultrasonic 1", "Ultrasonic 2", "Ultrasonic 3"};
-    for (int i = 0; i < 3; ++i) {
-        QHBoxLayout *row = new QHBoxLayout;
-        QLabel *light = new QLabel;
-        light->setFixedSize(14,14);
-        light->setStyleSheet("background-color:#ef4444;border-radius:7px;"); // default red
-        QLabel *label = new QLabel(sensorNames[i]);
-        label->setMinimumWidth(120);
-        row->addWidget(light);
-        row->addSpacing(8);
-        row->addWidget(label);
-        row->addStretch();
-        ultraLayout->addLayout(row);
-        ultrasonicLights.append(light);
-    }
-
-    // Populate Encoder layout
-    QVBoxLayout *leftCol = new QVBoxLayout;
-    QLabel *leftTitle = new QLabel("Left Wheel");
-    encoderLeftLabel = new QLabel("0");
-    encoderLeftLabel->setStyleSheet("font-weight:600;font-size:14px;");
-    leftCol->addWidget(leftTitle);
-    leftCol->addWidget(encoderLeftLabel);
-
-    QVBoxLayout *rightCol = new QVBoxLayout;
-    QLabel *rightTitle = new QLabel("Right Wheel");
-    encoderRightLabel = new QLabel("0");
-    encoderRightLabel->setStyleSheet("font-weight:600;font-size:14px;");
-    rightCol->addWidget(rightTitle);
-    rightCol->addWidget(encoderRightLabel);
-
-    encLayout->addLayout(leftCol);
-    encLayout->addSpacing(16);
-    encLayout->addLayout(rightCol);
-    encLayout->addStretch();
-
-    // Populate LED buttons
-    const QString cmds[5] = {"OFF","BOOTUP_WAIT","STANDBY","RUNNING","ERROR"};
-    for (int i = 0; i < 5; ++i) {
-        QPushButton *b = new QPushButton(cmds[i]);
-        b->setMinimumWidth(86);
-        ledLayout->addWidget(b);
-        ledButtons.append(b);
-        connect(b, &QPushButton::clicked, this, [this, b]() {
-            emit ledCommandRequested(b->text());
+    wheel_encoder_sub = qtros->create_subscription<iris_interfaces::msg::WheelEncoders>(
+        "wheel_encoders", 10,
+        [this](const iris_interfaces::msg::WheelEncoders::SharedPtr msg) {
+            setEncoderValues(msg->left_wheel_ticks, msg->right_wheel_ticks);
         });
-    }
-    ledLayout->addStretch();
+    
+    ultrasonic_sub = qtros->create_subscription<iris_interfaces::msg::UltrasonicRanges>(
+        "ultrasonic_ranges", 10,
+        [this](const iris_interfaces::msg::UltrasonicRanges::SharedPtr msg) {
+            setUltrasonicValues(msg->ultrasonic_1_active, msg->ultrasonic_2_active, 
+                msg->ultrasonic_3_active);
+        });
+    water_level_sub = qtros->create_subscription<iris_interfaces::msg::WaterTankLevels>(
+        "water_tank_levels", 10,
+        [this](const iris_interfaces::msg::WaterTankLevels::SharedPtr msg) {
+            setFreshWaterLevel(msg->fresh_water_tank_level , 
+                msg->dirty_water_tank_level );
+        });
+    a5_status_sub = qtros->create_subscription<iris_interfaces::msg::A5Status>(
+        "a5_control_status", 10,
+        [this](const iris_interfaces::msg::A5Status::SharedPtr msg) {
+                msg->mode_and_status ;
+        });
+    led_command_publisher = qtros->create_publisher<iris_interfaces::msg::LedControl>("led_command", 10);
+    
+    // =========================================================
+    // Main Layout
+    // =========================================================
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    // Populate water progress
-    freshWaterBar = new QProgressBar;
-    freshWaterBar->setRange(0,100);
-    // freshWaterBar->setValue(0);
-    waterLayout->addWidget(freshWaterBar);
+    mainLayout->setContentsMargins(4,4,4,4);
+    mainLayout->setSpacing(6);
+    // Keep everything at top
+    mainLayout->setAlignment(Qt::AlignTop);
 
-    // If we used local group boxes we've already added them to mainLayout; otherwise mainLayout remains unused but that's fine.
+    // =========================================================
+    // Group Boxes
+    // =========================================================
+
+    QGroupBox *ultraBox = new QGroupBox("Ultrasonic Sensors");
+    QGroupBox *encBox = new QGroupBox("Wheel Encoders");
+    QGroupBox *ledBox = new QGroupBox("LED Commands");
+    QGroupBox *waterBox = new QGroupBox("Fresh Water Level");
+
+    // =========================================================
+    // Prevent Vertical Stretching
+    // =========================================================
+
+    ultraBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
+    encBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
+    ledBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
+    waterBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
+
+    // =========================================================
+    // Layouts Inside Group Boxes
+    // =========================================================
+
+    QVBoxLayout *ultraLayout = new QVBoxLayout;
+    QHBoxLayout *encLayout = new QHBoxLayout;
+    QHBoxLayout *ledLayout = new QHBoxLayout;
+    QVBoxLayout *waterLayout = new QVBoxLayout;
+
+    ultraLayout->setSpacing(4);
+    encLayout->setSpacing(10);
+    ledLayout->setSpacing(8);
+    waterLayout->setSpacing(4);
+
+    ultraBox->setLayout(ultraLayout);
+    encBox->setLayout(encLayout);
+    ledBox->setLayout(ledLayout);
+    waterBox->setLayout(waterLayout);
+
+    // =========================================================
+    // Setup Each Section
+    // =========================================================
+
+    setupUltrasonicSection(ultraLayout);
+    setupEncoderSection(encLayout);
+    setupLedSection(ledLayout);
+    setupWaterSection(waterLayout);
+
+    // =========================================================
+    // Add Group Boxes to Main Layout
+    // =========================================================
+
+    mainLayout->addWidget(ultraBox);
+    mainLayout->addWidget(encBox);
+    mainLayout->addWidget(ledBox);
+    mainLayout->addWidget(waterBox);
+
+    // =========================================================
+    // StyleSheet
+    // =========================================================
+    this->setStyleSheet(R"(
+QGroupBox {
+    background-color: #ffffff;
+    border: 1px solid #e0e4eb;
+    border-radius: 10px;
+    margin-top: 14px;
+    padding: 2px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 12px;
+    padding: 2px 10px;
+    color: #1a6bdb;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 5px 16px;
+    font-size: 12px;
+    min-height: 28px;
+}
+
+QPushButton:hover {
+    background-color: #f3f6ff;
+    border-color: #1a6bdb;
+    color: #1a6bdb;
+}
+
+QWidget {
+    background-color: #f0f2f5;
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+)");
     setLayout(mainLayout);
 }
 
-void A5_service::setUltrasonicActive(int idx, bool active)
+// =============================================================
+// Setup Ultrasonic Section
+// =============================================================
+
+void A5_service::setupUltrasonicSection(QBoxLayout *layout)
 {
-    if (idx < 0 || idx >= ultrasonicLights.size()) return;
-    if (active)
-        ultrasonicLights[idx]->setStyleSheet("background-color:#22c55e;border-radius:7px;");
-    else
-        ultrasonicLights[idx]->setStyleSheet("background-color:#ef4444;border-radius:7px;");
+    const QString sensorNames[3] = {
+        "Ultrasonic 1",
+        "Ultrasonic 2",
+        "Ultrasonic 3"
+    };
+
+    for (int i = 0; i < 3; ++i)
+    {
+        QHBoxLayout *row = new QHBoxLayout;
+        QLabel *light = new QLabel;
+        light->setFixedSize(14,14);
+        light->setStyleSheet(
+            "background-color:#ef4444;"
+            "border-radius:7px;"
+        );
+
+        QLabel *label =
+            new QLabel(sensorNames[i]);
+
+        row->addWidget(light);
+        row->addSpacing(6);
+        row->addWidget(label);
+        row->addStretch();
+        layout->addLayout(row);
+        ultrasonicLights.append(light);
+    }
 }
 
-void A5_service::setEncoderValues(int left, int right)
+// =============================================================
+// Setup Encoder Section
+// =============================================================
+
+void A5_service::setupEncoderSection(QBoxLayout *layout)
 {
-    if (encoderLeftLabel) encoderLeftLabel->setText(QString::number(left));
-    if (encoderRightLabel) encoderRightLabel->setText(QString::number(right));
+    QVBoxLayout *leftCol = new QVBoxLayout;
+    QLabel *leftTitle = new QLabel("Left Wheel");
+    encoderLeftLabel = new QLabel("0");
+
+    encoderLeftLabel->setStyleSheet(
+        "font-weight:600;"
+        "font-size:14px;"
+    );
+    leftCol->addWidget(leftTitle);
+    leftCol->addWidget(encoderLeftLabel);
+    // --------------------------
+    QVBoxLayout *rightCol = new QVBoxLayout;
+
+    QLabel *rightTitle = new QLabel("Right Wheel");
+
+    encoderRightLabel = new QLabel("0");
+
+    encoderRightLabel->setStyleSheet(
+        "font-weight:600;"
+        "font-size:14px;"
+    );
+
+    rightCol->addWidget(rightTitle);
+    rightCol->addWidget(encoderRightLabel);
+    // --------------------------
+    layout->addLayout(leftCol);
+    layout->addSpacing(30);
+    layout->addLayout(rightCol);
+    layout->addStretch();
 }
+
+// =============================================================
+// Setup LED Section
+// =============================================================
+
+void A5_service::setupLedSection(QBoxLayout *layout)
+{
+    const QString cmds[5] = {
+        "OFF",
+        "BOOTUP_WAIT",
+        "STANDBY",
+        "RUNNING",
+        "ERROR"
+    };
+
+    for (int i = 0; i < 5; ++i)
+    {
+        QPushButton *button =
+            new QPushButton(cmds[i]);
+
+        button->setMinimumWidth(90);
+        ledButtons.append(button);
+        layout->addWidget(button);
+        connect(button,
+                &QPushButton::clicked,
+                this,
+                [this, button]()
+        {
+            emit ledCommandRequested(
+                button->text()
+            );
+        });
+    }
+    layout->addStretch();
+}
+
+// =============================================================
+// Setup Water Section
+// =============================================================
+
+void A5_service::setupWaterSection(QBoxLayout *layout)
+{
+    freshWaterBar =
+        new QProgressBar;
+
+    freshWaterBar->setRange(0,100);
+
+    freshWaterBar->setValue(0);
+
+    layout->addWidget(freshWaterBar);
+}
+
+// =============================================================
+// Fresh Water Level
+// =============================================================
 
 void A5_service::setFreshWaterLevel(int percent)
 {
-    if (freshWaterBar) freshWaterBar->setValue(qBound(0, percent, 100));
+    if (freshWaterBar)
+    {
+        freshWaterBar->setValue(
+            qBound(0, percent, 100)
+        );
+    }
 }

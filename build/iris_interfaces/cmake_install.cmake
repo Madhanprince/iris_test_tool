@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -353,14 +353,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rust_packages" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/iris_interfaces")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces" TYPE DIRECTORY FILES "/home/maddy/iris_test_tool/build/iris_interfaces/rosidl_generator_rs/iris_interfaces/rust")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -825,8 +817,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_generator_cExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_generator_cExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_generator_cExport-debug.cmake")
   endif()
 endif()
 
@@ -844,8 +836,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_typesupport_fastrtps_cExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_typesupport_fastrtps_cExport-debug.cmake")
   endif()
 endif()
 
@@ -863,8 +855,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_introspection_cExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake")
   endif()
 endif()
 
@@ -882,8 +874,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_cExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_cExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_cExport-debug.cmake")
   endif()
 endif()
 
@@ -917,8 +909,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_typesupport_fastrtps_cppExport-debug.cmake")
   endif()
 endif()
 
@@ -936,8 +928,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake")
   endif()
 endif()
 
@@ -955,8 +947,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_cppExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_cppExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/iris_interfaces__rosidl_typesupport_cppExport-debug.cmake")
   endif()
 endif()
 
@@ -974,8 +966,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_generator_pyExport.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_generator_pyExport-noconfig.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/iris_interfaces/cmake" TYPE FILE FILES "/home/maddy/iris_test_tool/build/iris_interfaces/CMakeFiles/Export/share/iris_interfaces/cmake/export_iris_interfaces__rosidl_generator_pyExport-debug.cmake")
   endif()
 endif()
 
@@ -1021,7 +1013,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/maddy/iris_test_tool/build/iris_interfaces/iris_interfaces__py/cmake_install.cmake")
-  include("/home/maddy/iris_test_tool/build/iris_interfaces/iris_interfaces__rs/cmake_install.cmake")
 
 endif()
 
