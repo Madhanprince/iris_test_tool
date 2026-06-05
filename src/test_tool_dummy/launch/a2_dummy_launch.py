@@ -9,5 +9,11 @@ def generate_launch_description():
             executable='a2_dummy',
             name='a2_dummy',
             output='screen'
-        )
+        ),
+        Node(
+            package='test_tool_dummy',
+            executable='a5_dummy',
+            name='a5_dummy',
+            output='screen'
+        ),
     ])

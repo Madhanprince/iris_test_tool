@@ -524,7 +524,7 @@ void MainWindow::a5_service()
         QWidget *currentPage =
             ui->stackedWidget->currentWidget();
         // Create A5 widget
-        a5_page = new A5_service(currentPage);
+        a5_page = new A5_service(qtros,currentPage);
         // Try to get existing vertical layout
         QVBoxLayout *layout =
             qobject_cast<QVBoxLayout*>(currentPage->layout());

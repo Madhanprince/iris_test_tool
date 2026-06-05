@@ -1,0 +1,36 @@
+[0.163s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.368s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.368s] [ 18%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.369s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.407s] [ 18%] Built target dummy_test_autogen
+[0.407s] [ 18%] Built target dummy_test_1_autogen
+[0.450s] [ 43%] Built target dummy_test_1
+[0.450s] [ 56%] Built target dummy_test
+[0.932s] [ 56%] Built target test_tool_node_autogen
+[0.961s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[1.014s] [ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[1.015s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[1.016s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[1.455s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[1.456s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+[1.456s]     9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+[1.456s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.456s] compilation terminated.
+[1.461s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[1.461s] gmake[2]: *** Waiting for unfinished jobs....
+[2.177s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:10[m[K,
+[2.177s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:3[m[K:
+[2.177s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+[2.177s]     9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+[2.177s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.178s] compilation terminated.
+[2.183s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10[m[K:
+[2.183s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+[2.183s]     9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+[2.183s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.183s] compilation terminated.
+[2.184s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+[2.189s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[2.190s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[2.190s] gmake: *** [Makefile:146: all] Error 2
+[2.194s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

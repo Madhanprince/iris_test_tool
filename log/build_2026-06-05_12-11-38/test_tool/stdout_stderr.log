@@ -1,0 +1,19 @@
+[  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 18%] Built target dummy_test_autogen
+[ 18%] Built target dummy_test_1_autogen
+[ 18%] Built target test_tool_node_autogen
+[ 37%] Built target dummy_test
+[35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[ 56%] Built target dummy_test_1
+gmake[2]: Warning: File '/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp' has modification time 2.1 s in the future
+[ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[ 68%] [32m[1mLinking CXX executable test_tool_node[0m
+/usr/bin/ld: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o: in function `A5_service::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)':
+/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:95: undefined reference to `A5_service::setUltrasonicActive(int, bool)'
+/usr/bin/ld: /home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:96: undefined reference to `A5_service::setEncoderValues(int, int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:337: test_tool_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

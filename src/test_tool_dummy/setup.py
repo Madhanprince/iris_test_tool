@@ -16,7 +16,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'a2_dummy = test_tool_dummy.a2_dummy:main'
+            'a2_dummy = test_tool_dummy.a2_dummy:main',
+            'a5_dummy = test_tool_dummy.a5_dummy:main'
         ],
     },
 )

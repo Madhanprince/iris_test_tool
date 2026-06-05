@@ -1,0 +1,57 @@
+[0.146s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.219s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.221s] [ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.221s] [ 18%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.249s] [ 18%] Built target dummy_test_1_autogen
+[0.253s] [ 18%] Built target dummy_test_autogen
+[0.274s] [ 18%] Built target test_tool_node_autogen
+[0.293s] [ 37%] Built target dummy_test_1
+[0.296s] [ 56%] Built target dummy_test
+[0.306s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.376s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.376s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[9.871s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[9.871s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:26:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::UltrasonicRanges_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::UltrasonicRanges_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kultrasonic_1_active[m[K’; did you mean ‘[01m[K_ultrasonic_1_type[m[K’?
+[9.871s]    26 |             setUltrasonicValues(msg->[01;31m[Kultrasonic_1_active[m[K, msg->ultrasonic_2_active,
+[9.872s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.872s]       |                                      [32m[K_ultrasonic_1_type[m[K
+[9.872s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:26:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::UltrasonicRanges_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::UltrasonicRanges_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kultrasonic_2_active[m[K’; did you mean ‘[01m[K_ultrasonic_2_type[m[K’?
+[9.873s]    26 |             setUltrasonicValues(msg->ultrasonic_1_active, msg->[01;31m[Kultrasonic_2_active[m[K,
+[9.873s]       |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.873s]       |                                                                [32m[K_ultrasonic_2_type[m[K
+[9.873s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:27:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct iris_interfaces::msg::UltrasonicRanges_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct iris_interfaces::msg::UltrasonicRanges_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kultrasonic_3_active[m[K’; did you mean ‘[01m[K_ultrasonic_3_type[m[K’?
+[9.874s]    27 |                 msg->[01;31m[Kultrasonic_3_active[m[K);
+[9.874s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.874s]       |                      [32m[K_ultrasonic_3_type[m[K
+[9.893s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:26:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetUltrasonicValues[m[K’ was not declared in this scope; did you mean ‘[01m[KsetUltrasonicActive[m[K’?
+[9.893s]    26 |             [01;31m[KsetUltrasonicValues[m[K(msg->ultrasonic_1_active, msg->ultrasonic_2_active,
+[9.893s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.893s]       |             [32m[KsetUltrasonicActive[m[K
+[9.898s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[9.898s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:32:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KA5_service::setFreshWaterLevel(iris_interfaces::msg::WaterTankLevels_<std::allocator<void> >::_fresh_water_tank_level_type&, iris_interfaces::msg::WaterTankLevels_<std::allocator<void> >::_dirty_water_tank_level_type&)[m[K’
+[9.899s]    32 |             [01;31m[KsetFreshWaterLevel(msg->fresh_water_tank_level ,[m[K
+[9.899s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.899s]    33 | [01;31m[K                msg->dirty_water_tank_level )[m[K;
+[9.899s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.899s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[9.899s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:35:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+[9.899s]    35 |     void [01;36m[KsetFreshWaterLevel[m[K(int percent);
+[9.899s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.899s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:35:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.746s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::a5_service()[m[K’:
+[12.747s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:527:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KA5_service::A5_service(QWidget*&)[m[K’
+[12.747s]   527 |         a5_page = new A5_service(currentPage[01;31m[K)[m[K;
+[12.747s]       |                                             [01;31m[K^[m[K
+[12.747s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10[m[K:
+[12.748s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KA5_service::A5_service(std::shared_ptr<Qtros>, QWidget*)[m[K’
+[12.748s]    23 |     explicit [01;36m[KA5_service[m[K(std::shared_ptr<Qtros> qtros_node, QWidget *parent = nullptr);
+[12.748s]       |              [01;36m[K^~~~~~~~~~[m[K
+[12.748s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:48:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KQWidget*[m[K’ to ‘[01m[Kstd::shared_ptr<Qtros>[m[K’
+[12.749s]    23 |     explicit A5_service([01;36m[Kstd::shared_ptr<Qtros> qtros_node[m[K, QWidget *parent = nullptr);
+[12.749s]       |                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[15.557s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[15.557s] gmake[2]: *** Waiting for unfinished jobs....
+[19.829s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[19.830s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[19.830s] gmake: *** [Makefile:146: all] Error 2
+[19.835s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

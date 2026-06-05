@@ -1,0 +1,21 @@
+[0.183s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.277s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.277s] [ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.282s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.316s] [ 18%] Built target dummy_test_autogen
+[0.324s] [ 18%] Built target dummy_test_1_autogen
+[0.363s] [ 37%] Built target dummy_test
+[0.372s] [ 56%] Built target dummy_test_1
+[0.898s] [ 56%] Built target test_tool_node_autogen
+[0.931s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[1.018s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[1.019s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[1.024s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[14.251s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In member function ‘[01m[Kvoid A5_service::setUltrasonicValues(float, float, float)[m[K’:
+[14.251s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:308:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kultra_value[m[K’ was not declared in this scope
+[14.252s]   308 |     [01;31m[Kultra_value[m[K->setText(QString::number(ultrasonic1, 'f', 2) + " cm");
+[14.252s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[25.231s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[25.231s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[25.232s] gmake: *** [Makefile:146: all] Error 2
+[25.240s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

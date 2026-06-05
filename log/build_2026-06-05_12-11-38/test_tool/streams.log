@@ -1,0 +1,21 @@
+[0.141s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.215s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.216s] [ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.218s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.245s] [ 18%] Built target dummy_test_autogen
+[0.249s] [ 18%] Built target dummy_test_1_autogen
+[0.261s] [ 18%] Built target test_tool_node_autogen
+[0.284s] [ 37%] Built target dummy_test
+[0.287s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.288s] [ 56%] Built target dummy_test_1
+[0.364s] gmake[2]: Warning: File '/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp' has modification time 2.1 s in the future
+[0.376s] [ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[13.483s] [ 68%] [32m[1mLinking CXX executable test_tool_node[0m
+[18.632s] /usr/bin/ld: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o: in function `A5_service::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)':
+[18.632s] /home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:95: undefined reference to `A5_service::setUltrasonicActive(int, bool)'
+[18.632s] /usr/bin/ld: /home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:96: undefined reference to `A5_service::setEncoderValues(int, int)'
+[18.975s] collect2: error: ld returned 1 exit status
+[18.977s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:337: test_tool_node] Error 1
+[18.978s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[18.978s] gmake: *** [Makefile:146: all] Error 2
+[18.981s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

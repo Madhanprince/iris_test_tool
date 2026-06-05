@@ -1,0 +1,33 @@
+[  6%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 18%] Built target dummy_test_autogen
+[ 18%] Built target dummy_test_1_autogen
+[ 18%] Built target test_tool_node_autogen
+[ 43%] Built target dummy_test_1
+[ 56%] Built target dummy_test
+[ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+    9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:10[m[K,
+                 from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:3[m[K:
+[01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+    9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+    9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

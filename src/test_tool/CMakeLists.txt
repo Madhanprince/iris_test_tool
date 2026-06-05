@@ -33,6 +33,7 @@ find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(iris_interfaces REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 
 # Force Qt5 to match ROS Humble / RViz
 find_package(Qt5 REQUIRED COMPONENTS Widgets)

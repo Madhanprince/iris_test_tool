@@ -1,0 +1,55 @@
+[0.149s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.238s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.239s] [ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.239s] [ 18%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.267s] [ 18%] Built target dummy_test_1_autogen
+[0.267s] [ 18%] Built target dummy_test_autogen
+[0.307s] [ 56%] Built target dummy_test_1
+[0.307s] [ 56%] Built target dummy_test
+[0.763s] [ 56%] Built target test_tool_node_autogen
+[0.793s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.862s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.862s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[0.863s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[11.963s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[11.964s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGroupBox[m[K’ does not name a type
+[11.964s]    54 |     [01;31m[KQGroupBox[m[K *ultraBox = nullptr;
+[11.964s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.967s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGroupBox[m[K’ does not name a type
+[11.967s]    55 |     [01;31m[KQGroupBox[m[K *encBox = nullptr;
+[11.967s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.971s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGroupBox[m[K’ does not name a type
+[11.971s]    56 |     [01;31m[KQGroupBox[m[K *ledBox = nullptr;
+[11.971s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.976s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGroupBox[m[K’ does not name a type
+[11.976s]    57 |     [01;31m[KQGroupBox[m[K *freshwaterBox = nullptr;
+[11.976s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.982s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGroupBox[m[K’ does not name a type
+[11.982s]    58 |     [01;31m[KQGroupBox[m[K *dirtywaterBox = nullptr;
+[11.982s]       |     [01;31m[K^~~~~~~~~[m[K
+[12.025s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In member function ‘[01m[Kvoid A5_service::setupMainLayout()[m[K’:
+[12.025s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[KultraBox[m[K’ was not declared in this scope
+[12.026s]    60 |     [01;31m[KultraBox[m[K = new QGroupBox("Ultrasonic Sensors");
+[12.026s]       |     [01;31m[K^~~~~~~~[m[K
+[12.039s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[KencBox[m[K’ was not declared in this scope
+[12.039s]    61 |     [01;31m[KencBox[m[K = new QGroupBox("Wheel Encoders");
+[12.040s]       |     [01;31m[K^~~~~~[m[K
+[12.050s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[KledBox[m[K’ was not declared in this scope
+[12.050s]    62 |     [01;31m[KledBox[m[K = new QGroupBox("LED Commands");
+[12.050s]       |     [01;31m[K^~~~~~[m[K
+[12.061s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[KfreshwaterBox[m[K’ was not declared in this scope; did you mean ‘[01m[KfreshWaterBar[m[K’?
+[12.061s]    63 |     [01;31m[KfreshwaterBox[m[K = new QGroupBox("Fresh Water Level");
+[12.061s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[12.061s]       |     [32m[KfreshWaterBar[m[K
+[12.070s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[KdirtywaterBox[m[K’ was not declared in this scope; did you mean ‘[01m[KdirtyWaterBar[m[K’?
+[12.070s]    64 |     [01;31m[KdirtywaterBox[m[K = new QGroupBox("Dirty Water Level");
+[12.071s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[12.071s]       |     [32m[KdirtyWaterBar[m[K
+[12.095s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In member function ‘[01m[Kvoid A5_service::setUltrasonicValues(float, float, float)[m[K’:
+[12.095s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:308:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kultra_value[m[K’ was not declared in this scope
+[12.095s]   308 |     [01;31m[Kultra_value[m[K->setText(QString::number(ultrasonic1, 'f', 2) + " cm");
+[12.096s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[20.324s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[20.325s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[20.326s] gmake: *** [Makefile:146: all] Error 2
+[20.336s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

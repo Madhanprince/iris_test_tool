@@ -10,3 +10,4 @@ setup.py
 ../../build/test_tool_dummy/test_tool_dummy.egg-info/zip-safe
 test_tool_dummy/__init__.py
 test_tool_dummy/a2_dummy.py
+test_tool_dummy/a5_dummy.py

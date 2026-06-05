@@ -1,0 +1,31 @@
+[0.140s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.214s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.215s] [ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.216s] [ 18%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.243s] [ 18%] Built target dummy_test_autogen
+[0.246s] [ 18%] Built target dummy_test_1_autogen
+[0.282s] [ 56%] Built target dummy_test_1
+[0.282s] [ 56%] Built target dummy_test
+[0.733s] [ 56%] Built target test_tool_node_autogen
+[0.756s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.831s] [ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[0.832s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.838s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[10.955s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[10.955s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:248:18:[m[K [01;31m[Kerror: [m[K‘[01m[KledCommandRequested[m[K’ was not declared in this scope
+[10.955s]   248 |             emit [01;31m[KledCommandRequested[m[K(
+[10.955s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[10.957s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K At global scope:
+[10.958s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:276:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+[10.958s]   276 | void [01;31m[KA5_service[m[K::setFreshWaterLevel(int percent)
+[10.958s]       |      [01;31m[K^~~~~~~~~~[m[K
+[10.958s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:276:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+[10.958s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[10.959s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+[10.959s]    19 | class [01;36m[KA5_service[m[K : public QWidget
+[10.959s]       |       [01;36m[K^~~~~~~~~~[m[K
+[13.314s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[13.314s] gmake[2]: *** Waiting for unfinished jobs....
+[18.330s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[18.331s] gmake: *** [Makefile:146: all] Error 2
+[18.335s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

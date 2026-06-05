@@ -8,12 +8,11 @@
 #include <QProgressBar>
 #include <QSizePolicy>
 #include <QString>
-#include "A5/a5_service.h"
 
-A5_service::A5_service(QWidget *parent)
-    : QWidget(parent)
+A5_service::A5_service(std::shared_ptr<Qtros> qtros_node ,QWidget *parent)
+    : QWidget(parent), qtros(qtros_node)
 {
-
+    setupMainLayout();
     wheel_encoder_sub = qtros->create_subscription<iris_interfaces::msg::WheelEncoders>(
         "wheel_encoders", 10,
         [this](const iris_interfaces::msg::WheelEncoders::SharedPtr msg) {
@@ -23,26 +22,31 @@ A5_service::A5_service(QWidget *parent)
     ultrasonic_sub = qtros->create_subscription<iris_interfaces::msg::UltrasonicRanges>(
         "ultrasonic_ranges", 10,
         [this](const iris_interfaces::msg::UltrasonicRanges::SharedPtr msg) {
-            setUltrasonicValues(msg->ultrasonic_1_active, msg->ultrasonic_2_active, 
-                msg->ultrasonic_3_active);
+            setUltrasonicValues(msg->ultrasonic_1.range, msg->ultrasonic_2.range, 
+                msg->ultrasonic_3.range);
         });
     water_level_sub = qtros->create_subscription<iris_interfaces::msg::WaterTankLevels>(
         "water_tank_levels", 10,
         [this](const iris_interfaces::msg::WaterTankLevels::SharedPtr msg) {
-            setFreshWaterLevel(msg->fresh_water_tank_level , 
-                msg->dirty_water_tank_level );
+            setFreshWaterLevel(msg->fresh_water_tank_level);
+            setDirtyWaterLevel(msg->dirty_water_tank_level);
         });
     a5_status_sub = qtros->create_subscription<iris_interfaces::msg::A5Status>(
         "a5_control_status", 10,
         [this](const iris_interfaces::msg::A5Status::SharedPtr msg) {
                 msg->mode_and_status ;
         });
-    led_command_publisher = qtros->create_publisher<iris_interfaces::msg::LedControl>("led_command", 10);
+    // led_command_publisher = qtros->create_publisher<iris_interfaces::msg::LedControl>("led_command", 10);
     
+
+}
+
+void A5_service::setupMainLayout()
+{
     // =========================================================
     // Main Layout
     // =========================================================
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    mainLayout = new QVBoxLayout(this);
 
     mainLayout->setContentsMargins(4,4,4,4);
     mainLayout->setSpacing(6);
@@ -53,10 +57,12 @@ A5_service::A5_service(QWidget *parent)
     // Group Boxes
     // =========================================================
 
-    QGroupBox *ultraBox = new QGroupBox("Ultrasonic Sensors");
-    QGroupBox *encBox = new QGroupBox("Wheel Encoders");
-    QGroupBox *ledBox = new QGroupBox("LED Commands");
-    QGroupBox *waterBox = new QGroupBox("Fresh Water Level");
+    ultraBox = new QGroupBox("Ultrasonic Sensors");
+    encBox = new QGroupBox("Wheel Encoders");
+    ledBox = new QGroupBox("LED Commands");
+    freshwaterBox = new QGroupBox("Fresh Water Level");
+    dirtywaterBox = new QGroupBox("Dirty Water Level");
+
 
     // =========================================================
     // Prevent Vertical Stretching
@@ -65,26 +71,30 @@ A5_service::A5_service(QWidget *parent)
     ultraBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
     encBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
     ledBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
-    waterBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
+    freshwaterBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
+    dirtywaterBox->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
 
     // =========================================================
     // Layouts Inside Group Boxes
     // =========================================================
 
-    QVBoxLayout *ultraLayout = new QVBoxLayout;
-    QHBoxLayout *encLayout = new QHBoxLayout;
-    QHBoxLayout *ledLayout = new QHBoxLayout;
-    QVBoxLayout *waterLayout = new QVBoxLayout;
+    ultraLayout = new QVBoxLayout;
+    encLayout = new QHBoxLayout;
+    ledLayout = new QHBoxLayout;
+    freshwaterLayout = new QVBoxLayout;
+    dirtywaterLayout = new QVBoxLayout;
 
     ultraLayout->setSpacing(4);
     encLayout->setSpacing(10);
     ledLayout->setSpacing(8);
-    waterLayout->setSpacing(4);
+    freshwaterLayout->setSpacing(4);
+    dirtywaterLayout->setSpacing(4);
 
     ultraBox->setLayout(ultraLayout);
     encBox->setLayout(encLayout);
     ledBox->setLayout(ledLayout);
-    waterBox->setLayout(waterLayout);
+    freshwaterBox->setLayout(freshwaterLayout);
+    dirtywaterBox->setLayout(dirtywaterLayout);
 
     // =========================================================
     // Setup Each Section
@@ -93,7 +103,8 @@ A5_service::A5_service(QWidget *parent)
     setupUltrasonicSection(ultraLayout);
     setupEncoderSection(encLayout);
     setupLedSection(ledLayout);
-    setupWaterSection(waterLayout);
+    setupFreshWaterSection(freshwaterLayout);
+    setupDirtyWaterSection(dirtywaterLayout);
 
     // =========================================================
     // Add Group Boxes to Main Layout
@@ -102,7 +113,8 @@ A5_service::A5_service(QWidget *parent)
     mainLayout->addWidget(ultraBox);
     mainLayout->addWidget(encBox);
     mainLayout->addWidget(ledBox);
-    mainLayout->addWidget(waterBox);
+    mainLayout->addWidget(freshwaterBox);
+    mainLayout->addWidget(dirtywaterBox);
 
     // =========================================================
     // StyleSheet
@@ -158,32 +170,28 @@ QWidget {
 
 void A5_service::setupUltrasonicSection(QBoxLayout *layout)
 {
-    const QString sensorNames[3] = {
-        "Ultrasonic 1",
-        "Ultrasonic 2",
-        "Ultrasonic 3"
+    
+    QStringList sensorNames = {
+        "Ultrasonic 1 :",
+        "Ultrasonic 2 :",
+        "Ultrasonic 3 :"
     };
-
     for (int i = 0; i < 3; ++i)
     {
-        QHBoxLayout *row = new QHBoxLayout;
-        QLabel *light = new QLabel;
-        light->setFixedSize(14,14);
-        light->setStyleSheet(
-            "background-color:#ef4444;"
-            "border-radius:7px;"
+        QVBoxLayout *row = new QVBoxLayout;
+        QLabel *label = new QLabel;
+        ultra_value = new QLabel("0");
+        ultra_value->setStyleSheet(
+            "font-weight:600;"
+            "font-size:14px;"
         );
+        label->setText(sensorNames[i]);
 
-        QLabel *label =
-            new QLabel(sensorNames[i]);
-
-        row->addWidget(light);
-        row->addSpacing(6);
         row->addWidget(label);
-        row->addStretch();
+        row->addWidget(ultra_value);
         layout->addLayout(row);
-        ultrasonicLights.append(light);
     }
+
 }
 
 // =============================================================
@@ -245,24 +253,24 @@ void A5_service::setupLedSection(QBoxLayout *layout)
         button->setMinimumWidth(90);
         ledButtons.append(button);
         layout->addWidget(button);
-        connect(button,
-                &QPushButton::clicked,
-                this,
-                [this, button]()
-        {
-            emit ledCommandRequested(
-                button->text()
-            );
-        });
+        // connect(button,
+        //         &QPushButton::clicked,
+        //         this,
+        //         [this, button]()
+        // {
+        //     emit ledCommandRequested(
+        //         button->text()
+        //     );
+        // });
     }
     layout->addStretch();
 }
 
 // =============================================================
-// Setup Water Section
+// Fresh Water Section
 // =============================================================
 
-void A5_service::setupWaterSection(QBoxLayout *layout)
+void A5_service::setupFreshWaterSection(QBoxLayout *layout)
 {
     freshWaterBar =
         new QProgressBar;
@@ -275,15 +283,102 @@ void A5_service::setupWaterSection(QBoxLayout *layout)
 }
 
 // =============================================================
-// Fresh Water Level
+// Dirty Water Section
+// =============================================================
+void A5_service::setupDirtyWaterSection(QBoxLayout *layout)
+{
+    dirtyWaterBar =
+        new QProgressBar;
+
+    dirtyWaterBar->setRange(0,100);
+
+    dirtyWaterBar->setValue(0);
+
+    layout->addWidget(dirtyWaterBar);
+
+}
+
+// =============================================================
+// Subscriber callback functions to update UI " Signals "
 // =============================================================
 
-void A5_service::setFreshWaterLevel(int percent)
+void A5_service::setUltrasonicValues(float ultrasonic1, float ultrasonic2, float ultrasonic3) 
 {
-    if (freshWaterBar)
+    emit ultrasonicValuesUpdated(ultrasonic1, ultrasonic2, ultrasonic3);
+}
+
+void A5_service::setEncoderValues(int left, int right)
+{
+    emit encoderValuesUpdated(left, right);
+}
+
+void A5_service::setFreshWaterLevel(int fresh_level)
+{
+    emit freshWaterLevelUpdated(fresh_level);
+}
+void A5_service::setDirtyWaterLevel(int dirty_level)
+{
+    emit dirtyWaterLevelUpdated(dirty_level);
+}
+
+// =============================================================
+// Subscriber callback functions to update UI " Slots "
+// =============================================================
+
+void A5_service::ultrasonicValuesUpdated(float ultrasonic1, float ultrasonic2, float ultrasonic3)
+{
+    ultra_value->setText(QString::number(ultrasonic1, 'f', 2) + " cm");
+    ultra_value->setText(QString::number(ultrasonic2, 'f', 2) + " cm");
+    ultra_value->setText(QString::number(ultrasonic3, 'f', 2) + " cm");
+}
+
+// void A5_service::ledCommandRequested(const QString &command)
+// {
+//     auto msg = std::make_shared<iris_interfaces::msg::LedControl>();
+//     msg->command = command.toStdString();
+//     led_command_publisher->publish(*msg);
+// }
+
+void A5_service::encoderValuesUpdated(int left, int right)
+{
+    if (encoderLeftLabel)
     {
-        freshWaterBar->setValue(
-            qBound(0, percent, 100)
-        );
+        encoderLeftLabel->setText(QString::number(left));
+    }
+    if (encoderRightLabel)
+    {
+        encoderRightLabel->setText(QString::number(right));
     }
 }
+
+void A5_service::freshWaterLevelUpdated(int fresh_level){
+    if (freshWaterBar)
+    {
+        freshWaterBar->setValue(qBound(0, fresh_level, 100));
+    }
+}
+
+void A5_service::dirtyWaterLevelUpdated(int dirty_level){
+    if (dirtyWaterBar)
+    {
+        dirtyWaterBar->setValue(qBound(0, dirty_level, 100));
+    }
+}
+
+void A5_service::a5_status_display(const iris_interfaces::msg::A5Status::SharedPtr msg)
+{
+    // Example: Update LED buttons based on mode
+    QString mode = QString::fromStdString(msg->mode_and_status);
+    for (QPushButton *button : ledButtons)
+    {
+        if (button->text() == mode)
+        {
+            button->setStyleSheet("background-color:#22c55e;"); // Active
+        }
+        else
+        {
+            button->setStyleSheet(""); // Default
+        }
+    }
+}
+

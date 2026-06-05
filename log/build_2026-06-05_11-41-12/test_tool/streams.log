@@ -1,0 +1,35 @@
+[0.143s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.227s] [ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.227s] [ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.231s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.262s] [ 18%] Built target dummy_test_autogen
+[0.262s] [ 18%] Built target dummy_test_1_autogen
+[0.321s] [ 37%] Built target dummy_test
+[0.325s] [ 56%] Built target dummy_test_1
+[0.787s] [ 56%] Built target test_tool_node_autogen
+[0.858s] [ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.858s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[0.859s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[1.269s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[1.270s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+[1.270s]     9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+[1.270s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.270s] compilation terminated.
+[1.275s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[1.275s] gmake[2]: *** Waiting for unfinished jobs....
+[2.101s] In file included from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:10[m[K,
+[2.101s]                  from [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:3[m[K:
+[2.102s] [01m[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+[2.102s]     9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+[2.102s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.102s] compilation terminated.
+[2.103s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10[m[K:
+[2.103s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:9:10:[m[K [01;31m[Kfatal error: [m[Kiris_interfaces/msg/UltrasonicRanges.hpp: No such file or directory
+[2.104s]     9 | #include [01;31m[K<iris_interfaces/msg/UltrasonicRanges.hpp>[m[K
+[2.104s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.104s] compilation terminated.
+[2.110s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1
+[2.114s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+[2.115s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[2.115s] gmake: *** [Makefile:146: all] Error 2
+[2.120s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': AMENT_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/maddy/iris_test_tool/install/iris_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

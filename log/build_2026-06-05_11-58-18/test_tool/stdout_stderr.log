@@ -1,0 +1,42 @@
+[ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 18%] Built target dummy_test_autogen
+[ 18%] Built target dummy_test_1_autogen
+[ 37%] Built target dummy_test_1
+[ 56%] Built target dummy_test
+[ 56%] Built target test_tool_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:13:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KA5_service::A5_service(QWidget*)[m[K’
+   13 | [01;31m[KA5_service[m[K::A5_service(QWidget *parent)
+      | [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:19:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KA5_service::A5_service(A5_service&&)[m[K’
+   19 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:19:7:[m[K [01;36m[Knote: [m[K                ‘[01m[KA5_service::A5_service(const A5_service&)[m[K’
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:14:[m[K [01;36m[Knote: [m[K                ‘[01m[KA5_service::A5_service(std::shared_ptr<Qtros>, QWidget*)[m[K’
+   23 |     explicit [01;36m[KA5_service[m[K(std::shared_ptr<Qtros> qtros_node, QWidget *parent = nullptr);
+      |              [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+   19 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::a5_service()[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:527:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KA5_service::A5_service(QWidget*&)[m[K’
+  527 |         a5_page = new A5_service(currentPage[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KA5_service::A5_service(std::shared_ptr<Qtros>, QWidget*)[m[K’
+   23 |     explicit [01;36m[KA5_service[m[K(std::shared_ptr<Qtros> qtros_node, QWidget *parent = nullptr);
+      |              [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:48:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KQWidget*[m[K’ to ‘[01m[Kstd::shared_ptr<Qtros>[m[K’
+   23 |     explicit A5_service([01;36m[Kstd::shared_ptr<Qtros> qtros_node[m[K, QWidget *parent = nullptr);
+      |                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
