@@ -1,0 +1,23 @@
+[ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 18%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 18%] Built target dummy_test_autogen
+[ 18%] Built target dummy_test_1_autogen
+[ 56%] Built target dummy_test
+[ 56%] Built target dummy_test_1
+[ 56%] Built target test_tool_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:385:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::on_a5_status_display(iris_interfaces::msg::A5Status_<std::allocator<void> >::SharedPtr)[m[K’
+  385 | void [01;31m[KA5_service[m[K::on_a5_status_display(const iris_interfaces::msg::A5Status::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:385:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::on_a5_status_display(iris_interfaces::msg::A5Status_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+   23 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

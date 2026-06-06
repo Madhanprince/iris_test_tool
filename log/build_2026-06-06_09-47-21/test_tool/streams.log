@@ -1,0 +1,118 @@
+[0.170s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.209s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.405s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.688s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.692s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.702s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.719s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.741s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.789s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.791s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.020s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.095s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.137s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[10.148s] -- Found rviz_common: 11.2.26 (/opt/ros/humble/share/rviz_common/cmake)
+[10.295s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[10.299s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[10.301s] -- Found OGRE
+[10.301s] --   static     : OFF
+[10.302s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[10.302s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[10.302s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[10.303s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[10.303s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[10.303s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[10.303s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[10.303s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[10.303s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[10.304s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[10.304s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[15.558s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[17.721s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[17.847s] -- Found rviz_default_plugins: 11.2.26 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[17.956s] -- Found iris_interfaces: 0.5.13 (/home/maddy/iris_test_tool/install/iris_interfaces/share/iris_interfaces/cmake)
+[17.999s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[18.105s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[18.105s] -- Configured cppcheck include dirs: /home/maddy/iris_test_tool/src/test_tool/include;/home/maddy/iris_test_tool/src/test_tool/include/test_tool;/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A2;/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5
+[18.105s] -- Configured cppcheck exclude dirs and/or files: 
+[18.107s] -- Added test 'flake8' to check Python code syntax and style conventions
+[18.109s] -- Added test 'lint_cmake' to check CMake code style
+[18.110s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[18.112s] -- Added test 'uncrustify' to check C / C++ code style
+[18.113s] -- Configured uncrustify additional arguments: 
+[18.113s] -- Added test 'xmllint' to check XML markup files
+[18.115s] -- Configuring done
+[18.203s] -- Generating done
+[18.220s] -- Build files have been written to: /home/maddy/iris_test_tool/build/test_tool
+[18.281s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[18.281s] [ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[18.281s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[18.309s] [ 18%] Built target dummy_test_autogen
+[18.318s] [ 18%] Built target dummy_test_1_autogen
+[18.330s] [35m[1mConsolidate compiler generated dependencies of target dummy_test[0m
+[18.345s] [35m[1mConsolidate compiler generated dependencies of target dummy_test_1[0m
+[18.385s] [ 37%] Built target dummy_test_1
+[18.387s] [ 56%] Built target dummy_test
+[19.319s] [ 56%] Built target test_tool_node_autogen
+[19.342s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[19.420s] [ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[19.420s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/main.cpp.o[0m
+[19.422s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/qt_ros.cpp.o[0m
+[19.427s] [ 81%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[19.433s] [ 87%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A2/a2_service.cpp.o[0m
+[19.434s] [ 93%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[35.584s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[35.584s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:19:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderValues[m[K’ was not declared in this scope
+[35.584s]    19 |             [01;31m[KsetEncoderValues[m[K(msg->left_wheel_ticks, msg->right_wheel_ticks);
+[35.584s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[35.637s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[35.638s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:25:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetUltrasonicValues[m[K’ was not declared in this scope
+[35.638s]    25 |             [01;31m[KsetUltrasonicValues[m[K(msg->ultrasonic_1.range, msg->ultrasonic_2.range,
+[35.638s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[35.694s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[35.694s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetFreshWaterLevel[m[K’ was not declared in this scope; did you mean ‘[01m[KsetupFreshWaterSection[m[K’?
+[35.694s]    31 |             [01;31m[KsetFreshWaterLevel[m[K(msg->fresh_water_tank_level);
+[35.695s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[35.695s]       |             [32m[KsetupFreshWaterSection[m[K
+[35.752s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetDirtyWaterLevel[m[K’ was not declared in this scope; did you mean ‘[01m[KsetupDirtyWaterSection[m[K’?
+[35.752s]    32 |             [01;31m[KsetDirtyWaterLevel[m[K(msg->dirty_water_tank_level);
+[35.753s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[35.753s]       |             [32m[KsetupDirtyWaterSection[m[K
+[35.802s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K At global scope:
+[35.802s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:305:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setUltrasonicValues(float, float, float)[m[K’
+[35.803s]   305 | void [01;31m[KA5_service[m[K::setUltrasonicValues(float ultrasonic1, float ultrasonic2, float ultrasonic3)
+[35.803s]       |      [01;31m[K^~~~~~~~~~[m[K
+[35.808s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:305:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setUltrasonicValues(float, float, float)[m[K’
+[35.808s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[35.808s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+[35.809s]    23 | class [01;36m[KA5_service[m[K : public QWidget
+[35.809s]       |       [01;36m[K^~~~~~~~~~[m[K
+[35.809s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:310:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setEncoderValues(int, int)[m[K’
+[35.809s]   310 | void [01;31m[KA5_service[m[K::setEncoderValues(int left, int right)
+[35.809s]       |      [01;31m[K^~~~~~~~~~[m[K
+[35.810s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:310:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setEncoderValues(int, int)[m[K’
+[35.810s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[35.810s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+[35.810s]    23 | class [01;36m[KA5_service[m[K : public QWidget
+[35.811s]       |       [01;36m[K^~~~~~~~~~[m[K
+[35.811s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:315:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+[35.811s]   315 | void [01;31m[KA5_service[m[K::setFreshWaterLevel(int fresh_level)
+[35.811s]       |      [01;31m[K^~~~~~~~~~[m[K
+[35.811s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:315:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+[35.812s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[35.812s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+[35.812s]    23 | class [01;36m[KA5_service[m[K : public QWidget
+[35.812s]       |       [01;36m[K^~~~~~~~~~[m[K
+[35.825s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:319:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setDirtyWaterLevel(int)[m[K’
+[35.825s]   319 | void [01;31m[KA5_service[m[K::setDirtyWaterLevel(int dirty_level)
+[35.825s]       |      [01;31m[K^~~~~~~~~~[m[K
+[35.826s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:319:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setDirtyWaterLevel(int)[m[K’
+[35.826s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[35.826s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+[35.826s]    23 | class [01;36m[KA5_service[m[K : public QWidget
+[35.826s]       |       [01;36m[K^~~~~~~~~~[m[K
+[52.732s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[52.733s] gmake[2]: *** Waiting for unfinished jobs....
+[65.725s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[65.725s] gmake: *** [Makefile:146: all] Error 2
+[65.770s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

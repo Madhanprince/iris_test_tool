@@ -1,0 +1,391 @@
+[0.000000] (-) TimerEvent: {}
+[0.000563] (-) JobUnselected: {'identifier': 'iris_interfaces'}
+[0.000666] (-) JobUnselected: {'identifier': 'test_tool_dummy'}
+[0.000757] (test_tool) JobQueued: {'identifier': 'test_tool', 'dependencies': OrderedDict([('iris_interfaces', '/home/maddy/iris_test_tool/install/iris_interfaces')])}
+[0.001659] (test_tool) JobStarted: {'identifier': 'test_tool'}
+[0.099483] (-) TimerEvent: {}
+[0.194715] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'cmake'}
+[0.196667] (test_tool) JobProgress: {'identifier': 'test_tool', 'progress': 'build'}
+[0.198091] (test_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maddy/iris_test_tool/build/test_tool', '--', '-j8', '-l8'], 'cwd': '/home/maddy/iris_test_tool/build/test_tool', 'env': OrderedDict([('USER', 'maddy'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/maddy/iris_test_tool/install/iris_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maddy'), ('OLDPWD', '/home/maddy/iris_test_tool'), ('LESS', '-R'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.114.0'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maddy'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/431_interop'), ('NAME', 'RMCCORPDE-DT024'), ('_P9K_SSH_TTY', '/dev/pts/3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '32482'), ('USER_ZDOTDIR', '/home/maddy'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('FC_FONTATIONS', '1'), ('PATH', '/home/maddy/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/maddy/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.15.6-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PostgreSQL/17/bin:/mnt/c/sonar-scanner-7.1.0.4889-windows-x64/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/RMCPDEDT024/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/RMCPDEDT024/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/RMCPDEDT024/AppData/Local/Python/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e6c4ec60b.sock'), ('AMENT_PREFIX_PATH', '/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('NO_AT_BRIDGE', '1'), ('P9K_SSH', '0'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'a0463a8f-3ac0-4a56-bff5-696830c5a148'), ('PWD', '/home/maddy/iris_test_tool/build/test_tool'), ('_P9K_TTY', '/dev/pts/3'), ('ZDOTDIR', '/home/maddy'), ('PYTHONPATH', '/home/maddy/iris_test_tool/install/iris_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/maddy/iris_test_tool/install/iris_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.202850] (-) TimerEvent: {}
+[0.303246] (-) TimerEvent: {}
+[0.395957] (test_tool) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test\x1b[0m\n'}
+[0.396293] (test_tool) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target test_tool_node\x1b[0m\n'}
+[0.396472] (test_tool) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target dummy_test_1\x1b[0m\n'}
+[0.403424] (-) TimerEvent: {}
+[0.432573] (test_tool) StdoutLine: {'line': b'[ 18%] Built target dummy_test_1_autogen\n'}
+[0.437074] (test_tool) StdoutLine: {'line': b'[ 18%] Built target dummy_test_autogen\n'}
+[0.479337] (test_tool) StdoutLine: {'line': b'[ 37%] Built target dummy_test\n'}
+[0.480092] (test_tool) StdoutLine: {'line': b'[ 56%] Built target dummy_test_1\n'}
+[0.503590] (-) TimerEvent: {}
+[0.604161] (-) TimerEvent: {}
+[0.704740] (-) TimerEvent: {}
+[0.805168] (-) TimerEvent: {}
+[0.905766] (-) TimerEvent: {}
+[1.006611] (-) TimerEvent: {}
+[1.100608] (test_tool) StdoutLine: {'line': b'[ 56%] Built target test_tool_node_autogen\n'}
+[1.106705] (-) TimerEvent: {}
+[1.139390] (test_tool) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_tool_node\x1b[0m\n'}
+[1.194421] (test_tool) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[1.198522] (test_tool) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o\x1b[0m\n'}
+[1.200039] (test_tool) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o\x1b[0m\n'}
+[1.206903] (-) TimerEvent: {}
+[1.307436] (-) TimerEvent: {}
+[1.407966] (-) TimerEvent: {}
+[1.508517] (-) TimerEvent: {}
+[1.608980] (-) TimerEvent: {}
+[1.709478] (-) TimerEvent: {}
+[1.809984] (-) TimerEvent: {}
+[1.910486] (-) TimerEvent: {}
+[2.010991] (-) TimerEvent: {}
+[2.111499] (-) TimerEvent: {}
+[2.212000] (-) TimerEvent: {}
+[2.312480] (-) TimerEvent: {}
+[2.412905] (-) TimerEvent: {}
+[2.513409] (-) TimerEvent: {}
+[2.615107] (-) TimerEvent: {}
+[2.715761] (-) TimerEvent: {}
+[2.816319] (-) TimerEvent: {}
+[2.917006] (-) TimerEvent: {}
+[3.017582] (-) TimerEvent: {}
+[3.118804] (-) TimerEvent: {}
+[3.219409] (-) TimerEvent: {}
+[3.321601] (-) TimerEvent: {}
+[3.422324] (-) TimerEvent: {}
+[3.523037] (-) TimerEvent: {}
+[3.624206] (-) TimerEvent: {}
+[3.725010] (-) TimerEvent: {}
+[3.826409] (-) TimerEvent: {}
+[3.927031] (-) TimerEvent: {}
+[4.027892] (-) TimerEvent: {}
+[4.129106] (-) TimerEvent: {}
+[4.229940] (-) TimerEvent: {}
+[4.331169] (-) TimerEvent: {}
+[4.432866] (-) TimerEvent: {}
+[4.539865] (-) TimerEvent: {}
+[4.640437] (-) TimerEvent: {}
+[4.740915] (-) TimerEvent: {}
+[4.841428] (-) TimerEvent: {}
+[4.942080] (-) TimerEvent: {}
+[5.045790] (-) TimerEvent: {}
+[5.146877] (-) TimerEvent: {}
+[5.247540] (-) TimerEvent: {}
+[5.350555] (-) TimerEvent: {}
+[5.452392] (-) TimerEvent: {}
+[5.552924] (-) TimerEvent: {}
+[5.654313] (-) TimerEvent: {}
+[5.755852] (-) TimerEvent: {}
+[5.856524] (-) TimerEvent: {}
+[5.957114] (-) TimerEvent: {}
+[6.058054] (-) TimerEvent: {}
+[6.158716] (-) TimerEvent: {}
+[6.259332] (-) TimerEvent: {}
+[6.361974] (-) TimerEvent: {}
+[6.462792] (-) TimerEvent: {}
+[6.564501] (-) TimerEvent: {}
+[6.665793] (-) TimerEvent: {}
+[6.766395] (-) TimerEvent: {}
+[6.866940] (-) TimerEvent: {}
+[6.967922] (-) TimerEvent: {}
+[7.068860] (-) TimerEvent: {}
+[7.169801] (-) TimerEvent: {}
+[7.270747] (-) TimerEvent: {}
+[7.371808] (-) TimerEvent: {}
+[7.475833] (-) TimerEvent: {}
+[7.576417] (-) TimerEvent: {}
+[7.676928] (-) TimerEvent: {}
+[7.777571] (-) TimerEvent: {}
+[7.882338] (-) TimerEvent: {}
+[7.983301] (-) TimerEvent: {}
+[8.091931] (-) TimerEvent: {}
+[8.192632] (-) TimerEvent: {}
+[8.293063] (-) TimerEvent: {}
+[8.396142] (-) TimerEvent: {}
+[8.497399] (-) TimerEvent: {}
+[8.599737] (-) TimerEvent: {}
+[8.703832] (-) TimerEvent: {}
+[8.804318] (-) TimerEvent: {}
+[8.907851] (-) TimerEvent: {}
+[9.008617] (-) TimerEvent: {}
+[9.109348] (-) TimerEvent: {}
+[9.211237] (-) TimerEvent: {}
+[9.313010] (-) TimerEvent: {}
+[9.413514] (-) TimerEvent: {}
+[9.515322] (-) TimerEvent: {}
+[9.616736] (-) TimerEvent: {}
+[9.718100] (-) TimerEvent: {}
+[9.818687] (-) TimerEvent: {}
+[9.919273] (-) TimerEvent: {}
+[10.020029] (-) TimerEvent: {}
+[10.123860] (-) TimerEvent: {}
+[10.224335] (-) TimerEvent: {}
+[10.325647] (-) TimerEvent: {}
+[10.426247] (-) TimerEvent: {}
+[10.526927] (-) TimerEvent: {}
+[10.628101] (-) TimerEvent: {}
+[10.729142] (-) TimerEvent: {}
+[10.829607] (-) TimerEvent: {}
+[10.930641] (-) TimerEvent: {}
+[11.031902] (-) TimerEvent: {}
+[11.134348] (-) TimerEvent: {}
+[11.236015] (-) TimerEvent: {}
+[11.336940] (-) TimerEvent: {}
+[11.437495] (-) TimerEvent: {}
+[11.538049] (-) TimerEvent: {}
+[11.638898] (-) TimerEvent: {}
+[11.739454] (-) TimerEvent: {}
+[11.839940] (-) TimerEvent: {}
+[11.940453] (-) TimerEvent: {}
+[12.040888] (-) TimerEvent: {}
+[12.141350] (-) TimerEvent: {}
+[12.241894] (-) TimerEvent: {}
+[12.342483] (-) TimerEvent: {}
+[12.443813] (-) TimerEvent: {}
+[12.544653] (-) TimerEvent: {}
+[12.645362] (-) TimerEvent: {}
+[12.745865] (-) TimerEvent: {}
+[12.846413] (-) TimerEvent: {}
+[12.946864] (-) TimerEvent: {}
+[13.047476] (-) TimerEvent: {}
+[13.148228] (-) TimerEvent: {}
+[13.248839] (-) TimerEvent: {}
+[13.349390] (-) TimerEvent: {}
+[13.449792] (-) TimerEvent: {}
+[13.550788] (-) TimerEvent: {}
+[13.655827] (-) TimerEvent: {}
+[13.756332] (-) TimerEvent: {}
+[13.792267] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1\x1b[m\x1b[K:\n'}
+[13.792703] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:70:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSlots\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kslots\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.792894] (test_tool) StderrLine: {'line': b'   70 | \x1b[01;31m\x1b[KSlots\x1b[m\x1b[K:\n'}
+[13.793054] (test_tool) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.793206] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[Kslots\x1b[m\x1b[K\n'}
+[13.793361] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:77:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSignals\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksignals\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.793561] (test_tool) StderrLine: {'line': b'   77 | \x1b[01;31m\x1b[KSignals\x1b[m\x1b[K:\n'}
+[13.793713] (test_tool) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[13.793863] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[Ksignals\x1b[m\x1b[K\n'}
+[13.794013] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:80:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.794172] (test_tool) StderrLine: {'line': b'   80 |     void \x1b[01;31m\x1b[KsetUltrasonicValues\x1b[m\x1b[K(float ultrasonic1, float ultrasonic2, float ultrasonic3);\n'}
+[13.794326] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.794477] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:36:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.794631] (test_tool) StderrLine: {'line': b'   36 |     void \x1b[01;36m\x1b[KsetUltrasonicValues\x1b[m\x1b[K(float ultrasonic1, float ultrasonic2, float ultrasonic3);\n'}
+[13.794782] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.794930] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:81:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.795098] (test_tool) StderrLine: {'line': b'   81 |     void \x1b[01;31m\x1b[KsetEncoderValues\x1b[m\x1b[K(int left, int right);\n'}
+[13.795255] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.795405] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:37:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.795563] (test_tool) StderrLine: {'line': b'   37 |     void \x1b[01;36m\x1b[KsetEncoderValues\x1b[m\x1b[K(int left, int right);\n'}
+[13.795797] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.795983] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:82:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.796154] (test_tool) StderrLine: {'line': b'   82 |     void \x1b[01;31m\x1b[KsetFreshWaterLevel\x1b[m\x1b[K(int fresh_level);\n'}
+[13.796357] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.796517] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:38:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.796669] (test_tool) StderrLine: {'line': b'   38 |     void \x1b[01;36m\x1b[KsetFreshWaterLevel\x1b[m\x1b[K(int fresh_level);\n'}
+[13.796820] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.796969] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:83:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.797122] (test_tool) StderrLine: {'line': b'   83 |     void \x1b[01;31m\x1b[KsetDirtyWaterLevel\x1b[m\x1b[K(int dirty_level);\n'}
+[13.797284] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.797431] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:39:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.797583] (test_tool) StderrLine: {'line': b'   39 |     void \x1b[01;36m\x1b[KsetDirtyWaterLevel\x1b[m\x1b[K(int dirty_level);\n'}
+[13.797730] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.855675] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.856145] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:317:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KfreshWaterLevelUpdated\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KdirtyWaterLevelUpdated\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.856375] (-) TimerEvent: {}
+[13.856575] (test_tool) StderrLine: {'line': b'  317 |     emit \x1b[01;31m\x1b[KfreshWaterLevelUpdated\x1b[m\x1b[K(fresh_level);\n'}
+[13.856934] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.857191] (test_tool) StderrLine: {'line': b'      |          \x1b[32m\x1b[KdirtyWaterLevelUpdated\x1b[m\x1b[K\n'}
+[13.857807] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.858027] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:354:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::freshWaterLevelUpdated(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.858191] (test_tool) StderrLine: {'line': b'  354 | void \x1b[01;31m\x1b[KA5_service\x1b[m\x1b[K::freshWaterLevelUpdated(int fresh_level){\n'}
+[13.858349] (test_tool) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.858502] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:354:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::freshWaterLevelUpdated(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.858656] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1\x1b[m\x1b[K:\n'}
+[13.858807] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass A5_service\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.858980] (test_tool) StderrLine: {'line': b'   23 | class \x1b[01;36m\x1b[KA5_service\x1b[m\x1b[K : public QWidget\n'}
+[13.859137] (test_tool) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.956540] (-) TimerEvent: {}
+[14.056996] (-) TimerEvent: {}
+[14.157455] (-) TimerEvent: {}
+[14.257982] (-) TimerEvent: {}
+[14.358432] (-) TimerEvent: {}
+[14.458877] (-) TimerEvent: {}
+[14.559471] (-) TimerEvent: {}
+[14.660258] (-) TimerEvent: {}
+[14.760692] (-) TimerEvent: {}
+[14.861218] (-) TimerEvent: {}
+[14.961800] (-) TimerEvent: {}
+[15.062309] (-) TimerEvent: {}
+[15.162784] (-) TimerEvent: {}
+[15.263301] (-) TimerEvent: {}
+[15.363941] (-) TimerEvent: {}
+[15.464480] (-) TimerEvent: {}
+[15.564967] (-) TimerEvent: {}
+[15.665514] (-) TimerEvent: {}
+[15.766015] (-) TimerEvent: {}
+[15.866708] (-) TimerEvent: {}
+[15.908057] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/moc_a5_service.cpp:10\x1b[m\x1b[K,\n'}
+[15.908437] (test_tool) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/mocs_compilation.cpp:3\x1b[m\x1b[K:\n'}
+[15.908660] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:70:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSlots\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kslots\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.908878] (test_tool) StderrLine: {'line': b'   70 | \x1b[01;31m\x1b[KSlots\x1b[m\x1b[K:\n'}
+[15.909088] (test_tool) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[15.909294] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[Kslots\x1b[m\x1b[K\n'}
+[15.916175] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:77:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSignals\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksignals\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.916559] (test_tool) StderrLine: {'line': b'   77 | \x1b[01;31m\x1b[KSignals\x1b[m\x1b[K:\n'}
+[15.916762] (test_tool) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[15.916965] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[Ksignals\x1b[m\x1b[K\n'}
+[15.917170] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:80:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.917377] (test_tool) StderrLine: {'line': b'   80 |     void \x1b[01;31m\x1b[KsetUltrasonicValues\x1b[m\x1b[K(float ultrasonic1, float ultrasonic2, float ultrasonic3);\n'}
+[15.917566] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.917752] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:36:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.917960] (test_tool) StderrLine: {'line': b'   36 |     void \x1b[01;36m\x1b[KsetUltrasonicValues\x1b[m\x1b[K(float ultrasonic1, float ultrasonic2, float ultrasonic3);\n'}
+[15.918172] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.918366] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:81:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.918584] (test_tool) StderrLine: {'line': b'   81 |     void \x1b[01;31m\x1b[KsetEncoderValues\x1b[m\x1b[K(int left, int right);\n'}
+[15.918825] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.919027] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:37:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.919238] (test_tool) StderrLine: {'line': b'   37 |     void \x1b[01;36m\x1b[KsetEncoderValues\x1b[m\x1b[K(int left, int right);\n'}
+[15.919448] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.919645] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:82:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.925361] (test_tool) StderrLine: {'line': b'   82 |     void \x1b[01;31m\x1b[KsetFreshWaterLevel\x1b[m\x1b[K(int fresh_level);\n'}
+[15.925642] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.925879] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:38:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.926118] (test_tool) StderrLine: {'line': b'   38 |     void \x1b[01;36m\x1b[KsetFreshWaterLevel\x1b[m\x1b[K(int fresh_level);\n'}
+[15.926336] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.926601] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:83:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.926810] (test_tool) StderrLine: {'line': b'   83 |     void \x1b[01;31m\x1b[KsetDirtyWaterLevel\x1b[m\x1b[K(int dirty_level);\n'}
+[15.927003] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.927192] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/build/test_tool/test_tool_node_autogen/PVQ5PQUJCZ/../../../../src/test_tool/include/test_tool/A5/a5_service.h:39:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.927421] (test_tool) StderrLine: {'line': b'   39 |     void \x1b[01;36m\x1b[KsetDirtyWaterLevel\x1b[m\x1b[K(int dirty_level);\n'}
+[15.927631] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.966892] (-) TimerEvent: {}
+[16.067507] (-) TimerEvent: {}
+[16.090830] (test_tool) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/mainwindow.cpp:10\x1b[m\x1b[K:\n'}
+[16.091188] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:70:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSlots\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kslots\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[16.091386] (test_tool) StderrLine: {'line': b'   70 | \x1b[01;31m\x1b[KSlots\x1b[m\x1b[K:\n'}
+[16.091612] (test_tool) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[16.091802] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[Kslots\x1b[m\x1b[K\n'}
+[16.097435] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:77:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSignals\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksignals\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[16.097745] (test_tool) StderrLine: {'line': b'   77 | \x1b[01;31m\x1b[KSignals\x1b[m\x1b[K:\n'}
+[16.098011] (test_tool) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[16.098214] (test_tool) StderrLine: {'line': b'      | \x1b[32m\x1b[Ksignals\x1b[m\x1b[K\n'}
+[16.098419] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:80:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.098625] (test_tool) StderrLine: {'line': b'   80 |     void \x1b[01;31m\x1b[KsetUltrasonicValues\x1b[m\x1b[K(float ultrasonic1, float ultrasonic2, float ultrasonic3);\n'}
+[16.098817] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.099017] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:36:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setUltrasonicValues(float, float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.099253] (test_tool) StderrLine: {'line': b'   36 |     void \x1b[01;36m\x1b[KsetUltrasonicValues\x1b[m\x1b[K(float ultrasonic1, float ultrasonic2, float ultrasonic3);\n'}
+[16.099461] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.100206] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:81:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.100474] (test_tool) StderrLine: {'line': b'   81 |     void \x1b[01;31m\x1b[KsetEncoderValues\x1b[m\x1b[K(int left, int right);\n'}
+[16.102083] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.103010] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:37:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setEncoderValues(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.103228] (test_tool) StderrLine: {'line': b'   37 |     void \x1b[01;36m\x1b[KsetEncoderValues\x1b[m\x1b[K(int left, int right);\n'}
+[16.103432] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.103650] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:82:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.103918] (test_tool) StderrLine: {'line': b'   82 |     void \x1b[01;31m\x1b[KsetFreshWaterLevel\x1b[m\x1b[K(int fresh_level);\n'}
+[16.104155] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.104356] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:38:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setFreshWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.104564] (test_tool) StderrLine: {'line': b'   38 |     void \x1b[01;36m\x1b[KsetFreshWaterLevel\x1b[m\x1b[K(int fresh_level);\n'}
+[16.104772] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.104974] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:83:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.105182] (test_tool) StderrLine: {'line': b'   83 |     void \x1b[01;31m\x1b[KsetDirtyWaterLevel\x1b[m\x1b[K(int dirty_level);\n'}
+[16.105382] (test_tool) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.105584] (test_tool) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:39:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid A5_service::setDirtyWaterLevel(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.105788] (test_tool) StderrLine: {'line': b'   39 |     void \x1b[01;36m\x1b[KsetDirtyWaterLevel\x1b[m\x1b[K(int dirty_level);\n'}
+[16.105993] (test_tool) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.167666] (-) TimerEvent: {}
+[16.268386] (-) TimerEvent: {}
+[16.368887] (-) TimerEvent: {}
+[16.469423] (-) TimerEvent: {}
+[16.569876] (-) TimerEvent: {}
+[16.670337] (-) TimerEvent: {}
+[16.770831] (-) TimerEvent: {}
+[16.871388] (-) TimerEvent: {}
+[16.971997] (-) TimerEvent: {}
+[17.072652] (-) TimerEvent: {}
+[17.173179] (-) TimerEvent: {}
+[17.273691] (-) TimerEvent: {}
+[17.374188] (-) TimerEvent: {}
+[17.474737] (-) TimerEvent: {}
+[17.575229] (-) TimerEvent: {}
+[17.675744] (-) TimerEvent: {}
+[17.776259] (-) TimerEvent: {}
+[17.876802] (-) TimerEvent: {}
+[17.977294] (-) TimerEvent: {}
+[18.077794] (-) TimerEvent: {}
+[18.178423] (-) TimerEvent: {}
+[18.278924] (-) TimerEvent: {}
+[18.379537] (-) TimerEvent: {}
+[18.480046] (-) TimerEvent: {}
+[18.580565] (-) TimerEvent: {}
+[18.681157] (-) TimerEvent: {}
+[18.781702] (-) TimerEvent: {}
+[18.882288] (-) TimerEvent: {}
+[18.982928] (-) TimerEvent: {}
+[19.071829] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:76: CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o] Error 1\n'}
+[19.072590] (test_tool) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[19.083170] (-) TimerEvent: {}
+[19.183840] (-) TimerEvent: {}
+[19.284339] (-) TimerEvent: {}
+[19.384775] (-) TimerEvent: {}
+[19.486756] (-) TimerEvent: {}
+[19.592421] (-) TimerEvent: {}
+[19.697064] (-) TimerEvent: {}
+[19.697494] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:104: CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o] Error 1\n'}
+[19.797214] (-) TimerEvent: {}
+[19.897689] (-) TimerEvent: {}
+[19.998173] (-) TimerEvent: {}
+[20.098650] (-) TimerEvent: {}
+[20.199103] (-) TimerEvent: {}
+[20.299558] (-) TimerEvent: {}
+[20.400137] (-) TimerEvent: {}
+[20.500627] (-) TimerEvent: {}
+[20.601108] (-) TimerEvent: {}
+[20.701589] (-) TimerEvent: {}
+[20.802086] (-) TimerEvent: {}
+[20.902608] (-) TimerEvent: {}
+[21.003135] (-) TimerEvent: {}
+[21.103636] (-) TimerEvent: {}
+[21.204225] (-) TimerEvent: {}
+[21.304724] (-) TimerEvent: {}
+[21.405192] (-) TimerEvent: {}
+[21.505730] (-) TimerEvent: {}
+[21.606312] (-) TimerEvent: {}
+[21.706870] (-) TimerEvent: {}
+[21.807349] (-) TimerEvent: {}
+[21.907871] (-) TimerEvent: {}
+[22.008348] (-) TimerEvent: {}
+[22.108809] (-) TimerEvent: {}
+[22.209355] (-) TimerEvent: {}
+[22.309906] (-) TimerEvent: {}
+[22.410412] (-) TimerEvent: {}
+[22.510847] (-) TimerEvent: {}
+[22.611300] (-) TimerEvent: {}
+[22.711815] (-) TimerEvent: {}
+[22.812322] (-) TimerEvent: {}
+[22.912762] (-) TimerEvent: {}
+[23.013249] (-) TimerEvent: {}
+[23.113745] (-) TimerEvent: {}
+[23.214196] (-) TimerEvent: {}
+[23.314709] (-) TimerEvent: {}
+[23.415266] (-) TimerEvent: {}
+[23.515822] (-) TimerEvent: {}
+[23.616260] (-) TimerEvent: {}
+[23.716813] (-) TimerEvent: {}
+[23.817395] (-) TimerEvent: {}
+[23.918009] (-) TimerEvent: {}
+[24.018449] (-) TimerEvent: {}
+[24.118923] (-) TimerEvent: {}
+[24.219397] (-) TimerEvent: {}
+[24.319884] (-) TimerEvent: {}
+[24.420380] (-) TimerEvent: {}
+[24.520863] (-) TimerEvent: {}
+[24.621377] (-) TimerEvent: {}
+[24.721848] (-) TimerEvent: {}
+[24.822351] (-) TimerEvent: {}
+[24.922842] (-) TimerEvent: {}
+[24.986629] (test_tool) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1\n'}
+[24.987324] (test_tool) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2\n'}
+[24.987682] (test_tool) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[24.992361] (test_tool) CommandEnded: {'returncode': 2}
+[25.023133] (-) TimerEvent: {}
+[25.027693] (test_tool) JobEnded: {'identifier': 'test_tool', 'rc': 2}
+[25.039105] (-) EventReactorShutdown: {}

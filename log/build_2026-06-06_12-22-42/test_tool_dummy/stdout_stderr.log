@@ -1,0 +1,21 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+writing ../../build/test_tool_dummy/test_tool_dummy.egg-info/PKG-INFO
+writing dependency_links to ../../build/test_tool_dummy/test_tool_dummy.egg-info/dependency_links.txt
+writing entry points to ../../build/test_tool_dummy/test_tool_dummy.egg-info/entry_points.txt
+writing requirements to ../../build/test_tool_dummy/test_tool_dummy.egg-info/requires.txt
+writing top-level names to ../../build/test_tool_dummy/test_tool_dummy.egg-info/top_level.txt
+reading manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+writing manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+removing '/home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/test_tool_dummy/test_tool_dummy.egg-info to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy-0.0.0-py3.10.egg-info
+running install_scripts
+Installing a2_dummy script to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/test_tool_dummy
+Installing a5_dummy script to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/test_tool_dummy
+writing list of installed files to '/home/maddy/iris_test_tool/build/test_tool_dummy/install.log'

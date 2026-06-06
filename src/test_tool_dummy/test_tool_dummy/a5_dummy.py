@@ -19,7 +19,7 @@ class A5DummyNode(Node):
         self.wheel_pub = self.create_publisher(WheelEncoders, 'wheel_encoders', 10)
         self.ultra_pub = self.create_publisher(UltrasonicRanges, 'ultrasonic_ranges', 10)
         self.water_pub = self.create_publisher(WaterTankLevels, 'water_tank_levels', 10)
-        # self.status_pub = self.create_publisher(A5Status, 'a5_control_status', 10)
+        self.status_pub = self.create_publisher(A5Status, 'a5_control_status', 10)
 
         self.led_sub = self.create_subscription(
             LedControl,

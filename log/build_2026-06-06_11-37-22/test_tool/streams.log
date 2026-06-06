@@ -1,0 +1,25 @@
+[0.169s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.254s] [  6%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.255s] [ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.260s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.291s] [ 18%] Built target dummy_test_1_autogen
+[0.293s] [ 18%] Built target dummy_test_autogen
+[0.341s] [ 37%] Built target dummy_test
+[0.345s] [ 56%] Built target dummy_test_1
+[0.835s] [ 56%] Built target test_tool_node_autogen
+[0.863s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.944s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[0.944s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[0.950s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[12.574s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:385:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::on_a5_status_display(iris_interfaces::msg::A5Status_<std::allocator<void> >::SharedPtr)[m[K’
+[12.574s]   385 | void [01;31m[KA5_service[m[K::on_a5_status_display(const iris_interfaces::msg::A5Status::SharedPtr msg)
+[12.574s]       |      [01;31m[K^~~~~~~~~~[m[K
+[12.574s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:385:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::on_a5_status_display(iris_interfaces::msg::A5Status_<std::allocator<void> >::SharedPtr)[m[K’
+[12.575s] In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[12.575s] [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+[12.575s]    23 | class [01;36m[KA5_service[m[K : public QWidget
+[12.575s]       |       [01;36m[K^~~~~~~~~~[m[K
+[21.731s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[21.731s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[21.732s] gmake: *** [Makefile:146: all] Error 2
+[21.737s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

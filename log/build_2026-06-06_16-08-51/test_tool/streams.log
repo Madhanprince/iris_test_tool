@@ -1,0 +1,47 @@
+[0.158s] Invoking command in '/home/maddy/iris_test_tool/build/test_tool': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8
+[0.272s] [  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[0.272s] [ 12%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[0.276s] [ 18%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[0.303s] [ 18%] Built target dummy_test_autogen
+[0.306s] [ 18%] Built target dummy_test_1_autogen
+[0.350s] [ 37%] Built target dummy_test_1
+[0.351s] [ 56%] Built target dummy_test
+[0.857s] [ 56%] Built target test_tool_node_autogen
+[0.884s] [35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[0.947s] [ 62%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[0.947s] [ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[0.949s] [ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[12.912s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In member function ‘[01m[Kvoid A5_service::ledCommandRequested(const QString&)[m[K’:
+[12.913s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:388:47:[m[K [01;31m[Kerror: [m[K‘[01m[KSTANDBY[m[K’ is not a member of ‘[01m[Kiris_interfaces::msg::LedControl[m[K’ {aka ‘[01m[Kiris_interfaces::msg::LedControl_<std::allocator<void> >[m[K’}
+[12.913s]   388 |             iris_interfaces::msg::LedControl::[01;31m[KSTANDBY[m[K;
+[12.913s]       |                                               [01;31m[K^~~~~~~[m[K
+[12.920s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:429:15:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass QDebug[m[K’
+[12.920s]   429 |         qDebug[01;31m[K([m[K) << "Unknown LED Command :" << command;
+[12.920s]       |               [01;31m[K^[m[K
+[12.921s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:1297[m[K,
+[12.921s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:43[m[K,
+[12.921s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43[m[K,
+[12.921s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:43[m[K,
+[12.922s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[12.922s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:4[m[K,
+[12.922s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[12.922s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:57:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass QDebug[m[K’
+[12.922s]    57 | class [01;36m[KQDebug[m[K;
+[12.923s]       |       [01;36m[K^~~~~~[m[K
+[12.923s] [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:433:11:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass QDebug[m[K’
+[12.923s]   433 |     qDebug[01;31m[K([m[K) << "Published LED Command :" << command;
+[12.923s]       |           [01;31m[K^[m[K
+[12.923s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:1297[m[K,
+[12.923s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:43[m[K,
+[12.923s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43[m[K,
+[12.924s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:43[m[K,
+[12.924s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[12.924s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:4[m[K,
+[12.924s]                  from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[12.924s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:57:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass QDebug[m[K’
+[12.924s]    57 | class [01;36m[KQDebug[m[K;
+[12.924s]       |       [01;36m[K^~~~~~[m[K
+[24.086s] gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+[24.087s] gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+[24.087s] gmake: *** [Makefile:146: all] Error 2
+[24.098s] Invoked command in '/home/maddy/iris_test_tool/build/test_tool' returned '2': CMAKE_PREFIX_PATH=/home/maddy/iris_test_tool/install/iris_interfaces:/home/maddy/iris_test_tool/install/test_tool:/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/test_tool -- -j8 -l8

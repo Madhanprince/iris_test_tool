@@ -1,0 +1,26 @@
+[3.703s] Invoking command in '/home/maddy/iris_test_tool/src/test_tool_dummy': PYTHONPATH=/home/maddy/iris_test_tool/build/test_tool_dummy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_tool_dummy build --build-base /home/maddy/iris_test_tool/build/test_tool_dummy/build install --record /home/maddy/iris_test_tool/build/test_tool_dummy/install.log --install-scripts $base/lib/test_tool_dummy --single-version-externally-managed
+[4.752s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.752s]   warnings.warn(
+[4.772s] running egg_info
+[4.773s] writing ../../build/test_tool_dummy/test_tool_dummy.egg-info/PKG-INFO
+[4.774s] writing dependency_links to ../../build/test_tool_dummy/test_tool_dummy.egg-info/dependency_links.txt
+[4.775s] writing entry points to ../../build/test_tool_dummy/test_tool_dummy.egg-info/entry_points.txt
+[4.776s] writing requirements to ../../build/test_tool_dummy/test_tool_dummy.egg-info/requires.txt
+[4.777s] writing top-level names to ../../build/test_tool_dummy/test_tool_dummy.egg-info/top_level.txt
+[4.781s] reading manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+[4.791s] writing manifest file '../../build/test_tool_dummy/test_tool_dummy.egg-info/SOURCES.txt'
+[4.800s] running build
+[4.800s] running build_py
+[4.801s] copying test_tool_dummy/a5_dummy.py -> /home/maddy/iris_test_tool/build/test_tool_dummy/build/lib/test_tool_dummy
+[4.801s] running install
+[4.801s] running install_lib
+[4.803s] copying /home/maddy/iris_test_tool/build/test_tool_dummy/build/lib/test_tool_dummy/a5_dummy.py -> /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy
+[4.803s] byte-compiling /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy/a5_dummy.py to a5_dummy.cpython-310.pyc
+[4.810s] running install_egg_info
+[4.817s] removing '/home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy-0.0.0-py3.10.egg-info' (and everything under it)
+[4.828s] Copying ../../build/test_tool_dummy/test_tool_dummy.egg-info to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages/test_tool_dummy-0.0.0-py3.10.egg-info
+[4.832s] running install_scripts
+[4.887s] Installing a2_dummy script to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/test_tool_dummy
+[4.896s] Installing a5_dummy script to /home/maddy/iris_test_tool/install/test_tool_dummy/lib/test_tool_dummy
+[4.896s] writing list of installed files to '/home/maddy/iris_test_tool/build/test_tool_dummy/install.log'
+[5.024s] Invoked command in '/home/maddy/iris_test_tool/src/test_tool_dummy' returned '0': PYTHONPATH=/home/maddy/iris_test_tool/build/test_tool_dummy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maddy/iris_test_tool/install/test_tool_dummy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_tool_dummy build --build-base /home/maddy/iris_test_tool/build/test_tool_dummy/build install --record /home/maddy/iris_test_tool/build/test_tool_dummy/install.log --install-scripts $base/lib/test_tool_dummy --single-version-externally-managed

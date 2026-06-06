@@ -1,0 +1,20 @@
+[  6%] [34m[1mAutomatic MOC and UIC for target dummy_test[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target dummy_test_1[0m
+[ 18%] [34m[1mAutomatic MOC and UIC for target test_tool_node[0m
+[ 18%] Built target dummy_test_autogen
+[ 18%] Built target dummy_test_1_autogen
+[ 37%] Built target dummy_test_1
+[ 56%] Built target dummy_test
+[ 56%] Built target test_tool_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target test_tool_node[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/test_tool_node_autogen/mocs_compilation.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/mainwindow.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o[0m
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In member function ‘[01m[Kvoid A5_service::on_ultrasonicValuesUpdated(float, float, float)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:393:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kultrasonic4[m[K’ was not declared in this scope; did you mean ‘[01m[Kultrasonic1[m[K’?
+  393 |     ultrasonic_4_label_value->setText(QString::number([01;31m[Kultrasonic4[m[K, 'f', 2) + " cm");
+      |                                                       [01;31m[K^~~~~~~~~~~[m[K
+      |                                                       [32m[Kultrasonic1[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

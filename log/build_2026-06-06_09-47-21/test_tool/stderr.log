@@ -1,0 +1,54 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:19:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderValues[m[K’ was not declared in this scope
+   19 |             [01;31m[KsetEncoderValues[m[K(msg->left_wheel_ticks, msg->right_wheel_ticks);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:25:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetUltrasonicValues[m[K’ was not declared in this scope
+   25 |             [01;31m[KsetUltrasonicValues[m[K(msg->ultrasonic_1.range, msg->ultrasonic_2.range,
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In lambda function:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetFreshWaterLevel[m[K’ was not declared in this scope; did you mean ‘[01m[KsetupFreshWaterSection[m[K’?
+   31 |             [01;31m[KsetFreshWaterLevel[m[K(msg->fresh_water_tank_level);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[KsetupFreshWaterSection[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsetDirtyWaterLevel[m[K’ was not declared in this scope; did you mean ‘[01m[KsetupDirtyWaterSection[m[K’?
+   32 |             [01;31m[KsetDirtyWaterLevel[m[K(msg->dirty_water_tank_level);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[KsetupDirtyWaterSection[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K At global scope:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:305:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setUltrasonicValues(float, float, float)[m[K’
+  305 | void [01;31m[KA5_service[m[K::setUltrasonicValues(float ultrasonic1, float ultrasonic2, float ultrasonic3)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:305:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setUltrasonicValues(float, float, float)[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+   23 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:310:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setEncoderValues(int, int)[m[K’
+  310 | void [01;31m[KA5_service[m[K::setEncoderValues(int left, int right)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:310:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setEncoderValues(int, int)[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+   23 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:315:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+  315 | void [01;31m[KA5_service[m[K::setFreshWaterLevel(int fresh_level)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:315:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setFreshWaterLevel(int)[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+   23 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:319:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid A5_service::setDirtyWaterLevel(int)[m[K’
+  319 | void [01;31m[KA5_service[m[K::setDirtyWaterLevel(int dirty_level)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:319:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid A5_service::setDirtyWaterLevel(int)[m[K’
+In file included from [01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:1[m[K:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/include/test_tool/A5/a5_service.h:23:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass A5_service[m[K’ defined here
+   23 | class [01;36m[KA5_service[m[K : public QWidget
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

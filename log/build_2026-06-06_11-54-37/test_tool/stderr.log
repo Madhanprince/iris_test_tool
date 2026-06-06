@@ -1,0 +1,16 @@
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:[m[K In member function ‘[01m[Kvoid A5_service::on_ultrasonicValuesUpdated(float, float, float)[m[K’:
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:358:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kultra_1_label[m[K’ was not declared in this scope; did you mean ‘[01m[Kultra_value[m[K’?
+  358 |     [01;31m[Kultra_1_label[m[K->setText(QString::number(ultrasonic1, 'f', 2) + " cm");
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kultra_value[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:359:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kultra_2_label[m[K’ was not declared in this scope; did you mean ‘[01m[Kultra_value[m[K’?
+  359 |     [01;31m[Kultra_2_label[m[K->setText(QString::number(ultrasonic2, 'f', 2) + " cm");
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kultra_value[m[K
+[01m[K/home/maddy/iris_test_tool/src/test_tool/src/iris_tool/A5/a5_service.cpp:360:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kultra_3_label[m[K’ was not declared in this scope; did you mean ‘[01m[Kultra_value[m[K’?
+  360 |     [01;31m[Kultra_3_label[m[K->setText(QString::number(ultrasonic3, 'f', 2) + " cm");
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kultra_value[m[K
+gmake[2]: *** [CMakeFiles/test_tool_node.dir/build.make:146: CMakeFiles/test_tool_node.dir/src/iris_tool/A5/a5_service.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/test_tool_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -8,6 +8,8 @@
 #include <QProgressBar>
 #include <QSizePolicy>
 #include <QString>
+#include <QThread>
+#include <QDebug>
 
 A5_service::A5_service(std::shared_ptr<Qtros> qtros_node ,QWidget *parent)
     : QWidget(parent), qtros(qtros_node)
@@ -23,7 +25,7 @@ A5_service::A5_service(std::shared_ptr<Qtros> qtros_node ,QWidget *parent)
         "ultrasonic_ranges", 10,
         [this](const iris_interfaces::msg::UltrasonicRanges::SharedPtr msg) {
             setUltrasonicValues(msg->ultrasonic_1.range, msg->ultrasonic_2.range, 
-                msg->ultrasonic_3.range);
+                msg->ultrasonic_3.range, msg->ultrasonic_4.range);
         });
     water_level_sub = qtros->create_subscription<iris_interfaces::msg::WaterTankLevels>(
         "water_tank_levels", 10,
@@ -31,14 +33,29 @@ A5_service::A5_service(std::shared_ptr<Qtros> qtros_node ,QWidget *parent)
             setFreshWaterLevel(msg->fresh_water_tank_level);
             setDirtyWaterLevel(msg->dirty_water_tank_level);
         });
-    a5_status_sub = qtros->create_subscription<iris_interfaces::msg::A5Status>(
-        "a5_control_status", 10,
-        [this](const iris_interfaces::msg::A5Status::SharedPtr msg) {
-                msg->mode_and_status ;
-        });
-    // led_command_publisher = qtros->create_publisher<iris_interfaces::msg::LedControl>("led_command", 10);
+    // a5_status_sub = qtros->create_subscription<iris_interfaces::msg::A5Status>(
+    //     "a5_control_status", 10,
+    //     [this](const iris_interfaces::msg::A5Status::SharedPtr msg) {
+    //             msg->mode_and_status ;
+    //     });
+    led_command_publisher = qtros->create_publisher<iris_interfaces::msg::LedControl>
+                                                ("a5_control/led_control", 10);
     
-
+    connect(this, &A5_service::ultrasonicValuesUpdated,
+            this, &A5_service::on_ultrasonicValuesUpdated,
+            Qt::QueuedConnection);
+    connect(this, &A5_service::encoderValuesUpdated,
+            this, &A5_service::on_encoderValuesUpdated,
+            Qt::QueuedConnection);
+    connect(this, &A5_service::freshWaterLevelUpdated,
+            this, &A5_service::on_freshWaterLevelUpdated,
+            Qt::QueuedConnection);  
+    connect(this, &A5_service::dirtyWaterLevelUpdated,
+            this, &A5_service::on_dirtyWaterLevelUpdated,
+            Qt::QueuedConnection);
+    // connect(this, &A5_service::a5_status_display,
+    //         this, &A5_service::on_a5_status_display,
+    //         Qt::QueuedConnection);
 }
 
 void A5_service::setupMainLayout()
@@ -174,21 +191,26 @@ void A5_service::setupUltrasonicSection(QBoxLayout *layout)
     QStringList sensorNames = {
         "Ultrasonic 1 :",
         "Ultrasonic 2 :",
-        "Ultrasonic 3 :"
+        "Ultrasonic 3 :",
+        "Ultrasonic 4 :",
     };
-    for (int i = 0; i < 3; ++i)
+    for (int i = 0; i < 4; ++i)
     {
         QVBoxLayout *row = new QVBoxLayout;
-        QLabel *label = new QLabel;
-        ultra_value = new QLabel("0");
-        ultra_value->setStyleSheet(
+        QLabel *ultrasonic_label = new QLabel;
+        QLabel *ultrasonic_value_label = new QLabel("0 cm");
+        
+        ultrasonic_value_label->setStyleSheet(
             "font-weight:600;"
             "font-size:14px;"
         );
-        label->setText(sensorNames[i]);
 
-        row->addWidget(label);
-        row->addWidget(ultra_value);
+        ultrasonic_label->setText(sensorNames[i]);
+        ultrasonicLabels.append(ultrasonic_value_label);
+
+        row->addWidget(ultrasonic_label);
+        row->addWidget(ultrasonic_value_label);
+
         layout->addLayout(row);
     }
 
@@ -253,17 +275,15 @@ void A5_service::setupLedSection(QBoxLayout *layout)
         button->setMinimumWidth(90);
         ledButtons.append(button);
         layout->addWidget(button);
-        // connect(button,
-        //         &QPushButton::clicked,
-        //         this,
-        //         [this, button]()
-        // {
-        //     emit ledCommandRequested(
-        //         button->text()
-        //     );
-        // });
+        
     }
     layout->addStretch();
+    connect(ledButtons[0], &QPushButton::clicked, [this]() { ledCommandRequested("OFF"); });
+    connect(ledButtons[1], &QPushButton::clicked, [this]() { ledCommandRequested("BOOTUP_WAIT"); });
+    connect(ledButtons[2], &QPushButton::clicked, [this]() { ledCommandRequested("STANDBY"); });
+    connect(ledButtons[3], &QPushButton::clicked, [this]() { ledCommandRequested("RUNNING"); });
+    connect(ledButtons[4], &QPushButton::clicked, [this]() { ledCommandRequested("ERROR"); });
+
 }
 
 // =============================================================
@@ -302,9 +322,9 @@ void A5_service::setupDirtyWaterSection(QBoxLayout *layout)
 // Subscriber callback functions to update UI " Signals "
 // =============================================================
 
-void A5_service::setUltrasonicValues(float ultrasonic1, float ultrasonic2, float ultrasonic3) 
+void A5_service::setUltrasonicValues(float ultrasonic1, float ultrasonic2, float ultrasonic3, float ultrasonic4) 
 {
-    emit ultrasonicValuesUpdated(ultrasonic1, ultrasonic2, ultrasonic3);
+    emit ultrasonicValuesUpdated(ultrasonic1, ultrasonic2, ultrasonic3, ultrasonic4);
 }
 
 void A5_service::setEncoderValues(int left, int right)
@@ -320,26 +340,102 @@ void A5_service::setDirtyWaterLevel(int dirty_level)
 {
     emit dirtyWaterLevelUpdated(dirty_level);
 }
-
+// void A5_service::setA5Status(const iris_interfaces::msg::A5Status::SharedPtr msg)
+// {
+//     emit a5_status_display(msg);
+// }
 // =============================================================
 // Subscriber callback functions to update UI " Slots "
 // =============================================================
 
-void A5_service::ultrasonicValuesUpdated(float ultrasonic1, float ultrasonic2, float ultrasonic3)
+void A5_service::on_ultrasonicValuesUpdated(float ultrasonic1, float ultrasonic2, float ultrasonic3, float ultrasonic4)
 {
-    ultra_value->setText(QString::number(ultrasonic1, 'f', 2) + " cm");
-    ultra_value->setText(QString::number(ultrasonic2, 'f', 2) + " cm");
-    ultra_value->setText(QString::number(ultrasonic3, 'f', 2) + " cm");
+    ultrasonicLabels[0]->setText(QString::number(ultrasonic1, 'f', 2) + " cm");
+    ultrasonicLabels[1]->setText(QString::number(ultrasonic2, 'f', 2) + " cm");
+    ultrasonicLabels[2]->setText(QString::number(ultrasonic3, 'f', 2) + " cm");
+    ultrasonicLabels[3]->setText(QString::number(ultrasonic4, 'f', 2) + " cm");
 }
 
-// void A5_service::ledCommandRequested(const QString &command)
-// {
-//     auto msg = std::make_shared<iris_interfaces::msg::LedControl>();
-//     msg->command = command.toStdString();
-//     led_command_publisher->publish(*msg);
-// }
+void A5_service::ledCommandRequested(const QString &command)
+{
+    auto msg =
+        std::make_shared<iris_interfaces::msg::LedControl>();
 
-void A5_service::encoderValuesUpdated(int left, int right)
+    if (command == "OFF")
+    {
+        msg->led_command =
+            iris_interfaces::msg::LedControl::OFF;
+
+        msg->left_indicator = 0;
+        msg->right_indicator = 0;
+
+        led_command_publisher->publish(*msg);
+        RCLCPP_INFO(qtros->get_logger(), "Published LED Command : OFF");
+    }
+    else if (command == "BOOTUP_WAIT")
+    {
+        msg->led_command =
+            iris_interfaces::msg::LedControl::BOOTUP_WAIT;
+
+        msg->left_indicator = 1;
+        msg->right_indicator = 1;
+
+        led_command_publisher->publish(*msg);
+        RCLCPP_INFO(qtros->get_logger(), "Published LED Command : BOOTUP_WAIT");
+    }
+    else if (command == "STANDY")
+    {
+        msg->led_command =
+            iris_interfaces::msg::LedControl::STANDY;
+
+        msg->left_indicator = 1;
+        msg->right_indicator = 1;
+
+        led_command_publisher->publish(*msg);
+        RCLCPP_INFO(qtros->get_logger(), "Published LED Command : STANDBY");
+    }
+    else if (command == "RUNNING")
+    {
+        msg->led_command =
+            iris_interfaces::msg::LedControl::RUNNING;
+
+        // First state
+        msg->left_indicator = 1;
+        msg->right_indicator = 0;
+
+        led_command_publisher->publish(*msg);
+
+        QThread::msleep(300);
+
+        // Second state
+        msg->left_indicator = 0;
+        msg->right_indicator = 1;
+
+        led_command_publisher->publish(*msg);
+        RCLCPP_INFO(qtros->get_logger(), "Published LED Command : RUNNING");
+    }
+    else if (command == "ERROR")
+    {
+        msg->led_command =
+            iris_interfaces::msg::LedControl::ERROR;
+
+        msg->left_indicator = 1;
+        msg->right_indicator = 1;
+
+        led_command_publisher->publish(*msg);
+        RCLCPP_INFO(qtros->get_logger(), "Published LED Command : ERROR");
+    }
+    else
+    {
+        qDebug() << "Unknown LED Command :" << command;
+        return;
+    }
+
+    qDebug() << "Published LED Command :" << command;
+}
+
+
+void A5_service::on_encoderValuesUpdated(int left, int right)
 {
     if (encoderLeftLabel)
     {
@@ -351,34 +447,34 @@ void A5_service::encoderValuesUpdated(int left, int right)
     }
 }
 
-void A5_service::freshWaterLevelUpdated(int fresh_level){
+void A5_service::on_freshWaterLevelUpdated(int fresh_level){
     if (freshWaterBar)
     {
         freshWaterBar->setValue(qBound(0, fresh_level, 100));
     }
 }
 
-void A5_service::dirtyWaterLevelUpdated(int dirty_level){
+void A5_service::on_dirtyWaterLevelUpdated(int dirty_level){
     if (dirtyWaterBar)
     {
         dirtyWaterBar->setValue(qBound(0, dirty_level, 100));
     }
 }
 
-void A5_service::a5_status_display(const iris_interfaces::msg::A5Status::SharedPtr msg)
-{
-    // Example: Update LED buttons based on mode
-    QString mode = QString::fromStdString(msg->mode_and_status);
-    for (QPushButton *button : ledButtons)
-    {
-        if (button->text() == mode)
-        {
-            button->setStyleSheet("background-color:#22c55e;"); // Active
-        }
-        else
-        {
-            button->setStyleSheet(""); // Default
-        }
-    }
-}
+// void A5_service::on_a5_status_display(const iris_interfaces::msg::A5Status::SharedPtr msg)
+// {
+//     // Example: Update LED buttons based on mode
+//     QString mode = QString::fromStdString(msg->mode_and_status);
+//     for (QPushButton *button : ledButtons)
+//     {
+//         if (button->text() == mode)
+//         {
+//             button->setStyleSheet("background-color:#22c55e;"); // Active
+//         }
+//         else
+//         {
+//             button->setStyleSheet(""); // Default
+//         }
+//     }
+// }
 
