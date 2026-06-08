@@ -1,2 +1,0 @@
-uint8 fresh_water_tank_level
-uint8 dirty_water_tank_level

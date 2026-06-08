@@ -1,1 +1,0 @@
-Invoking command in '/home/maddy/iris_test_tool/build/iris_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maddy/iris_test_tool/build/iris_interfaces -- -j8 -l8

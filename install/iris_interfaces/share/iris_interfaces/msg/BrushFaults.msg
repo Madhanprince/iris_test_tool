@@ -1,5 +1,0 @@
-uint8 actuator_digital_fault
-uint8 drive_brush_current_digital_fault
-uint8 overcurrent_analog_fault
-uint8 temperature_fault
-uint8 undercurrent_analog_fault

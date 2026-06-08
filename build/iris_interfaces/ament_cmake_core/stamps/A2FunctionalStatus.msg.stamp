@@ -1,4 +1,0 @@
-BrushStatus brush
-VacuumStatus vacuum
-uint8 water_pump
-uint8 detergent_pump

@@ -1,8 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001005] (-) JobUnselected: {'identifier': 'iris_interfaces'}
-[0.001197] (-) JobUnselected: {'identifier': 'test_tool'}
-[0.001299] (test_tool_dummy) JobQueued: {'identifier': 'test_tool_dummy', 'dependencies': OrderedDict()}
-[0.001403] (test_tool_dummy) JobStarted: {'identifier': 'test_tool_dummy'}
-[0.099179] (-) TimerEvent: {}
-[0.120303] (test_tool_dummy) JobEnded: {'identifier': 'test_tool_dummy', 'rc': 0}
-[0.121953] (-) EventReactorShutdown: {}

@@ -1,3 +1,0 @@
-
-uint8 brush_status
-uint8 vacuum_status

@@ -1,2 +1,0 @@
-SystemSoftwareStatus system_software_info
-MenderClientStatus mender_client_status

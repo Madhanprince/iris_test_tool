@@ -1,2 +1,0 @@
-uint8 brush_command
-uint8 vacuum_command

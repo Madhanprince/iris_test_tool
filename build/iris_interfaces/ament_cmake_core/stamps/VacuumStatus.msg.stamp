@@ -1,3 +1,0 @@
-uint8 vacuum_motor_command
-uint8 vacuum_motor_status
-ActuatorStatus squeeze_actuator
