@@ -383,10 +383,10 @@ void A5_service::ledCommandRequested(const QString &command)
         led_command_publisher->publish(*msg);
         RCLCPP_INFO(qtros->get_logger(), "Published LED Command : BOOTUP_WAIT");
     }
-    else if (command == "STANDY")
+    else if (command == "STANDBY")
     {
         msg->led_command =
-            iris_interfaces::msg::LedControl::STANDY;
+            iris_interfaces::msg::LedControl::STANDBY;
 
         msg->left_indicator = 1;
         msg->right_indicator = 1;
